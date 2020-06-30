@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+.Contact {
+  color: $white;
+  background: $dark;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & > * {
+    padding-top: 2em;
+  }
+
+  &_text {
+    flex-basis: 2;
+    max-width: 600px;
+  }
+
+  &_info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
+  .Info_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+    margin-bottom: 0.8em;
+
+    svg {
+      margin-right: 0.4em;
+    }
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+  }
+
+  &_map {
+    overflow: hidden;
+    background: $red_to_black;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

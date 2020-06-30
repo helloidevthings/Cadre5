@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap");
+.Header {
+  display: block;
+  max-width: 30em;
+  background-color: #000000;
+  z-index: 1000;
+  padding: 30px;
+}
+
+.Logo {
+  flex: 3 0 auto;
+  color: pink;
+}
+
+.Navigation {
+  flex: 1 5 auto;
+}
+
+.Button {
+  text-decoration: none;
+  border-radius: none;
+  border: none;
+  background-color: transparent;
+}
+.Button_primary {
+  margin: 2em 0em;
+  padding: 0.2em 0em;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  position: relative;
+  transition: color 0.3s ease-in;
+}
+.Button_primary:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+  transform: scaleX(1);
+  background-color: #000000;
+  transition: transform 0.5s cubic-bezier(0.6, -0.01, 0.11, 0.99);
+}
+.Button_primary:hover:after {
+  transform: scaleX(0);
+  background-color: #c10230;
+}
+.Button[data-theme="dark"] {
+  color: #ffffff;
+}
+.Button[data-theme="dark"].Button_primary:after {
+  background-color: #ffffff;
+}
+
+.Navigation {
+  top: 0px;
+  left: 0px;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navigation .Menu_item {
+  list-style: none;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+.Navigation .Menu_item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  background: linear-gradient(#000000, #c10230);
+  background-repeat: no-repeat;
+}
+.Hero_para {
+  max-width: 30em;
+  margin: 1.3em;
+}
+.Hero_mission-statement {
+  font-size: 1.35em;
+  font-weight: 300;
+  line-height: 1.45;
+}
+
+.Project {
+  display: block;
+  height: 100vh;
+}
+.Project_date {
+  color: #383838;
+}
+.Project_leadin {
+  color: #c10230;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: #000000;
+  line-height: 1.45;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.Main {
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
