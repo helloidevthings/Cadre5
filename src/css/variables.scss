@@ -1,0 +1,13 @@
+$black: #000000;
+$white: #ffffff;
+
+$primary: #c10230;
+$dark-red: #2e0000;
+$dark: #1f1f1f;
+$gray-med: #383838;
+$gray-lt: #757575;
+$light: #efefef;
+
+$black_to_red: linear-gradient(#{$dark}, #{$dark-red});
+$red_to_black: linear-gradient(#{$dark-red}, #{$black});
+$dark_to_gray-med: linear-gradient(#{$dark}, #{$gray-med});
