@@ -1,11 +1,14 @@
 import React, { Fragment } from "react";
+
+import Page from "./Page";
 import HeroBasic from "./HeroBasic";
 import CTA from "./CTA";
 import Featurette from "./Featurette";
 import Title from "./Parts/Title";
+import LogoGrid from "./LogoGrid";
 
 const About = () => (
-  <Fragment>
+  <Page>
     <HeroBasic />
     <CTA
       subheader="FOUNDED IN 1999"
@@ -45,7 +48,8 @@ const About = () => (
       imgalt="people working in an office environment"
       type="basic"
     />
-  </Fragment>
+    <LogoGrid />
+  </Page>
 );
 
 export default About;

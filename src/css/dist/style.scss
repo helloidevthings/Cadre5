@@ -1,16 +1,20 @@
+// global
 @import "../variables.scss";
 @import "../global.scss";
-@import "../Header.scss";
 @import "../buttons.scss";
 @import "../navigation.scss";
+
+// views
+@import "../About.scss";
+@import "../Contact.scss";
+@import "../CTA.scss";
+@import "../Clients.scss";
+@import "../Featurette.scss";
+@import "../Header.scss";
 @import "../Hero.scss";
 @import "../HeroBasic.scss";
 @import "../IntroText.scss";
-@import "../About.scss";
-@import "../Clients.scss";
-@import "../Contact.scss";
-@import "../CTA.scss";
-@import "../Featurette.scss";
+@import "../LogoGrid.scss";
 @import "../ProjectHero.scss";
 @import "../ProjectsRelated.scss";
 
