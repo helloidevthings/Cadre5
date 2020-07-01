@@ -93,30 +93,31 @@ hr {
 .fancyAND {
   $main-color: $primary;
   color: $main-color;
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
-  font-size: 0.5em;
+  font-size: 0.9em;
+  font-weight: 800;
   position: relative;
-  padding-top: 2px;
+  padding-top: 0;
   padding-bottom: 2px;
+  margin: 9px 0.6em 0;
 
-  &:before,
-  &:after {
+  &:before {
     content: "";
     display: block;
     position: absolute;
     background-color: $main-color;
-    height: 2px;
+    height: 3px;
     width: 100%;
   }
   &:before {
     top: 0;
     left: 0;
   }
-  &:after {
-    bottom: 0;
-    left: 0;
-  }
+  // &:after {
+  //   bottom: 0;
+  //   left: 0;
+  // }
 }
 
 .WaveHr {
