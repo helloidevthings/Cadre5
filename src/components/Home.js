@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 
+import Page from "./Page";
 import Hero from "./Hero";
 import Clients from "./Clients";
 import Projects from "./Projects";
@@ -8,7 +9,7 @@ import Careers from "./Careers";
 import WaveHr from "./Parts/WaveHR";
 
 const Home = () => (
-  <Fragment>
+  <Page>
     <div className="Hero">
       <Hero
         title="We are Cadre5"
@@ -32,7 +33,7 @@ const Home = () => (
     </div>
     <div className="Careers"></div>
     <Careers />
-  </Fragment>
+  </Page>
 );
 
 export default Home;

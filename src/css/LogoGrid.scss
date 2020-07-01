@@ -1,0 +1,21 @@
+.LogoGrid {
+  &_grid {
+    font-display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      max-width: 130px;
+      max-height: 50px;
+      margin: 1em;
+      filter: grayscale(100%);
+      transition: all 1s ease-in-out;
+
+      &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.02);
+      }
+    }
+  }
+}

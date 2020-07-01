@@ -5,9 +5,7 @@ import Router from "./Router";
 const App = () => (
   <main className="Main">
     <Header />
-    <section className="Content">
-      <Router />
-    </section>
+    <Router />
   </main>
 );
 

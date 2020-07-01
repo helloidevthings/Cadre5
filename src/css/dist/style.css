@@ -94,23 +94,6 @@ blockquote {
     left: 0;
     top: 0.1em; }
 
-.Header {
-  flex: 1 1 auto;
-  background-color: #000000;
-  z-index: 1000;
-  padding: 1em; }
-
-.Logo {
-  color: pink;
-  margin: 1em 0.8em 5em;
-  height: 300px; }
-  .Logo svg {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    vertical-align: middle; }
-
 .Button {
   text-decoration: none;
   border-radius: none;
@@ -168,84 +151,6 @@ blockquote {
       text-decoration: none; }
       .Navigation .Menu li a:hover {
         color: pink; }
-
-.Hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  position: relative;
-  color: #ffffff;
-  background: linear-gradient(#2e0000, #000000);
-  background-repeat: no-repeat; }
-  .Hero_para {
-    max-width: 33em;
-    margin: 1.3em; }
-  .Hero_tagline {
-    font-size: 1.6em;
-    font-weight: 300;
-    line-height: 1.45; }
-
-.HeroBasic {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 40vh;
-  position: relative; }
-  .HeroBasic_header {
-    color: #ffffff; }
-  .HeroBasic_media {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%; }
-    .HeroBasic_media img {
-      object-fit: cover;
-      object-position: 50% 50%;
-      height: inherit;
-      width: inherit; }
-  .HeroBasic:after {
-    content: "";
-    background: linear-gradient(rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.58));
-    height: inherit;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1; }
-
-.IntroText_date-wrap {
-  margin: 1em 0;
-  position: relative; }
-  .IntroText_date-wrap:after {
-    content: "";
-    background-color: #757575;
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    z-index: -1; }
-.IntroText_date {
-  color: #757575;
-  display: inline;
-  background-color: #ffffff;
-  font-size: 0.9em;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  margin: 1em 0;
-  padding-right: 10px;
-  z-index: 1; }
-.IntroText_description--lg {
-  font-size: 1.1em;
-  margin-bottom: 0.8em; }
-
-.Clients {
-  color: #ffffff;
-  background: #1f1f1f;
-  padding: 3em 1em; }
 
 .Contact {
   color: #ffffff;
@@ -326,6 +231,11 @@ blockquote {
       right: 0;
       z-index: -1; }
 
+.Clients {
+  color: #ffffff;
+  background: #1f1f1f;
+  padding: 3em 1em; }
+
 .Featurette {
   background: linear-gradient(#ffffff 20%, #efefef 20%); }
   .Featurette_wrap {
@@ -351,6 +261,111 @@ blockquote {
   .Featurette blockquote {
     max-width: 600px;
     margin-top: 3em; }
+
+.Header {
+  flex: 1 1 auto;
+  background-color: #000000;
+  z-index: 1000;
+  padding: 1em; }
+
+.Logo {
+  color: pink;
+  margin: 1em 0.8em 5em;
+  height: 300px; }
+  .Logo svg {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle; }
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  color: #ffffff;
+  background: linear-gradient(#2e0000, #000000);
+  background-repeat: no-repeat; }
+  .Hero_para {
+    max-width: 33em;
+    margin: 1.3em; }
+  .Hero_tagline {
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.45; }
+
+.HeroBasic {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40vh;
+  position: relative; }
+  .HeroBasic_header {
+    color: #ffffff; }
+  .HeroBasic_media {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .HeroBasic_media img {
+      object-fit: cover;
+      object-position: 50% 50%;
+      height: inherit;
+      width: inherit; }
+  .HeroBasic:after {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.58));
+    height: inherit;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1; }
+
+.IntroText_date-wrap {
+  margin: 1em 0;
+  position: relative; }
+  .IntroText_date-wrap:after {
+    content: "";
+    background-color: #757575;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: -1; }
+.IntroText_date {
+  color: #757575;
+  display: inline;
+  background-color: #ffffff;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin: 1em 0;
+  padding-right: 10px;
+  z-index: 1; }
+.IntroText_description--lg {
+  font-size: 1.1em;
+  margin-bottom: 0.8em; }
+
+.LogoGrid_grid {
+  font-display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .LogoGrid_grid > * {
+    max-width: 130px;
+    max-height: 50px;
+    margin: 1em;
+    filter: grayscale(100%);
+    transition: all 1s ease-in-out; }
+    .LogoGrid_grid > *:hover {
+      filter: grayscale(0%);
+      transform: scale(1.02); }
 
 .Project_heading {
   background: #1f1f1f;

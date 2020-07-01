@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
@@ -8,6 +10,7 @@ import ProjResolution from "./ProjResolution";
 import FourOhFour from "./FourOhFour";
 
 const Router = () => (
+  // <AnimatePresence>
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
@@ -19,6 +22,7 @@ const Router = () => (
       <Route component={FourOhFour} />
     </Switch>
   </BrowserRouter>
+  // </AnimatePresence>
 );
 
 export default Router;
