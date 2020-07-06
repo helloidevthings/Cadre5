@@ -8,6 +8,8 @@
   border-radius: none;
   border: none;
   background-color: transparent;
+  margin-top: 2em;
+  display: inline-block;
 
   &#{$btnStyle} {
     margin: 2em 0em;

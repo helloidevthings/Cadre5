@@ -1,24 +1,13 @@
 import React, { Fragment } from "react";
+import Page from "./Page";
 import MapPin from "./Svgs/MapPin";
 import Phone from "./Svgs/Phone";
 import Envelope from "./Svgs/Envelope";
 
 class Contact extends React.Component {
-  // Getting the text from Inputs...
-  // constructor() {
-  //   super();
-  //   this.contactUs = this.contactUs.bind(this);
-  // }
-
-  // InputFName = React.createRef();
-
-  // contactUs(event) {
-  //   event.preventDefault();
-  // }
-
   render() {
     return (
-      <Fragment>
+      <Page>
         <section className="Contact">
           <div className="Contact_text">
             <h2 className="Contact_title">Contact Us</h2>
@@ -154,7 +143,7 @@ class Contact extends React.Component {
             ></path>
           </svg>
         </div>
-      </Fragment>
+      </Page>
     );
   }
 }

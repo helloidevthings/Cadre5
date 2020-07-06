@@ -42,10 +42,14 @@
   &_map {
     overflow: hidden;
     background: $red_to_black;
-    width: 100vw;
-    height: 600px;
+    max-width: 100vw;
+    // height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
