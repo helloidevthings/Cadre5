@@ -1,13 +1,12 @@
 import React from "react";
+import Page from "./Page";
 
-class Careers extends React.Component {
-  render() {
-    return (
-      <section className="Careers">
-        <h2 className="Careers_title">Careers</h2>
-      </section>
-    );
-  }
-}
+const Careers = () => (
+  <Page>
+    <section className="Careers">
+      <h2 className="Careers_title">Careers</h2>
+    </section>
+  </Page>
+);
 
 export default Careers;

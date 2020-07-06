@@ -21,7 +21,7 @@ const CTA = ({
         descLg={descLg}
         desc={desc}
       />
-      {link && <Button theme="dark" btnstyle="primary" />}
+      {link && <Button theme="dark" style="primary" href="" text="" />}
     </div>
     <Image src={imgsrc} alt={imgalt} base="CTA" />
   </section>

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import Page from "./Page";
 import HeroBasic from "./HeroBasic";
@@ -6,9 +6,19 @@ import CTA from "./CTA";
 import Featurette from "./Featurette";
 import Title from "./Parts/Title";
 import LogoGrid from "./LogoGrid";
+// import { motion, AnimatePresence } from "framer-motion";
 
-const About = () => (
+const About = ({ isVisible }) => (
   <Page>
+    {/* <AnimatePresence>
+      {isVisible && (
+        <motion.div
+          className="animation-wrapper"
+          key="about"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        > */}
     <HeroBasic />
     <CTA
       subheader="FOUNDED IN 1999"
@@ -49,6 +59,9 @@ const About = () => (
       type="basic"
     />
     <LogoGrid />
+    {/* </motion.div>
+      )}
+    </AnimatePresence> */}
   </Page>
 );
 

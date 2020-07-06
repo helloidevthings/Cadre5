@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import Clients from "./Clients";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Careers from "./Careers";
+import HeroCareers from "./HeroCareers";
 import WaveHr from "./Parts/WaveHR";
 
 const Home = () => (
@@ -14,6 +14,7 @@ const Home = () => (
       <Hero
         title="We are Cadre5"
         tagline="We design and develop enterprise and scientific software for global leaders."
+        ctaText="About Us"
       />
     </div>
     <div className="Clients">
@@ -32,7 +33,7 @@ const Home = () => (
       <Contact />
     </div>
     <div className="Careers"></div>
-    <Careers />
+    <HeroCareers />
   </Page>
 );
 

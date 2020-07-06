@@ -1,20 +1,16 @@
 import React from "react";
 import Arrow from "../Svgs/Arrow.js";
 
-class Button extends React.Component {
-  render() {
-    return (
-      <button
-        className="Button"
-        btnstyle={`${this.props.btnstyle}`}
-        theme={`${this.props.theme}`}
-        href="https://www.google.com/"
-      >
-        Link Text
-        {/* <Arrow /> */}
-      </button>
-    );
-  }
-}
+const Button = ({ style, theme, href, text }) => (
+  <a
+    href={`${href}`}
+    className="Button"
+    btnstyle={`${style}`}
+    theme={`${theme}`}
+  >
+    {`${text}`}
+    {/* <Arrow /> */}
+  </a>
+);
 
 export default Button;
