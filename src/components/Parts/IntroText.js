@@ -8,7 +8,7 @@ const IntroText = ({ subheader, leadin, descLg, desc }) => (
     <h3 className="IntroText_leadin">{leadin}</h3>
     <hr />
     <p className="IntroText_description--lg">{descLg}</p>
-    <p className="IntroText_description">{desc}</p>
+    {desc && <p className="IntroText_description">{desc}</p>}
   </article>
 );
 

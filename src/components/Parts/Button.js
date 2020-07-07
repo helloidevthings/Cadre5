@@ -1,15 +1,10 @@
 import React from "react";
 import Arrow from "../Svgs/Arrow.js";
 
-const Button = ({ style, theme, href, text }) => (
-  <a
-    href={`${href}`}
-    className="Button"
-    btnstyle={`${style}`}
-    theme={`${theme}`}
-  >
-    {`${text}`}
-    {/* <Arrow /> */}
+const Button = ({ href, style, theme, text, arrow = false }) => (
+  <a href={href} className="Button" btnstyle={style} theme={theme}>
+    {text}
+    {arrow && <Arrow />}
   </a>
 );
 

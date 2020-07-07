@@ -4,9 +4,15 @@ import Page from "./Page";
 import Hero from "./Hero";
 import Clients from "./Clients";
 import Projects from "./Projects";
+import ProjectsRelated from "./ProjectsRelated";
+
 import Contact from "./Contact";
 import HeroCareers from "./HeroCareers";
 import WaveHr from "./Parts/WaveHR";
+
+// loadProjects = () => {
+//   alert("loading projs");
+// };
 
 const Home = () => (
   <Page>
@@ -20,15 +26,16 @@ const Home = () => (
     <div className="Clients">
       <Clients />
     </div>
+
     <Projects />
     <WaveHr wave="white" bg="linear-gradient(#efefef, white)" />
-    {/* <ProjectsRelated
+    <ProjectsRelated
       projTitle="G2"
       projLeadin="Project management for government agencies."
       imgsrc="/images/g2-screen-array.png"
       imgalt="g2 graphics"
       tags="Health"
-    /> */}
+    />
     <div className="Contact">
       <Contact />
     </div>

@@ -9,21 +9,31 @@ const Project = ({
   leadin,
   descLg,
   desc,
-  wave,
-  bg,
-  imgsrc,
-  imgalt,
-  link,
+  wave = "",
+  img = "",
+  link = "",
 }) => (
   <Fragment>
-    {wave && <WaveHr wave={wave} bg={bg} />}
+    {wave && <WaveHr color={wave.color} bg={wave.bg} />}
     <article className="ProjectHero">
       <div className="text-wrapper">
         <h2 className="Project_title">{title}</h2>
-        <IntroText subheader={subheader} leadin={leadin} descLg={descLg} />
-        {link && <Button theme="dark" style="primary" href="" text="" />}
+        <IntroText
+          subheader={subheader}
+          leadin={leadin}
+          descLg={descLg}
+          desc={desc}
+        />
+        {link && (
+          <Button
+            theme={link.theme}
+            style={link.style}
+            href={link.href}
+            text={link.text}
+          />
+        )}
       </div>
-      <Image src={imgsrc} alt={imgalt} base="ProjectHero" />
+      <Image src={img.src} alt={img.alt} base="ProjectHero" />
     </article>
   </Fragment>
 );
