@@ -8,10 +8,9 @@ const CTA = ({
   leadin,
   descLg,
   desc,
-  imgsrc,
-  imgalt,
+  img = "",
   type,
-  link,
+  link = "",
 }) => (
   <section className={`CTA CTA--${type}`}>
     <div className="CTA_text text-wrapper">
@@ -21,9 +20,16 @@ const CTA = ({
         descLg={descLg}
         desc={desc}
       />
-      {link && <Button theme="dark" style="primary" href="" text="" />}
+      {link && (
+        <Button
+          theme={link.theme}
+          style={link.style}
+          href={link.href}
+          text={link.text}
+        />
+      )}
     </div>
-    <Image src={imgsrc} alt={imgalt} base="CTA" />
+    <Image src={img.src} alt={img.alt} base="CTA" />
   </section>
 );
 

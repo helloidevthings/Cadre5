@@ -28,9 +28,9 @@
     justify-content: center;
 
     @supports (max-width: max-content) {
-      min-width: 30em;
+      min-width: 25em;
       max-width: max-content;
-      flex-basis: 30em;
+      flex-basis: 25em;
       // flex-grow: 99999;
     }
 

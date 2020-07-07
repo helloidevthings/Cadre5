@@ -10,10 +10,6 @@ import Contact from "./Contact";
 import HeroCareers from "./HeroCareers";
 import WaveHr from "./Parts/WaveHR";
 
-// loadProjects = () => {
-//   alert("loading projs");
-// };
-
 const Home = () => (
   <Page>
     <div className="Hero">

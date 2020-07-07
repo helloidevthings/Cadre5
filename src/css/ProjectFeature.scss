@@ -1,0 +1,26 @@
+.ProjectFeature {
+  $light-theme: "[theme= " light " ]";
+  $medium-theme: "[theme= " medium " ]";
+  $dark-theme: "[theme= " dark " ]";
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &_media {
+    max-width: 600px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &#{$light-theme} {
+    background-color: $white;
+  }
+  &#{$dark-theme} {
+    background-color: $dark;
+  }
+  &#{$medium-theme} {
+    background-color: $light;
+  }
+}
