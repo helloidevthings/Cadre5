@@ -1,6 +1,38 @@
 @import "variables.scss";
 
 .IntroTextIcon {
-  &_title {
+  max-width: 30em;
+
+  &_text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid $gray-lt;
+    margin-bottom: 1.2em;
+    padding-bottom: 0.8em;
+
+    h2 {
+      font-size: 2.2em;
+    }
+  }
+
+  &_icon {
+    $circle: 2em;
+    display: block;
+    width: $circle;
+    height: $circle;
+    position: relative;
+    margin-right: 1em;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $primary;
+      width: $circle;
+      height: $circle;
+      border-radius: $circle;
+      top: 0;
+      left: 0;
+    }
   }
 }

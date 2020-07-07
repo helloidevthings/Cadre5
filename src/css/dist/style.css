@@ -11,7 +11,9 @@ body {
   color: #000000;
   line-height: 1.59;
   background: #ffffff;
-  font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (2100 - 320))); }
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (2100 - 320))); }
 
 .Main {
   display: flex;
@@ -47,7 +49,6 @@ h2 {
 
 h3 {
   font-size: 1.8em;
-  font-weight: 600;
   line-height: 1.45;
   margin-bottom: 0.3em; }
 
@@ -58,6 +59,10 @@ h6 {
 
 p {
   line-height: 1.55; }
+
+p.large {
+  font-size: 1.15em;
+  margin-bottom: 1.1em; }
 
 ul {
   margin-block-start: 0;
@@ -99,14 +104,14 @@ blockquote {
   margin: 3em auto;
   padding-left: 4.8em;
   position: relative;
-  color: #383838;
+  color: #4d4d4d;
   font-size: 1em;
   font-weight: 500;
   font-style: italic;
   line-height: 1.5; }
   blockquote:before {
     content: "";
-    color: #757575;
+    color: #a9a8a8;
     font-size: 3em;
     position: absolute;
     background: url(/images/svgs/quote.svg);
@@ -236,9 +241,9 @@ blockquote {
     justify-content: center; }
     @supports (max-width: max-content) {
       .CTA_media {
-        min-width: 30em;
+        min-width: 25em;
         max-width: max-content;
-        flex-basis: 30em; } }
+        flex-basis: 25em; } }
     .CTA_media:after {
       content: "";
       background: linear-gradient(#ffffff 38%, #efefef 38%);
@@ -399,7 +404,7 @@ blockquote {
   position: relative; }
   .IntroText_date-wrap:after {
     content: "";
-    background-color: #757575;
+    background-color: #a9a8a8;
     position: absolute;
     height: 1px;
     width: 100%;
@@ -407,7 +412,7 @@ blockquote {
     left: 0;
     z-index: -1; }
 .IntroText_date {
-  color: #757575;
+  color: #a9a8a8;
   display: inline;
   background-color: #ffffff;
   font-size: 0.9em;
@@ -419,6 +424,33 @@ blockquote {
 .IntroText_description--lg {
   font-size: 1.1em;
   margin-bottom: 0.8em; }
+
+.IntroTextIcon {
+  max-width: 30em; }
+  .IntroTextIcon_text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid #a9a8a8;
+    margin-bottom: 1.2em;
+    padding-bottom: 0.8em; }
+    .IntroTextIcon_text h2 {
+      font-size: 2.2em; }
+  .IntroTextIcon_icon {
+    display: block;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    margin-right: 1em; }
+    .IntroTextIcon_icon:after {
+      content: "";
+      position: absolute;
+      background-color: #c10230;
+      width: 2em;
+      height: 2em;
+      border-radius: 2em;
+      top: 0;
+      left: 0; }
 
 .LogoGrid {
   max-width: 1200px;
@@ -452,6 +484,21 @@ blockquote {
         transform: scale(1.3);
         opacity: 1; }
 
+.ProjectFeature {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .ProjectFeature_media {
+    max-width: 600px; }
+    .ProjectFeature_media img {
+      width: 100%; }
+  .ProjectFeature[theme=light] {
+    background-color: #ffffff; }
+  .ProjectFeature[theme=dark] {
+    background-color: #1f1f1f; }
+  .ProjectFeature[theme=medium] {
+    background-color: #efefef; }
+
 .Project_heading {
   background: #1f1f1f;
   color: #ffffff;
@@ -473,9 +520,9 @@ blockquote {
     max-width: 1200px; }
     @supports (max-width: max-content) {
       .ProjectHero_media {
-        min-width: 25em;
+        min-width: 20em;
         max-width: max-content;
-        flex-basis: 25em;
+        flex-basis: 20em;
         flex-grow: 99999; } }
     .ProjectHero_media img {
       max-width: 100%;
