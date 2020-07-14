@@ -4,49 +4,50 @@
   color: $white;
   background: $dark;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-
-  & > * {
-    padding-top: 2em;
-  }
+  padding-top: 3em;
 
   &_text {
-    flex-basis: 2;
+    // flex-basis: 2;
     max-width: 600px;
   }
 
-  &_info {
-    display: flex;
-    flex-wrap: wrap;
+  & .InfoItems {
     margin-top: 2em;
-  }
-  .Info_item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 2em;
-    margin-bottom: 0.8em;
-
-    svg {
-      margin-right: 0.4em;
-    }
   }
 
   &_form {
     display: flex;
     flex-direction: column;
-    flex-basis: 1;
+    // flex-basis: 1;
+    padding: 2em;
+  }
+
+  input {
+    margin-bottom: 1em;
+    border: none;
+    border-bottom: 1px solid $white;
+  }
+
+  textarea {
+    margin-bottom: 1em;
+  }
+
+  & [type="submit"] {
+    background-color: $primary;
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    display: inline-block;
   }
 
   &_map {
     overflow: hidden;
     background: $red_to_black;
     max-width: 100vw;
-    // height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-height: 800px;
+    margin-top: 3em;
+
     svg {
       width: 100%;
       height: 100%;

@@ -2,7 +2,8 @@
 
 .Button {
   $btnStyle: '[btnstyle= "primary" ]';
-  $theme: "[theme= " light " ]";
+  $light-theme: "[theme= " light " ]";
+  $dark-theme: "[theme= " dark " ]";
 
   text-decoration: none;
   border-radius: none;
@@ -47,10 +48,13 @@
   &_secondary {
   }
 
-  &#{$theme} {
+  &#{$light-theme} {
     color: $white;
     &#{$btnStyle}:after {
       background-color: $white;
     }
+  }
+  &#{$dark-theme} {
+    color: $black;
   }
 }

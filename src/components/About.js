@@ -9,7 +9,10 @@ import LogoGrid from "./LogoGrid";
 
 const About = () => (
   <Page>
-    <HeroBasic />
+    <HeroBasic
+      title="About Us"
+      img={{ src: "/images/cadre5office.jpg", alt: "Cadre5 Building" }}
+    />
     <CTA
       subheader="FOUNDED IN 1999"
       leadin="Cadre5 is dedicated to building great software."

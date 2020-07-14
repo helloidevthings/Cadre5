@@ -1,5 +1,76 @@
+@import "variables.scss";
+
 .ProjectsRelated {
+  background-color: $light;
+  padding-top: 2em;
+  padding-bottom: 4em;
+
+  &_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &_title {
-    color: pink;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+.ProjectCard {
+  color: $white;
+  background-color: $dark;
+  flex: 1 1 auto;
+  margin: 0.5em;
+  max-width: 20em;
+  border-radius: 0.7em;
+  box-shadow: $box_shadow;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.02);
+    background-color: $black;
+    // color: $black;
+  }
+
+  &_link {
+    text-decoration: none;
+  }
+
+  &_text {
+    padding: 1.3em;
+  }
+
+  &_media {
+    position: relative;
+    max-height: 280px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+    }
+  }
+
+  &_tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.3em 0;
+
+    li {
+      list-style: none;
+      margin-right: 0.4em;
+      border-radius: 1em;
+      padding: 0.1em 0.8em;
+      &:nth-child(even) {
+        background-color: $gray-med;
+      }
+      &:nth-child(odd) {
+        background-color: $primary;
+      }
+    }
   }
 }

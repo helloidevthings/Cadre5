@@ -1,18 +1,48 @@
 import React from "react";
-import Image from "./Parts/Image";
+import ProjectCard from "./ProjectCard";
+import WaveHr from "./Parts/WaveHR";
 
-const ProjectsRelated = ({ projTitle, projLeadin, imgsrc, imgalt, tags }) => (
+const ProjectsRelated = ({ projTitle, projLeadin, img = "", tags }) => (
   <section className="ProjectsRelated">
-    <article className="Project">
-      <div className="header">
-        <h2 className="ProjectsRelated_title">{projTitle}</h2>
-        <h3 className="ProjectsRelated_leadin">{projLeadin}</h3>
-        <ul className="ProjectsRelated_tags">
-          <li>{tags}</li>
-        </ul>
-      </div>
-      <Image src="imgsrc" alt="imgalt" base="ProjectsRelated" />
-    </article>
+    <h2 className="ProjectsRelated_title">Similar Projects</h2>
+    <div className="ProjectsRelated_cards">
+      <ProjectCard
+        subheader="2007--2020"
+        title="Resolution"
+        leadin="Simplify Work. Improve Scientific Productivity."
+        img={{
+          src: "/images/graph-full-min.png",
+          alt: "resolution interface graphics",
+        }}
+        link={{
+          href: "./resolution",
+        }}
+      />
+      <ProjectCard
+        subheader="2007--2020"
+        title="Resolution"
+        leadin="Simplify Work. Improve Scientific Productivity."
+        img={{
+          src: "/images/graph-full-min.png",
+          alt: "resolution interface graphics",
+        }}
+        link={{
+          href: "./resolution",
+        }}
+      />
+      <ProjectCard
+        subheader="2007--2020"
+        title="Resolution"
+        leadin="Simplify Work. Improve Scientific Productivity."
+        img={{
+          src: "/images/graph-full-min.png",
+          alt: "resolution interface graphics",
+        }}
+        link={{
+          href: "./resolution",
+        }}
+      />
+    </div>
   </section>
 );
 

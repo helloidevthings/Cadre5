@@ -2,8 +2,8 @@ import React from "react";
 import Image from "./Parts/Image";
 import IntroTextIcon from "./Parts/IntroTextIcon";
 
-const ProjectFeature = ({ img = "", introText = "", theme }) => (
-  <section className="ProjectFeature" theme={theme}>
+const ProjectFeature = ({ img = "", introText = "", theme, row }) => (
+  <section className="ProjectFeature" theme={theme} row={row}>
     <IntroTextIcon
       icon={introText.svg}
       title={introText.title}

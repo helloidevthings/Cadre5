@@ -2,10 +2,13 @@
   $light-theme: "[theme= " light " ]";
   $medium-theme: "[theme= " medium " ]";
   $dark-theme: "[theme= " dark " ]";
+  $reverse: "[row= " reverse " ]";
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-top: 3em;
+  align-items: center;
 
   &_media {
     max-width: 600px;
@@ -22,5 +25,8 @@
   }
   &#{$medium-theme} {
     background-color: $light;
+  }
+  &#{$reverse} {
+    flex-direction: row-reverse;
   }
 }

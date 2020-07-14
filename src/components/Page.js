@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Footer from "./Footer";
 
 const Page = ({ children }) => (
   <motion.section
@@ -10,6 +11,7 @@ const Page = ({ children }) => (
     className="Content"
   >
     {children}
+    <Footer />
   </motion.section>
 );
 

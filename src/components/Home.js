@@ -8,6 +8,7 @@ import ProjectsRelated from "./ProjectsRelated";
 
 import Contact from "./Contact";
 import HeroCareers from "./HeroCareers";
+import HeroBasic from "./HeroBasic";
 import WaveHr from "./Parts/WaveHR";
 
 const Home = () => (
@@ -19,24 +20,17 @@ const Home = () => (
         ctaText="About Us"
       />
     </div>
-    <div className="Clients">
-      <Clients />
-    </div>
-
+    <Clients />
     <Projects />
-    <WaveHr wave="white" bg="linear-gradient(#efefef, white)" />
-    <ProjectsRelated
-      projTitle="G2"
-      projLeadin="Project management for government agencies."
-      imgsrc="/images/g2-screen-array.png"
-      imgalt="g2 graphics"
-      tags="Health"
-    />
-    <div className="Contact">
-      <Contact />
-    </div>
+    <WaveHr color="white" bg="#efefef" />
+    <ProjectsRelated />
+    <Contact />
     <div className="Careers"></div>
     <HeroCareers />
+    <HeroBasic
+      title=""
+      img={{ src: "/images/cadre5office.jpg", alt: "Cadre5 Building" }}
+    />
   </Page>
 );
 

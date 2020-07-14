@@ -7,7 +7,6 @@ const Projects = () => (
       <div className="Project_heading">
         <h2>Our Projects</h2>
       </div>
-
       <Project
         subheader="2007--2020"
         title="Resolution"
