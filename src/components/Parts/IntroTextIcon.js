@@ -5,7 +5,13 @@ const base = "IntroTextIcon";
 const IntroTextIcon = ({ icon, title, descLg, desc }) => (
   <div className={`${base} text-wrapper`}>
     <div className={`${base}_text`}>
-      <div className={`${base}_icon`}>{icon}</div>
+      <div className={`${base}_icon`} style={{}}>
+        <figure
+          style={{
+            background: `url(/images/svgs/${icon}.svg) no-repeat center center`,
+          }}
+        ></figure>
+      </div>
       {/* <div className={`${base}_icon`}>{<`${icon}`/>}</div> */}
       <h2>{title}</h2>
     </div>

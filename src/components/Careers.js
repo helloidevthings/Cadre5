@@ -1,11 +1,17 @@
 import React from "react";
 import Page from "./Page";
+import HeroBasic from "./HeroBasic";
 
 const Careers = () => (
   <Page>
-    <section className="Careers">
-      <h2 className="Careers_title">Careers</h2>
-    </section>
+    <HeroBasic
+      title="Careers"
+      img={{
+        src: "/images/stock-of-working.png",
+        alt: "People working in an office",
+      }}
+    />{" "}
+    <section className="Careers"></section>
   </Page>
 );
 

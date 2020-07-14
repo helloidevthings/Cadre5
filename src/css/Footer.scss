@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+.Footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $dark;
+  color: $white;
+  padding: 1.3em;
+  font-size: 0.9em;
+}

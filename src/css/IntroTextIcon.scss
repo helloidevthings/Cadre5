@@ -23,6 +23,14 @@
     height: $circle;
     position: relative;
     margin-right: 1em;
+    z-index: 1;
+
+    & figure {
+      z-index: 3;
+      display: block;
+      width: $circle;
+      height: $circle;
+    }
 
     &:after {
       content: "";
@@ -33,6 +41,7 @@
       border-radius: $circle;
       top: 0;
       left: 0;
+      z-index: -1;
     }
   }
 }
