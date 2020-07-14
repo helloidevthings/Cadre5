@@ -182,6 +182,9 @@ blockquote {
       text-decoration: none; }
       .Navigation .Menu li a:hover {
         color: pink; }
+  .Navigation .Menu.SubNav {
+    color: white;
+    text-align: left; }
 
 .Contact {
   color: #ffffff;

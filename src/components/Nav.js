@@ -10,7 +10,7 @@ const Nav = () => (
     </li>
     <li>
       <a href="/Resolution">Projects</a>
-      <ul>{subNavMap}</ul>
+      <ul className="SubNav">{subNavMap}</ul>
     </li>
     <li>
       <a href="/Careers">Careers</a>
