@@ -1,24 +1,59 @@
 import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
+const mainNav = ["About", "Projects", "Careers", "Contact"];
 const subNav = ["Resolution", "G2", "HealthMedEX"];
-const subNavMap = subNav.map((sub) => <li>{sub}</li>);
+const subNavMap = subNav.map((sub) => (
+  <li>
+    <a href={sub}>{sub}</a>
+  </li>
+));
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay: 0.4,
+      when: "beforeChildren",
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 8, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 const Nav = () => (
-  <ul className="Menu">
-    <li>
-      <a href="/About">About</a>
-    </li>
-    <li>
-      <a href="/Resolution">Projects</a>
-      <ul className="SubNav">{subNavMap}</ul>
-    </li>
-    <li>
-      <a href="/Careers">Careers</a>
-    </li>
-    <li>
-      <a href="/Contact">Contact</a>
-    </li>
-  </ul>
+  <motion.ul
+    className="Menu"
+    variants={container}
+    initial="hidden"
+    animate="visible"
+  >
+    {mainNav.map((index) => (
+      <motion.li key={index} className="item" variants={item}>
+        <a href={index}>{index}</a>
+        {/* {index === "Projects" && (
+          <AnimatePresence>
+            <ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              {subNavMap}
+            </ul>
+          </AnimatePresence>
+        )} */}
+      </motion.li>
+    ))}
+  </motion.ul>
 );
 
 export default Nav;

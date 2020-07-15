@@ -4,8 +4,6 @@
   color: $white;
   background: $black_to_dark;
   padding: 3em 1em;
-  max-width: 1200px;
-  margin: auto 0;
 
   &_title {
     text-align: center;
@@ -16,12 +14,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 
     & > * {
       max-width: 7em;
       max-height: 3.75em;
-      //   max-width: 150px;
-      //   max-height: 80px;
       margin: 1.3em;
       filter: grayscale(100%);
       opacity: 0.8;
