@@ -1,3 +1,25 @@
+// In-View Triggered Animations
+
+.fade_in {
+  opacity: 0.5;
+  transform: translateY(1.2em);
+  transition: all 0.8s ease-in-out;
+}
+.fade_1 {
+  opacity: 1;
+  transform: translateY(0em);
+}
+
+.zoom_move {
+  transform: scale(0.95) translateY(2em);
+  transition: all 0.7s ease-in;
+}
+.zoom_1 {
+  transform: scale(1) translateY(0em);
+}
+
+// SVG Animations
+
 .draw-in {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;

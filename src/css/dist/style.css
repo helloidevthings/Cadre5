@@ -121,6 +121,48 @@ blockquote {
     left: 0;
     top: 0.1em; }
 
+.fade_in {
+  opacity: 0.5;
+  transform: translateY(1.2em);
+  transition: all 0.8s ease-in-out; }
+
+.fade_1 {
+  opacity: 1;
+  transform: translateY(0em); }
+
+.zoom_move {
+  transform: scale(0.95) translateY(2em);
+  transition: all 0.7s ease-in; }
+
+.zoom_1 {
+  transform: scale(1) translateY(0em); }
+
+.draw-in {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 5s ease-in-out infinite alternate; }
+
+.item-to {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom; }
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: ease; }
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(50px); }
+  100% {
+    transform: translateY(0); } }
 .Button {
   text-decoration: none;
   border-radius: none;
@@ -159,6 +201,34 @@ blockquote {
       background-color: #ffffff; }
   .Button[theme=dark] {
     color: #000000; }
+
+.ToolTip {
+  position: absolute;
+  margin-top: 2em;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #c10230;
+  border: 0.2rem solid #ffffff;
+  border-radius: 2.5em;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.16);
+  z-index: 3;
+  top: -60px;
+  left: -20px; }
+  .ToolTip_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+  .ToolTip_dropdown {
+    background-color: #ffffff;
+    padding: 1.5em 1em;
+    border-radius: 0.8rem;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.16);
+    position: relative;
+    font-size: 1rem; }
 
 .Navigation {
   display: flex;
@@ -316,19 +386,26 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  padding-bottom: 3em; }
   .FeatureApp_media {
     max-width: 900px; }
     .FeatureApp_media img {
       width: 100%;
       border-radius: 10px;
       margin: auto;
-      position: relative;
       border: 1.4rem white solid;
       box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.16); }
   .FeatureApp.circles {
     position: relative;
     max-width: 100%; }
+    .FeatureApp.circles:before {
+      content: "";
+      position: relative; }
+  .FeatureApp--medium {
+    background: linear-gradient(#ffffff, #efefef); }
+  .FeatureApp--light {
+    background: linear-gradient(#efefef, #ffffff); }
 
 .Footer {
   display: flex;
@@ -446,6 +523,22 @@ blockquote {
     position: absolute;
     z-index: -1; }
 
+.IconDesc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 3em; }
+  .IconDesc_item {
+    margin: 2em;
+    max-width: 18em;
+    text-align: center; }
+    .IconDesc_item h4 {
+      font-size: 1.5em;
+      margin-bottom: 0.3em; }
+  .IconDesc_media {
+    margin-bottom: 1em; }
+
 .InfoItems {
   display: flex;
   flex-wrap: wrap;
@@ -497,7 +590,10 @@ blockquote {
     margin-bottom: 1.2em;
     padding-bottom: 0.8em; }
     .IntroTextIcon_text h2 {
-      font-size: 2.2em; }
+      font-size: 1.8em; }
+  .IntroTextIcon_descLg {
+    font-size: 1.1em;
+    margin-bottom: 1em; }
   .IntroTextIcon_icon {
     display: block;
     width: 2em;
@@ -558,9 +654,11 @@ blockquote {
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 3em;
+  padding-bottom: 3em;
+  justify-content: center;
   align-items: center; }
   .ProjectFeature_media {
-    max-width: 600px; }
+    max-width: 38em; }
     .ProjectFeature_media img {
       width: 100%; }
   .ProjectFeature[theme=light] {
