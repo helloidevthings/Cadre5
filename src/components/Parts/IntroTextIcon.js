@@ -15,7 +15,7 @@ const IntroTextIcon = ({ icon, title, descLg, desc }) => (
       {/* <div className={`${base}_icon`}>{<`${icon}`/>}</div> */}
       <h2>{title}</h2>
     </div>
-    <p className={`${base}_descLg large`}>{descLg}</p>
+    <p className={`${base}_descLg`}>{descLg}</p>
     <p className={`${base}_desc`}>{desc}</p>
   </div>
 );

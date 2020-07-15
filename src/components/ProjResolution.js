@@ -3,8 +3,10 @@ import Project from "./Project";
 import Page from "./Page";
 import WaveHr from "./Parts/WaveHR";
 import ProjectFeature from "./ProjectFeature";
+import ProjectsRelated from "./ProjectsRelated";
 import projects from "../projectData";
 import FeatureApp from "./FeatureApp";
+import IconDesc from "./Parts/IconDesc";
 
 const projData = { projects };
 
@@ -14,7 +16,8 @@ const ProjResolution = () => (
       subheader="2007--2020"
       title="Resolution"
       leadin="Simplify Work. Improve Scientific Productivity."
-      descLg="Currently researchers interact with 80 different systems that were designed from the perspective of the business unit."
+      descLg="Resolution was created for Oak Ridge National Laboratory which is the largest US Department of Energy science and energy laboratory."
+      // desc="Currently researchers interact with 80 different systems. Resolution is a unified user interface platform designed around the researcher to manage the full lifecycle of research projects at ORNL."
       img={{
         src: "/images/graph-full-min.png",
         alt: "resolution interface graphics",
@@ -24,15 +27,13 @@ const ProjResolution = () => (
     <ProjectFeature
       theme="medium"
       introText={{
-        title: "Opportunity",
+        title: "The Challenge",
         desc:
-          "RESolution knits together the disparate user interfaces as well as builds new modules to fill in system gaps in the research lifecycle.",
-        descLg:
-          "The responsive design makes It accessible from desktops, smartphones and tablets. RESolution's design provides an enjoyable and efficient user experience for the researcher.",
-        svg: "ChartArrow",
+          "Currently researchers interact with 80 different systems. Resolution is a unified user interface platform designed around the researcher to manage the full lifecycle of research projects at ORNL.",
+        svg: "Wrench",
       }}
       img={{
-        src: "/images/resolution/responsive_ipad_phone.png",
+        src: "/images/resolution/video.png",
         alt: "",
       }}
     />
@@ -40,10 +41,11 @@ const ProjResolution = () => (
       theme="medium"
       row="reverse"
       introText={{
-        title: "Applications",
+        title: "Responsive Design",
         descLg:
-          "RESolution knits together the disparate user interfaces as well as builds new modules to fill in system gaps in the research lifecycle.",
-        svg: "Wrench",
+          "The responsive design makes It accessible from desktops, smartphones and tablets. Resolution's design provides an enjoyable and efficient user experience for the researcher.",
+        desc: "",
+        svg: "ChartArrow",
       }}
       img={{
         src: "/images/resolution/responsive_ipad_phone.png",
@@ -51,7 +53,153 @@ const ProjResolution = () => (
       }}
     />
     <WaveHr color="#efefef" bg="white" />
-    <FeatureApp />
+    {/* Project Management */}
+    <FeatureApp
+      img={{ src: "/images/resolution/project_management_main2.png", alt: "" }}
+      theme="medium"
+    />
+    <WaveHr color="#efefef" bg="white" />
+    <ProjectFeature
+      theme="light"
+      introText={{
+        title: "Project Management",
+        descLg:
+          "The goal of this platform is to create a light-touch project management tool for researchers.",
+        desc:
+          "Users can quickly set up a project in 15mins. The platform is integrated with financial systems and allows the displays of cost data relative to planning.",
+        svg: "Wrench",
+      }}
+      img={{
+        src: "/images/resolution/projectmanagement_graph.png",
+        alt: "",
+      }}
+    />
+    <ProjectFeature
+      theme="light"
+      row="reverse"
+      introText={{
+        title: "Project Dashboard",
+        descLg:
+          "Each project dashboard gives a high level view of cost, schedule, budget authority and performance.",
+        desc: "Interactive widgets allow users to drill in and filter data.",
+        svg: "Wrench",
+      }}
+      img={{
+        src: "/images/resolution/project_management_dash.png",
+        alt: "",
+      }}
+    />
+    <ProjectFeature
+      theme="light"
+      introText={{
+        title: "Portfolio Dashboard",
+        descLg:
+          "The most powerful and hardworking screen in the project management tool is the portfolio dashboard.",
+        desc:
+          "Charts at the top aggregate milestone, plan, cost and performance data for the portfolio. A data grid summarizes key project metrics, and users can expand the grid for a second layer of detail.",
+        svg: "Wrench",
+      }}
+      img={{
+        src: "/images/resolution/graph-portfolio2.png",
+        alt: "",
+      }}
+    />
+    {/* Publications */}
+    <WaveHr color="white" bg="#efefef" />
+    <FeatureApp
+      img={{ src: "/images/resolution/pubs_main.png", alt: "" }}
+      theme="light"
+    />
+    <ProjectFeature
+      theme="light"
+      introText={{
+        title: "Publications",
+        descLg:
+          "Researchers publish. All publications undergo an extensive review process involving peers and institutional functions related to security and intellectual property.",
+        desc:
+          "This application was designed around researcher to make the review and release process simple and efficient. It also handles security with the automatic encryption of uploaded files",
+        svg: "Wrench",
+      }}
+      img={{
+        src: "/images/resolution/pubs_right.png",
+        alt: "",
+      }}
+    />
+    <ProjectFeature
+      theme="light"
+      row="reverse"
+      introText={{
+        title: "Publications",
+        descLg:
+          "Resolution provides tools to aid the review process. The publication widgets display key metrics for management and individuals on the publication pipeline.",
+        desc:
+          "Authors can correspond with reviewers inside the system, reducing the need for communications; view documents within the system, reducing download times; copy and paste acknowledgement text; and receive help within Publications itself.",
+        svg: "Wrench",
+      }}
+      img={{
+        src: "/images/resolution/pubs_left.png",
+        alt: "",
+      }}
+    />
+    {/* Site Access */}
+    <WaveHr color="white" bg="#efefef" />
+    <FeatureApp
+      img={{ src: "/images/resolution/site_access.png", alt: "" }}
+      theme="light"
+    />
+    <ProjectFeature
+      theme="light"
+      introText={{
+        title: "Site Access",
+        desc:
+          "Quick filters allow users to see visitors arriving in two weeks or guests who's access is about to expire.",
+        descLg:
+          "Scientists use this module to manage visitors access to ORNL's campus and research facilities. A chart view displays duration of the access authorization as well buildings and cyber access.",
+        svg: "Wrench",
+      }}
+      img={{
+        src: "/images/resolution/site_access_detail.png",
+        alt: "",
+      }}
+    />
+    <WaveHr color="white" bg="#efefef" />
+    {/* Procurement */}
+    <ProjectFeature
+      theme="medium"
+      row="reverse"
+      introText={{
+        title: "Procurement",
+        descLg:
+          "Conducting world leading research requires a wide range of supplies and services, from polar bear guards in the arctic to neutron target vessels.",
+        desc:
+          "Researchers can track the full procurment lifecycle. This application provides a quick glance of active and pending information including: purchase requisitions, purchase orders, agreements, and items awaiting delivery.",
+
+        svg: "Wrench",
+      }}
+      img={{
+        src: "/images/resolution/procurement.png",
+        alt: "",
+      }}
+    />
+    {/* Estimator */}
+    <ProjectFeature
+      theme="medium"
+      introText={{
+        title: "Estimator",
+        desc:
+          "Project Estimator was developed to create an easy, consistent way to estimate project costs to replace the disparate methods being used across the lab. Project Estimator uses official SAP rates, so you know your estimate is accurate, and enables you to easily develop a simple schedule and estimate in one tool! It is also collaborative, so you can easily work on estimates with others at ORNL.",
+        svg: "ChartArrow",
+      }}
+      img={{
+        src: "/images/resolution/responsive_ipad_phone.png",
+        alt: "",
+      }}
+    />
+    <WaveHr color="#efefef" bg="white" />
+    <FeatureApp img={{ src: "/images/resolution/action_list.png", alt: "" }} />
+    <IconDesc />
+    <WaveHr color="white" bg="#efefef" />
+    <ProjectsRelated />
   </Page>
 );
 

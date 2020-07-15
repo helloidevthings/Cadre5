@@ -8,10 +8,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 3em;
+  padding-bottom: 3em;
+  justify-content: center;
   align-items: center;
 
   &_media {
-    max-width: 600px;
+    max-width: 38em;
     img {
       width: 100%;
     }
