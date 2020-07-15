@@ -13,11 +13,10 @@ const projData = { projects };
 const ProjResolution = () => (
   <Page>
     <Project
-      subheader="2007--2020"
-      title="Resolution"
+      subheader="2007–2020"
+      title="RESolution"
       leadin="Simplify Work. Improve Scientific Productivity."
-      descLg="Resolution was created for Oak Ridge National Laboratory which is the largest US Department of Energy science and energy laboratory."
-      // desc="Currently researchers interact with 80 different systems. Resolution is a unified user interface platform designed around the researcher to manage the full lifecycle of research projects at ORNL."
+      descLg="RESolution was created for Oak Ridge National Laboratory which is the largest US Department of Energy science and energy laboratory."
       img={{
         src: "/images/graph-full-min.png",
         alt: "resolution interface graphics",
@@ -186,8 +185,10 @@ const ProjResolution = () => (
       theme="medium"
       introText={{
         title: "Estimator",
+        descLg:
+          "Project Estimator was developed to create an easy, consistent way to estimate project costs.",
         desc:
-          "Project Estimator was developed to create an easy, consistent way to estimate project costs to replace the disparate methods being used across the lab. Project Estimator uses official SAP rates, so you know your estimate is accurate, and enables you to easily develop a simple schedule and estimate in one tool! It is also collaborative, so you can easily work on estimates with others at ORNL.",
+          "Project Estimator uses official SAP rates, so you know your estimate is accurate, and enables you to easily develop a simple schedule and estimate in one tool! It is also collaborative, so you can easily work on estimates with others at ORNL.",
         svg: "ChartArrow",
       }}
       img={{
@@ -196,7 +197,24 @@ const ProjResolution = () => (
       }}
     />
     <WaveHr color="#efefef" bg="white" />
+    {/* Action List */}
     <FeatureApp img={{ src: "/images/resolution/action_list.png", alt: "" }} />
+    <ProjectFeature
+      theme="light"
+      row="reverse"
+      introText={{
+        title: "Action List",
+        descLg:
+          "The foundation of the RESolution user interface is an action list.",
+        desc:
+          "After intensive user study we determined that the standard red, yellow, green alerting system of a typical dashboard was to noisy and annoying to the researchers. A subtle iconographic language that relied on form rather than color to signal importance was developed. In order not to overwhelm the user the information architecture layers the information. Prominence in the interface is given to items in the enterprise that are waiting on the researcher's actions. Alerts that may require action are secondary and items the researcher may want to follow are tertiary.",
+        svg: "Wrench",
+      }}
+      img={{
+        src: "/images/resolution/action_list_2.png",
+        alt: "",
+      }}
+    />
     <IconDesc />
     <WaveHr color="white" bg="#efefef" />
     <ProjectsRelated />
