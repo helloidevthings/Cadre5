@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const FeatureApp = ({ img = "", theme }) => {
-  const [ref, inView] = useInView({ triggeronce: true, threshold: 0.5 });
+  const [ref, inView] = useInView({ triggeronce: true, threshold: 0.15 });
 
   return (
     <section className={`FeatureApp FeatureApp--${theme}`}>
