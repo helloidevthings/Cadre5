@@ -123,8 +123,8 @@ blockquote {
 
 .fade_in {
   opacity: 0.5;
-  transform: translateY(1.2em);
-  transition: all 0.8s ease-in-out; }
+  transform: translateY(1.8em);
+  transition: all 0.5s ease-in-out; }
 
 .fade_1 {
   opacity: 1;
@@ -132,7 +132,7 @@ blockquote {
 
 .zoom_move {
   transform: scale(0.95) translateY(2em);
-  transition: all 0.7s ease-in; }
+  transition: all 0.5s ease-in; }
 
 .zoom_1 {
   transform: scale(1) translateY(0em); }

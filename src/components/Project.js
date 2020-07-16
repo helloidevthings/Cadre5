@@ -13,6 +13,7 @@ const Project = ({
   desc,
   wave = "",
   img = "",
+  logo = "",
   link = "",
 }) => {
   const [ref, inView] = useInView({ triggeronce: true, threshold: 0.18 });
@@ -37,6 +38,7 @@ const Project = ({
               text={link.text}
             />
           )}
+          {logo && <Image src={logo.src} />}
         </div>
         <div
           className={`fade_in ${inView ? "fade_1" : ""} ProjectHero_media`}
