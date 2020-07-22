@@ -243,7 +243,7 @@ blockquote {
     list-style: none;
     text-align: center;
     font-size: 0.72em;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     line-height: 1.12;
@@ -252,7 +252,7 @@ blockquote {
       color: #ffffff;
       text-decoration: none; }
       .Navigation .Menu .item a:hover {
-        color: pink; }
+        color: #c10230; }
   .Navigation .Menu.SubNav {
     color: white;
     text-align: left; }
@@ -336,26 +336,6 @@ blockquote {
       padding: 3em 2em;
       vertical-align: middle; }
 
-.Clients {
-  color: #ffffff;
-  background: linear-gradient(#000000, #1f1f1f);
-  padding: 3em 1em; }
-  .Clients_title {
-    text-align: center; }
-  .Clients_logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto; }
-    .Clients_logos > * {
-      max-width: 7em;
-      max-height: 3.75em;
-      margin: 1.3em;
-      filter: grayscale(100%);
-      opacity: 0.8; }
-
 .Featurette {
   background: linear-gradient(#ffffff 20%, #efefef 20%); }
   .Featurette_wrap {
@@ -433,25 +413,6 @@ blockquote {
     width: auto;
     height: auto;
     vertical-align: middle; }
-
-.Hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  position: relative;
-  color: #ffffff;
-  background: linear-gradient(#2e0000, #000000);
-  background-repeat: no-repeat; }
-  .Hero_para {
-    max-width: 33em;
-    margin: 1.3em; }
-  .Hero_tagline {
-    font-size: 1.6em;
-    font-weight: 300;
-    line-height: 1.45; }
 
 .HeroCareers {
   background: #1f1f1f;

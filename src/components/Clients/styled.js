@@ -1,8 +1,8 @@
-@import "variables.scss";
+import styled from "@emotion/styled";
 
-.Clients {
-  color: $white;
-  background: $black_to_dark;
+export default styled.section`
+  color: white;
+  background: ${(props) => props.theme.gradients.blackToDark};
   padding: 3em 1em;
 
   &_title {
@@ -25,4 +25,4 @@
       opacity: 0.8;
     }
   }
-}
+`;

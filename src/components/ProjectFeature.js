@@ -4,7 +4,7 @@ import IntroTextIcon from "./Parts/IntroTextIcon";
 import { useInView } from "react-intersection-observer";
 
 const ProjectFeature = ({ img = "", introText = "", theme, row }) => {
-  const [ref, inView] = useInView({ triggeronce: true, threshold: 0.25 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
 
   return (
     <section className="ProjectFeature" theme={theme} row={row}>
