@@ -13,13 +13,11 @@ import WaveHr from "./Parts/WaveHR";
 
 const Home = () => (
   <Page>
-    <div className="Hero">
-      <Hero
-        title="We are Cadre5"
-        tagline="We design and develop enterprise and scientific software for global leaders."
-        ctaText="About Us"
-      />
-    </div>
+    <Hero
+      title="We are Cadre5"
+      tagline="We design and develop enterprise and scientific software for global leaders."
+      ctaText="About Us"
+    />
     <Clients />
     <Projects />
     <WaveHr color="white" bg="#efefef" />
