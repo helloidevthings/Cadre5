@@ -7,10 +7,6 @@ import ProjectsRelated from "./ProjectsRelated";
 import projects from "../projectData";
 import FeatureApp from "./FeatureApp";
 import IconDesc from "./Parts/IconDesc";
-import { ThemeProvider } from "emotion-theming";
-import theme from "../theme";
-
-const projData = { projects };
 
 const ProjResolution = () => (
   <Page>
@@ -26,7 +22,7 @@ const ProjResolution = () => (
     />
     <WaveHr color="white" bg="#efefef"></WaveHr>
     <ProjectFeature
-      theme="mediumTheme"
+      themeColor="mediumTheme"
       introText={{
         title: "The Challenge",
         desc:
@@ -39,7 +35,7 @@ const ProjResolution = () => (
       }}
     />
     <ProjectFeature
-      theme="mediumTheme"
+      themeColor="mediumTheme"
       row="reverse"
       introText={{
         title: "Responsive Design",
@@ -57,11 +53,11 @@ const ProjResolution = () => (
     {/* Project Management */}
     <FeatureApp
       img={{ src: "/images/resolution/project_management_main2.png", alt: "" }}
-      theme="mediumTheme"
+      themeColor="mediumTheme"
     />
     <WaveHr color="#efefef" bg="white" />
     <ProjectFeature
-      theme="lightTheme"
+      themeColor="lightTheme"
       introText={{
         title: "Project Management",
         descLg:
@@ -76,7 +72,7 @@ const ProjResolution = () => (
       }}
     />
     <ProjectFeature
-      theme="lightTheme"
+      themeColor="lightTheme"
       row="reverse"
       introText={{
         title: "Project Dashboard",
@@ -91,7 +87,7 @@ const ProjResolution = () => (
       }}
     />
     <ProjectFeature
-      theme="lightTheme"
+      themeColor="lightTheme"
       introText={{
         title: "Portfolio Dashboard",
         descLg:
@@ -109,10 +105,10 @@ const ProjResolution = () => (
     <WaveHr color="white" bg="#efefef" />
     <FeatureApp
       img={{ src: "/images/resolution/pubs_main.png", alt: "" }}
-      theme="lightTheme"
+      themeColor="lightTheme"
     />
     <ProjectFeature
-      theme="lightTheme"
+      themeColor="lightTheme"
       introText={{
         title: "Publications",
         descLg:
@@ -127,7 +123,7 @@ const ProjResolution = () => (
       }}
     />
     <ProjectFeature
-      theme="lightTheme"
+      themeColor="lightTheme"
       row="reverse"
       introText={{
         title: "Publications",
@@ -146,10 +142,10 @@ const ProjResolution = () => (
     <WaveHr color="white" bg="#efefef" />
     <FeatureApp
       img={{ src: "/images/resolution/site_access.png", alt: "" }}
-      theme="lightTheme"
+      themeColor="lightTheme"
     />
     <ProjectFeature
-      theme="lightTheme"
+      themeColor="lightTheme"
       introText={{
         title: "Site Access",
         desc:
@@ -166,7 +162,7 @@ const ProjResolution = () => (
     <WaveHr color="white" bg="#efefef" />
     {/* Procurement */}
     <ProjectFeature
-      theme="mediumTheme"
+      themeColor="mediumTheme"
       row="reverse"
       introText={{
         title: "Procurement",
@@ -184,7 +180,7 @@ const ProjResolution = () => (
     />
     {/* Estimator */}
     <ProjectFeature
-      theme="mediumTheme"
+      themeColor="mediumTheme"
       introText={{
         title: "Estimator",
         descLg:
@@ -202,7 +198,7 @@ const ProjResolution = () => (
     {/* Action List */}
     <FeatureApp img={{ src: "/images/resolution/action_list.png", alt: "" }} />
     <ProjectFeature
-      theme="lightTheme"
+      themeColor="lightTheme"
       row="reverse"
       introText={{
         title: "Action List",

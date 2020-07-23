@@ -7,14 +7,14 @@ import { AnimatePresence } from "framer-motion";
 
 const App = () => {
   return (
-    // <ThemeProvider theme={theme}>
-    <main className="Main">
-      <Header />
-      <AnimatePresence>
-        <Router />
-      </AnimatePresence>
-    </main>
-    // </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <main className="Main">
+        <Header />
+        <AnimatePresence>
+          <Router />
+        </AnimatePresence>
+      </main>
+    </ThemeProvider>
   );
 };
 

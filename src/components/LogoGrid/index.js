@@ -1,15 +1,16 @@
 import React from "react";
-import Title from "./Parts/Title";
-import LogoGridItem from "./Parts/LogoGridItem";
+import Title from "../Parts/Title";
+import LogoGridItem from "../Parts/LogoGridItem";
+import Styles from "./styled";
 
-const LogoGrid = () => (
-  <section className="LogoGrid">
+export default () => (
+  <Styles>
     <Title title="Our Clients" base="LogoGrid" />
 
-    <div className="LogoGrid_heading">
+    <div className="heading">
       <h3>Government</h3>
     </div>
-    <div className="LogoGrid_grid">
+    <div className="grid">
       <LogoGridItem name="oak_ridge" type="government" alt="Oak Ridge" />
       <LogoGridItem
         name="nnsa"
@@ -70,11 +71,11 @@ const LogoGrid = () => (
         alt="National Geospacial Intellegence Agency"
       />
     </div>
-    <div className="LogoGrid_heading">
+    <div className="heading">
       <h3>Media</h3>
       <span className="fancyAND">and</span> <h3>Entertainment</h3>
     </div>
-    <div className="LogoGrid_grid">
+    <div className="grid">
       <LogoGridItem name="food_network" type="media" alt="Food Network" />
       <LogoGridItem
         name="knox_news_sentinel"
@@ -90,24 +91,24 @@ const LogoGrid = () => (
         alt="Time Warner Cable"
       />
     </div>
-    <div className="LogoGrid_heading">
+    <div className="heading">
       <h3>Transportation</h3>
       <span className="fancyAND">and</span>
       <h3>Automotive</h3>
     </div>
-    <div className="LogoGrid_grid">
+    <div className="grid">
       <LogoGridItem name="auto_zone" type="transportation" alt="Auto Zone" />
       <LogoGridItem name="delta" type="transportation" alt="Delta" />
       <LogoGridItem name="brunswick" type="transportation" alt="Brunswick" />
       <LogoGridItem name="denso" type="transportation" alt="Denso" />
       <LogoGridItem name="idle_air" type="transportation" alt="Idle Air" />
     </div>
-    <div className="LogoGrid_heading">
+    <div className="heading">
       <h3>Consumer</h3>
       <span className="fancyAND">and</span>
       <h3>Retail</h3>
     </div>
-    <div className="LogoGrid_grid">
+    <div className="grid">
       <LogoGridItem name="verizon" type="consumer" alt="Verizon" />
       <LogoGridItem name="coca_cola" type="consumer" alt="Coca Cola" />
       <LogoGridItem name="CVS_pharmacy" type="consumer" alt="CVS Pharmacy" />
@@ -119,12 +120,12 @@ const LogoGrid = () => (
       <LogoGridItem name="JTV" type="consumer" alt="JTV" />
       <LogoGridItem name="keurig" type="consumer" alt="Keurig" />
     </div>
-    <div className="LogoGrid_heading">
+    <div className="heading">
       <h3>Banking</h3>
       <span className="fancyAND">and</span>
       <h3>Financial</h3>
     </div>
-    <div className="LogoGrid_grid">
+    <div className="grid">
       <LogoGridItem
         name="first_tennessee"
         type="banking"
@@ -139,10 +140,10 @@ const LogoGrid = () => (
       <LogoGridItem name="citi_bank" type="banking" alt="City Bank" />
       <LogoGridItem name="ed_financial" type="banking" alt="Ed Financial" />
     </div>
-    <div className="LogoGrid_heading">
+    <div className="heading">
       <h3>Other</h3>
     </div>
-    <div className="LogoGrid_grid">
+    <div className="grid">
       <LogoGridItem name="ut" type="other" alt="Unniversity of Tennessee" />
       <LogoGridItem name="3m" type="other" alt="3m" />
       <LogoGridItem name="akal_security" type="other" alt="Akal Security" />
@@ -162,7 +163,5 @@ const LogoGrid = () => (
       />
       <LogoGridItem name="osborne_coincom" type="other" alt="Osborne Coincom" />
     </div>
-  </section>
+  </Styles>
 );
-
-export default LogoGrid;

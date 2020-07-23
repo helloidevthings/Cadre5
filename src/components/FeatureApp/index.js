@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Styles from "./styled";
 
-export default ({ img = "", theme }) => {
+export default ({ img = "", themeColor }) => {
   const [ref, inView] = useInView({ triggeronce: true, threshold: 0.15 });
 
   return (
-    <Styles>
+    <Styles themeColor={themeColor}>
       <div className={`zoom_move ${inView ? "zoom_1" : ""}`} ref={ref}>
         <Image src={img.src} alt={img.alt} />
         <div className="ToolTip_wrapper">

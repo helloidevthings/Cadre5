@@ -3,14 +3,11 @@ import Image from "../Parts/Image";
 import IntroTextIcon from "../Parts/IntroTextIcon";
 import { useInView } from "react-intersection-observer";
 import Styles from "./styled";
-// import { ThemeProvider } from "emotion-theming";
-// import theme from "../.././theme";
 
-export default ({ img = "", introText = "", theme, row }) => {
+export default ({ img = "", introText = "", themeColor, row }) => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
   return (
-    // <ThemeProvider theme={theme}>
-    <Styles theme={theme} row={row}>
+    <Styles themeColor={themeColor} row={row}>
       <IntroTextIcon
         icon={introText.svg}
         title={introText.title}
@@ -20,6 +17,5 @@ export default ({ img = "", introText = "", theme, row }) => {
       <div className={`fade_in ${inView ? "fade_1" : ""}`} ref={ref}></div>
       <Image src={img.src} alt={img.alt} />
     </Styles>
-    // </ThemeProvider>
   );
 };
