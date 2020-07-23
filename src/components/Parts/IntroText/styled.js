@@ -1,11 +1,13 @@
-.IntroText {
-  &_date-wrap {
+import styled from "@emotion/styled";
+
+export default styled.section`
+  .date-wrap {
     margin: 1em 0;
     position: relative;
 
     &:after {
       content: "";
-      background-color: $gray-lt;
+      background-color: ${(props) => props.theme.color.grayLt};
       position: absolute;
       height: 1px;
       width: 100%;
@@ -15,10 +17,10 @@
     }
   }
 
-  &_date {
-    color: $gray-lt;
+  .date {
+    color: ${(props) => props.theme.color.grayLt};
     display: inline;
-    background-color: $white;
+    background-color: white;
     font-size: 0.9em;
     font-weight: 400;
     letter-spacing: 0.01em;
@@ -27,10 +29,10 @@
     z-index: 1;
   }
 
-  &_description {
+  .description {
     &--lg {
       font-size: 1.1em;
       margin-bottom: 0.8em;
     }
   }
-}
+`;

@@ -1,14 +1,13 @@
-@import "variables.scss";
+import styled from "@emotion/styled";
 
-.Contact {
-  color: $white;
-  background: $dark;
+export default styled.section`
+  color: ${(props) => props.theme.color.white};
+  background: ${(props) => props.theme.color.dark};
   display: flex;
   flex-wrap: wrap;
   padding-top: 3em;
 
-  &_text {
-    // flex-basis: 2;
+  .text {
     max-width: 600px;
   }
 
@@ -16,17 +15,16 @@
     margin-top: 2em;
   }
 
-  &_form {
+  .form {
     display: flex;
     flex-direction: column;
-    // flex-basis: 1;
     padding: 2em;
   }
 
   input {
     margin-bottom: 1em;
     border: none;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid ${(props) => props.theme.color.white};
   }
 
   textarea {
@@ -34,16 +32,16 @@
   }
 
   & [type="submit"] {
-    background-color: $primary;
+    background-color: ${(props) => props.theme.color.primary};
     outline: none;
     border: none;
     border-radius: 2em;
     display: inline-block;
   }
 
-  &_map {
+  .map {
     overflow: hidden;
-    background: $red_to_black;
+    background: ${(props) => props.theme.gradients.redToBlack};
     max-width: 100vw;
     max-height: 800px;
     margin-top: 3em;
@@ -53,4 +51,4 @@
       height: 100%;
     }
   }
-}
+`;

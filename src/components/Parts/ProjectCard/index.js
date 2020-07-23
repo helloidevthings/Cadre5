@@ -1,9 +1,10 @@
 import React from "react";
-import Image from "./Parts/Image";
-import { Link } from "react-router-dom";
+import Image from "../Image";
 
-const ProjectCard = ({ title, leadin, img = "", link = "" }) => (
-  <a className="ProjectCard_link" href={link.href}>
+import Styles from "./styled";
+
+export default ({ title, leadin, img = "", link = "" }) => (
+  <Styles href={link.href}>
     <article className="ProjectCard">
       <div className="ProjectCard_text">
         <h3 className="ProjectCard_title">{title}</h3>
@@ -15,7 +16,5 @@ const ProjectCard = ({ title, leadin, img = "", link = "" }) => (
       </div>
       <Image src={img.src} alt={img.alt} base="ProjectCard" />
     </article>
-  </a>
+  </Styles>
 );
-
-export default ProjectCard;

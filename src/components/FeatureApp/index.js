@@ -1,15 +1,16 @@
 import React from "react";
-import Image from "./Parts/Image";
+import Image from "../Parts/Image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Styles from "./styled";
 
-const FeatureApp = ({ img = "", theme }) => {
+export default ({ img = "", theme }) => {
   const [ref, inView] = useInView({ triggeronce: true, threshold: 0.15 });
 
   return (
-    <section className={`FeatureApp FeatureApp--${theme}`}>
+    <Styles>
       <div className={`zoom_move ${inView ? "zoom_1" : ""}`} ref={ref}>
-        <Image src={img.src} base="FeatureApp" alt={img.alt} />
+        <Image src={img.src} alt={img.alt} />
         <div className="ToolTip_wrapper">
           <AnimatePresence>
             <motion.div
@@ -26,8 +27,6 @@ const FeatureApp = ({ img = "", theme }) => {
           </AnimatePresence>
         </div>
       </div>
-    </section>
+    </Styles>
   );
 };
-
-export default FeatureApp;

@@ -5,8 +5,8 @@ export default {
     primary: "#c10230",
     darkRed: "#2e0000",
     dark: "#1f1f1f",
-    greyMed: "#4d4d4d",
-    greyLt: "#a9a8a8",
+    grayMed: "#4d4d4d",
+    grayLt: "#a9a8a8",
     light: "#efefef",
   },
   boxShadow: {
@@ -14,7 +14,7 @@ export default {
   },
   gradients: {
     blackToRed: "linear-gradient(#1f1f1f, #2e0000)",
-    RedToBlack: "linear-gradient(#2e0000, #1f1f1f)",
+    redToBlack: "linear-gradient(#2e0000, #1f1f1f)",
     darkToGrayMd: "linear-gradient(#1f1f1f,#4d4d4d)",
     blackToDark: "linear-gradient(#000000, #1f1f1f)",
   },
