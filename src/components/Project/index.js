@@ -23,32 +23,27 @@ export default ({
     <Fragment>
       {wave && <WaveHr color={wave.color} bg={wave.bg} />}
       <Styles>
-        <article className="ProjectHero">
-          <div className="text-wrapper">
-            <h2 className="Project_title">{title}</h2>
-            <IntroText
-              subheader={subheader}
-              leadin={leadin}
-              descLg={descLg}
-              desc={desc}
+        <div className="text-wrapper">
+          <h2>{title}</h2>
+          <IntroText
+            subheader={subheader}
+            leadin={leadin}
+            descLg={descLg}
+            desc={desc}
+          />
+          {link && (
+            <Button
+              theme={link.theme}
+              style={link.style}
+              href={link.href}
+              text={link.text}
             />
-            {link && (
-              <Button
-                theme={link.theme}
-                style={link.style}
-                href={link.href}
-                text={link.text}
-              />
-            )}
-            {logo && <Image src={logo.src} />}
-          </div>
-          <div
-            className={`fade_in ${inView ? "fade_1" : ""} ProjectHero_media`}
-            ref={ref}
-          >
-            <Image src={img.src} alt={img.alt} />
-          </div>
-        </article>
+          )}
+          {logo && <Image src={logo.src} />}
+        </div>
+        {/* <div className={`fade_in ${inView ? "fade_1" : ""}`} ref={ref}> */}
+        <Image src={img.src} alt={img.alt} />
+        {/* </div> */}
       </Styles>
     </Fragment>
   );

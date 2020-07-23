@@ -1,26 +1,26 @@
 import styled from "@emotion/styled";
 
-export default styled.section`
-  $min-width-photo: 20em;
+export default styled.article`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 3em 0;
 
-  & .text-wrapper {
+  .text-wrapper {
     max-width: 30em;
     flex-grow: 9999;
     padding-right: 3em;
   }
 
-  & .IntroText_leadin {
+  .leadin {
     color: ${(props) => props.theme.color.primary};
   }
 
-  &_media {
+  figure {
+    $min-width-photo: 15em;
     flex: 1 1 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     @supports (max-width: max-content) {
       min-width: $min-width-photo;
       max-width: max-content;

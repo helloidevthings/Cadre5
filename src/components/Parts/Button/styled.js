@@ -1,6 +1,6 @@
-@import "variables.scss";
+import styled from "@emotion/styled";
 
-.Button {
+export default styled.a`
   $btnStyle: '[btnstyle= "primary" ]';
   $light-theme: "[theme= " light " ]";
   $dark-theme: "[theme= " dark " ]";
@@ -33,14 +33,14 @@
       right: 0;
       transform-origin: bottom right;
       transform: scaleX(1);
-      background-color: $black;
+      background-color: black;
       transition: transform 0.5s cubic-bezier(0.6, -0.01, 0.11, 0.99);
     }
 
     &:hover {
       &:after {
         transform: scaleX(0);
-        background-color: $primary;
+        background-color: #c10230;
       }
     }
   }
@@ -51,46 +51,10 @@
   &#{$light-theme} {
     color: $white;
     &#{$btnStyle}:after {
-      background-color: $white;
+      background-color: white;
     }
   }
   &#{$dark-theme} {
-    color: $black;
+    color: black;
   }
-}
-
-.ToolTip {
-  $unit: 2.5em;
-  position: absolute;
-  margin-top: 2em;
-  width: $unit;
-  height: $unit;
-  background-color: $primary;
-  border: 0.2rem solid $white;
-  border-radius: $unit;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: 700;
-  color: $white;
-  box-shadow: $box-shadow;
-  z-index: 3;
-  top: -60px;
-  left: -20px;
-
-  &_wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-
-  &_dropdown {
-    background-color: $white;
-    padding: 1.5em 1em;
-    border-radius: 0.8rem;
-    box-shadow: $box-shadow;
-    position: relative;
-    font-size: 1rem;
-    // top: 37%;
-    // z-index: 1;
-  }
-}
+`;

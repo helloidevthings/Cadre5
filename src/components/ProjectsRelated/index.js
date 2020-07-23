@@ -1,11 +1,11 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
-import WaveHr from "./Parts/WaveHR";
+import ProjectCard from "../Parts/ProjectCard";
+import Styles from "./styled";
 
-const ProjectsRelated = ({ projTitle, projLeadin, img = "", tags }) => (
-  <section className="ProjectsRelated">
-    <h2 className="ProjectsRelated_title">Similar Projects</h2>
-    <div className="ProjectsRelated_cards">
+export default ({ projTitle, projLeadin, img = "", tags }) => (
+  <Styles>
+    <h2 className="title">Similar Projects</h2>
+    <div className="cards">
       <ProjectCard
         subheader="2007--2020"
         title="Resolution"
@@ -43,7 +43,5 @@ const ProjectsRelated = ({ projTitle, projLeadin, img = "", tags }) => (
         }}
       />
     </div>
-  </section>
+  </Styles>
 );
-
-export default ProjectsRelated;

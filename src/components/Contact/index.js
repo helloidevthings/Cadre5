@@ -1,14 +1,15 @@
-import React, { Fragment } from "react";
-import InfoItems from "./Parts/InfoItems";
+import React from "react";
+import Styles from "./styled";
+import InfoItems from "../Parts/InfoItems";
 
-const Contact = () => (
-  <section className="Contact">
-    <div className="Contact_text text-wrapper">
-      <h2 className="Contact_title">Contact Us</h2>
+export default () => (
+  <Styles>
+    <div className="text text-wrapper">
+      <h2 className="title">Contact Us</h2>
       <h3>Let's talk about your project</h3>
       <InfoItems />
     </div>
-    <form className="Contact_form">
+    <form className="form">
       <input type="text" required placeholder="Name" />
       <input type="text" required placeholder="Email Address" />
       <input type="text" required placeholder="Job Title / Business" />
@@ -22,7 +23,7 @@ const Contact = () => (
       ></textarea>
       <button type="submit">Send A Message</button>
     </form>
-    <div className="Contact_map">
+    <div className="map">
       <svg xmlns="http://www.w3.org/2000/svg" width="1342" height="943">
         <g transform="translate(209.723 642.326)">
           <path
@@ -124,7 +125,5 @@ const Contact = () => (
         ></path>
       </svg>
     </div>
-  </section>
+  </Styles>
 );
-
-export default Contact;

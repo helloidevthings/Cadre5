@@ -1,26 +1,24 @@
-@import "variables.scss";
+import styled from "@emotion/styled";
 
-.CTA {
+export default styled.section`
+  background: ${(props) => props.theme.color.dark};
+  color: ${(props) => props.theme.color.white};
+  padding: 3em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
 
-  &--basic {
-    flex-direction: row;
-  }
-  &--alt {
-    flex-direction: row-reverse;
+  .text-wrapper {
+    max-width: 35em;
   }
 
-  &_text {
-    max-width: 36em;
-    flex-grow: 9999;
+  .leadin {
+    margin-bottom: 0.3em;
   }
 
-  &_media {
+  figure {
+    background: ${(props) => props.theme.color.dark};
     flex: 1 1 auto;
     max-width: 700px;
     position: relative;
@@ -28,21 +26,19 @@
     justify-content: center;
 
     @supports (max-width: max-content) {
-      min-width: 25em;
+      min-width: 20em;
       max-width: max-content;
-      flex-basis: 25em;
-      // flex-grow: 99999;
+      flex-basis: 20em;
     }
 
     &:after {
       content: "";
-      background: linear-gradient($white 38%, $light 38%);
+      background: ${(props) => props.theme.color.primary};
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      z-index: -1;
+      width: 73%;
+      height: 73%;
+      top: 20%;
+      left: 20%;
     }
 
     img {
@@ -53,6 +49,7 @@
       padding: 2em;
       padding: 3em 2em;
       vertical-align: middle;
+      z-index: 1;
     }
   }
-}
+`;

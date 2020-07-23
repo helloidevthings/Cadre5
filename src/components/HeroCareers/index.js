@@ -1,15 +1,14 @@
 import React from "react";
-import Button from "./Parts/Button";
-import Image from "./Parts/Image";
+import Button from "../Parts/Button";
+import Image from "../Parts/Image";
+import Styles from "./styled";
 
-const HeroCareers = () => (
-  <section className="HeroCareers">
+export default () => (
+  <Styles>
     <div className="text-wrapper">
-      <h2 className="HeroCareers_title">Careers</h2>
-      <h3 className="HeroCareers_leadin">
-        We're dedicated to building great software
-      </h3>
-      <p className="HeroCareers_description">
+      <h2 className="title">Careers</h2>
+      <h3 className="leadin">We're dedicated to building great software</h3>
+      <p className="description">
         Founded in 1999, we strive to delight our customers and their end users
         with the systems we craft. We need YOU to join our team.
       </p>
@@ -21,11 +20,8 @@ const HeroCareers = () => (
       />
     </div>
     <Image
-      base="HeroCareers"
       src="/images/stock-of-working.png"
       alt="people working in an office"
     />
-  </section>
+  </Styles>
 );
-
-export default HeroCareers;

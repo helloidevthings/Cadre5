@@ -1,9 +1,10 @@
 import React from "react";
-import IntroText from "./Parts/IntroText";
-import Image from "./Parts/Image";
-import Button from "./Parts/Button";
+import IntroText from "../Parts/IntroText";
+import Image from "../Parts/Image";
+import Button from "../Parts/Button";
+import Styles from "./styled";
 
-const CTA = ({
+export default ({
   subheader,
   leadin,
   descLg,
@@ -12,8 +13,8 @@ const CTA = ({
   type,
   link = "",
 }) => (
-  <section className={`CTA CTA--${type}`}>
-    <div className="CTA_text text-wrapper">
+  <Styles>
+    <div className="text text-wrapper">
       <IntroText
         subheader={subheader}
         leadin={leadin}
@@ -30,7 +31,5 @@ const CTA = ({
       )}
     </div>
     <Image src={img.src} alt={img.alt} base="CTA" />
-  </section>
+  </Styles>
 );
-
-export default CTA;
