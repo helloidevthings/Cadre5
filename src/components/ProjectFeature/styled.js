@@ -25,10 +25,10 @@ export default styled.section`
     background-color: white;
   }
   #{$dark-theme} {
-    background-color: #1f1f1f;
+    background-color: ${(props) => props.theme.color.dark};
   }
   #{$medium-theme} {
-    background-color: #efefef;
+    background-color: ${(props) => props.theme.color.light};
   }
   &#{$reverse} {
     flex-direction: row-reverse;
