@@ -20,31 +20,26 @@ export default ({
   const [ref, inView] = useInView({ triggeronce: true, threshold: 0.18 });
 
   return (
-    <Fragment>
-      {wave && <WaveHr color={wave.color} bg={wave.bg} />}
-      <Styles>
-        <div className="text-wrapper">
-          <h2>{title}</h2>
-          <IntroText
-            subheader={subheader}
-            leadin={leadin}
-            descLg={descLg}
-            desc={desc}
+    <Styles>
+      <div className="text-wrapper">
+        <h2>{title}</h2>
+        <IntroText
+          subheader={subheader}
+          leadin={leadin}
+          descLg={descLg}
+          desc={desc}
+        />
+        {link && (
+          <Button
+            theme={link.theme}
+            style={link.style}
+            href={link.href}
+            text={link.text}
           />
-          {link && (
-            <Button
-              theme={link.theme}
-              style={link.style}
-              href={link.href}
-              text={link.text}
-            />
-          )}
-          {logo && <Image src={logo.src} />}
-        </div>
-        {/* <div className={`fade_in ${inView ? "fade_1" : ""}`} ref={ref}> */}
-        <Image src={img.src} alt={img.alt} />
-        {/* </div> */}
-      </Styles>
-    </Fragment>
+        )}
+        {logo && <Image src={logo.src} />}
+      </div>
+      <Image src={img.src} alt={img.alt} />
+    </Styles>
   );
 };

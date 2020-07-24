@@ -17,13 +17,13 @@ export default styled.article`
     color: ${(props) => props.theme.color.primary};
   }
 
-  figure {
+  .media {
     $min-width-photo: 15em;
     flex: 1 1 auto;
-    max-width: 1000px;
+    max-width: 800px;
     @supports (max-width: max-content) {
       min-width: $min-width-photo;
-      max-width: max-content;
+      /* max-width: max-content; */
       flex-basis: $min-width-photo;
       flex-grow: 99999;
     }
