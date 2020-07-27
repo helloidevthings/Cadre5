@@ -29,11 +29,15 @@ export default styled.section`
     }
   }
 
-  &--mediumTheme {
-    background: linear-gradient($white, ${(props) => props.theme.color.light});
+  &.darkTheme {
+    background: ${(props) => props.theme.color.dark};
   }
 
-  &--lightTheme {
-    background: linear-gradient(${(props) => props.theme.color.light}, $white);
+  &.mediumTheme {
+    background: ${(props) => props.theme.color.light};
+  }
+
+  &.lightTheme {
+    background: white;
   }
 `;

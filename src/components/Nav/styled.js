@@ -1,15 +1,6 @@
 import styled from "@emotion/styled";
 
-export default styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  top: 0px;
-  left: 0px;
-  position: sticky;
-  box-sizing: border-box;
-
+export default styled.div`
   ul {
     li {
       list-style: none;

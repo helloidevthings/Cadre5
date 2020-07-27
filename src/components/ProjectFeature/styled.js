@@ -1,11 +1,6 @@
 import styled from "@emotion/styled";
 
 export default styled.section`
-  $light-theme: "[theme= " lightTheme " ]";
-  $medium-theme: "[theme= " mediumTheme " ]";
-  $dark-theme: "[theme= " darkTheme " ]";
-  $reverse: "[row= " reverse " ]";
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -13,6 +8,9 @@ export default styled.section`
   padding-bottom: 3em;
   justify-content: center;
   align-items: center;
+  &[data-row="reverse"] {
+    flex-direction: row-reverse;
+  }
 
   figure {
     max-width: 38em;
@@ -21,16 +19,13 @@ export default styled.section`
     }
   }
 
-  #{$light-theme} {
+  &.lightTheme {
     background-color: white;
   }
-  #{$dark-theme} {
+  &.darkTheme {
     background-color: ${(props) => props.theme.color.dark};
   }
-  #{$medium-theme} {
+  &.mediumTheme {
     background-color: ${(props) => props.theme.color.light};
-  }
-  &#{$reverse} {
-    flex-direction: row-reverse;
   }
 `;

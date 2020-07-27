@@ -60,4 +60,7 @@ export default {
   borderRadius: {
     subNavLink: "1em",
   },
+  circle: {
+    size: "2em",
+  },
 };
