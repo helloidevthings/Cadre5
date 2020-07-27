@@ -1,9 +1,8 @@
 import React from "react";
-// import ChartArrow from "./Svgs/ChartArrow";
+import Styles from "./styled";
 
-const base = "IntroTextIcon";
-const IntroTextIcon = ({ icon, title, descLg, desc }) => (
-  <div className={`${base} text-wrapper`}>
+export default ({ icon, title, descLg, desc, base }) => (
+  <Styles className={`${base} text-wrapper`}>
     <div className={`${base}_text`}>
       <div className={`${base}_icon`} style={{}}>
         <figure
@@ -17,7 +16,5 @@ const IntroTextIcon = ({ icon, title, descLg, desc }) => (
     </div>
     <p className={`${base}_descLg`}>{descLg}</p>
     <p className={`${base}_desc`}>{desc}</p>
-  </div>
+  </Styles>
 );
-
-export default IntroTextIcon;

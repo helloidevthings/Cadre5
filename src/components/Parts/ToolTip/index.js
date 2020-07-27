@@ -1,11 +1,11 @@
 import React from "react";
 import Styles from "./styled";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default () => (
-  <Styles>
-    {" "}
+  <Styles className="wrapper">
     <motion.div
-      className="ToolTip_dropdown"
+      className="description"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
