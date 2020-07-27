@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export default styled.section`
   max-width: 30em;
 
-  &_text {
+  & .text {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -15,16 +15,15 @@ export default styled.section`
       font-size: 1.8em;
     }
   }
-  &_descLg {
+  & .descLg {
     font-size: 1.1em;
     margin-bottom: 1em;
   }
 
-  &_icon {
-    $circle: 2em;
+  & .icon {
     display: block;
-    width: $circle;
-    height: $circle;
+    width: ${(props) => props.theme.circle.size};
+    height: ${(props) => props.theme.circle.size};
     position: relative;
     margin-right: 1em;
     z-index: 1;
@@ -32,17 +31,17 @@ export default styled.section`
     & figure {
       z-index: 3;
       display: block;
-      width: $circle;
-      height: $circle;
+      width: ${(props) => props.theme.circle.size};
+      height: ${(props) => props.theme.circle.size};
     }
 
     &:after {
       content: "";
       position: absolute;
       background-color: ${(props) => props.theme.color.primary};
-      width: $circle;
-      height: $circle;
-      border-radius: $circle;
+      width: ${(props) => props.theme.circle.size};
+      height: ${(props) => props.theme.circle.size};
+      border-radius: ${(props) => props.theme.circle.size};
       top: 0;
       left: 0;
       z-index: -1;

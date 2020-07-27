@@ -6,7 +6,6 @@ export default styled.figure`
   max-width: 100vw;
   figure {
   }
-
   svg {
     max-width: 100%;
     max-height: 100%;

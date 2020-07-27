@@ -27,7 +27,7 @@ const ProjResolution = () => (
         title: "The Challenge",
         desc:
           "Currently researchers interact with 80 different systems. Resolution is a unified user interface platform designed around the researcher to manage the full lifecycle of research projects at ORNL.",
-        svg: "Wrench",
+        svg: "ChartArrow",
       }}
       img={{
         src: "/images/resolution/video.png",
@@ -53,9 +53,13 @@ const ProjResolution = () => (
     {/* Project Management */}
     <FeatureApp
       img={{ src: "/images/resolution/project_management_main2.png", alt: "" }}
-      themeColor="mediumTheme"
+      themeColor="lightTheme"
+      tips={[
+        { i: 1, top: "10%", left: "20%", desc: "thing one description" },
+        { i: 2, top: "20%", left: "50%", desc: "thing two description" },
+        { i: 3, top: "40%", left: "30%", desc: "thing three description" },
+      ]}
     />
-    <WaveHr color="#efefef" bg="white" />
     <ProjectFeature
       themeColor="lightTheme"
       introText={{
@@ -64,7 +68,7 @@ const ProjResolution = () => (
           "The goal of this platform is to create a light-touch project management tool for researchers.",
         desc:
           "Users can quickly set up a project in 15mins. The platform is integrated with financial systems and allows the displays of cost data relative to planning.",
-        svg: "Wrench",
+        svg: "List",
       }}
       img={{
         src: "/images/resolution/projectmanagement_graph.png",
@@ -105,17 +109,17 @@ const ProjResolution = () => (
     <WaveHr color="white" bg="#efefef" />
     <FeatureApp
       img={{ src: "/images/resolution/pubs_main.png", alt: "" }}
-      themeColor="lightTheme"
+      themeColor="mediumTheme"
     />
     <ProjectFeature
-      themeColor="lightTheme"
+      themeColor="mediumTheme"
       introText={{
         title: "Publications",
         descLg:
           "Researchers publish. All publications undergo an extensive review process involving peers and institutional functions related to security and intellectual property.",
         desc:
           "This application was designed around researcher to make the review and release process simple and efficient. It also handles security with the automatic encryption of uploaded files",
-        svg: "Wrench",
+        svg: "Doc",
       }}
       img={{
         src: "/images/resolution/pubs_right.png",
@@ -123,7 +127,7 @@ const ProjResolution = () => (
       }}
     />
     <ProjectFeature
-      themeColor="lightTheme"
+      themeColor="mediumTheme"
       row="reverse"
       introText={{
         title: "Publications",
@@ -131,7 +135,7 @@ const ProjResolution = () => (
           "Resolution provides tools to aid the review process. The publication widgets display key metrics for management and individuals on the publication pipeline.",
         desc:
           "Authors can correspond with reviewers inside the system, reducing the need for communications; view documents within the system, reducing download times; copy and paste acknowledgement text; and receive help within Publications itself.",
-        svg: "Wrench",
+        svg: "Doc",
       }}
       img={{
         src: "/images/resolution/pubs_left.png",
@@ -139,7 +143,7 @@ const ProjResolution = () => (
       }}
     />
     {/* Site Access */}
-    <WaveHr color="white" bg="#efefef" />
+    <WaveHr color="#efefef" bg="white" />
     <FeatureApp
       img={{ src: "/images/resolution/site_access.png", alt: "" }}
       themeColor="lightTheme"
@@ -152,7 +156,7 @@ const ProjResolution = () => (
           "Quick filters allow users to see visitors arriving in two weeks or guests who's access is about to expire.",
         descLg:
           "Scientists use this module to manage visitors access to ORNL's campus and research facilities. A chart view displays duration of the access authorization as well buildings and cyber access.",
-        svg: "Wrench",
+        svg: "Lock",
       }}
       img={{
         src: "/images/resolution/site_access_detail.png",
@@ -171,7 +175,7 @@ const ProjResolution = () => (
         desc:
           "Researchers can track the full procurment lifecycle. This application provides a quick glance of active and pending information including: purchase requisitions, purchase orders, agreements, and items awaiting delivery.",
 
-        svg: "Wrench",
+        svg: "Money",
       }}
       img={{
         src: "/images/resolution/procurement.png",
@@ -187,7 +191,7 @@ const ProjResolution = () => (
           "Project Estimator was developed to create an easy, consistent way to estimate project costs.",
         desc:
           "Project Estimator uses official SAP rates, so you know your estimate is accurate, and enables you to easily develop a simple schedule and estimate in one tool! It is also collaborative, so you can easily work on estimates with others at ORNL.",
-        svg: "ChartArrow",
+        svg: "Money",
       }}
       img={{
         src: "/images/resolution/responsive_ipad_phone.png",
@@ -206,7 +210,7 @@ const ProjResolution = () => (
           "The foundation of the RESolution user interface is an action list.",
         desc:
           "After intensive user study we determined that the standard red, yellow, green alerting system of a typical dashboard was to noisy and annoying to the researchers. A subtle iconographic language that relied on form rather than color to signal importance was developed. In order not to overwhelm the user the information architecture layers the information. Prominence in the interface is given to items in the enterprise that are waiting on the researcher's actions. Alerts that may require action are secondary and items the researcher may want to follow are tertiary.",
-        svg: "Wrench",
+        svg: "Action",
       }}
       img={{
         src: "/images/resolution/action_list_2.png",
