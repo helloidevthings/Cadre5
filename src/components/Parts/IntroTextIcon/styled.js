@@ -1,13 +1,13 @@
-@import "variables.scss";
+import styled from "@emotion/styled";
 
-.IntroTextIcon {
+export default styled.section`
   max-width: 30em;
 
   &_text {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border-bottom: 2px solid $gray-lt;
+    border-bottom: 2px solid ${(props) => props.theme.color.grayLt};
     margin-bottom: 1.2em;
     padding-bottom: 0.8em;
 
@@ -39,7 +39,7 @@
     &:after {
       content: "";
       position: absolute;
-      background-color: $primary;
+      background-color: ${(props) => props.theme.color.primary};
       width: $circle;
       height: $circle;
       border-radius: $circle;
@@ -48,4 +48,4 @@
       z-index: -1;
     }
   }
-}
+`;
