@@ -21,7 +21,7 @@ export default ({
 
   return (
     <Styles>
-      <div className="text-wrapper">
+      <div className={`text-wrapper  ${inView ? "active" : ""}`} ref={ref}>
         <h2>{title}</h2>
         <IntroText
           subheader={subheader}
@@ -39,7 +39,7 @@ export default ({
         )}
         {logo && <Image src={logo.src} />}
       </div>
-      <div className={inView ? "active" : ""} ref={ref}>
+      <div className={`image-wrapper ${inView ? "active" : ""}`} ref={ref}>
         <Image src={img.src} alt={img.alt} />
       </div>
     </Styles>
