@@ -29,10 +29,16 @@ const ProjResolution = () => (
           "Currently researchers interact with 80 different systems. Resolution is a unified user interface platform designed around the researcher to manage the full lifecycle of research projects at ORNL.",
         svg: "ChartArrow",
       }}
-      img={{
-        src: "/images/resolution/video.png",
-        alt: "",
-      }}
+      iframe={
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2ossQTT7It8?controls=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      }
     />
     <ProjectFeature
       themeColor="mediumTheme"
@@ -71,9 +77,22 @@ const ProjResolution = () => (
         svg: "List",
       }}
       img={{
-        src: "/images/resolution/projectmanagement_graph.png",
+        src: "/images/resolution/portfolio-dash3.png",
         alt: "",
       }}
+    />
+    <FeatureApp
+      img={{ src: "/images/resolution/portfolio_dashboard2.gif", alt: "" }}
+      themeColor="lightTheme"
+      tips={[
+        {
+          i: 1,
+          top: "10%",
+          left: "20%",
+          desc: "Expandable panels makes it easy f",
+        },
+        { i: 2, top: "20%", left: "50%", desc: "thing two description" },
+      ]}
     />
     <ProjectFeature
       themeColor="lightTheme"
@@ -182,6 +201,14 @@ const ProjResolution = () => (
         alt: "",
       }}
     />
+    <FeatureApp
+      img={{
+        src: "/images/resolution/procurement_timeline_graph.gif",
+        alt: "",
+      }}
+      themeColor="mediumTheme"
+      tips={[{ i: 1, top: "20%", left: "50%", desc: "thing two description" }]}
+    />
     {/* Estimator */}
     <ProjectFeature
       themeColor="mediumTheme"
@@ -213,7 +240,7 @@ const ProjResolution = () => (
         svg: "Action",
       }}
       img={{
-        src: "/images/resolution/action_list_2.png",
+        src: "/images/resolution/action_list1.png",
         alt: "",
       }}
     />

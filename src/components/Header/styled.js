@@ -10,6 +10,7 @@ export default styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     align-items: center;
     top: 0px;
     left: 0px;

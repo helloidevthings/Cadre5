@@ -20,7 +20,7 @@ export default styled.article`
   .media {
     $min-width-photo: 15em;
     flex: 1 1 auto;
-    max-width: 800px;
+    max-width: 700px;
     @supports (max-width: max-content) {
       min-width: $min-width-photo;
       /* max-width: max-content; */

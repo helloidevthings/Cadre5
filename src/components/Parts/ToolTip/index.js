@@ -35,11 +35,7 @@ export default ({ tips = [] }) => {
                 key={i}
               >
                 <p>{desc}</p>
-                <button
-                  className="Close"
-                  onClick={closeButton}
-                  activeTip={visible ? true : false}
-                >
+                <button className="Close" onClick={closeButton}>
                   X
                 </button>
               </motion.div>
