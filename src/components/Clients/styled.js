@@ -5,11 +5,11 @@ export default styled.section`
   background: ${(props) => props.theme.gradients.blackToDark};
   padding: 3em 1em;
 
-  &_title {
+  & .title {
     text-align: center;
   }
 
-  &_logos {
+  & .logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

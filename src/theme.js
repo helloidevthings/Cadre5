@@ -13,7 +13,7 @@ export default {
     main: "0px 4px 8px 2px rgba(0, 0, 0, 0.16)",
   },
   gradients: {
-    blackToRed: "linear-gradient(#1f1f1f, #2e0000)",
+    blackToRed: "linear-gradient(#000000, #2e0000)",
     redToBlack: "linear-gradient(#2e0000, #1f1f1f)",
     darkToGrayMd: "linear-gradient(#1f1f1f,#4d4d4d)",
     blackToDark: "linear-gradient(#000000, #1f1f1f)",
