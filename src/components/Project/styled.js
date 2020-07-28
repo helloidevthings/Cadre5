@@ -5,12 +5,32 @@ export default styled.article`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 3em 0;
+  margin: 5rem 0;
 
   .text-wrapper {
     max-width: 30em;
     flex-grow: 9999;
     padding-right: 3em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 1s ease-in-out;
+
+    &.active {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .image-wrapper {
+    opacity: 0;
+    transform: translateX(15%);
+    transition: all 1s ease-in-out;
+    transition-delay: 0.2s;
+
+    &.active {
+      opacity: 1;
+      transform: none;
+    }
   }
 
   .leadin {
