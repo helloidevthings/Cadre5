@@ -17,7 +17,7 @@ export default ({
   logo = "",
   link = "",
 }) => {
-  const [ref, inView] = useInView({ triggeronce: true, threshold: 0.18 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.18 });
 
   return (
     <Styles>
@@ -39,7 +39,9 @@ export default ({
         )}
         {logo && <Image src={logo.src} />}
       </div>
-      <Image src={img.src} alt={img.alt} />
+      <div className={inView ? "active" : ""} ref={ref}>
+        <Image src={img.src} alt={img.alt} />
+      </div>
     </Styles>
   );
 };
