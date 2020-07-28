@@ -40,10 +40,11 @@ export default styled.section`
   }
 
   .map {
+    flex: 0 0 auto;
     overflow: hidden;
     background: ${(props) => props.theme.gradients.redToBlack};
     max-width: 100vw;
-    max-height: 800px;
+    max-height: 600px;
     margin-top: 3em;
 
     svg {

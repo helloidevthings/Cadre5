@@ -17,6 +17,7 @@ export default () => (
         theme="light"
         href="./Careers"
         text="Job Postings"
+        themeColor="lightTheme"
       />
     </div>
     <Image

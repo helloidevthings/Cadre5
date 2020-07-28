@@ -1,10 +1,6 @@
 import styled from "@emotion/styled";
 
 export default styled.a`
-  $btnStyle: '[btnstyle= "primary" ]';
-  $light-theme: "[theme= " light " ]";
-  $dark-theme: "[theme= " dark " ]";
-
   text-decoration: none;
   border-radius: none;
   border: none;
@@ -12,12 +8,13 @@ export default styled.a`
   margin-top: 2em;
   display: inline-block;
 
-  &#{$btnStyle} {
+  &.primary {
     margin: 2em 0em;
     padding: 0.1em 0em;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
+    color: black;
     font-weight: 400;
     letter-spacing: 0.12em;
     position: relative;
@@ -31,9 +28,9 @@ export default styled.a`
       height: 1px;
       bottom: 0;
       right: 0;
+      background-color: black;
       transform-origin: bottom right;
       transform: scaleX(1);
-      background-color: black;
       transition: transform 0.5s cubic-bezier(0.6, -0.01, 0.11, 0.99);
     }
 
@@ -47,14 +44,17 @@ export default styled.a`
 
   &_secondary {
   }
-
-  &#{$light-theme} {
-    color: $white;
-    &#{$btnStyle}:after {
+  &.lightTheme {
+    color: white;
+    &.primary:after {
       background-color: white;
     }
   }
-  &#{$dark-theme} {
+  &.darkTheme {
     color: black;
+
+    &.primary:after {
+      background-color: white;
+    }
   }
 `;

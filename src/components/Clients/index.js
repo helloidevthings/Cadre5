@@ -12,15 +12,8 @@ export default ({ title, img = "" }) => {
   };
   return (
     <Styles>
-      <h2 className="Clients_title">Our Clients</h2>
-      <div className="Clients_logos">
-        {/* {[...logos].map(({ logo = "" }, i) => (
-              <LogoGridItem
-                type={logos.logo.type}
-                name={logos.logo.name}
-                alt={logos.logo.alt}
-              />
-            ))} */}
+      <h2 className="title">Our Clients</h2>
+      <div className="logos">
         <LogoGridItem
           type="government"
           name="oak_ridge_white"

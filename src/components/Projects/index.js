@@ -1,12 +1,14 @@
 import React from "react";
 import Project from "../Project";
+import WaveHr from "../Parts/WaveHR";
 
 import Styles from "./styled";
 export default () => (
   <Styles>
-    <div className="Project_heading">
+    <div className="heading">
       <h2>Our Projects</h2>
     </div>
+    <WaveHr color="#1f1f1f" bg="white" />
     <Project
       subheader="2007--2020"
       title="Resolution"
