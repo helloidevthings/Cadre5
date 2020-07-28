@@ -6,5 +6,6 @@ export default styled.section`
     color: white;
     padding-top: 3em;
     padding-left: 4em;
+    text-align: center;
   }
 `;

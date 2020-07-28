@@ -22,7 +22,17 @@ export default styled.section`
       max-height: 3.75em;
       margin: 1.3em;
       filter: grayscale(100%);
-      opacity: 0.8;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      transition-delay: 0.4s;
+
+      .active& {
+        opacity: 1;
+        transform: none;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 `;

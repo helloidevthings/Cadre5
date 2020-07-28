@@ -9,19 +9,27 @@ export default styled.section`
   margin: 0;
   position: relative;
   color: white;
-  background: ${(props) => props.theme.gradients.blackToRed};
-  background-attachment: fixed;
+  background: ${(props) => props.theme.gradients.redToBlack};
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   z-index: 3;
   overflow: hidden;
 
-  & .para {
+  & article {
     max-width: 33em;
     margin: 1.3em;
     z-index: 4;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+
+    &.active {
+      transform: none;
+      opacity: 1;
+    }
   }
 
-  & .tagline {
+  & h2 {
     font-size: 1.6em;
     font-weight: 300;
     line-height: 1.45;
