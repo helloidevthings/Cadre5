@@ -5,12 +5,6 @@ export default styled.section`
   padding-top: 2em;
   padding-bottom: 4em;
 
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .title {
     text-align: center;
     margin-bottom: 1em;
