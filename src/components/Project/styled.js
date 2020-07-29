@@ -37,7 +37,7 @@ export default styled.article`
     color: ${(props) => props.theme.color.primary};
   }
 
-  .media {
+  figure {
     $min-width-photo: 15em;
     flex: 1 1 auto;
     max-width: 700px;

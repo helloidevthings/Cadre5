@@ -19,7 +19,10 @@ export default ({ tips = [] }) => {
         };
 
         return (
-          <div className="wrapper" style={{ top: top, left: left }}>
+          <div
+            className={visible ? "wrapper active" : "wrapper"}
+            style={{ top: top, left: left }}
+          >
             <button
               className="ToolTip ToolTipButton"
               onClick={handleButtonClick}

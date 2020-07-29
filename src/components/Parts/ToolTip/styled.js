@@ -15,11 +15,12 @@ export default styled.div`
     color: white;
     box-shadow: ${(props) => props.theme.boxShadow.main};
     z-index: 3;
+    outline: none;
   }
 
   .ToolTipButton {
-    top: -1em;
-    left: -1em;
+    top: -1.3em;
+    left: -1.5em;
   }
 
   .Close {
@@ -29,7 +30,8 @@ export default styled.div`
     top: -1em;
     right: -0.8em;
     font-size: 0.7em;
-    background-color: ${(props) => props.theme.color.grayLt};
+    border: none;
+    background-color: ${(props) => props.theme.color.grayMed};
   }
 
   .wrapper {
@@ -42,10 +44,13 @@ export default styled.div`
     display: flex;
     background-color: white;
     max-width: 20em;
-    padding: 1.4em 1.3em;
+    padding: 1em 1em 1em 1.3em;
     border-radius: 0.8rem;
     box-shadow: ${(props) => props.theme.boxShadow.main};
     position: relative;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    & .active {
+      z-index: 200;
+    }
   }
 `;
