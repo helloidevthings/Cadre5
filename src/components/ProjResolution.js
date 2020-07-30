@@ -47,7 +47,7 @@ const ProjResolution = () => (
       introText={{
         title: "Responsive Design",
         descLg:
-          "The responsive design makes It accessible from desktops, smartphones and tablets. RESolution's design provides an enjoyable and efficient user experience for the researcher.",
+          "The responsive design makes the software accessible from desktops, smartphones and tablets. RESolution's design provides an enjoyable and efficient user experience for the researcher.",
         desc: "",
         svg: "ChartArrow",
       }}
@@ -58,49 +58,6 @@ const ProjResolution = () => (
     />
     <WaveHr color="#efefef" bg="white" />
     {/* Project Management */}
-    <FeatureApp
-      img={{ src: "/images/resolution/complex_project_graph.png", alt: "" }}
-      themeColor="lightTheme"
-      tips={[
-        {
-          i: 1,
-          top: "52%",
-          left: "20%",
-          desc: "The purple line indicates the planned project work",
-        },
-        {
-          i: 2,
-          top: "28%",
-          left: "30%",
-          desc: "The gray shaded region is the full budget authority",
-        },
-        {
-          i: 3,
-          top: "28%",
-          left: "60%",
-          desc: "The upper green line shows the actuals plus commitments",
-        },
-        {
-          i: 4,
-          top: "43%",
-          left: "55%",
-          desc: "The lower green line is the amount spent",
-        },
-        {
-          i: 5,
-          top: "23%",
-          left: "70%",
-          desc:
-            "The orange dotted line represents the work completed or work valued",
-        },
-        {
-          i: 6,
-          top: "83%",
-          left: "20%",
-          desc: "Project Milestones",
-        },
-      ]}
-    />
     <ProjectFeature
       themeColor="lightTheme"
       row="reverse"
@@ -132,19 +89,48 @@ const ProjResolution = () => (
       }}
     />
     <FeatureApp
-      img={{ src: "/images/resolution/portfolio_dashboard2.gif", alt: "" }}
+      img={{ src: "/images/resolution/complex_project_graph.png", alt: "" }}
       themeColor="lightTheme"
       tips={[
         {
           i: 1,
-          top: "50%",
+          top: "52%",
+          left: "20%",
+          desc: "The purple line indicates the planned project work",
+        },
+        {
+          i: 2,
+          top: "28%",
+          left: "26%",
+          desc: "The gray shaded region is the full budget authority",
+        },
+        {
+          i: 3,
+          top: "28%",
+          left: "60%",
+          desc: "The upper green line shows the actuals plus commitments",
+        },
+        {
+          i: 4,
+          top: "43%",
+          left: "55%",
+          desc: "The lower green line is the amount spent",
+        },
+        {
+          i: 5,
+          top: "23%",
           left: "70%",
           desc:
-            "Expandable panels make it easy to find detailed information about each piece while maintaining a quick overall view of each project.",
+            "The orange dotted line represents the work completed or work valued",
+        },
+        {
+          i: 6,
+          top: "83%",
+          left: "20%",
+          desc: "Project Milestones",
         },
       ]}
     />
-
     <ProjectFeature
       themeColor="lightTheme"
       introText={{
@@ -160,27 +146,28 @@ const ProjResolution = () => (
         alt: "",
       }}
     />
-    {/* Publications */}
-    <WaveHr color="white" bg="#efefef" />
     <FeatureApp
-      img={{ src: "/images/resolution/pubs_main.png", alt: "" }}
-      themeColor="mediumTheme"
+      img={{ src: "/images/resolution/portfolio_dashboard2.gif", alt: "" }}
+      themeColor="lightTheme"
       tips={[
         {
           i: 1,
-          top: "13%",
-          left: "79%",
-          desc: "Displays action items for each researcher",
+          top: "50%",
+          left: "70%",
+          desc:
+            "Expandable panels make it easy to find detailed information about each piece while maintaining a quick overall view of each project.",
         },
         {
           i: 2,
-          top: "20%",
-          left: "5%",
+          top: "65%",
+          left: "10%",
           desc:
-            "The dashboard shows a high level view of stats. Dashboard can be toggled between calendar year and fiscal year",
+            "Each quad chart represents how a high level view of how a project is going",
         },
       ]}
     />
+    {/* Publications */}
+    <WaveHr color="white" bg="#efefef" />
     <ProjectFeature
       themeColor="mediumTheme"
       introText={{
@@ -212,8 +199,43 @@ const ProjResolution = () => (
         alt: "",
       }}
     />
+    <FeatureApp
+      img={{ src: "/images/resolution/pubs_main.png", alt: "" }}
+      themeColor="mediumTheme"
+      tips={[
+        {
+          i: 1,
+          top: "13%",
+          left: "79%",
+          desc: "Displays action items for each researcher",
+        },
+        {
+          i: 2,
+          top: "20%",
+          left: "5%",
+          desc:
+            "The dashboard shows a high level view of stats. Dashboard can be toggled between calendar year and fiscal year",
+        },
+      ]}
+    />
     {/* Site Access */}
     <WaveHr color="#efefef" bg="white" />
+
+    <ProjectFeature
+      themeColor="lightTheme"
+      introText={{
+        title: "Site Access",
+        desc:
+          "Quick filters allow users to see visitors arriving in two weeks or guests who's access is about to expire.",
+        descLg:
+          "Scientists use this module to manage visitors' access to ORNL's campus and research facilities. A chart view displays duration of the access authorization as well buildings and cyber access.",
+        svg: "Lock",
+      }}
+      img={{
+        src: "/images/resolution/site_access_detail.png",
+        alt: "",
+      }}
+    />
     <FeatureApp
       img={{ src: "/images/resolution/site_access.png", alt: "" }}
       themeColor="lightTheme"
@@ -232,21 +254,6 @@ const ProjResolution = () => (
             "Shows the level of security access each individual has on the timeline",
         },
       ]}
-    />
-    <ProjectFeature
-      themeColor="lightTheme"
-      introText={{
-        title: "Site Access",
-        desc:
-          "Quick filters allow users to see visitors arriving in two weeks or guests who's access is about to expire.",
-        descLg:
-          "Scientists use this module to manage visitors' access to ORNL's campus and research facilities. A chart view displays duration of the access authorization as well buildings and cyber access.",
-        svg: "Lock",
-      }}
-      img={{
-        src: "/images/resolution/site_access_detail.png",
-        alt: "",
-      }}
     />
     <WaveHr color="white" bg="#efefef" />
     {/* Procurement */}

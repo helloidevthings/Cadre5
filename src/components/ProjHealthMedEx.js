@@ -54,7 +54,6 @@ const ProjHealthMedEx = () => (
     />
     <WaveHr color="#efefef" bg="white" />
     {/* Project Management */}
-
     <ProjectFeature
       themeColor="lightTheme"
       introText={{
@@ -106,7 +105,6 @@ const ProjHealthMedEx = () => (
         alt: "",
       }}
     />
-
     <ProjectFeature
       themeColor="lightTheme"
       introText={{
@@ -122,7 +120,6 @@ const ProjHealthMedEx = () => (
         alt: "",
       }}
     />
-
     <ProjectFeature
       themeColor="lightTheme"
       row="reverse"
@@ -131,7 +128,7 @@ const ProjHealthMedEx = () => (
         descLg:
           "We conducted live user testing in our office and visited care facilities.",
         desc:
-          "A touch screen prototype was developed in gray-frames to test the usability of different design paradigms.",
+          "A touch screen prototype was developed in gray-frames to test the usability of different design paradigms. To minimize occlusion we positioned the navigation and action buttons at the bottom of the screen.",
         svg: "Wrench",
       }}
       img={{
@@ -155,7 +152,7 @@ const ProjHealthMedEx = () => (
           top: "85%",
           left: "27%",
           desc:
-            "Submit buttons are at the bottom of the screen to make them easier to reach",
+            "Navigation and action buttons are at the bottom of the screen to make them easier to reach",
         },
       ]}
     />
