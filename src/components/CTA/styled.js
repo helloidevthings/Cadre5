@@ -8,10 +8,10 @@ export default styled.section`
   margin-top: 2em;
   margin-bottom: 2em;
 
-  &--basic {
+  &.basic {
     flex-direction: row;
   }
-  &--alt {
+  &.alt {
     flex-direction: row-reverse;
   }
 
