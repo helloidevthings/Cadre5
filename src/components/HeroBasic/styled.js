@@ -6,10 +6,8 @@ export default styled.section`
   justify-content: flex-end;
   height: 40vh;
   position: relative;
-
-  .header {
-    color: white;
-  }
+  overflow: hidden;
+  color: white;
 
   figure {
     z-index: -1;
@@ -33,5 +31,10 @@ export default styled.section`
     left: 0;
     position: absolute;
     z-index: -1;
+  }
+  & .background_svg {
+    position: absolute;
+    bottom: -30%;
+    right: -10%;
   }
 `;

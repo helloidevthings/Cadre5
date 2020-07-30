@@ -40,7 +40,7 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
   ];
   return (
     <Styles>
-      <h2 className="title">Similar Projects</h2>
+      <h2 className="title">Other Projects</h2>
       <ProjectCard cards={cards} />
     </Styles>
   );
