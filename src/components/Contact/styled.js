@@ -6,15 +6,14 @@ export default styled.section`
   padding-top: 3em;
 
   & .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .text {
     max-width: 600px;
   }
-
 
   & .InfoItems {
     margin-top: 2em;
@@ -24,6 +23,7 @@ export default styled.section`
     display: flex;
     flex-direction: column;
     padding: 2em;
+    max-width: 600px;
   }
 
   input {
@@ -46,9 +46,9 @@ export default styled.section`
 
   .map {
     flex: 0 0 auto;
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     overflow: hidden;
     background: ${(props) => props.theme.gradients.redToBlack};
     max-width: 100vw;

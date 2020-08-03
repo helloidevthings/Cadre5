@@ -2,13 +2,14 @@ import React from "react";
 import LogoGridItem from "../Parts/LogoGridItem";
 import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
+import Title from "../Parts/Title";
 
 export default ({ title, img = "" }) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
 
   return (
     <Styles ref={ref} className={inView ? "active" : ""}>
-      <h2 className="title">Our Clients</h2>
+      <Title className="title" title="Our Clients" />
       <div className="logos">
         <LogoGridItem
           type="government"
