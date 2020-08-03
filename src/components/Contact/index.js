@@ -1,11 +1,16 @@
 import React from "react";
 import Styles from "./styled";
 import InfoItems from "../Parts/InfoItems";
+import { useInView } from "react-intersection-observer";
 
-export default () => (
+export default () => {
+
+const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
+
+return (
   <Styles>
-    <div>
-      <div className="text text-wrapper">
+    <div className="wrapper">
+      <div className={`text text-wrapper fadeUp ${inView ? "active" : ""}`} ref={ref}>
         <h2 className="title">Contact Us</h2>
         <h3>Let's talk about your project</h3>
         <InfoItems />
@@ -49,3 +54,4 @@ export default () => (
     </div>
   </Styles>
 );
+} 

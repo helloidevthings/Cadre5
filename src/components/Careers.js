@@ -1,8 +1,13 @@
 import React from "react";
 import Page from "./Page";
 import HeroBasic from "./HeroBasic";
+import { useInView } from "react-intersection-observer";
 
-const Careers = () => (
+
+export default () => {
+const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
+
+return (
   <Page>
     <HeroBasic
       title="Careers"
@@ -14,5 +19,4 @@ const Careers = () => (
     <section className="Careers"></section>
   </Page>
 );
-
-export default Careers;
+}

@@ -12,6 +12,7 @@ const About = () => (
     <HeroBasic
       title="About Us"
       img={{ src: "/images/cadre5office.jpg", alt: "Cadre5 Building" }}
+      svg={true}
     />
     <CTA
       subheader="FOUNDED IN 1999"

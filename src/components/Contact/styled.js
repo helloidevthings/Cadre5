@@ -3,13 +3,18 @@ import styled from "@emotion/styled";
 export default styled.section`
   color: ${(props) => props.theme.color.white};
   background: ${(props) => props.theme.color.dark};
+  padding-top: 3em;
+
+  & .wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 3em;
+  justify-content: center; 
+  }
 
   .text {
     max-width: 600px;
   }
+
 
   & .InfoItems {
     margin-top: 2em;
@@ -41,6 +46,9 @@ export default styled.section`
 
   .map {
     flex: 0 0 auto;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
     overflow: hidden;
     background: ${(props) => props.theme.gradients.redToBlack};
     max-width: 100vw;
