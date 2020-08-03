@@ -10,7 +10,7 @@ export default ({ title, tagline, ctaText }) => {
 
   return (
     <Styles>
-      <article ref={ref} className={inView ? "active" : ""}>
+      <article ref={ref} className={`fadeUp ${inView ? "active" : ""}`}>
         <h1>{title}</h1>
         <h2>{tagline}</h2>
         <Button themeColor="lightTheme" style="primary" text={`${ctaText}`} />

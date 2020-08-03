@@ -17,7 +17,7 @@ export default ({
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
 
   return (
-    <Styles className={inView ? "active" : ""}>
+    <Styles className={inView ? `active ${type}` : `${type}`} ref={ref}>
       <div className="text text-wrapper">
         <IntroText
           subheader={subheader}

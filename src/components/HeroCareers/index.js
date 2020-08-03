@@ -2,10 +2,14 @@ import React from "react";
 import Button from "../Parts/Button";
 import Image from "../Parts/Image";
 import Styles from "./styled";
+import { useInView } from "react-intersection-observer";
 
-export default () => (
+export default () => {
+  const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
+
+return (
   <Styles>
-    <div className="text-wrapper">
+    <div className={`text-wrapper fadeUp ${inView ? "active" : ""}`} ref={ref}>
       <h2 className="title">Careers</h2>
       <h3 className="leadin">We're dedicated to building great software</h3>
       <p className="description">
@@ -26,3 +30,4 @@ export default () => (
     />
   </Styles>
 );
+}

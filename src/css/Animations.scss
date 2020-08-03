@@ -1,4 +1,14 @@
 // In-View Triggered Animations
+.fadeUp {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.92, 0.04, 0.28, 1.01);
+
+  &.active {
+    transform: none;
+    opacity: 1;
+  }
+}
 
 .fade_in {
   opacity: 0.5;
@@ -14,6 +24,7 @@
   transform: scale(0.95) translateY(2em);
   transition: all 0.5s ease-in;
 }
+
 .zoom_1 {
   transform: scale(1) translateY(0em);
 }

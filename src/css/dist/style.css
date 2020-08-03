@@ -81,7 +81,7 @@ hr {
   position: relative;
   padding-top: 0;
   padding-bottom: 2px;
-  margin: 9px 0.6em 0; }
+  margin: 0.2em 0.6em 0; }
   .fancyAND:before {
     content: "";
     display: block;
@@ -115,6 +115,14 @@ blockquote {
     height: 1.2em;
     left: 0;
     top: 0.1em; }
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.92, 0.04, 0.28, 1.01); }
+  .fadeUp.active {
+    transform: none;
+    opacity: 1; }
 
 .fade_in {
   opacity: 0.5;

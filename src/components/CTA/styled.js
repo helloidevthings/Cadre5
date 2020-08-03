@@ -14,10 +14,23 @@ export default styled.section`
   &.alt {
     flex-direction: row-reverse;
   }
+  &.active {
+    transform: none;
+    opacity: 1;
+
+    & > .text,
+    & > figure {
+      transform: none;
+      opacity: 1;
+    }
+  }
 
   .text {
     max-width: 36em;
     flex-grow: 9999;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
   }
 
   figure {
@@ -26,12 +39,15 @@ export default styled.section`
     position: relative;
     display: flex;
     justify-content: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 1s ease-in-out;
 
     @supports (max-width: max-content) {
       min-width: 25em;
       max-width: max-content;
       flex-basis: 25em;
-      // flex-grow: 99999;
+      flex-grow: 99999;
     }
 
     &:after {

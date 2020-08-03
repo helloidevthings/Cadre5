@@ -19,14 +19,6 @@ export default styled.section`
     max-width: 33em;
     margin: 1.3em;
     z-index: 4;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease-in-out;
-
-    &.active {
-      transform: none;
-      opacity: 1;
-    }
   }
 
   & h2 {
