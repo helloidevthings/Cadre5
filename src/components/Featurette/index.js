@@ -19,6 +19,7 @@ export default ({ title, quote }) => {
           <article
             className={`item fadeUp ${inView ? "active" : ""}`}
             ref={ref}
+            key={i}
             style={{ transitionDelay: `${i * 0.2}s` }}
           >
             <Image src={`/images/${img}.png`} alt={name} />

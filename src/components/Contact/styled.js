@@ -56,6 +56,7 @@ export default styled.section`
     margin-top: 3em;
 
     svg {
+      margin-top: -7em;
       width: 100%;
       height: 100%;
     }

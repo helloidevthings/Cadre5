@@ -27,7 +27,7 @@ export default ({
         />
         {link && (
           <Button
-            theme={link.theme}
+            themeColor={link.theme}
             style={link.style}
             href={link.href}
             text={link.text}
