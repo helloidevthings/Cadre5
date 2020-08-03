@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "../Parts/ProjectCard";
 import Styles from "./styled";
+import Title from "../Parts/Title";
 
 export default ({ projTitle, projLeadin, img = "", tags }) => {
   const cards = [
@@ -40,7 +41,7 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
   ];
   return (
     <Styles>
-      <h2 className="title">Other Projects</h2>
+      <Title className="title" title="Other Projects" />
       <ProjectCard cards={cards} />
     </Styles>
   );

@@ -12,7 +12,8 @@ export default styled.section`
     box-shadow: ${(props) => props.theme.boxShadow.main};
     opacity: 0;
     transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.8s ease-in-out, transform 0.5s ease-in-out,
+      background-color 1s ease-in-out;
     transition-delay: 0.4s;
 
     &.active {
@@ -21,16 +22,16 @@ export default styled.section`
     }
 
     &:hover {
-      transform: scale(1.02);
+      /* transform: scale(1.02); */
       background-color: ${(props) => props.theme.color.black};
     }
 
     &:nth-child(2) {
-      transition-delay: 0.6s;
+      transition-delay: 0.5s;
     }
 
     &:nth-child(3) {
-      transition-delay: 0.8s;
+      transition-delay: 0.7s;
     }
   }
 
