@@ -13,7 +13,11 @@ export default ({ title, tagline, ctaText }) => {
       <article ref={ref} className={`fadeUp ${inView ? "active" : ""}`}>
         <h1>{title}</h1>
         <h2>{tagline}</h2>
-        <Button themeColor="lightTheme" style="primary" text={`${ctaText}`} />
+        <Button
+          themeColor="lightTheme"
+          btnStyle="primary"
+          text={`${ctaText}`}
+        />
       </article>
       <div className="svg-wrapper wave-lines">
         <WaveLines />

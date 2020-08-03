@@ -38,7 +38,7 @@ export default styled.section`
   }
 
   blockquote {
-    max-width: 600px;
+    max-width: 28em;
     margin-top: 3em;
   }
 `;

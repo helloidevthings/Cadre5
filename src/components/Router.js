@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import ContactPage from "./ContactPage";
 import Careers from "./Careers";
+import Projects from "./Projects";
 import ProjResolution from "./ProjResolution";
 import ProjHealthMedEx from "./ProjHealthMedEx";
 import FourOhFour from "./FourOhFour";
@@ -16,6 +17,7 @@ const Router = () => (
       <Route exact path="/" component={Home} />
       <Route exact path="/home" component={Home} />
       <Route exact path="/about" component={About} isVisible="false" />
+      <Route exact path="/projects" component={Projects} />
       <Route exact path="/careers" component={Careers} />
       <Route exact path="/contact" component={ContactPage} />
       <Route exact path="/resolution" component={ProjResolution} />

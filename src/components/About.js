@@ -29,7 +29,7 @@ const About = () => (
       title="Our Partners"
       quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     />
-    <Title title="Awards ;amp Recognition" base="CTA" />
+    <Title title={`Awards & Recognition`} base="CTA" />
     <CTA
       subheader="Awarded in 2014"
       leadin="Oak Ridge National Laboratory Innovator Award"
@@ -39,6 +39,13 @@ const About = () => (
         alt: "resolution interface graphics",
       }}
       type="basic"
+      link={{
+        themeColor: "dark",
+        btnStyle: "secondary",
+        text: "Learn More",
+        href:
+          "https://www.businesswire.com/news/home/20151110006186/en/Groundbreaking-Government-Programs-Recognized-15th-Annual-Excellence.Gov",
+      }}
     />
     <CTA
       subheader="Awarded in 2015"
@@ -49,6 +56,13 @@ const About = () => (
         alt: "resolution interface graphics",
       }}
       type="alt"
+      link={{
+        themeColor: "dark",
+        btnStyle: "secondary",
+        text: "Learn More",
+        href:
+          "https://www.businesswire.com/news/home/20151110006186/en/Groundbreaking-Government-Programs-Recognized-15th-Annual-Excellence.Gov",
+      }}
     />
     <CTA
       subheader="Awarded in 2015"
@@ -59,6 +73,13 @@ const About = () => (
         alt: "people working in an office environment",
       }}
       type="basic"
+      link={{
+        themeColor: "dark",
+        btnStyle: "secondary",
+        text: "Learn More",
+        href:
+          "https://www.businesswire.com/news/home/20151110006186/en/Groundbreaking-Government-Programs-Recognized-15th-Annual-Excellence.Gov",
+      }}
     />
     <LogoGrid />
   </Page>

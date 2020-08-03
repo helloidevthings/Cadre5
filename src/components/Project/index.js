@@ -12,7 +12,6 @@ export default ({
   leadin,
   descLg,
   desc,
-  wave = "",
   img = "",
   logo = "",
   link = "",
@@ -31,8 +30,8 @@ export default ({
         />
         {link && (
           <Button
-            theme={link.theme}
-            style={link.style}
+            themeColor={link.theme}
+            btnStyle={link.style}
             href={link.href}
             text={link.text}
           />

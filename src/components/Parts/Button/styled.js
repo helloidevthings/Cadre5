@@ -42,7 +42,8 @@ export default styled.a`
     }
   }
 
-  &_secondary {
+  &.secondary {
+    color: pink;
   }
   &.lightTheme {
     color: white;
