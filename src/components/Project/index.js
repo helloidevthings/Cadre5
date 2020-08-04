@@ -6,7 +6,7 @@ import Image from "../Parts/Image";
 import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
 
-export default ({ details = [] }) => {
+export default ({ details = [], themeColor }) => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
 
   return (
@@ -16,7 +16,7 @@ export default ({ details = [] }) => {
           { subheader, title, leadin, descLg, desc, img = "", link = "" },
           i
         ) => (
-          <Styles key={i} className={inView ? "active" : ""}>
+          <Styles key={i} className={`${themeColor} ${inView ? "active" : ""}`}>
             <div className="text-wrapper" ref={ref}>
               <h2>{title}</h2>
               <IntroText

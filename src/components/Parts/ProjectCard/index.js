@@ -9,15 +9,16 @@ export default ({ cards = [] }) => {
   return (
     <Styles>
       <div className="cards">
-        {cards.map(({ title, leadin, img = "", link = "" }) => (
+        {cards.map(({ title, leadin, img = "", link = "", tags = [] }) => (
           <a href={link.href} ref={ref} className={inView ? "active" : ""}>
             <div className="text">
               <h3>{title}</h3>
               <p>{leadin}</p>
-              {/* <ul className="tags">
-                <li>Government</li>
-                <li>Health</li>
-              </ul> */}
+              <ul className="tags">
+                {tags.map(({ type }) => (
+                  <li className={type}>{type}</li>
+                ))}
+              </ul>
             </div>
             <Image src={img.src} alt={img.alt} />
           </a>

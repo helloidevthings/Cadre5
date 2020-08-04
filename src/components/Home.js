@@ -83,7 +83,12 @@ const Home = () => {
       <Clients />
       <WaveHr color="#1f1f1f" bg="white" />
       <Project details={resolution} />
-      <Project details={g2} />
+      <WaveHr
+        color="white"
+        bg="linear-gradient(to top, transparent, rgb(233 233 233 / 37%))"
+      />
+      <Project details={g2} themeColor="mediumTheme" />
+      <WaveHr color="#ededed" bg="white" />
       <Project details={healthmedex} />
       <WaveHr color="white" bg="#efefef" />
       <ProjectsRelated />

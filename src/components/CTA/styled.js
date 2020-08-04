@@ -52,16 +52,16 @@ export default styled.section`
       flex-grow: 99999;
     }
 
-    &:after {
+    /* &:after {
       content: "";
-      background: linear-gradient($white 38%, $light 38%);
+      background: linear-gradient(white 38%, #efefef 38%);
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       right: 0;
       z-index: -1;
-    }
+    } */
 
     img {
       max-width: 90%;

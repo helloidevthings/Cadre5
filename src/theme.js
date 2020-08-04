@@ -8,6 +8,7 @@ export default {
     grayMed: "#4d4d4d",
     grayLt: "#a9a8a8",
     light: "#efefef",
+    lightest: "#ededed",
   },
   boxShadow: {
     main: "0px 4px 8px 2px rgba(0, 0, 0, 0.16)",
@@ -19,7 +20,9 @@ export default {
     blackToDark: "linear-gradient(#020202, #1f1f1f)",
     lightToWhite: "linear-gradient(to right, #efefef, white)",
     lightToTransparent:
-      "linear-gradient(to right,rgb(239 239 239 / 59%), transparent)",
+      "linear-gradient(to right, rgb(239 239 239 / 59%), transparent)",
+    lightToTransparent180:
+      "linear-gradient(to bottom, transparent, rgb(231 231 231 / 59%))",
   },
   font: {
     primary: "fira-sans",
