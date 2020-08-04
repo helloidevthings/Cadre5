@@ -27,10 +27,12 @@ export default ({
         />
         {link && (
           <Button
-            themeColor={link.theme}
-            style={link.style}
+            themeColor={link.themeColor}
+            btnStyle={link.btnStyle}
             href={link.href}
             text={link.text}
+            arrow={true}
+            target={link.target}
           />
         )}
       </div>

@@ -43,8 +43,22 @@ export default styled.a`
   }
 
   &.secondary {
-    color: pink;
+    color: ${(props) => props.theme.color.grayMed};
+
+    svg {
+      margin-left: 0.4em;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: ${(props) => props.theme.color.dark};
+
+      svg {
+        margin-left: 0.8em;
+      }
+    }
   }
+
   &.lightTheme {
     color: white;
     &.primary:after {

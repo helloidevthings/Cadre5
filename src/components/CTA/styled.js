@@ -11,8 +11,10 @@ export default styled.section`
   &.basic {
     flex-direction: row;
   }
+
   &.alt {
     flex-direction: row-reverse;
+    background: ${(props) => props.theme.gradients.lightToTransparent};
   }
   &.active {
     transform: none;

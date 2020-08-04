@@ -14,10 +14,10 @@ export default ({ cards = [] }) => {
             <div className="text">
               <h3>{title}</h3>
               <p>{leadin}</p>
-              <ul className="tags">
+              {/* <ul className="tags">
                 <li>Government</li>
                 <li>Health</li>
-              </ul>
+              </ul> */}
             </div>
             <Image src={img.src} alt={img.alt} />
           </a>

@@ -7,6 +7,13 @@ export default styled.article`
   align-items: center;
   margin: 5rem 0;
 
+  &.active {
+    & > .text-wrapper {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   .text-wrapper {
     max-width: 30em;
     flex-grow: 9999;
@@ -14,11 +21,6 @@ export default styled.article`
     opacity: 0;
     transform: translateY(20%);
     transition: all 1s ease-in-out;
-
-    &.active {
-      opacity: 1;
-      transform: none;
-    }
   }
 
   .image-wrapper {

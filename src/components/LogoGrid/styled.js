@@ -18,6 +18,10 @@ export default styled.section`
     }
   }
 
+  h3 {
+    margin-bottom: 0;
+  }
+
   .grid {
     display: flex;
     flex-wrap: wrap;

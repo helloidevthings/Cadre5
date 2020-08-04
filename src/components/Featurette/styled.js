@@ -11,7 +11,7 @@ export default styled.section`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0 2em;
+    padding: 0 2em 2em;
 
     article:nth-child(2) {
       align-self: flex-end;
