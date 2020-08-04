@@ -8,6 +8,7 @@ import Careers from "./Careers";
 import Projects from "./Projects";
 import ProjResolution from "./ProjResolution";
 import ProjHealthMedEx from "./ProjHealthMedEx";
+import ProjG2 from "./ProjG2";
 import FourOhFour from "./FourOhFour";
 import { AnimatePresence } from "framer-motion";
 
@@ -22,6 +23,7 @@ const Router = () => (
       <Route exact path="/contact" component={ContactPage} />
       <Route exact path="/resolution" component={ProjResolution} />
       <Route exact path="/healthmedex" component={ProjHealthMedEx} />
+      <Route exact path="/g2" component={ProjG2} />
       <Route component={FourOhFour} />
     </Switch>
   </BrowserRouter>

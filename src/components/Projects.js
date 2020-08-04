@@ -7,6 +7,26 @@ import ProjectsRelated from "./ProjectsRelated";
 import ProjectCard from "./Parts/ProjectCard";
 
 export default () => {
+  const healthmedex = [
+    {
+      subheader: "Featured Project",
+      title: "HealthMedEx",
+      leadin: "Wireframing, Prototyping and Usability Testing",
+      descLg:
+        "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
+      img: {
+        src: "/images/healthmedex/healthmedex1.png",
+        alt: "resolution interface graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "./healthmedex",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+  ];
   const resolution = [
     {
       subheader: "Featured Project",
@@ -36,7 +56,7 @@ export default () => {
         "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
 
       img: {
-        src: "/images/g2-screen-array.png",
+        src: "/images/g2/card_graphic.png",
         alt: "g2 graphics",
       },
       link: {
@@ -46,6 +66,11 @@ export default () => {
         themeColor: "dark",
         arrow: true,
       },
+      tags: [
+        {
+          type: "Government",
+        },
+      ],
     },
     {
       subheader: "2007 • 2020",
@@ -64,6 +89,14 @@ export default () => {
         themeColor: "dark",
         arrow: true,
       },
+      tags: [
+        {
+          type: "Medical",
+        },
+        {
+          type: "User Experience",
+        },
+      ],
     },
     {
       title: "Resolution",
@@ -75,14 +108,32 @@ export default () => {
       link: {
         href: "./resolution",
       },
+      tags: [
+        {
+          type: "Government",
+        },
+        {
+          type: "User Experience",
+        },
+      ],
     },
   ];
   return (
     <Page>
-      <Title title="Our Projects" />
-      <WaveHr color="white" bg="#efefef" />
+      <Title title="Our Projects" themeColor="darkTheme" />
+      <WaveHr color="#000000" bg="white" />
+      <WaveHr color="white" bg="white" />
       <ProjectCard cards={cards} />
-      <Project details={resolution} />
+      <WaveHr color="white" bg="white" />
+      <WaveHr
+        color="white"
+        bg="linear-gradient(to top, transparent, rgb(233 233 233 / 37%))"
+      />
+      <Project details={resolution} themeColor="mediumTheme" />
+      <WaveHr color="#ededed" bg="white" />
+      {/* <Project details={resolution} /> */}
+      {/* <WaveHr color="white" bg="white" /> */}
+      <Project details={healthmedex} />
     </Page>
   );
 };

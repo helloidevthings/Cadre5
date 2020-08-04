@@ -20,13 +20,6 @@ const ProjHealthMedEx = () => {
         src: "/images/healthmedex/healthmedex1.png",
         alt: "resolution interface graphics",
       },
-      link: {
-        text: "View Project",
-        href: "./healthmedex",
-        btnStyle: "secondary",
-        themeColor: "dark",
-        arrow: true,
-      },
     },
   ];
   return (

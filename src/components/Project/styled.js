@@ -5,7 +5,8 @@ export default styled.article`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
+  /* margin: 5rem 0; */
+  padding: 5rem 0;
 
   &.active {
     & > .text-wrapper {
@@ -57,5 +58,19 @@ export default styled.article`
       height: auto;
       vertical-align: middle;
     }
+  }
+  &.darkTheme {
+    background: ${(props) => props.theme.gradients.redToBlack};
+    color: white;
+  }
+
+  &.mediumTheme {
+    background: linear-gradient(to bottom, transparent, rgb(237 237 237));
+    color: black;
+  }
+
+  &.lightTheme {
+    background: white;
+    color: black;
   }
 `;

@@ -15,6 +15,10 @@ export default styled.section`
     max-width: 600px;
   }
 
+  h3 {
+    font-size: 1.4em;
+  }
+
   & .InfoItems {
     margin-top: 2em;
   }

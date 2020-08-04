@@ -4,7 +4,7 @@ export default styled.section`
   & a {
     color: white;
     text-decoration: none;
-    background-color: ${(props) => props.theme.color.dark};
+    background: ${(props) => props.theme.gradients.darkToGrayMd};
     flex: 1 1 auto;
     margin: 0.5em;
     max-width: 20em;
@@ -12,8 +12,7 @@ export default styled.section`
     box-shadow: ${(props) => props.theme.boxShadow.main};
     opacity: 0;
     transform: scale(1.1);
-    transition: opacity 0.8s ease-in-out, transform 0.4s ease-in-out,
-      background-color 1s ease-in-out;
+    transition: opacity 0.8s ease-in-out, transform 0.4s ease-in-out;
     transition-delay: 0.4s;
 
     &.active {
@@ -22,8 +21,7 @@ export default styled.section`
     }
 
     &:hover {
-      transform: scale(1.02);
-      background-color: ${(props) => props.theme.color.black};
+      background: ${(props) => props.theme.color.black};
     }
 
     &:nth-child(2) {
@@ -42,17 +40,18 @@ export default styled.section`
   }
 
   & .text {
-    padding: 1.3em;
+    padding: 1.3em 1.5em 1.4em;
   }
 
   & figure {
     position: relative;
-    max-height: 280px;
+    max-height: 250px;
     overflow: hidden;
-
+    border-radius: 0 0 0.7em 0.7em;
+    
     img {
-      width: 100%;
       height: 100%;
+      background: white; 
     }
   }
 
@@ -63,15 +62,22 @@ export default styled.section`
 
     li {
       list-style: none;
+      font-size: .8em; 
       margin-right: 0.4em;
       border-radius: 1em;
       padding: 0.1em 0.8em;
       &:nth-child(even) {
-        background-color: ${(props) => props.theme.color.grayMd};
+        background-color: ${(props) => props.theme.color.grayMed};
       }
       &:nth-child(odd) {
         background-color: ${(props) => props.theme.color.primary};
       }
+      /* &.Government {
+        background-color: ${(props) => props.theme.color.grayMed};
+      }
+      &.User Experience {
+        background-color: ${(props) => props.theme.color.grayMed};
+      } */
     }
   }
 `;
