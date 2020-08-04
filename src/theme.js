@@ -17,6 +17,9 @@ export default {
     redToBlack: "linear-gradient(#2e0000, #000000)",
     darkToGrayMd: "linear-gradient(#1f1f1f,#4d4d4d)",
     blackToDark: "linear-gradient(#020202, #1f1f1f)",
+    lightToWhite: "linear-gradient(to right, #efefef, white)",
+    lightToTransparent:
+      "linear-gradient(to right,rgb(239 239 239 / 59%), transparent)",
   },
   font: {
     primary: "fira-sans",

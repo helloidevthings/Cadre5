@@ -1,20 +1,15 @@
 import React from "react";
-
-import Page from "./Page";
-import Hero from "./Hero";
-import Clients from "./Clients";
 import Project from "./Project";
-import ProjectsRelated from "./ProjectsRelated";
-
-import Contact from "./Contact";
-import HeroCareers from "./HeroCareers";
-import HeroBasic from "./HeroBasic";
+import Page from "./Page";
 import WaveHr from "./Parts/WaveHR";
+import Title from "./Parts/Title";
+import ProjectsRelated from "./ProjectsRelated";
+import ProjectCard from "./Parts/ProjectCard";
 
-const Home = () => {
+export default () => {
   const resolution = [
     {
-      subheader: "2007 • 2020",
+      subheader: "Featured Project",
       title: "RESolution",
       leadin: "Simplify Work. Improve Scientific Productivity.",
       descLg:
@@ -32,7 +27,7 @@ const Home = () => {
       },
     },
   ];
-  const g2 = [
+  const cards = [
     {
       subheader: "2007 • 2020",
       title: "G2",
@@ -52,8 +47,6 @@ const Home = () => {
         arrow: true,
       },
     },
-  ];
-  const healthmedex = [
     {
       subheader: "2007 • 2020",
       title: "HealthMedEx",
@@ -72,30 +65,24 @@ const Home = () => {
         arrow: true,
       },
     },
+    {
+      title: "Resolution",
+      leadin: "Simplify Work. Improve Scientific Productivity.",
+      img: {
+        src: "/images/graph-full-min.png",
+        alt: "resolution interface graphics",
+      },
+      link: {
+        href: "./resolution",
+      },
+    },
   ];
   return (
     <Page>
-      <Hero
-        title="We are Cadre5"
-        tagline="We design and develop enterprise and scientific software for global leaders."
-        ctaText="About Us"
-      />
-      <Clients />
-      <WaveHr color="#1f1f1f" bg="white" />
-      <Project details={resolution} />
-      <Project details={g2} />
-      <Project details={healthmedex} />
+      <Title title="Our Projects" />
       <WaveHr color="white" bg="#efefef" />
-      <ProjectsRelated />
-      <Contact />
-      <div className="Careers"></div>
-      <HeroCareers />
-      <HeroBasic
-        title=""
-        img={{ src: "/images/cadre5office.jpg", alt: "Cadre5 Building" }}
-      />
+      <ProjectCard cards={cards} />
+      <Project details={resolution} />
     </Page>
   );
 };
-
-export default Home;

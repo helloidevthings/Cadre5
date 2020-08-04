@@ -145,6 +145,11 @@ blockquote {
   stroke-dashoffset: 1000;
   animation: draw 5s ease-in-out infinite alternate; }
 
+.drawIN1x {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 5s ease-in-out; }
+
 .item-to {
   animation-duration: 10s;
   animation-iteration-count: infinite;

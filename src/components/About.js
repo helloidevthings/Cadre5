@@ -43,8 +43,9 @@ const About = () => (
         themeColor: "dark",
         btnStyle: "secondary",
         text: "Learn More",
+        target: true,
         href:
-          "https://www.businesswire.com/news/home/20151110006186/en/Groundbreaking-Government-Programs-Recognized-15th-Annual-Excellence.Gov",
+          "https://www.ornl.gov/news/six-area-firms-receive-ornl-small-business-awards",
       }}
     />
     <CTA
@@ -52,7 +53,7 @@ const About = () => (
       leadin="Overall WinnerExcellence.gov Awards"
       desc="Research Enterprise Solution (RESolution) – To integrate multiple new technologies for Oak Ridge National Laboratory (ORNL) into one seamless user experience. The application offers streamlined, one-stop access to ORNL data from the underlying LOB systems – reducing the daily hassle of IT and allowing researchers to be productive anytime, anywhere and on any device."
       img={{
-        src: "/images/graph-full-min.png",
+        src: "/images/resolution/procurement_dash.png",
         alt: "resolution interface graphics",
       }}
       type="alt"
@@ -60,6 +61,7 @@ const About = () => (
         themeColor: "dark",
         btnStyle: "secondary",
         text: "Learn More",
+        target: true,
         href:
           "https://www.businesswire.com/news/home/20151110006186/en/Groundbreaking-Government-Programs-Recognized-15th-Annual-Excellence.Gov",
       }}
@@ -77,8 +79,9 @@ const About = () => (
         themeColor: "dark",
         btnStyle: "secondary",
         text: "Learn More",
+        target: true,
         href:
-          "https://www.businesswire.com/news/home/20151110006186/en/Groundbreaking-Government-Programs-Recognized-15th-Annual-Excellence.Gov",
+          "https://oakridgetoday.com/2014/09/29/cadre5-wins-small-business-subcontractor-year-award/",
       }}
     />
     <LogoGrid />

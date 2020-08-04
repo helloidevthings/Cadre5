@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export default styled.section`
+export default styled.div`
   .date-wrap {
     margin: 1em 0;
     position: relative;

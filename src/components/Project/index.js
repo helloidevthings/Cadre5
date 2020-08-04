@@ -3,44 +3,47 @@ import Button from "../Parts/Button";
 import WaveHr from "../Parts/WaveHR";
 import IntroText from "../Parts/IntroText";
 import Image from "../Parts/Image";
-import { useInView } from "react-intersection-observer";
 import Styles from "./styled";
+import { useInView } from "react-intersection-observer";
 
-export default ({
-  title,
-  subheader,
-  leadin,
-  descLg,
-  desc,
-  img = "",
-  logo = "",
-  link = "",
-}) => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.18 });
+export default ({ details = [] }) => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
 
   return (
-    <Styles>
-      <div className={`text-wrapper  ${inView ? "active" : ""}`} ref={ref}>
-        <h2>{title}</h2>
-        <IntroText
-          subheader={subheader}
-          leadin={leadin}
-          descLg={descLg}
-          desc={desc}
-        />
-        {link && (
-          <Button
-            themeColor={link.theme}
-            btnStyle={link.style}
-            href={link.href}
-            text={link.text}
-          />
-        )}
-        {logo && <Image src={logo.src} />}
-      </div>
-      <div className={`image-wrapper ${inView ? "active" : ""}`} ref={ref}>
-        <Image src={img.src} alt={img.alt} />
-      </div>
-    </Styles>
+    <div>
+      {details.map(
+        (
+          { subheader, title, leadin, descLg, desc, img = "", link = "" },
+          i
+        ) => (
+          <Styles key={i} className={inView ? "active" : ""}>
+            <div className="text-wrapper" ref={ref}>
+              <h2>{title}</h2>
+              <IntroText
+                subheader={subheader}
+                leadin={leadin}
+                descLg={descLg}
+                desc={desc}
+              />
+              {link && (
+                <Button
+                  themeColor={link.themeColor}
+                  btnStyle={link.btnStyle}
+                  href={link.href}
+                  text={link.text}
+                  arrow={link.arrow}
+                />
+              )}
+            </div>
+            <div
+              className={`image-wrapper ${inView ? "active" : ""}`}
+              ref={ref}
+            >
+              <Image src={img.src} alt={img.alt} />
+            </div>
+          </Styles>
+        )
+      )}
+    </div>
   );
 };

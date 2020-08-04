@@ -12,7 +12,7 @@ export default styled.section`
     box-shadow: ${(props) => props.theme.boxShadow.main};
     opacity: 0;
     transform: scale(1.1);
-    transition: opacity 0.8s ease-in-out, transform 0.5s ease-in-out,
+    transition: opacity 0.8s ease-in-out, transform 0.4s ease-in-out,
       background-color 1s ease-in-out;
     transition-delay: 0.4s;
 
@@ -22,7 +22,7 @@ export default styled.section`
     }
 
     &:hover {
-      /* transform: scale(1.02); */
+      transform: scale(1.02);
       background-color: ${(props) => props.theme.color.black};
     }
 
@@ -45,7 +45,7 @@ export default styled.section`
     padding: 1.3em;
   }
 
-  &figure {
+  & figure {
     position: relative;
     max-height: 280px;
     overflow: hidden;
