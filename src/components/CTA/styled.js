@@ -5,16 +5,15 @@ export default styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 
-  &.basic {
+  &.row {
     flex-direction: row;
   }
 
-  &.alt {
+  &.reverse {
     flex-direction: row-reverse;
-    background: ${(props) => props.theme.gradients.lightToTransparent};
   }
   &.active {
     transform: none;
@@ -72,5 +71,15 @@ export default styled.section`
       padding: 3em 2em;
       vertical-align: middle;
     }
+  }
+  &.lightTheme {
+    background-color: white;
+  }
+  &.darkTheme {
+    background-color: ${(props) => props.theme.color.dark};
+    color: white;
+  }
+  &.mediumTheme {
+    background: ${(props) => props.theme.gradients.lightToTransparent};
   }
 `;

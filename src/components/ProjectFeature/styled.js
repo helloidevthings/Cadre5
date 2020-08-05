@@ -35,7 +35,8 @@ export default styled.section`
     background-color: white;
   }
   &.darkTheme {
-    background-color: ${(props) => props.theme.color.dark};
+    background-color: ${(props) => props.theme.color.grayDark};
+    color: white;
   }
   &.mediumTheme {
     background-color: ${(props) => props.theme.color.light};

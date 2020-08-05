@@ -33,17 +33,23 @@ export default styled.section`
       display: block;
       width: ${(props) => props.theme.circle.size};
       height: ${(props) => props.theme.circle.size};
+      /* margin-right: 0;
+      margin-bottom: 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0; */
     }
 
     &:after {
       content: "";
       position: absolute;
       background-color: ${(props) => props.theme.color.primary};
-      width: ${(props) => props.theme.circle.size};
-      height: ${(props) => props.theme.circle.size};
-      border-radius: ${(props) => props.theme.circle.size};
-      top: 0;
-      left: 0;
+      width: 2.4em;
+      height: 2.4em;
+      border-radius: 2.4em;
+      top: -0.18em;
+      left: -0.18em;
       z-index: -1;
     }
   }

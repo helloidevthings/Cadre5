@@ -4,6 +4,7 @@ import IntroText from "../Parts/IntroText";
 import Image from "../Parts/Image";
 import Button from "../Parts/Button";
 import Styles from "./styled";
+import theme from "../../theme";
 
 export default ({
   subheader,
@@ -11,13 +12,19 @@ export default ({
   descLg,
   desc,
   img = "",
-  type,
+  row,
+  themeColor,
   link = "",
 }) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
 
   return (
-    <Styles className={inView ? `active ${type}` : `${type}`} ref={ref}>
+    <Styles
+      className={
+        inView ? `active ${row} ${themeColor}` : `${row} ${themeColor}`
+      }
+      ref={ref}
+    >
       <div className="text text-wrapper">
         <IntroText
           subheader={subheader}

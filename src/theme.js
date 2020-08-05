@@ -5,6 +5,7 @@ export default {
     primary: "#c10230",
     darkRed: "#2e0000",
     dark: "#1f1f1f",
+    grayDark: "#383838",
     grayMed: "#4d4d4d",
     grayLt: "#a9a8a8",
     light: "#efefef",
