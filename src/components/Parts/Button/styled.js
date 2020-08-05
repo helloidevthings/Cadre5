@@ -51,7 +51,7 @@ export default styled.a`
     }
 
     &:hover {
-      color: ${(props) => props.theme.color.dark};
+      /* color: ${(props) => props.theme.color.dark}; */
 
       svg {
         margin-left: 0.8em;
@@ -67,6 +67,9 @@ export default styled.a`
   }
   &.darkTheme {
     color: black;
+    &:hover {
+      color: ${(props) => props.theme.color.grayLt};
+    }
 
     &.primary:after {
       background-color: white;

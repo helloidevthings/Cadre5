@@ -8,7 +8,7 @@ export default styled.section`
   padding-bottom: 3em;
 
   figure {
-    max-width: 900px;
+    max-width: 1090px;
 
     img {
       width: 100%;
@@ -30,7 +30,12 @@ export default styled.section`
   }
 
   &.darkTheme {
-    background: ${(props) => props.theme.color.dark};
+    background: ${(props) => props.theme.color.grayDark};
+    figure {
+      img {
+        border-color: black;
+      }
+    }
   }
 
   &.mediumTheme {

@@ -49,6 +49,8 @@ const About = () => (
       }}
     />
     <CTA
+      row="reverse"
+      themeColor="mediumTheme"
       subheader="Awarded in 2015"
       leadin="Overall WinnerExcellence.gov Awards"
       desc="Research Enterprise Solution (RESolution) – To integrate multiple new technologies for Oak Ridge National Laboratory (ORNL) into one seamless user experience. The application offers streamlined, one-stop access to ORNL data from the underlying LOB systems – reducing the daily hassle of IT and allowing researchers to be productive anytime, anywhere and on any device."
@@ -67,7 +69,7 @@ const About = () => (
       }}
     />
     <CTA
-      subheader="Awarded in 2015"
+      subheader="Awarded in 2014"
       leadin="U.S. Small Business Administration, Southeast Subcontractor of the Year"
       desc="Cadre5, was recently presented with the U.S. Small Business Administration’s 2014 Small Business Subcontractor of the Year Award for Region 4, which includes Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee."
       img={{
