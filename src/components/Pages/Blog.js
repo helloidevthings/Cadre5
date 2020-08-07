@@ -17,11 +17,7 @@ export default () => {
         alt: "g2 graphics",
       },
       link: {
-        text: "View Project",
-        href: "/g2",
-        btnStyle: "secondary",
-        themeColor: "dark",
-        arrow: true,
+        href: "/Posts/ProjectManagementGraphs",
       },
     },
     {
