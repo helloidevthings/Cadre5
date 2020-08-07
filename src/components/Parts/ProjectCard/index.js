@@ -3,11 +3,11 @@ import { useInView } from "react-intersection-observer";
 import Image from "../Image";
 import Styles from "./styled";
 
-export default ({ cards = [] }) => {
+export default ({ cards = [], themeColor }) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
 
   return (
-    <Styles>
+    <Styles className={themeColor ? themeColor : ""}>
       <div className="cards">
         {cards.map(({ title, leadin, img = "", link = "", tags = [] }) => (
           <a href={link.href} ref={ref} className={inView ? "active" : ""}>

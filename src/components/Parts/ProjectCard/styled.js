@@ -80,4 +80,18 @@ export default styled.section`
       } */
     }
   }
+
+  &.mediumTheme a {
+    color: black;
+    background: ${(props) => props.theme.color.light};
+    &:hover {
+      color: ${(props) => props.theme.color.primary};
+    }
+    h3 {
+      font-size: 1.2em; 
+    }
+    p {
+      font-size: .89em; 
+    }
+  }
 `;

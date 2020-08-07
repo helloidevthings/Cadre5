@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
-import Project from "./Project";
-import Page from "./Page";
-import WaveHr from "./Parts/WaveHR";
-import ProjectFeature from "./ProjectFeature";
-import ProjectsRelated from "./ProjectsRelated";
-import projects from "../projectData";
-import FeatureApp from "./FeatureApp";
-import IconDesc from "./Parts/IconDesc";
+import Project from "../../Project";
+import Page from "../../Page";
+import WaveHr from "../../Parts/WaveHR";
+import ProjectFeature from "../../ProjectFeature";
+import ProjectsRelated from "../../ProjectsRelated";
+import FeatureApp from "../../FeatureApp";
+import IconDesc from "../../Parts/IconDesc";
 
 const ProjResolution = () => {
   const details = [
@@ -61,7 +60,7 @@ const ProjResolution = () => {
           descLg:
             "The responsive design makes the software accessible from desktops, smartphones and tablets. RESolution's design provides an enjoyable and efficient user experience for the researcher.",
           desc: "",
-          svg: "ChartArrow",
+          svg: "Devices",
         }}
         img={{
           src: "/images/resolution/responsive_ipad_phone.png",
@@ -151,7 +150,7 @@ const ProjResolution = () => {
             "The most powerful and hardworking screen in the project management tool is the portfolio dashboard.",
           desc:
             "Charts at the top aggregate milestone, plan, cost and performance data for the portfolio. A data grid summarizes key project metrics, and users can expand the grid for a second layer of detail.",
-          svg: "Wrench",
+          svg: "Briefcase",
         }}
         img={{
           src: "/images/resolution/portfolio-dash3.png",
@@ -278,10 +277,24 @@ const ProjResolution = () => {
             "Conducting world leading research requires a wide range of supplies and services, from polar bear guards in the arctic to neutron target vessels.",
           desc:
             "Researchers can track the full procurement lifecycle. This application provides a quick glance of active and pending information including: purchase requisitions, purchase orders, agreements, and items awaiting delivery.",
-          svg: "Money",
+          svg: "CircleChart",
         }}
         img={{
           src: "/images/resolution/procurement_dash.png",
+          alt: "",
+        }}
+      />
+      <ProjectFeature
+        themeColor="mediumTheme"
+        introText={{
+          title: "Procurement",
+          descLg:
+            "Conducting world leading research requires a wide range of supplies and services, from polar bear guards in the arctic to neutron target vessels.",
+          desc:
+            "Researchers can track the full procurement lifecycle. This application provides a quick glance of active and pending information including: purchase requisitions, purchase orders, agreements, and items awaiting delivery.",
+        }}
+        img={{
+          src: "/images/resolution/circle_chart3.png",
           alt: "",
         }}
       />
