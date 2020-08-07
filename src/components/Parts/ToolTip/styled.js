@@ -32,6 +32,7 @@ export default styled.div`
     font-size: 0.7em;
     border: none;
     background-color: ${(props) => props.theme.color.grayMed};
+    z-index: 0;
   }
 
   .wrapper {

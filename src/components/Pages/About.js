@@ -1,11 +1,11 @@
 import React from "react";
 
-import Page from "./Page";
-import HeroBasic from "./HeroBasic";
-import CTA from "./CTA";
-import Featurette from "./Featurette";
-import Title from "./Parts/Title";
-import LogoGrid from "./LogoGrid";
+import Page from "../Page";
+import HeroBasic from "../HeroBasic";
+import CTA from "../CTA";
+import Featurette from "../Featurette";
+import Title from "../Parts/Title";
+import LogoGrid from "../LogoGrid";
 
 const About = () => (
   <Page>

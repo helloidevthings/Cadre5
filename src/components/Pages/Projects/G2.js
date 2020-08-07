@@ -1,11 +1,11 @@
 import React from "react";
-import Project from "./Project";
-import Page from "./Page";
-import WaveHr from "./Parts/WaveHR";
-import CTA from "./CTA";
-import FeatureApp from "./FeatureApp";
-import ProjectFeature from "./ProjectFeature";
-import ProjectsRelated from "./ProjectsRelated";
+import Project from "../../Project";
+import Page from "../../Page";
+import WaveHr from "../../Parts/WaveHR";
+import CTA from "../../CTA";
+import FeatureApp from "../../FeatureApp";
+import ProjectFeature from "../../ProjectFeature";
+import ProjectsRelated from "../../ProjectsRelated";
 
 const ProjResolution = () => {
   const details = [

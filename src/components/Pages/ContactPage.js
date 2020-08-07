@@ -1,6 +1,6 @@
 import React from "react";
-import Page from "./Page";
-import Contact from "./Contact";
+import Page from "../Page";
+import Contact from "../Contact";
 
 const ContactPage = () => (
   <Page>

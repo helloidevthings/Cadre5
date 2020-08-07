@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const AbstractPointGraph = () => (
   <svg
@@ -7,7 +8,7 @@ const AbstractPointGraph = () => (
     overflow="visible"
     viewBox="0 0 1439.05 460.96"
   >
-    <path
+    <motion.path
       class="st40 draw-in"
       d="M450.52 432.05l218.97-166.46 549.91 53.51L1421.53 2.03l-332.92 387.42L416.83 275.5.69 460.79z"
     />

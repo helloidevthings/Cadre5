@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 
 export default styled.section`
   background: linear-gradient(
-    white 20%,
-    ${(props) => props.theme.color.light} 20%
+    white 25%,
+    ${(props) => props.theme.color.light} 25%
   );
 
   .wrap {

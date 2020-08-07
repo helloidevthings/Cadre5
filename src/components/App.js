@@ -5,17 +5,20 @@ import theme from "../theme";
 import { ThemeProvider } from "emotion-theming";
 import AppStyles from "./App.styled.js";
 import { AnimatePresence } from "framer-motion";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <AppStyles className="Main">
-        <Header />
-        <AnimatePresence>
-          <Router />
-        </AnimatePresence>
-      </AppStyles>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <AppStyles className="Main">
+          <Header />
+          <AnimatePresence>
+            <Router />
+          </AnimatePresence>
+        </AppStyles>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 };
 

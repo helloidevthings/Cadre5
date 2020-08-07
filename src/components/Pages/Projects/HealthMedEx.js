@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
-import Project from "./Project";
-import Page from "./Page";
-import WaveHr from "./Parts/WaveHR";
-import ProjectFeature from "./ProjectFeature";
-import ProjectsRelated from "./ProjectsRelated";
-import projects from "../projectData";
-import FeatureApp from "./FeatureApp";
-import IconDesc from "./Parts/IconDesc";
+import Project from "../../Project";
+import Page from "../../Page";
+import WaveHr from "../../Parts/WaveHR";
+import ProjectFeature from "../../ProjectFeature";
+import ProjectsRelated from "../../ProjectsRelated";
+import FeatureApp from "../../FeatureApp";
+import IconDesc from "../../Parts/IconDesc";
 
 const ProjHealthMedEx = () => {
   const details = [
@@ -50,7 +49,7 @@ const ProjHealthMedEx = () => {
             "We created the Vision App to aid healthcare providers. The system indicates who should receive care and the type of care.",
           desc:
             "Cards with the names of each resident are illuminated with a vibrant yellow color. Inside each patient's record, care and assessments that need completing are illuminated. The healthcare professionals know they have successfully delivered all scheduled care once the screen is quiescent.",
-          svg: "ChartArrow",
+          svg: "People",
         }}
         img={{
           src: "/images/healthmedex/names_inyellow.png",
@@ -67,7 +66,7 @@ const ProjHealthMedEx = () => {
             "We wanted to create an app with vibrant illustrations that could easily communicate the type of care that needed to be given.",
           desc:
             "The app would need to be usable on a touch screen device. Our users needed to quickly learn how to use the app. We conducted user tests with wireframes to help prioritize the right information for our users. ",
-          svg: "List",
+          svg: "Shapes",
         }}
         img={{
           src: "/images/healthmedex/healthmedex3.png",
@@ -103,7 +102,7 @@ const ProjHealthMedEx = () => {
             "Detailed and illustrative iconography was developed to make the interface easy to learn. The client set a goal of five-minute standup training, which was achieved.",
           desc:
             "The development of the iconography began with medical illustrations. Artists iterated through concepts with hand sketches and once approved, moved to final design.",
-          svg: "Wrench",
+          svg: "Design",
         }}
         img={{
           src: "/images/healthmedex/icons_healthmedex.png",
@@ -118,7 +117,7 @@ const ProjHealthMedEx = () => {
             "The design process began with information architecture and interaction flow diagrams.",
           desc:
             "Wireframes were created to explore alternative approaches to navigating and interacting with the data.",
-          svg: "Wrench",
+          svg: "ExcelDoc",
         }}
         img={{
           src: "/images/healthmedex/wireframing.png",
@@ -134,7 +133,7 @@ const ProjHealthMedEx = () => {
             "We conducted live user testing in our office and visited care facilities.",
           desc:
             "A touch screen prototype was developed in gray-frames to test the usability of different design paradigms. To minimize occlusion we positioned the navigation and action buttons at the bottom of the screen.",
-          svg: "Wrench",
+          svg: "Verified",
         }}
         img={{
           src: "/images/healthmedex/userTest2.png",

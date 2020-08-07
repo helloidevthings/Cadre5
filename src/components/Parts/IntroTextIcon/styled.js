@@ -33,6 +33,7 @@ export default styled.section`
       display: block;
       width: ${(props) => props.theme.circle.size};
       height: ${(props) => props.theme.circle.size};
+
       /* margin-right: 0;
       margin-bottom: 0;
       margin-block-start: 0;
