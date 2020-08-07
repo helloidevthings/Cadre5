@@ -304,28 +304,6 @@ const ProjResolution = () => {
           alt: "",
         }}
         themeColor="mediumTheme"
-        tips={[
-          {
-            i: 1,
-            top: "20%",
-            left: "10%",
-            desc:
-              "This chart shows you a combination of project funding, cost, and how much has been invoiced from start to finish",
-          },
-          {
-            i: 2,
-            top: "40%",
-            left: "50%",
-            desc:
-              "Toggle between what has been spent and what is left in the project",
-          },
-          {
-            i: 3,
-            top: "20%",
-            left: "60%",
-            desc: "Different stats are highlighted depending on your selection",
-          },
-        ]}
       />
       {/* Estimator */}
       <ProjectFeature

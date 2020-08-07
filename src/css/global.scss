@@ -19,6 +19,7 @@ body {
 .Main {
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
   justify-content: space-between;
   // width: 100vw;
   // height: 100vh;
@@ -36,7 +37,14 @@ body {
   //   flex-grow: 99999;
   // }
 }
-
+.blog {
+  max-width: 40em;
+  margin: 3em auto;
+  p {
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+  }
+}
 .text-wrapper {
   padding-left: 4em;
   padding-right: 3em;

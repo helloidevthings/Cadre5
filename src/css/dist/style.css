@@ -18,11 +18,19 @@ body {
 .Main {
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
   justify-content: space-between; }
 
 .Content {
   flex-grow: 9999;
   width: 90%; }
+
+.blog {
+  max-width: 40em;
+  margin: 3em auto; }
+  .blog p {
+    margin-top: 1.3em;
+    margin-bottom: 1.3em; }
 
 .text-wrapper {
   padding-left: 4em;
