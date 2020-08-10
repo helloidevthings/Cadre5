@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 export default ({ title, quote }) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
   const partners = [
-    { name: "Ken Lowry", title: "Senior Partner", img: "Ken" },
+    { name: "Ken Lowery", title: "Senior Partner", img: "Ken" },
     { name: "Steve Hicks", title: "President & CEO", img: "Steve" },
     { name: "Chris O'Neal", title: "Senior Partner", img: "Chris" },
   ];
