@@ -38,59 +38,11 @@ export default () => {
       },
     },
     {
-      title: "Project Management Graphs",
-      leadin: "We solve issues with Project Management...",
+      title: "User Testing with Wireframes",
+      leadin: "We used low fidelity wireframes to test our prototypes.",
 
       img: {
-        src: "/images/resolution/circle_chart3.png",
-        alt: "g2 graphics",
-      },
-      link: {
-        text: "View Project",
-        href: "/g2",
-        btnStyle: "secondary",
-        themeColor: "dark",
-        arrow: true,
-      },
-    },
-    {
-      title: "Project Management Graphs",
-      leadin: "We solve issues with Project Management...",
-
-      img: {
-        src: "/images/resolution/circle_chart3.png",
-        alt: "g2 graphics",
-      },
-      link: {
-        text: "View Project",
-        href: "/g2",
-        btnStyle: "secondary",
-        themeColor: "dark",
-        arrow: true,
-      },
-    },
-    {
-      title: "Project Management Graphs",
-      leadin: "We solve issues with Project Management...",
-
-      img: {
-        src: "/images/resolution/circle_chart3.png",
-        alt: "g2 graphics",
-      },
-      link: {
-        text: "View Project",
-        href: "/g2",
-        btnStyle: "secondary",
-        themeColor: "dark",
-        arrow: true,
-      },
-    },
-    {
-      title: "Project Management Graphs",
-      leadin: "We solve issues with Project Management...",
-
-      img: {
-        src: "/images/resolution/circle_chart3.png",
+        src: "/images/healthmedex/userTest2.png",
         alt: "g2 graphics",
       },
       link: {
@@ -107,6 +59,7 @@ export default () => {
       <Title title="UX Blog" themeColor="darkTheme" />
       <WaveHr color="#000000" bg="white" />
       <WaveHr color="white" bg="white" />
+      <ProjectCard cards={cards} themeColor="mediumTheme" />
       <ProjectCard cards={cards} themeColor="mediumTheme" />
       <WaveHr color="white" bg="white" />
     </Page>

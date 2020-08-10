@@ -14,7 +14,10 @@ export default () => {
         }}
       />{" "}
       <article className="blog">
-        <h2>How we helped our clients with this stuff...</h2>
+        <h2>
+          This graph lets the Project Manager quickly view the status of a
+          project.
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
@@ -54,9 +57,9 @@ export default () => {
         introText={{
           title: "Procurement",
           descLg:
-            "Conducting world leading research requires a wide range of supplies and services, from polar bear guards in the arctic to neutron target vessels.",
+            "This graph makes it easy for the project manager to view the status of a project.",
           desc:
-            "Researchers can track the full procurement lifecycle. This application provides a quick glance of active and pending information including: purchase requisitions, purchase orders, agreements, and items awaiting delivery.",
+            "Each segment represents a month of the timeline. The green represents the funding for the project. The blue is how much money has been spent so far. The yellow represents how much has be invoiced so far.",
         }}
         img={{
           src: "/images/resolution/circle_chart3.png",
