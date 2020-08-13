@@ -4,6 +4,7 @@ export default styled.section`
   color: ${(props) => props.theme.color.white};
   background: ${(props) => props.theme.color.dark};
   padding-top: 3em;
+  /* min-height: 100vh; */
 
   & .wrapper {
     display: flex;
