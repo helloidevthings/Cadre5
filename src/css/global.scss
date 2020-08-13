@@ -37,6 +37,7 @@ body {
   //   flex-grow: 99999;
   // }
 }
+
 .blog {
   max-width: 40em;
   margin: 3em auto;
@@ -56,6 +57,9 @@ body {
   text-align: center;
 }
 
+a {
+  color: $primary;
+}
 h1,
 h2,
 h3 {

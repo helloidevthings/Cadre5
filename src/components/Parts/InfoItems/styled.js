@@ -1,6 +1,10 @@
 import styled from "@emotion/styled";
 
 export default styled.div`
+  a {
+    color: white;
+    text-decoration: none;
+  }
   .InfoItems {
     display: flex;
     flex-wrap: wrap;
