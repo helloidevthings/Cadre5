@@ -13,11 +13,12 @@ export default () => {
             <Logo />
           </a>
         </div>
-        {/* <button
+        <button
+          className="menuButton"
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-        ></button> */}
+        ></button>
         <Nav isOpen={isOpen} />
       </nav>
     </Styles>
