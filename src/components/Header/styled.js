@@ -6,6 +6,12 @@ export default styled.header`
   z-index: 1000;
   padding: 1em;
 
+  .menuButton {
+    @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+      display: none;
+    }
+  }
+
   .Navigation {
     display: flex;
     flex-direction: row;
