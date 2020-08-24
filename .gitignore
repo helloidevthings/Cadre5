@@ -1,2 +1,5 @@
 node_modules
-src/Components/Pages/Projects/Test.js
+src/Components/Pages/Projects/Mavnet.js
+src/Components/Pages/Projects/Runestone.js
+public/mavnet
+public/runestone
