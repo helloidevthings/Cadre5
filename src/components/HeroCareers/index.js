@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "../Parts/Button";
 import Image from "../Parts/Image";
+import IntroText from "../Parts/IntroText";
 import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
 
-export default () => {
+export default ({}) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
 
   return (
