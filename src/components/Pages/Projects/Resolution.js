@@ -7,7 +7,7 @@ import ProjectsRelated from "../../ProjectsRelated";
 import FeatureApp from "../../FeatureApp";
 import IconDesc from "../../Parts/IconDesc";
 
-const ProjResolution = () => {
+const Resolution = () => {
   const details = [
     {
       subheader: "2007 • 2020",
@@ -18,13 +18,6 @@ const ProjResolution = () => {
       img: {
         src: "/images/resolution/anothergraph.png",
         alt: "resolution interface graphics",
-      },
-      link: {
-        themeColor: "dark",
-        btnStyle: "secondary",
-        text: "View Project",
-        href: "/resolution",
-        arrow: true,
       },
     },
   ];
@@ -347,4 +340,4 @@ const ProjResolution = () => {
   );
 };
 
-export default ProjResolution;
+export default Resolution;

@@ -9,6 +9,7 @@ import Blog from "./Pages/Blog";
 import Projects from "./Pages/Projects";
 import Resolution from "./Pages/Projects/Resolution";
 import HealthMedEx from "./Pages/Projects/HealthMedEx";
+import Mavnet from "./Pages/Projects/Mavnet";
 import ProjectManagementGraphs from "./Pages/Posts/ProjectManagementGraphs";
 import G2 from "./Pages/Projects/G2";
 import FourOhFour from "./Pages/FourOhFour";
@@ -29,6 +30,7 @@ const Router = () => (
     <Route exact path="/Blog" component={Blog} />
     <Route exact path="/Resolution" component={Resolution} />
     <Route exact path="/Healthmedex" component={HealthMedEx} />
+    <Route exact path="/Mavnet" component={Mavnet} />
     <Route exact path="/G2" component={G2} />
     <Route component={FourOhFour} />
   </Switch>
