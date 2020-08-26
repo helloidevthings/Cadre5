@@ -6,7 +6,6 @@ export default ({ isOpen }) => {
   const mainNav = [
     { name: "About", path: "/About" },
     { name: "Projects", path: "/Projects" },
-    { name: "UX Blog", path: "/Blog" },
     { name: "Careers", path: "/Careers" },
     { name: "Contact", path: "/Contact" },
   ];
