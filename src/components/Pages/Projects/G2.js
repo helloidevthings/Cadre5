@@ -76,24 +76,13 @@ const ProjResolution = () => {
       />
       <WaveHr color="#efefef" bg="#383838" />
       <WaveHr color="#383838" bg="#383838" />
-      <FeatureApp
-        img={{ src: "/images/g2/desktop.png", alt: "" }}
-        themeColor="darkTheme"
-        tips={[
-          {
-            i: 1,
-            top: "13%",
-            left: "3%",
-            desc: "Dashboard?",
-          },
-        ]}
-      />
       <ProjectFeature
         themeColor="darkTheme"
-        row="reverse"
+        row="basic"
         introText={{
-          title: "Main Dashbaord",
-          descLg: "Dashboard?",
+          title: "Main Dashboard",
+          descLg:
+            "Gives an overview of project state and notifications that need to be addressed.(?)",
           desc: "Details?",
           svg: "Wrench",
         }}
@@ -103,16 +92,8 @@ const ProjResolution = () => {
         }}
       />
       <FeatureApp
-        img={{ src: "/images/g2/detail-graph.png", alt: "" }}
+        img={{ src: "/images/g2/desktop.png", alt: "" }}
         themeColor="darkTheme"
-        tips={[
-          {
-            i: 1,
-            top: "13%",
-            left: "3%",
-            desc: "Dashboard?",
-          },
-        ]}
       />
       <ProjectFeature
         themeColor="darkTheme"
@@ -124,12 +105,26 @@ const ProjResolution = () => {
           svg: "Envelope",
         }}
         img={{
-          src: "/images/g2/g2-graphs.png",
+          src: "/images/g2/fin_plan_detail.png",
+          alt: "",
+        }}
+      />
+      <ProjectFeature
+        themeColor="darkTheme"
+        row="basic"
+        introText={{
+          title: "Icon Signalling",
+          descLg: "Inbox?",
+          desc: "Details?",
+          svg: "Shapes",
+        }}
+        img={{
+          src: "/images/g2/icon_signalling.png",
           alt: "",
         }}
       />
       <FeatureApp
-        img={{ src: "/images/g2/inbox.png", alt: "" }}
+        img={{ src: "/images/g2/notifications.png", alt: "" }}
         themeColor="darkTheme"
         tips={[
           {
