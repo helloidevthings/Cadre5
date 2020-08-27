@@ -9,6 +9,7 @@ import Contact from "../Contact";
 import HeroCareers from "../HeroCareers";
 import HeroBasic from "../HeroBasic";
 import WaveHr from "../Parts/WaveHR";
+import InfoItems from "../Parts/InfoItems";
 
 const Home = () => {
   const resolution = [
@@ -93,7 +94,16 @@ const Home = () => {
       <ProjectsRelated />
       <Contact />
       <div className="Careers"></div>
-      <HeroCareers />
+      <HeroCareers
+        title="Careers"
+        leadin="We're dedicated to building great software"
+        desc="Founded in 1999, we strive to delight our customers and their end
+          users with the systems we craft. We need YOU to join our team."
+        img={{
+          src: "/images/stock-of-working.png",
+          alt: "people working in an office",
+        }}
+      />
       <HeroBasic
         title=""
         img={{ src: "/images/cadre5office.jpg", alt: "Cadre5 Building" }}

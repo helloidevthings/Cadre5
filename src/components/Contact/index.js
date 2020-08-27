@@ -2,36 +2,23 @@ import React from "react";
 import Styles from "./styled";
 import InfoItems from "../Parts/InfoItems";
 import { useInView } from "react-intersection-observer";
+import HeroCareers from "../HeroCareers";
 
 export default () => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
 
   return (
     <Styles>
-      <div className="wrapper">
-        <div
-          className={`text text-wrapper fadeUp ${inView ? "active" : ""}`}
-          ref={ref}
-        >
-          <h2 className="title">Contact Us</h2>
-          <h3>Let's talk about your project</h3>
-          <InfoItems />
-        </div>
-        {/* <form className="form">
-        <input type="text" required placeholder="Name" />
-        <input type="text" required placeholder="Email Address" />
-        <input type="text" required placeholder="Job Title / Business" />
-        <input type="text" required placeholder="Reason for Contacting" />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Message"
-        ></textarea>
-        <button type="submit">Send A Message</button>
-      </form> */}
-      </div>
+      <HeroCareers
+        title="Contact"
+        leadin="Let's talk about your project"
+        desc={<InfoItems />}
+        row="reverse"
+        img={{
+          src: "/images/stock-of-working.png",
+          alt: "people working in an office",
+        }}
+      />
       <a href="https://goo.gl/maps/ipTngEpBKrhsJgd18" target="blank">
         <div className="map">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1342 943">
