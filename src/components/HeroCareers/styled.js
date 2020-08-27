@@ -9,6 +9,13 @@ export default styled.section`
   justify-content: center;
   align-items: center;
 
+  &.row {
+    flex-direction: row;
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
   .text-wrapper {
     max-width: 35em;
   }

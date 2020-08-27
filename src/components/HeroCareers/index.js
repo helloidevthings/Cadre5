@@ -5,33 +5,30 @@ import IntroText from "../Parts/IntroText";
 import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
 
-export default ({}) => {
+export default ({ row, title, leadin, desc = {}, link = "", img = "" }) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
 
   return (
-    <Styles>
+    <Styles className={row}>
       <div
         className={`text-wrapper fadeUp ${inView ? "active" : ""}`}
         ref={ref}
       >
-        <h2 className="title">Careers</h2>
-        <h3 className="leadin">We're dedicated to building great software</h3>
-        <p className="description">
-          Founded in 1999, we strive to delight our customers and their end
-          users with the systems we craft. We need YOU to join our team.
-        </p>
-        <Button
-          btnStyle="primary"
-          themeColor="light"
-          href="./Careers"
-          text="Job Postings"
-          themeColor="lightTheme"
-        />
+        <h2 className="title">{title}</h2>
+        <h3 className="leadin">{leadin}</h3>
+        <p className="description">{desc}</p>
+        {link && (
+          <Button
+            themeColor={link.themeColor}
+            btnStyle={link.btnStyle}
+            href={link.href}
+            text={link.text}
+            arrow={true}
+            target={link.target}
+          />
+        )}
       </div>
-      <Image
-        src="/images/stock-of-working.png"
-        alt="people working in an office"
-      />
+      {img && <Image src={img.src} alt={img.alt} />}
     </Styles>
   );
 };
