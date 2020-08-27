@@ -95,14 +95,17 @@ const ProjResolution = () => {
         img={{ src: "/images/g2/desktop.png", alt: "" }}
         themeColor="darkTheme"
       />
+      <WaveHr color="#383838" bg="#efefef" />
       <ProjectFeature
-        themeColor="darkTheme"
-        row="reverse"
+        themeColor="mediumTheme"
+        row="basic"
         introText={{
-          title: "The Inbox",
-          descLg: "Inbox?",
-          desc: "Details?",
-          svg: "Envelope",
+          title: "Financial Plan Chart",
+          descLg:
+            "Each piece of the gant chart represents a piece of the financial plan.",
+          desc:
+            "Each section is outlined below, also there's an option to over over each piece so that it is very clear what it represents.",
+          svg: "Money",
         }}
         img={{
           src: "/images/g2/fin_plan_detail.png",
@@ -110,12 +113,60 @@ const ProjResolution = () => {
         }}
       />
       <ProjectFeature
+        themeColor="mediumTheme"
+        row="reverse"
+        introText={{
+          title: "Icon Signalling",
+          descLg:
+            "Each project comes with iconography to indicate each change.",
+          desc:
+            "Any change requests to a project must be approved. Using iconography makes it easy to tell what has changed on the project.",
+          svg: "Shapes",
+        }}
+        img={{
+          src: "/images/g2/icon_signals.png",
+          alt: "",
+        }}
+      />
+      <FeatureApp
+        img={{ src: "/images/g2/notifications.png", alt: "" }}
+        themeColor="mediumTheme"
+        tips={[
+          {
+            i: 1,
+            top: "45%",
+            left: "5%",
+            desc:
+              "The red-dot next to the icon shows that this item has been updated.",
+          },
+        ]}
+      />
+      <WaveHr color="#efefef" bg="#383838" />
+      <ProjectFeature
+        themeColor="darkTheme"
+        row="reverse"
+        introText={{
+          title: "Milestones",
+          descLg:
+            "Each piece of the gant chart represents a piece of the financial plan.",
+          desc:
+            "Each section is outlined below, also there's an option to over over each piece so that it is very clear what it represents.",
+          svg: "List",
+        }}
+        img={{
+          src: "/images/g2/next_feat2.png",
+          alt: "",
+        }}
+      />
+      <ProjectFeature
         themeColor="darkTheme"
         row="basic"
         introText={{
-          title: "Icon Signalling",
-          descLg: "Inbox?",
-          desc: "Details?",
+          title: "Another Feature",
+          descLg:
+            "Each project comes with iconography to indicate each change.",
+          desc:
+            "Any change requests to a project must be approved. Using iconography makes it easy to tell what has changed on the project.",
           svg: "Shapes",
         }}
         img={{
@@ -124,14 +175,15 @@ const ProjResolution = () => {
         }}
       />
       <FeatureApp
-        img={{ src: "/images/g2/notifications.png", alt: "" }}
+        img={{ src: "/images/g2/next_feat.png", alt: "" }}
         themeColor="darkTheme"
         tips={[
           {
             i: 1,
-            top: "13%",
-            left: "3%",
-            desc: "Dashboard?",
+            top: "45%",
+            left: "5%",
+            desc:
+              "The red-dot next to the icon shows that this item has been updated.",
           },
         ]}
       />
