@@ -9,7 +9,9 @@ export default () => (
     <ul className="InfoItems">
       <li className="Info_item">
         <Envelope />
-        <a href="info@cadre5.com">info@cadre5.com</a>
+        <a href="mailto:info@cadre5.com" target="blank">
+          Info@Cadre5.com
+        </a>
       </li>
       <li className="Info_item">
         <Phone />
@@ -19,7 +21,7 @@ export default () => (
       </li>
       <li className="Info_item">
         <MapPin />
-        <a href="https://goo.gl/maps/ipTngEpBKrhsJgd18">
+        <a href="https://goo.gl/maps/ipTngEpBKrhsJgd18" target="blank">
           804 Innovation Drive, Knoxville • TN 37932
         </a>
       </li>
