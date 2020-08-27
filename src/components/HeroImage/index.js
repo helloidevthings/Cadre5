@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../Parts/Button";
 import Image from "../Parts/Image";
-import IntroText from "../Parts/IntroText";
 import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
 

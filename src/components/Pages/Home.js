@@ -6,10 +6,9 @@ import Clients from "../Clients";
 import Project from "../Project";
 import ProjectsRelated from "../ProjectsRelated";
 import Contact from "../Contact";
-import HeroCareers from "../HeroCareers";
+import HeroImage from "../HeroImage";
 import HeroBasic from "../HeroBasic";
 import WaveHr from "../Parts/WaveHR";
-import InfoItems from "../Parts/InfoItems";
 
 const Home = () => {
   const resolution = [
@@ -94,7 +93,7 @@ const Home = () => {
       <ProjectsRelated />
       <Contact />
       <div className="Careers"></div>
-      <HeroCareers
+      <HeroImage
         title="Careers"
         leadin="We're dedicated to building great software"
         desc="Founded in 1999, we strive to delight our customers and their end
