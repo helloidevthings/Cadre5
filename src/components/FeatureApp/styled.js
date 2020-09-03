@@ -8,7 +8,7 @@ export default styled.section`
   padding-bottom: 3em;
 
   figure {
-    max-width: 1090px;
+    max-width: 1200px;
 
     img {
       width: 100%;
