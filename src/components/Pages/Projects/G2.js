@@ -26,7 +26,7 @@ const ProjResolution = () => {
     <Page>
       <Project details={details} />
       <WaveHr color="white" bg="#efefef"></WaveHr>
-      <ProjectFeature
+      {/* <ProjectFeature
         themeColor="mediumTheme"
         row="reverse"
         introText={{
@@ -38,7 +38,7 @@ const ProjResolution = () => {
           src: "/images/logos/government/nnsa.png",
           alt: "",
         }}
-      />
+      /> */}
       <ProjectFeature
         themeColor="mediumTheme"
         introText={{
@@ -74,7 +74,7 @@ const ProjResolution = () => {
           alt: "",
         }}
       />
-      <WaveHr color="#efefef" bg="#383838" />
+      {/* <WaveHr color="#efefef" bg="#383838" />
       <WaveHr color="#383838" bg="#383838" />
       <ProjectFeature
         themeColor="darkTheme"
@@ -95,9 +95,11 @@ const ProjResolution = () => {
         img={{ src: "/images/g2/desktop.png", alt: "" }}
         themeColor="darkTheme"
       />
-      <WaveHr color="#383838" bg="#efefef" />
+      <WaveHr color="#383838" bg="#efefef" /> */}
+      <WaveHr color="#efefef" bg="white" />
+
       <ProjectFeature
-        themeColor="mediumTheme"
+        themeColor="lightTheme"
         row="basic"
         introText={{
           title: "Financial Plan Chart",
@@ -113,7 +115,7 @@ const ProjResolution = () => {
         }}
       />
       <ProjectFeature
-        themeColor="mediumTheme"
+        themeColor="lightTheme"
         row="reverse"
         introText={{
           title: "Icon Signalling",
@@ -130,7 +132,7 @@ const ProjResolution = () => {
       />
       <FeatureApp
         img={{ src: "/images/g2/notifications.png", alt: "" }}
-        themeColor="mediumTheme"
+        themeColor="lightTheme"
         tips={[
           {
             i: 1,
@@ -141,7 +143,7 @@ const ProjResolution = () => {
           },
         ]}
       />
-      <WaveHr color="#efefef" bg="#383838" />
+      <WaveHr color="white" bg="#383838" />
       <ProjectFeature
         themeColor="darkTheme"
         row="reverse"
