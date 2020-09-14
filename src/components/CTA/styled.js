@@ -65,8 +65,8 @@ export default styled.section`
     img {
       max-width: 90%;
       max-height: 90%;
-      width: auto;
-      height: auto;
+      /* width: auto; */
+      /* height: auto; */
       padding: 2em;
       padding: 3em 2em;
       vertical-align: middle;

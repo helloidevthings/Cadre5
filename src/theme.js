@@ -21,7 +21,7 @@ export default {
     blackToDark: "linear-gradient(#020202, #1f1f1f)",
     lightToWhite: "linear-gradient(to right, #efefef, white)",
     lightToTransparent:
-      "linear-gradient(to right, rgb(239 239 239 / 59%), transparent)",
+      "linear-gradient(to right, rgb(239 239 239 / 59%), rgb(239 239 239 / 10%))",
     lightToTransparent180:
       "linear-gradient(to bottom, transparent, rgb(231 231 231 / 59%))",
   },

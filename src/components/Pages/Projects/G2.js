@@ -42,21 +42,17 @@ const ProjResolution = () => {
       <ProjectFeature
         themeColor="mediumTheme"
         introText={{
-          title: "The Opportunity",
+          title: "The Challenge",
+          descLg:
+            "Nuclear projects can be difficult to manage, approve funding, and other needs. It took weeks to receive a status report from each lab. (?)",
           desc:
-            "To provide increased operational transparency to Congress and other constituents, support efficient and effective management of taxpayer funds, provide advanced data analysis and reporting capabilities to drive better decision making throughout the organization, and support the work of multiple organizations with varying missions within a single system.",
+            "G2 provides transparency to Congress(?) and other constituents by giving the exact status of every project. By giving those in authority the ability to quickly view updates, projects can be managed more effectively. G2 also increases accountability between labs. Labs can see each other’s progress as well as the funding received. ",
           svg: "ChartArrow",
         }}
-        iframe={
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/BEwz3IA8NQ8"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        }
+        img={{
+          src: "/images/g2/",
+          alt: "A few nice Images of the UI. That could be collaged together",
+        }}
       />
       <ProjectFeature
         themeColor="mediumTheme"
@@ -97,32 +93,16 @@ const ProjResolution = () => {
       />
       <WaveHr color="#383838" bg="#efefef" /> */}
       <WaveHr color="#efefef" bg="white" />
-
-      <ProjectFeature
-        themeColor="lightTheme"
-        row="basic"
-        introText={{
-          title: "Financial Plan Chart",
-          descLg:
-            "Each piece of the gant chart represents a piece of the financial plan.",
-          desc:
-            "Each section is outlined below, also there's an option to over over each piece so that it is very clear what it represents.",
-          svg: "Money",
-        }}
-        img={{
-          src: "/images/g2/fin_plan_detail.png",
-          alt: "",
-        }}
-      />
+      <WaveHr color="white" bg="white" />
       <ProjectFeature
         themeColor="lightTheme"
         row="reverse"
         introText={{
           title: "Icon Signalling",
           descLg:
-            "Each project comes with iconography to indicate each change.",
+            "To make viewing projects more efficient we used iconography to indicate each change. By doing this the user can quickly see which areas need their attention. Projects change throughout the process, the user can see exactly what updates have been made to each plan.",
           desc:
-            "Any change requests to a project must be approved. Using iconography makes it easy to tell what has changed on the project.",
+            "(Maybe we explain one example icon?) -- This could be a nice place to use Jason's Sketches",
           svg: "Shapes",
         }}
         img={{
@@ -130,6 +110,40 @@ const ProjResolution = () => {
           alt: "",
         }}
       />
+      <article className="blog">
+        <h3>Fin Plan Dashboard</h3>
+        The fin plan dashboard(?) shows an overview of the status of every
+        project. By using a variety of icons the user can see exactly which
+        areas have been updated and are pending approval.
+      </article>
+      <FeatureApp
+        img={{
+          src: "/images/g2/.png",
+          alt: "Large Image of the Fin Plan Dashboard",
+        }}
+        themeColor="lightTheme"
+      />
+      <ProjectFeature
+        themeColor="lightTheme"
+        row="basic"
+        introText={{
+          title: "Financial Plan Chart",
+          descLg:
+            "Each piece of the chart represents a variable of the total financial plan.",
+          desc:
+            "Each section is outlined below, also there's an option to hover each piece so that it is very clear what it represents.",
+          svg: "Money",
+        }}
+        img={{
+          src: "/images/g2/fin_plan_detail.png",
+          alt: "",
+        }}
+      />
+      <article className="blog">
+        <h3>Fin Plan Dashboard(?)</h3>
+        Description of this dashboard goes here. I initially thought this was
+        the Fin Plan Dashboard. If it is, I can move it back up to the top.
+      </article>
       <FeatureApp
         img={{ src: "/images/g2/notifications.png", alt: "" }}
         themeColor="lightTheme"
@@ -150,34 +164,21 @@ const ProjResolution = () => {
         introText={{
           title: "Milestones",
           descLg:
-            "Each piece of the gant chart represents a piece of the financial plan.",
+            "This dashboard shows the progress of all projects. The user can quickly get an idea of the status of each project... They can also view every project in detail to see if the project is ahead of schedule, behind schedule, etc… (I’m not sure exactly what to say in this section)",
           desc:
-            "Each section is outlined below, also there's an option to over over each piece so that it is very clear what it represents.",
+            "(The next image is pretty big, but I wanted to show you what it looked like on the site.)",
           svg: "List",
         }}
         img={{
-          src: "/images/g2/next_feat2.png",
-          alt: "",
-        }}
-      />
-      <ProjectFeature
-        themeColor="darkTheme"
-        row="basic"
-        introText={{
-          title: "Another Feature",
-          descLg:
-            "Each project comes with iconography to indicate each change.",
-          desc:
-            "Any change requests to a project must be approved. Using iconography makes it easy to tell what has changed on the project.",
-          svg: "Shapes",
-        }}
-        img={{
-          src: "/images/g2/icon_signalling.png",
-          alt: "",
+          src: "/images/g2/.png",
+          alt: "image of the milestones (detailed view)",
         }}
       />
       <FeatureApp
-        img={{ src: "/images/g2/next_feat.png", alt: "" }}
+        img={{
+          src: "/images/g2/Expanded-Tasks--Expanded-Timeline-huge.png",
+          alt: "",
+        }}
         themeColor="darkTheme"
         tips={[
           {
@@ -203,6 +204,27 @@ const ProjResolution = () => {
             width="560"
             height="315"
             src="https://www.youtube.com/embed/5ZJRWg8_4Uc"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        }
+      />
+      <ProjectFeature
+        themeColor="darkTheme"
+        row="reverse"
+        introText={{
+          title: "NNSA",
+          descLg:
+            "The National Nuclear Security Administration maintains and enhances the safety, security, and effectiveness of U.S. nuclear capabilities and works globally to reduce nuclear proliferation and the danger from weapons of mass destruction.",
+          desc:
+            "^ I’m not sure where to put this… at the moment it’s next to a video",
+        }}
+        iframe={
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BEwz3IA8NQ8"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
