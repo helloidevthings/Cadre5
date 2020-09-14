@@ -65,7 +65,11 @@ export default styled.article`
   }
 
   &.mediumTheme {
-    background: linear-gradient(to bottom, transparent, rgb(237 237 237));
+    background: linear-gradient(
+      to bottom,
+      rgb(237 237 237 / 10%),
+      rgb(237 237 237)
+    );
     color: black;
   }
 
