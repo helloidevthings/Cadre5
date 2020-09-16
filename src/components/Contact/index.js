@@ -15,7 +15,7 @@ export default () => {
         desc={<InfoItems />}
         row="reverse"
         img={{
-          src: "/images/stock-of-working.png",
+          src: "/images/cadre-about-image.png",
           alt: "people working in an office",
         }}
       />
