@@ -15,6 +15,7 @@ export default styled.section`
   &.reverse {
     flex-direction: row-reverse;
   }
+
   &.active {
     transform: none;
     opacity: 1;
@@ -55,7 +56,7 @@ export default styled.section`
       content: "";
       background: linear-gradient(white 38%, #efefef 38%);
       position: absolute;
-      width: 100%;
+      width: 90%;
       height: 100%;
       top: 0;
       right: 0;
@@ -72,6 +73,22 @@ export default styled.section`
       vertical-align: middle;
     }
   }
+
+  &.border {
+    figure {
+      &:after {
+        content: "";
+        background: ${(props) => props.theme.color.primary};
+        position: absolute;
+        width: 73%;
+        height: 73%;
+        top: 21%;
+        left: 20%;
+        z-index: -1;
+      }
+    }
+  }
+
   &.lightTheme {
     background-color: white;
   }

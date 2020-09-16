@@ -12,8 +12,8 @@ export default ({
   descLg,
   desc,
   img = "",
-  row,
-  themeColor,
+  row = "",
+  themeColor = "",
   link = "",
 }) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
