@@ -21,8 +21,8 @@ export default styled.div`
 
     svg {
       margin-right: 0.5em;
-      width: 26px;
-      max-height: 26px;
+      width: 23px;
+      max-height: 23px;
     }
   }
 `;
