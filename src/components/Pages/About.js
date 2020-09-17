@@ -28,6 +28,7 @@ const About = () => (
         alt: "people working in an office environment",
       }}
       type="basic"
+      border="border"
     />
     <Featurette
       title="Our Partners"

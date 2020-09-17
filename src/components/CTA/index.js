@@ -14,6 +14,7 @@ export default ({
   img = "",
   row = "",
   themeColor = "",
+  border = "",
   link = "",
 }) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
@@ -21,7 +22,9 @@ export default ({
   return (
     <Styles
       className={
-        inView ? `active ${row} ${themeColor}` : `${row} ${themeColor}`
+        inView
+          ? `active ${row} ${themeColor} ${border}`
+          : `${row} ${themeColor} ${border}`
       }
       ref={ref}
     >
