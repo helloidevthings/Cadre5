@@ -1,6 +1,6 @@
-import React, { useState, setState } from "react";
+import React, { useState } from "react";
 import Styles from "./styled";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default ({ tips = [] }) => {
   return (

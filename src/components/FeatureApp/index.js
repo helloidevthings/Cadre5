@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "../Parts/Image";
-import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Styles from "./styled";
 import ToolTip from "../Parts/ToolTip";

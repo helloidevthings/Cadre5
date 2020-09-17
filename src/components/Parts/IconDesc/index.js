@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "../Image";
-import { useInView } from "react-intersection-observer";
 import Styles from "./styled";
 
 export default () => (
