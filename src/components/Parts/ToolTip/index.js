@@ -22,6 +22,7 @@ export default ({ tips = [] }) => {
           <div
             className={visible ? "wrapper active" : "wrapper"}
             style={{ top: top, left: left }}
+            key={i}
           >
             <button
               className="ToolTip ToolTipButton"

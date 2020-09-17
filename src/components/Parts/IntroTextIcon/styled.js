@@ -20,6 +20,10 @@ export default styled.section`
     margin-bottom: 1em;
   }
 
+  & .list {
+    padding-left: 1em;
+  }
+
   & .icon {
     display: block;
     width: ${(props) => props.theme.circle.size};
