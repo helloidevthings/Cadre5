@@ -4,6 +4,7 @@ import Router from "./Router";
 import theme from "../theme";
 import { ThemeProvider } from "emotion-theming";
 import AppStyles from "./App.styled.js";
+import GlobalStyles from "./Global.styled.js";
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter } from "react-router-dom";
 
@@ -11,7 +12,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <AppStyles className="Main">
+        <GlobalStyles />
+        <AppStyles>
           <Header />
           <AnimatePresence>
             <Router />
