@@ -9,14 +9,21 @@ export default ({ cards = [], themeColor }) => {
   return (
     <Styles className={themeColor ? themeColor : ""}>
       <div className="cards">
-        {cards.map(({ title, leadin, img = "", link = "", tags = [] }) => (
-          <a href={link.href} ref={ref} className={inView ? "active" : ""}>
+        {cards.map(({ title, leadin, img = "", link = "", tags = [] }, i) => (
+          <a
+            href={link.href}
+            className={inView ? "active" : ""}
+            ref={ref}
+            key={i}
+          >
             <div className="text">
               <h3>{title}</h3>
               <p>{leadin}</p>
               <ul className="tags">
-                {tags.map(({ type }) => (
-                  <li className={type}>{type}</li>
+                {tags.map(({ type }, i) => (
+                  <li className={type} key={i}>
+                    {type}
+                  </li>
                 ))}
               </ul>
             </div>

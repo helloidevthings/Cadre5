@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import Styles from "./styled";
 export default ({ subheader, leadin, descLg, desc }) => (
@@ -9,10 +9,10 @@ export default ({ subheader, leadin, descLg, desc }) => (
       </div>
     )}
     {leadin && (
-      <>
+      <Fragment>
         <h3 className="leadin">{leadin}</h3>
         <hr />
-      </>
+      </Fragment>
     )}
     <p className="description--lg">{descLg}</p>
     {desc && <p className="description">{desc}</p>}
