@@ -17,7 +17,7 @@ export default ({ icon, title, descLg, desc, list = [] }) => (
       <h2> {title} </h2>
     </div>
     {descLg && <p className="descLg"> {descLg} </p>}
-    {desc && <p className="descLg"> {desc} </p>}
+    {desc && <p className="desc"> {desc} </p>}
     {list &&
       list.map(({ item }, i) => {
         return (

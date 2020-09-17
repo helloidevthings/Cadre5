@@ -10,9 +10,14 @@ export default ({ title, img = "" }) => {
 
   return (
     <Styles ref={ref} className={inView ? "active" : ""}>
-      <Title className="title" title="Our Clients" />
+      {/* <Title className="title" title="Our Clients" /> */}
       <article className="blog">
-        <p>All the logos in the world</p>
+        <h2>Our Clients</h2>
+        <p>
+          {`Over the years Cadre5 has had the opportunity to work with various
+          different clients in many industries. Including, Government, Consumer,
+          Media & Entertainment`}
+        </p>
         <Button
           href="/About"
           text="View All Logos"
