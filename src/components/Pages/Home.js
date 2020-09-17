@@ -103,7 +103,7 @@ const Home = () => {
           alt: "people working in an office",
         }}
         link={{
-          text: "View Opportunities",
+          text: "Opportunities",
           btnStyle: "primary",
           themeColor: "lightTheme",
           href: "/Careers",
