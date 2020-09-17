@@ -16,6 +16,6 @@ export default ({
     className={`${btnStyle} ${themeColor}`}
   >
     {text}
-    {arrow && <Arrow />}
+    {arrow === true ? <Arrow /> : ""}
   </Styles>
 );
