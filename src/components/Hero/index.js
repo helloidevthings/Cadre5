@@ -17,6 +17,7 @@ export default ({ title, tagline, ctaText }) => {
           themeColor="lightTheme"
           btnStyle="primary"
           text={`${ctaText}`}
+          href="/About"
         />
       </article>
       <div className="svg-wrapper wave-lines">

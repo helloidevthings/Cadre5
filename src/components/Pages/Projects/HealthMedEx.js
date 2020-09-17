@@ -1,11 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Project from "../../Project";
 import Page from "../../Page";
 import WaveHr from "../../Parts/WaveHR";
 import ProjectFeature from "../../ProjectFeature";
 import ProjectsRelated from "../../ProjectsRelated";
 import FeatureApp from "../../FeatureApp";
-import IconDesc from "../../Parts/IconDesc";
 
 const ProjHealthMedEx = () => {
   const details = [

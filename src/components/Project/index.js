@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Button from "../Parts/Button";
-import WaveHr from "../Parts/WaveHR";
 import IntroText from "../Parts/IntroText";
 import Image from "../Parts/Image";
 import Styles from "./styled";

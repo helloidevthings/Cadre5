@@ -1,18 +1,14 @@
 import React from "react";
 import Styles from "./styled";
-import InfoItems from "../Parts/InfoItems";
-import { useInView } from "react-intersection-observer";
 import HeroImage from "../HeroImage";
 
 export default () => {
-  const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
-
   return (
     <Styles>
       <HeroImage
         title="Contact"
         leadin="Let's talk about your project"
-        desc={<InfoItems />}
+        infoItems={true}
         row="reverse"
         img={{
           src: "/images/cadre-about-image.png",

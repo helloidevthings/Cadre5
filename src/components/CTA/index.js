@@ -4,7 +4,6 @@ import IntroText from "../Parts/IntroText";
 import Image from "../Parts/Image";
 import Button from "../Parts/Button";
 import Styles from "./styled";
-import theme from "../../theme";
 
 export default ({
   subheader,
