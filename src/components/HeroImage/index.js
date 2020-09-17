@@ -22,7 +22,7 @@ export default ({ row, title, leadin, desc = {}, link = "", img = "" }) => {
             btnStyle={link.btnStyle}
             href={link.href}
             text={link.text}
-            arrow={true}
+            arrow={link.arrow}
             target={link.target}
           />
         )}

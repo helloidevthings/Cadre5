@@ -102,6 +102,12 @@ const Home = () => {
           src: "/images/stock-of-working.png",
           alt: "people working in an office",
         }}
+        link={{
+          text: "View Opportunities",
+          btnStyle: "primary",
+          themeColor: "lightTheme",
+          href: "/Careers",
+        }}
       />
       <HeroBasic
         title=""

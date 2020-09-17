@@ -14,7 +14,7 @@ export default () => {
           src: "/images/stock-of-working.png",
           alt: "People working in an office",
         }}
-      />{" "}
+      />
       <section className="Careers"></section>
     </Page>
   );
