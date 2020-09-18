@@ -57,7 +57,7 @@ export default styled.section`
     overflow: hidden;
     background: ${(props) => props.theme.gradients.redToBlack};
     max-width: 100vw;
-    max-height: 600px;
+    max-height: 36em;
     margin-top: 3em;
 
     svg {
