@@ -74,8 +74,6 @@ export default () => {
         },
       ],
     },
-  ];
-  const cards2 = [
     {
       title: "Ru",
       leadin: "Project management for government agencies.",
@@ -131,7 +129,6 @@ export default () => {
       <WaveHr color="#000000" bg="white" />
       <WaveHr color="white" bg="white" />
       <ProjectCard cards={cards1} />
-      <ProjectCard cards={cards2} />
       <WaveHr color="white" bg="white" />
     </Page>
   );

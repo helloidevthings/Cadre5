@@ -30,6 +30,11 @@ export default styled.main`
       margin-bottom: 1.3em;
     }
   }
+
+  .center {
+    text-align: center;
+  }
+
   .text-wrapper {
     padding-left: 4em;
     padding-right: 3em;
