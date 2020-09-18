@@ -17,7 +17,7 @@ const About = () => (
         alt: "Cadre5 Building",
       }}
       svg={true}
-    />{" "}
+    />
     <CTA
       subheader="FOUNDED IN 1999"
       leadin="Cadre5 is dedicated to building great software."
@@ -52,7 +52,7 @@ const About = () => (
         href:
           "https://www.ornl.gov/news/six-area-firms-receive-ornl-small-business-awards",
       }}
-    />{" "}
+    />
     <CTA
       row="reverse"
       themeColor="mediumTheme"
@@ -72,13 +72,13 @@ const About = () => (
         href:
           "https://www.businesswire.com/news/home/20151110006186/en/Groundbreaking-Government-Programs-Recognized-15th-Annual-Excellence.Gov",
       }}
-    />{" "}
+    />
     <CTA
       subheader="Awarded in 2014"
       leadin="U.S. Small Business Administration, Southeast Subcontractor of the Year"
       desc="Cadre5, was recently presented with the U.S. Small Business Administration’s 2014 Small Business Subcontractor of the Year Award for Region 4, which includes Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee."
       img={{
-        src: "/images/stock-of-working.png",
+        src: "/images/people_working.png",
         alt: "people working in an office environment",
       }}
       type="basic"
@@ -90,7 +90,7 @@ const About = () => (
         href:
           "https://oakridgetoday.com/2014/09/29/cadre5-wins-small-business-subcontractor-year-award/",
       }}
-    />{" "}
+    />
     <LogoGrid />
   </Page>
 );

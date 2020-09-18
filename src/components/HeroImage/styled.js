@@ -32,11 +32,11 @@ export default styled.section`
     display: flex;
     justify-content: center;
 
-    @supports (max-width: max-content) {
+    /* @supports (max-width: max-content) {
       min-width: 20em;
       max-width: max-content;
       flex-basis: 20em;
-    }
+    } */
 
     &:after {
       content: "";

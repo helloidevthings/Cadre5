@@ -45,12 +45,12 @@ export default styled.section`
     transform: translateY(-20px);
     transition: all 1s ease-in-out;
 
-    @supports (max-width: max-content) {
-      min-width: 25em;
+    /* @supports (max-width: max-content) {
+      min-width: 10em;
       max-width: max-content;
-      flex-basis: 25em;
+      flex-basis: 10em;
       flex-grow: 99999;
-    }
+    } */
 
     /* &:after {
       content: "";
@@ -66,8 +66,6 @@ export default styled.section`
     img {
       max-width: 90%;
       max-height: 90%;
-      /* width: auto; */
-      /* height: auto; */
       padding: 2em;
       padding: 3em 2em;
       vertical-align: middle;

@@ -12,7 +12,7 @@ export default styled.section`
     box-shadow: ${(props) => props.theme.boxShadow.main};
     opacity: 0;
     transform: scale(1.1);
-    transition: opacity 0.1s ease-in, transform 0.3s ease-in;
+    transition: opacity 0.3s ease-in, transform 0.4s ease-in;
 
     &:hover {
       background: ${(props) => props.theme.color.black};

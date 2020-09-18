@@ -25,6 +25,7 @@ export default styled.main`
   .blog {
     max-width: 40em;
     margin: 3em auto;
+    padding: 1em;
     p {
       margin-top: 1.3em;
       margin-bottom: 1.3em;
