@@ -12,24 +12,10 @@ export default styled.section`
     box-shadow: ${(props) => props.theme.boxShadow.main};
     opacity: 0;
     transform: scale(1.1);
-    transition: opacity 0.8s ease-in-out, transform 0.4s ease-in-out;
-    transition-delay: 0.4s;
-
-    &.active {
-      opacity: 1;
-      transform: none;
-    }
+    transition: opacity 0.1s ease-in, transform 0.3s ease-in;
 
     &:hover {
       background: ${(props) => props.theme.color.black};
-    }
-
-    &:nth-child(2) {
-      transition-delay: 0.5s;
-    }
-
-    &:nth-child(3) {
-      transition-delay: 0.7s;
     }
   }
 
@@ -37,6 +23,12 @@ export default styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    &.active {
+      a {
+        opacity: 1;
+        transform: none;
+      }
+    }
   }
 
   & .text {
@@ -48,10 +40,10 @@ export default styled.section`
     max-height: 250px;
     overflow: hidden;
     border-radius: 0 0 0.7em 0.7em;
-    
+
     img {
       height: 100%;
-      background: white; 
+      background: white;
     }
   }
 
@@ -62,7 +54,7 @@ export default styled.section`
 
     li {
       list-style: none;
-      font-size: .8em; 
+      font-size: 0.8em;
       margin-right: 0.4em;
       border-radius: 1em;
       padding: 0.1em 0.8em;
@@ -73,10 +65,14 @@ export default styled.section`
         background-color: ${(props) => props.theme.color.primary};
       }
       /* &.Government {
-        background-color: ${(props) => props.theme.color.grayMed};
+        background-color: ${(props) =>
+        props.theme.color
+          .grayMed};
       }
       &.User Experience {
-        background-color: ${(props) => props.theme.color.grayMed};
+        background-color: ${(
+        props
+      ) => props.theme.color.grayMed};
       } */
     }
   }
@@ -88,10 +84,10 @@ export default styled.section`
       color: ${(props) => props.theme.color.primary};
     }
     h3 {
-      font-size: 1.2em; 
+      font-size: 1.2em;
     }
     p {
-      font-size: .89em; 
+      font-size: 0.89em;
     }
   }
 `;

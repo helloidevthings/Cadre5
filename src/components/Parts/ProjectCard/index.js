@@ -8,13 +8,12 @@ export default ({ cards = [], themeColor }) => {
 
   return (
     <Styles className={themeColor ? themeColor : ""}>
-      <div className="cards">
+      <div className={`cards ${inView ? "active" : ""}`} ref={ref}>
         {cards.map(({ title, leadin, img = "", link = "", tags = [] }, i) => (
           <a
             href={link.href}
-            className={inView ? "active" : ""}
-            ref={ref}
             key={i}
+            style={{ transitionDelay: `${0.2 * i}s` }}
           >
             <div className="text">
               <h3>{title}</h3>
