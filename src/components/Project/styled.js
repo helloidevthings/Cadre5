@@ -26,7 +26,7 @@ export default styled.article`
 
   .image-wrapper {
     opacity: 0;
-    transform: translateX(15%);
+    /* transform: translateX(15%); */
     transition: all 1s ease-in-out;
     transition-delay: 0.2s;
 

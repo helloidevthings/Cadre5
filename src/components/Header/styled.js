@@ -7,6 +7,10 @@ export default styled.header`
   padding: 1em;
 
   .menuButton {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+
     @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
       display: none;
     }

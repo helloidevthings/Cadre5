@@ -24,7 +24,7 @@ export default styled.main`
 
   .blog {
     max-width: 40em;
-    margin: 3em auto;
+    margin: 3em auto 1em;
     padding: 1em;
     p {
       margin-top: 1.3em;
@@ -183,37 +183,63 @@ export default styled.main`
 
   /* SVG Animations */
 
-  .draw-in {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 5s ease-in-out infinite alternate;
+  .drawIn {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: draw 8s ease-in-out infinite;
   }
 
-  .drawIN1x {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 5s ease-in-out;
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 2000;
+    }
+    60% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 2000;
+    }
   }
 
-  .item-to {
+  .drawInCircle {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: drawCircle 2s ease-in-out alternate infinite;
+  }
+
+  @keyframes drawCircle {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 300;
+    }
+  }
+
+  .fadeInCircle {
+    opacity: 0;
+    animation: fadeInCircle 3s ease-in-out alternate infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes fadeInCircle {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .itemTo {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
   }
 
-  .bounce-1 {
+  .bounce1 {
     animation-name: bounce-1;
     animation-timing-function: ease;
-  }
-
-  @keyframes draw {
-    from {
-      stroke-dashoffset: 1000;
-    }
-
-    to {
-      stroke-dashoffset: 0;
-    }
   }
 
   @keyframes bounce-1 {
