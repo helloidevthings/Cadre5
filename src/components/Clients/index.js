@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Parts/Button";
 import LogoGridItem from "../Parts/LogoGridItem";
 import Styles from "./styled";
@@ -243,6 +243,8 @@ export default () => {
       alt: "Osborne Coincom",
     },
   ];
+  const [visible, toggleVisible] = useState(false);
+
   return (
     <Styles className={inView ? "active" : ""} ref={ref}>
       {/* <Title className="title" title="Our Clients" /> */}
@@ -253,17 +255,16 @@ export default () => {
           different clients in many industries. Including, Government, Consumer,
           Media & Entertainment`}
         </p>
-        {/* <Button
-          href="/About"
-          text="View All Logos"
-          themeColor="lightTheme"
-          btnStyle="secondary"
-          arrow={true}
-        /> */}
       </article>
       <div className="logos">
         <LogoGridItem logos={logos} />
       </div>
+      <Button
+        href="/About"
+        text="View All Logos"
+        themeColor="lightTheme"
+        btnStyle="primary"
+      />
     </Styles>
   );
 };

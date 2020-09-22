@@ -25,7 +25,7 @@ export default styled.section`
       margin: 1.3em;
       filter: grayscale(100%);
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 1s ease-in-out;
 
       &:hover {
         transform: scale(1.2);

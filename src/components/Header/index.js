@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Nav from "../Nav";
 import Logo from "../Svgs/Logo";
+import LogoMobile from "../Svgs/LogoMobile";
 import Styles from "./styled";
 
 export default () => {
@@ -8,6 +9,11 @@ export default () => {
   return (
     <Styles>
       <nav className="Navigation">
+        <div className="LogoMobile">
+          <a href="/">
+            <LogoMobile />
+          </a>
+        </div>
         <div className="Logo">
           <a href="/">
             <Logo />
@@ -18,7 +24,9 @@ export default () => {
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-        ></button>
+        >
+          Menu
+        </button>
         <Nav isOpen={isOpen} />
       </nav>
     </Styles>
