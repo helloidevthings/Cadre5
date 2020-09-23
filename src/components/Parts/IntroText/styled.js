@@ -32,7 +32,7 @@ export default styled.div`
   .description {
     &--lg {
       font-size: 1.1em;
-      margin-bottom: 0.8em;
+      /* margin-bottom: 0.8em; */
     }
   }
 `;

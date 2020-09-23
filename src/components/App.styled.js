@@ -70,7 +70,7 @@ export default styled.main`
   h3 {
     font-size: 1.8em;
     line-height: 1.45;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.2em;
   }
   h4 {
     font-size: 1.1em;
@@ -86,6 +86,7 @@ export default styled.main`
 
   p {
     line-height: 1.55;
+    margin-top: 1em;
   }
 
   p.large {
@@ -129,7 +130,7 @@ export default styled.main`
   }
 
   hr {
-    margin: 1.5em 0;
+    margin: 1em 0;
   }
 
   .fancyAND {

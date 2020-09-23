@@ -51,8 +51,11 @@ export default styled.section`
     display: flex;
     flex-wrap: wrap;
     margin: 1.3em 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
 
-    li {
+    & li {
       list-style: none;
       font-size: 0.7em;
       margin-right: 0.4em;
@@ -64,16 +67,10 @@ export default styled.section`
       &:nth-child(odd) {
         background-color: ${(props) => props.theme.color.primary};
       }
-      /* &.Government {
-        background-color: ${(props) =>
-        props.theme.color
-          .grayMed};
+
+      &:before {
+        content: none;
       }
-      &.User Experience {
-        background-color: ${(
-        props
-      ) => props.theme.color.grayMed};
-      } */
     }
   }
 
