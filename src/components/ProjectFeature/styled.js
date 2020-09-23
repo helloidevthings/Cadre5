@@ -19,6 +19,10 @@ export default styled.section`
     }
   }
 
+  ul li {
+    margin-top: 1em;
+  }
+
   .iframeContainer {
     /* position: relative;
     overflow: hidden;

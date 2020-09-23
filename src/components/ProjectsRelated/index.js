@@ -25,7 +25,10 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
       },
       tags: [
         {
-          type: "Government",
+          type: "Program Management",
+        },
+        {
+          type: "UX",
         },
       ],
     },
@@ -67,7 +70,7 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
       },
       tags: [
         {
-          type: "Government",
+          type: "Project Management",
         },
         {
           type: "User Experience",

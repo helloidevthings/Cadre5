@@ -54,10 +54,10 @@ export default styled.section`
 
     li {
       list-style: none;
-      font-size: 0.8em;
+      font-size: 0.7em;
       margin-right: 0.4em;
       border-radius: 1em;
-      padding: 0.1em 0.8em;
+      padding: 0.1em 0.8em 0.2em;
       &:nth-child(even) {
         background-color: ${(props) => props.theme.color.grayMed};
       }

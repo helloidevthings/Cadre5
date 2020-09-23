@@ -19,7 +19,8 @@ export default ({ icon, title, descLg, desc, list = [] }) => (
     {descLg && <p className="descLg"> {descLg} </p>}
     {desc && <p className="desc"> {desc} </p>}
     {list &&
-      list.map(({ item }, i) => {
+      list.map((item, i) => {
+        console.log(item);
         return (
           <ul className="list" key={i}>
             <li>{item}</li>
