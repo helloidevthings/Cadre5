@@ -22,6 +22,9 @@ export default styled.section`
 
   & .list {
     padding-left: 1em;
+    li {
+      font-size: 1.1em;
+    }
   }
 
   & .icon {
