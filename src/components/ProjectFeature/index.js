@@ -8,7 +8,7 @@ import Styles from "./styled";
 
 export default ({
   img = "",
-  introText = "",
+  introText = [],
   themeColor = "",
   row = "",
   video = "",
@@ -23,6 +23,7 @@ export default ({
         title={introText.title}
         desc={introText.desc}
         descLg={introText.descLg}
+        list={introText.list}
       />
       {link && (
         <Button

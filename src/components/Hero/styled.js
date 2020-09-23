@@ -40,13 +40,15 @@ export default styled.section`
     width: 100%;
     top: -10px;
     left: -10px;
+    opacity: 0.5;
   }
 
   & .abstract-graph {
-    height: 800px;
-    top: 33%;
+    /* height: 800px; */
+    bottom: 0;
     left: -10px;
     right: -10px;
+    opacity: 0.9;
   }
 
   /* SVG STYLES */

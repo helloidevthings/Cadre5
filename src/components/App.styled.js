@@ -186,7 +186,7 @@ export default styled.main`
   .drawIn {
     stroke-dasharray: 2300;
     stroke-dashoffset: 2300;
-    animation: draw 8s ease-in-out infinite;
+    animation: draw 13s ease-in-out infinite;
   }
 
   @keyframes draw {
@@ -204,7 +204,7 @@ export default styled.main`
   .drawInCircle {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: drawCircle 2s ease-in-out alternate infinite;
+    animation: drawCircle 3s ease-in-out alternate infinite;
   }
 
   @keyframes drawCircle {
@@ -218,8 +218,7 @@ export default styled.main`
 
   .fadeInCircle {
     opacity: 0;
-    animation: fadeInCircle 3s ease-in-out alternate infinite;
-    animation-delay: 2s;
+    animation: fadeInCircle 5s ease-in-out alternate infinite;
   }
 
   @keyframes fadeInCircle {
@@ -227,7 +226,7 @@ export default styled.main`
       opacity: 0;
     }
     to {
-      opacity: 1;
+      opacity: 0.9;
     }
   }
 
