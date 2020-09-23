@@ -18,6 +18,12 @@ export default styled.section`
     }
   }
 
+  .title-wrap {
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+
   .item {
     margin: 1em auto;
     max-width: 28em;

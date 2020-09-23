@@ -17,13 +17,14 @@ export default styled.section`
   }
   & .descLg {
     font-size: 1.1em;
-    margin-bottom: 1em;
   }
 
   & .list {
+    margin-top: 1em;
     padding-left: 1em;
     li {
-      font-size: 1.1em;
+      font-weight: 500;
+      font-size: 0.9em;
     }
   }
 

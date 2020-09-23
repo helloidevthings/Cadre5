@@ -10,6 +10,13 @@ export default styled.div`
     flex-wrap: wrap;
     color: white;
     font-size: 1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+
+    & li:before {
+      content: none;
+    }
   }
   .Info_item {
     display: flex;
