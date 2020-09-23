@@ -9,10 +9,9 @@ export default ({ isOpen }) => {
     { name: "Careers", path: "/Careers" },
     { name: "Contact", path: "/Contact" },
   ];
-  console.log(isOpen);
   return (
     <Styles isOpen={isOpen}>
-      <ul>
+      <ul className="nav">
         {mainNav.map(({ name, path }) => (
           <li key={name}>
             <NavLink to={path} exact>

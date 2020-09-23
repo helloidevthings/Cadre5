@@ -72,6 +72,11 @@ export default styled.main`
     line-height: 1.45;
     margin-bottom: 0.3em;
   }
+  h4 {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    font-weight: 300;
+  }
 
   h4,
   h5,
@@ -89,9 +94,38 @@ export default styled.main`
   }
 
   ul {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    list-style: none;
+    li {
+      margin-top: 1em;
+      position: relative;
+      font-size: 1.28em;
+      font-weight: 200;
+
+      &:before {
+        content: "";
+        color: red;
+        display: block;
+        position: absolute;
+        width: 0.3em;
+        height: 0.3em;
+        border-radius: 0.3em;
+        background-color: ${(props) => props.theme.color.primary};
+        left: -0.8em;
+        top: 0.6em;
+      }
+    }
+  }
+  .darkTheme {
+    ul li:before {
+      background-color: ${(props) => props.theme.color.ltRed};
+    }
+  }
+  .mediumTheme {
+    ul li:before {
+      background-color: ${(props) => props.theme.color.red};
+    }
   }
 
   hr {

@@ -1,8 +1,11 @@
 import styled from "@emotion/styled";
 
 export default styled.div`
-  ul {
+  .nav {
     transition: all 0.5s ease-in-out;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
 
     @media (max-width: ${(props) => props.theme.breakpoints.desktop}) {
       position: absolute;
@@ -12,7 +15,7 @@ export default styled.div`
       transform: translateY(${(props) => (props.isOpen ? "0%" : "-100%")});
     }
 
-    li {
+    & li {
       list-style: none;
       text-align: center;
       font-size: 0.72em;
@@ -22,8 +25,12 @@ export default styled.div`
       line-height: 1.12;
       color: white;
 
-      a,
-      .active {
+      &:before {
+        content: none;
+      }
+
+      & > a,
+      &.active {
         color: white;
         text-decoration: none;
         padding-bottom: 0.18em;
