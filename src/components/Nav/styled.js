@@ -6,13 +6,17 @@ export default styled.div`
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
+    position: relative;
 
-    @media (max-width: ${(props) => props.theme.breakpoints.desktop}) {
+    @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      transform: translateY(${(props) => (props.isOpen ? "0%" : "-100%")});
+      margin-top: 1.6em;
+      padding-top: 4em;
+      font-size: 3em;
+      width: ${(props) => (props.isOpen ? "0" : "100%")};
+      height: ${(props) => (props.isOpen ? "0" : "100vh")};
+      background-color: ${(props) => (props.isOpen ? "none" : "#000")};
+      transform: translateX(${(props) => (props.isOpen ? "0%" : "100%")});
     }
 
     & li {
@@ -24,6 +28,8 @@ export default styled.div`
       letter-spacing: 0.12em;
       line-height: 1.12;
       color: white;
+      transform: scale(${(props) => (props.isOpen ? "0" : "1")});
+      transition: all 0.5s ease-in-out;
 
       &:before {
         content: none;

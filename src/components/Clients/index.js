@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 export default () => {
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
-  const logos = [
+  const logos1 = [
     {
       name: "oak_ridge_white",
       type: "government",
@@ -122,6 +122,8 @@ export default () => {
       type: "transportation",
       alt: "Delta",
     },
+  ];
+  const logos2 = [
     {
       name: "brunswick_white",
       type: "transportation",
@@ -243,10 +245,20 @@ export default () => {
       alt: "Osborne Coincom",
     },
   ];
-  const [visible, toggleVisible] = useState(false);
+  const [visible, toggleVisible] = useState(true);
+  const handleButtonClick = (e) => {
+    if (!visible) {
+      toggleVisible(true);
+    } else {
+      toggleVisible(false);
+    }
+  };
+
+  const view = inView ? "active" : "";
+  const expand = visible ? "visible" : "";
 
   return (
-    <Styles className={inView ? "active" : ""} ref={ref}>
+    <Styles className={`${view} ${expand}`} ref={ref}>
       {/* <Title className="title" title="Our Clients" /> */}
       <article className="blog center">
         <h2>Our Clients</h2>
@@ -257,14 +269,14 @@ export default () => {
         </p>
       </article>
       <div className="logos">
-        <LogoGridItem logos={logos} />
+        <LogoGridItem logos={logos1} />
       </div>
-      <Button
-        href="/About"
-        text="View All Logos"
-        themeColor="lightTheme"
-        btnStyle="primary"
-      />
+      <div className="logoWrapper">
+        <LogoGridItem logos={logos2} />
+      </div>
+      <button className="ToolTip ToolTipButton" onClick={handleButtonClick}>
+        View All Logos
+      </button>
     </Styles>
   );
 };

@@ -41,6 +41,10 @@ export default styled.div`
     left: 50%;
   }
 
+  p {
+    margin-top: 0;
+  }
+
   .description {
     display: flex;
     background-color: white;

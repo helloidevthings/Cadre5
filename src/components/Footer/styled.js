@@ -7,10 +7,11 @@ export default styled.footer`
   justify-content: space-between;
   background-color: ${(props) => props.theme.color.dark};
   color: white;
-  padding: 1.1em 1.8em;
+  padding: 0.4rem 1.8rem;
   font-size: 0.9em;
 
-  p {
+  & > p {
     font-weight: 200;
+    margin: 1rem 0;
   }
 `;

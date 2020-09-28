@@ -5,8 +5,8 @@ export default styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   &.row {
     flex-direction: row;
@@ -66,8 +66,7 @@ export default styled.section`
     img {
       max-width: 90%;
       max-height: 90%;
-      padding: 2em;
-      padding: 3em 2em;
+      padding: 3rem 2rem;
       vertical-align: middle;
     }
   }

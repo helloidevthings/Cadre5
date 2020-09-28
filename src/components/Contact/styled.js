@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export default styled.section`
   color: ${(props) => props.theme.color.white};
   background: ${(props) => props.theme.color.dark};
-  padding-top: 3em;
+  padding-top: 3rem;
   /* min-height: 100vh; */
 
   & .wrapper {
@@ -21,7 +21,7 @@ export default styled.section`
   }
 
   & .InfoItems {
-    margin-top: 2em;
+    margin-top: 2rem;
   }
 
   .form {
@@ -58,10 +58,10 @@ export default styled.section`
     background: ${(props) => props.theme.gradients.redToBlack};
     max-width: 100vw;
     max-height: 36em;
-    margin-top: 3em;
+    margin-top: 3rem;
 
     svg {
-      margin-top: -7em;
+      margin-top: -7rem;
       width: 100%;
       height: 100%;
     }

@@ -4,8 +4,8 @@ export default styled.section`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   justify-content: center;
   align-items: center;
   &[data-row="reverse"] {

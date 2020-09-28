@@ -37,9 +37,14 @@ export default styled.main`
   }
 
   .text-wrapper {
-    padding-left: 4em;
-    padding-right: 3em;
-    margin-bottom: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+      padding-left: 4rem;
+      padding-right: 3rem;
+      margin-bottom: 2rem;
+    }
   }
 
   .Title {
@@ -130,7 +135,7 @@ export default styled.main`
   }
 
   hr {
-    margin: 1em 0;
+    margin: 1rem 0;
   }
 
   .fancyAND {
@@ -235,6 +240,20 @@ export default styled.main`
       stroke-dashoffset: 2000;
     }
   }
+  .drawIn1x {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: drawIn1x 3s ease-in-out;
+  }
+
+  @keyframes drawIn1x {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: 2000;
+    }
+  }
 
   .drawInCircle {
     stroke-dasharray: 300;
@@ -278,13 +297,45 @@ export default styled.main`
 
   @keyframes bounce-1 {
     0% {
-      transform: translateY(0);
+      transform: translateX(0);
     }
     50% {
-      transform: translateY(50px);
+      transform: translateX(50px);
     }
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
+    }
+  }
+  .bounce2 {
+    animation-name: bounce2;
+    animation-timing-function: ease;
+  }
+
+  @keyframes bounce2 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(25px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .bounce3 {
+    animation-name: bounce3;
+    animation-timing-function: ease;
+  }
+
+  @keyframes bounce3 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(65px);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 `;

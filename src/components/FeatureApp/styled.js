@@ -5,7 +5,7 @@ export default styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-bottom: 3em;
+  padding-bottom: 3rem;
 
   figure {
     max-width: 1200px;

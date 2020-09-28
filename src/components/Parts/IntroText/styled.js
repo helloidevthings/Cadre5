@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export default styled.div`
   .date-wrap {
-    margin: 1em 0;
+    margin: 1rem 0;
     position: relative;
 
     &:after {

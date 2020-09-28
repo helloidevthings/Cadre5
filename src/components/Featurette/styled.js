@@ -11,7 +11,7 @@ export default styled.section`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0 2em 2em;
+    padding: 0 2rem 2rem;
 
     article:nth-child(2) {
       align-self: flex-end;
@@ -25,9 +25,9 @@ export default styled.section`
   }
 
   .item {
-    margin: 1em auto;
+    margin: 1rem auto;
     max-width: 28em;
-    padding: 1em;
+    padding: 1rem;
   }
 
   figure {

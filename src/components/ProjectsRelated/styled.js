@@ -2,11 +2,11 @@ import styled from "@emotion/styled";
 
 export default styled.section`
   background-color: ${(props) => props.theme.color.light};
-  padding-top: 2em;
-  padding-bottom: 4em;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 
   .title {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 `;

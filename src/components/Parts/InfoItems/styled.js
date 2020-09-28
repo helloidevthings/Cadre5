@@ -9,7 +9,7 @@ export default styled.div`
     display: flex;
     flex-wrap: wrap;
     color: white;
-    font-size: 1em;
+    font-size: 0.9em;
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
