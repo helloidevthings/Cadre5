@@ -61,10 +61,18 @@ const ProjResolution = () => {
           title: "Capabilities",
           descLg:
             "G2 offers a variety of services to fit their needs with a responsive design that makes it accessible on any any device.",
-          desc:
-            "Financial Management, Cost Reporting, DOE STARS Reconciliation, Year-End Forecasting, Baseline/Forecast Schedules and Metrics, Out-Year & Annual Planning, Geo-Spatial Analysis, On-demand Reports, Data Warehousing, and numerous Line of Business Modules.",
           svg: "List",
-          list: { item: "things and stuff" },
+          list: [
+            "Financial Management",
+            "Cost Reporting, DOE STARS Reconciliation",
+            "Year-End Forecasting",
+            "Baseline/Forecast Schedules and Metrics",
+            "Out-Year & Annual Planning",
+            "Geo-Spatial Analysis",
+            "On-demand Reports",
+            "Data Warehousing",
+            "Numerous Line of Business Modules.",
+          ],
         }}
         img={{
           src: "/images/g2/responsive_graphic.png",
@@ -106,11 +114,6 @@ const ProjResolution = () => {
             "(Maybe we explain one example icon?) -- This could be a nice place to use Jason's Sketches",
           svg: "Shapes",
         }}
-        list={[
-          {
-            item: "stuff",
-          },
-        ]}
         img={{
           src: "/images/g2/icon_signals.png",
           alt: "",

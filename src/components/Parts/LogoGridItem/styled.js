@@ -6,11 +6,11 @@ export default styled.img`
   margin: 1.3em;
   filter: grayscale(100%);
   opacity: 0.8;
-  transition: all 0.3s cubic-bezier(0.79, -0.01, 0.23, 1.04);
+  transition: all 0.1s ease-in-out;
 
   &:hover {
     filter: grayscale(0%) saturate(100%);
-    transform: scale(1.3);
+    /* transform: scale(1.3); */
     opacity: 1;
   }
 `;

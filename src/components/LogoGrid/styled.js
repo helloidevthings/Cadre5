@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export default styled.section`
   max-width: 1200px;
-  margin: 0.8em auto 5em;
+  margin: 0.8rem auto 5rem;
 
   .heading {
     display: flex;

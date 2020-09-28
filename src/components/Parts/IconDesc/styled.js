@@ -5,7 +5,7 @@ export default styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding-bottom: 3em;
+  padding-bottom: 3rem;
 
   .item {
     margin: 2em;

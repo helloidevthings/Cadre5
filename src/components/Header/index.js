@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Nav from "../Nav";
 import Logo from "../Svgs/Logo";
 import LogoMobile from "../Svgs/LogoMobile";
+import MenuIcon from "../Svgs/MenuIcon";
+import MenuIconOpen from "../Svgs/MenuIconOpen";
 import Styles from "./styled";
 
 export default () => {
@@ -25,7 +27,7 @@ export default () => {
             setIsOpen(!isOpen);
           }}
         >
-          Menu
+          {isOpen ? <MenuIcon /> : <MenuIconOpen />}
         </button>
         <Nav isOpen={isOpen} />
       </nav>

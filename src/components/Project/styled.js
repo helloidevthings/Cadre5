@@ -5,7 +5,6 @@ export default styled.article`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* margin: 5rem 0; */
   padding: 5rem 0;
 
   &.active {

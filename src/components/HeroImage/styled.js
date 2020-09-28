@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export default styled.section`
   background: ${(props) => props.theme.color.dark};
   color: ${(props) => props.theme.color.white};
-  padding: 3em 0;
+  padding: 3rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,7 +17,7 @@ export default styled.section`
     flex-direction: row-reverse;
   }
   .text-wrapper {
-    max-width: 35em;
+    max-width: 35rem;
   }
 
   .leadin {

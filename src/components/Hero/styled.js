@@ -10,15 +10,17 @@ export default styled.section`
   position: relative;
   color: white;
   background: ${(props) => props.theme.gradients.redToBlack};
-  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   z-index: 3;
   overflow: hidden;
 
   & article {
     max-width: 33em;
-    margin: 1.3em;
+    padding: 1.8em;
     z-index: 4;
+    @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+      padding: 1.3em;
+    }
   }
 
   & h2 {
@@ -48,7 +50,7 @@ export default styled.section`
     bottom: 0;
     left: -10px;
     right: -10px;
-    opacity: 0.9;
+    opacity: 1;
   }
 
   /* SVG STYLES */
