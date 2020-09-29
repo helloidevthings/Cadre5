@@ -6,7 +6,7 @@ export default styled.img`
   margin: 1.3em;
   filter: grayscale(100%);
   opacity: 0.8;
-  transition: all 0.1s ease-in-out;
+  /* transition: all 0.1ms ease-in-out; */
 
   &:hover {
     filter: grayscale(0%) saturate(100%);
