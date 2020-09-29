@@ -47,13 +47,6 @@ export default styled.section`
       max-height: 0;
     }
   }
-
-  /* Logo Fade In */
-  &.active {
-    .logo {
-      opacity: 1;
-    }
-  }
   & button {
     border: none;
     border-top: 1px solid white;
@@ -64,6 +57,15 @@ export default styled.section`
     letter-spacing: 0.14em;
     padding: 1rem;
     margin-top: 1rem;
-    /* outline: none; */
+    opacity: 0;
+    transition-delay: 5s;
+    transition: opacity 2s ease-in;
+  }
+  /* Logo Fade In */
+  &.active {
+    .logo,
+    button {
+      opacity: 1;
+    }
   }
 `;
