@@ -265,7 +265,7 @@ export default styled.main`
   .drawIn3 {
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
-    animation: draw3 15s ease-in-out 3s infinite;
+    animation: draw3 15s ease-in-out 0.5s infinite;
   }
 
   @keyframes draw3 {
