@@ -2,8 +2,10 @@ import React from "react";
 import Title from "../Parts/Title";
 import LogoGridItem from "../Parts/LogoGridItem";
 import Styles from "./styled";
+import { useInView } from "react-intersection-observer";
 
 export default () => {
+  const [ref, inView] = useInView({ triggerOnce: true });
   const gov = [
     {
       name: "oak_ridge",
@@ -255,8 +257,10 @@ export default () => {
     },
   ];
 
+  const view = inView ? "active" : "";
+
   return (
-    <Styles>
+    <Styles className={`${view}`} ref={ref}>
       <Title title="Our Clients" base="LogoGrid" />
       <div className="heading">
         <h3>Government</h3>
