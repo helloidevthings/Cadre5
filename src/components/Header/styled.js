@@ -4,11 +4,13 @@ export default styled.header`
   flex: 1 1 auto;
   background-color: black;
   z-index: 1000;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   height: ${(props) => (props.isOpen ? "100" : "")};
 
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    padding: 1rem;
+    position: sticky;
+    width: unset;
   }
 
   .menuButton {
@@ -17,7 +19,8 @@ export default styled.header`
     font-weight: 300;
     border: none;
     position: absolute;
-    right: 5px;
+    right: 1%;
+    top: 20%;
 
     @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
       display: none;
@@ -29,21 +32,23 @@ export default styled.header`
 
   .Navigation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     top: 0px;
     left: 0px;
     position: sticky;
     box-sizing: border-box;
-    @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-      flex-direction: column;
-      padding: 1rem;
+    padding: 1rem;
+
+    ul {
+      padding: 0;
+      margin-top: 1.1em;
     }
   }
 
   .Logo {
-    margin: 1em 0.8em 5em;
+    /* margin: 1em 0.8em 5em; */
     height: 300px;
     display: none;
     @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
@@ -62,7 +67,7 @@ export default styled.header`
   }
 
   .LogoMobile {
-    padding: 1rem;
+    /* padding: 1rem; */
     @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
       display: none;
     }

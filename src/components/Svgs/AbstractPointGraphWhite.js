@@ -1,46 +1,134 @@
 import React from "react";
 
 const AbstractPointGraphWhite = () => (
-  <svg
-    className="background_svg"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1242 398"
-  >
+  <svg overflow="visible" viewBox="0 0 2000.44 648.89">
+    <style>
+      {
+        ".abstractLinesWhite__st0{fill:none;stroke:#fff;stroke-miterlimit:10}.abstractLinesWhite__st2{fill:#fff}"
+      }
+    </style>
     <path
-      d="M388.844 373.006l188.992-143.711 474.627 46.197L1226.922 1.753 939.579 336.228 359.766 237.85.596 397.819z"
-      fill="transparent"
-      strokeWidth=".25"
-      stroke="#FFF"
-      strokeMiterlimit="10"
-    />
-    <g fill="#FFF">
-      <path d="M575.739 229.295a2.098 2.098 0 114.195 0 2.098 2.098 0 01-4.195 0zM832.865 84.158a2.097 2.097 0 114.195 0 2.097 2.097 0 01-4.195 0zM672.666 239.62a2.098 2.098 0 114.196 0 2.098 2.098 0 01-4.196 0zM995.387 130.667a2.097 2.097 0 114.195-.001 2.097 2.097 0 01-4.195.001zM457.728 206.554a2.098 2.098 0 114.196 0 2.098 2.098 0 01-4.196 0zM465.712 311.968a2.097 2.097 0 114.195-.001 2.097 2.097 0 01-4.195.001zM355.675 237.522a2.098 2.098 0 114.196 0 2.098 2.098 0 01-4.196 0zM936.826 335.848a2.097 2.097 0 114.195-.001 2.097 2.097 0 01-4.195.001zM1050.263 275.207a2.097 2.097 0 114.195-.001 2.097 2.097 0 01-4.195.001zM1224.738 2.098a2.098 2.098 0 114.195 0 2.098 2.098 0 01-4.195 0z" />
-    </g>
-    <path
-      d="M1226.922 1.753l-23.088 344.74-625.998-115.092 261.692 129.346L995.74 129.786l243.438 112.346"
-      fill="transparent"
-      strokeWidth=".25"
-      stroke="#FFF"
-      strokeMiterlimit="10"
+      d="M.23 648.2l564.59-260.93 945.63 160.05L1975.66 3.5"
+      className="abstractLinesWhite__st0 drawIn"
+      // style={{ animationDelay: `1s` }}
     />
     <path
-      d="M21.431 396.481l324.37-177.451 234.141 178.789 255.02-313.661 407.064-2.279L956.4 42.528 463.812 386.975 279.618 255.238"
-      fill="transparent"
-      strokeWidth=".25"
-      stroke="#FFF"
-      strokeMiterlimit="10"
+      d="M1975.66 3.5l-41.58 560.41L919.49 377.3 596.21 622.93"
+      className="abstractLinesWhite__st0 drawIn"
+      // style={{ animationDelay: `3s` }}
     />
     <path
-      d="M174.855 387.2l284.97-181.621 287.913 148.322 87.224-269.743 391.96 70.147"
-      fill="transparent"
-      strokeWidth=".25"
-      stroke="#FFF"
-      strokeMiterlimit="10"
+      d="M244.6 648.2l482.87-312.92 468.48 241.43 141.93-439.07 662.35 114.18"
+      className="abstractLinesWhite__st0 drawIn"
+      // style={{ animationDelay: `5s` }}
     />
     <path
-      d="M574.747 228.967l101.112 50.876 77.532-95.356-78.37 54.753zm538.582-94.985l111.4-129.778-85.075 134.483zM320.736 255.238l37.295-17.198 40.764 6.432z"
-      fill="#FFF"
-      opacity=".2"
+      d="M.23 648.2l544.14-289.17L922.92 648.2l414.96-510.56 662.35-3.71"
+      className="abstractLinesWhite__st0 drawIn"
+      // style={{ animationDelay: `7s` }}
+    />
+    <path
+      d="M2000.23 116.94l-464.76-47.07-808 561.04-291.43-214.3L.23 648.2"
+      className="abstractLinesWhite__st0 drawIn"
+      // style={{ animationDelay: `9s` }}
+    />
+    <path
+      d="M2000.23 391.79l-397.91-181.87-257.02 377.93L919.49 377.3 399.31 648.2"
+      className="abstractLinesWhite__st0 drawIn"
+      // style={{ animationDelay: `11s` }}
+    />
+    <path
+      d="M1975.66 3.5l-280.63 445.12-775.54-71.32L145.1 648.2"
+      className="abstractLinesWhite__st0 drawIn"
+      // style={{ animationDelay: `12s` }}
+    />
+
+    {/* Circles That Fade In */}
+
+    {/* Circles that DrawIn */}
+    <circle
+      cx={1072.68}
+      cy={391.06}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1044.62}
+      cy={498.4}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={920.49}
+      cy={377.59}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={743.64}
+      cy={511.93}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={728.06}
+      cy={335.73}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={610.75}
+      cy={411.3}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1338.18}
+      cy={138.64}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1601.87}
+      cy={209.92}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1694.67}
+      cy={447.96}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1251.97}
+      cy={407.76}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1975.66}
+      cy={6.04}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1836.64}
+      cy={224}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1510.81}
+      cy={546.23}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
+    />
+    <circle
+      cx={1455.97}
+      cy={426.52}
+      r={5.54}
+      className="abstractLinesWhite__st0 drawInCircle"
     />
   </svg>
 );

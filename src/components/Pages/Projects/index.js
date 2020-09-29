@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 import Page from "../../Page";
+import HeroBasic from "../../HeroBasic";
 import WaveHr from "../../Parts/WaveHR";
 import Title from "../../Parts/Title";
 import ProjectCard from "../../Parts/ProjectCard";
@@ -125,8 +126,16 @@ export default () => {
   ];
   return (
     <Page>
-      <Title title="Our Projects" themeColor="darkTheme" />
-      <WaveHr color="#000000" bg="white" />
+      <HeroBasic
+        title="Our Projects"
+        img={{
+          src: "/images/people-working-2.png",
+          alt: "Cadre5 Building",
+        }}
+        svg="CirclesWhite"
+      />
+      {/* <Title title="Our Projects" themeColor="darkTheme" /> */}
+      {/* <WaveHr color="#000000" bg="white" /> */}
       <WaveHr color="white" bg="white" />
       <ProjectCard cards={cards1} />
       <WaveHr color="white" bg="white" />

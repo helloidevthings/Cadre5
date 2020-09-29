@@ -33,8 +33,12 @@ export default styled.section`
     z-index: -1;
   }
   & .background_svg {
-    position: absolute;
-    bottom: -30%;
-    right: -10%;
+    svg {
+      max-width: 90%;
+      position: absolute;
+      bottom: -13%;
+      right: -7%;
+      opacity: 0.7;
+    }
   }
 `;
