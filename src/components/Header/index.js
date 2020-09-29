@@ -7,7 +7,7 @@ import MenuIconOpen from "../Svgs/MenuIconOpen";
 import Styles from "./styled";
 
 export default () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <Styles>
       <nav className="Navigation">

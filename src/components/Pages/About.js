@@ -16,7 +16,7 @@ const About = () => (
         src: "/images/cadre5office.jpg",
         alt: "Cadre5 Building",
       }}
-      svg={true}
+      svg="AbstractWhite"
     />
     <CTA
       subheader="FOUNDED IN 1999"

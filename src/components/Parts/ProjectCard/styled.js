@@ -61,10 +61,10 @@ export default styled.section`
       margin-right: 0.4em;
       border-radius: 1em;
       padding: 0.1em 0.8em 0.2em;
-      &:nth-child(even) {
+      &:nth-of-type(even) {
         background-color: ${(props) => props.theme.color.grayMed};
       }
-      &:nth-child(odd) {
+      &:nth-of-type(odd) {
         background-color: ${(props) => props.theme.color.primary};
       }
 

@@ -11,6 +11,7 @@ export default () => {
           src: "/images/stock-of-working.png",
           alt: "People working in an office",
         }}
+        svg="WavesWhite"
       />
       <section className="Careers"></section>
     </Page>

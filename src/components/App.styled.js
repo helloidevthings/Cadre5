@@ -194,7 +194,7 @@ export default styled.main`
   .fadeUp {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.6s cubic-bezier(0.42, 0, 0.45, 0.99);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.45, 0.99);
 
     &.active {
       transform: none;
@@ -203,7 +203,7 @@ export default styled.main`
   }
 
   .fade_in {
-    opacity: 0.5;
+    opacity: 0.4;
     transform: translateY(1.8em);
     transition: all 0.5s ease-in-out;
   }
@@ -214,7 +214,7 @@ export default styled.main`
 
   .zoom_move {
     transform: scale(0.95) translateY(2em);
-    transition: all 0.5s ease-in;
+    transition: all 0.4s ease-in;
   }
 
   .zoom_1 {
@@ -223,6 +223,7 @@ export default styled.main`
 
   /* SVG Animations */
 
+  /* Main Graphics Draw In Animation */
   .drawIn {
     stroke-dasharray: 2300;
     stroke-dashoffset: 2300;
@@ -240,6 +241,46 @@ export default styled.main`
       stroke-dashoffset: 2000;
     }
   }
+
+  /* Draw In for Small Objects */
+  .drawIn2 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw2 12s ease-in-out infinite;
+  }
+
+  @keyframes draw2 {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    60% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 1000;
+    }
+  }
+
+  /* Draw In Slowly */
+  .drawIn3 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: draw3 15s ease-in-out 3s infinite;
+  }
+
+  @keyframes draw3 {
+    0% {
+      stroke-dashoffset: 2000;
+    }
+    60% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 2000;
+    }
+  }
+
+  /* Draw In 1x and Stop */
   .drawIn1x {
     stroke-dasharray: 2300;
     stroke-dashoffset: 2300;
@@ -255,6 +296,7 @@ export default styled.main`
     }
   }
 
+  /* Draw In for Small Circles on Homepage in Abstract Point Graph */
   .drawInCircle {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
@@ -285,7 +327,7 @@ export default styled.main`
   }
 
   .itemTo {
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
   }
@@ -307,32 +349,16 @@ export default styled.main`
     }
   }
   .bounce2 {
-    animation-name: bounce2;
+    animation-name: bounce-2;
     animation-timing-function: ease;
   }
 
-  @keyframes bounce2 {
+  @keyframes bounce-2 {
     0% {
       transform: translateX(0);
     }
     50% {
-      transform: translateX(25px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  .bounce3 {
-    animation-name: bounce3;
-    animation-timing-function: ease;
-  }
-
-  @keyframes bounce3 {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(65px);
+      transform: translateY(20px);
     }
     100% {
       transform: translateX(0);

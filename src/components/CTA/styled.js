@@ -32,7 +32,7 @@ export default styled.section`
     flex-grow: 9999;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.8s ease-in-out;
+    transition: all 0.7s ease-in-out;
   }
 
   figure {
@@ -42,8 +42,8 @@ export default styled.section`
     display: flex;
     justify-content: center;
     opacity: 0;
-    transform: translateY(-20px);
-    transition: all 1s ease-in-out;
+    transform: translateY(20px);
+    transition: all 1.2s ease-in-out;
 
     /* @supports (max-width: max-content) {
       min-width: 10em;

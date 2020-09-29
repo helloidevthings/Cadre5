@@ -2,10 +2,11 @@ import React from "react";
 import Image from "../Parts/Image";
 import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
-
 import AbstractPointGraphWhite from "../Svgs/AbstractPointGraphWhite";
+import WaveLinesWhite from "../Svgs/WaveLinesWhite";
+import CirclesWhite from "../Svgs/CirclesWhite";
 
-export default ({ title, img = "", svg = false }) => {
+export default ({ title, img = "", svg = "" }) => {
   const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
 
   return (
@@ -15,9 +16,13 @@ export default ({ title, img = "", svg = false }) => {
         className={`text-wrapper fadeUp ${inView ? "active" : ""}`}
         ref={ref}
       >
-        <h1 className="header">{title}</h1> 
+        <h1 className="header">{title}</h1>
       </div>
-      { svg && <AbstractPointGraphWhite />}
+      <div className="background_svg">
+        {svg === "AbstractWhite" && <AbstractPointGraphWhite />}
+        {svg === "WavesWhite" && <WaveLinesWhite />}
+        {svg === "CirclesWhite" && <CirclesWhite />}
+      </div>
     </Styles>
   );
 };

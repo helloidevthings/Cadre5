@@ -23,8 +23,12 @@ export default styled.section`
     }
   }
 
+  & h1 {
+    font-size: 3.7em;
+  }
+
   & h2 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 300;
     line-height: 1.45;
   }
