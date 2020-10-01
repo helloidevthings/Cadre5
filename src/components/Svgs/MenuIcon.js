@@ -2,9 +2,21 @@ import React from "react";
 
 function MenuIcon() {
   return (
-    <svg width={24} height={24} viewBox="0 0 24 24" overflow="visible">
-      <path d="M0 0h24v24H0V0z" fill="none" />
-      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+    <svg
+      width={21.64}
+      height={17.71}
+      viewBox="0 0 21.64 17.71"
+      overflow="visible"
+    >
+      <style>
+        {
+          ".prefix__st0{fill:none;stroke:#ff2839;stroke-width:1.25;stroke-miterlimit:10}"
+        }
+      </style>
+      <path
+        className="prefix__st0"
+        d="M0 11.6h21.64M0 17.09h21.64M0 .62h21.64M0 6.05h21.64"
+      />
     </svg>
   );
 }

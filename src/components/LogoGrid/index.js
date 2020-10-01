@@ -47,6 +47,7 @@ export default () => {
       type: "government",
       alt: "Department of Energy",
     },
+
     {
       name: "department_of_Homeland_security",
       type: "government",
@@ -82,6 +83,16 @@ export default () => {
       type: "government",
       alt: "National Geospacial Intellegence Agency",
     },
+    {
+      name: "cca",
+      type: "government",
+      alt: "CCA",
+    },
+    {
+      name: "pantex",
+      type: "government",
+      alt: "Pantex",
+    },
   ];
 
   const media = [
@@ -104,6 +115,11 @@ export default () => {
       name: "regal",
       type: "media",
       alt: "Regal",
+    },
+    {
+      name: "HGTV",
+      type: "media",
+      alt: "HGTV",
     },
     {
       name: "scripps",
@@ -164,6 +180,11 @@ export default () => {
       name: "general_insurance",
       type: "consumer",
       alt: "General Insurance",
+    },
+    {
+      name: "radio_systems",
+      type: "consumer",
+      alt: "Radio Systems",
     },
     {
       name: "JTV",
@@ -254,6 +275,11 @@ export default () => {
       name: "osborne_coincom",
       type: "other",
       alt: "Osborne Coincom",
+    },
+    {
+      name: "pronova",
+      type: "other",
+      alt: "Pronova",
     },
   ];
 

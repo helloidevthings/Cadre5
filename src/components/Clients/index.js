@@ -83,6 +83,11 @@ export default () => {
       alt: "National Geospacial Intellegence Agency",
     },
     {
+      name: "pantex_white",
+      type: "government",
+      alt: "Pantex",
+    },
+    {
       name: "food_network_white",
       type: "media",
       alt: "Food Network",
@@ -108,6 +113,11 @@ export default () => {
       alt: "Scripps",
     },
     {
+      name: "hgtv_white",
+      type: "media",
+      alt: "HGTV",
+    },
+    {
       name: "time_warner_cable_white",
       type: "media",
       alt: "Time Warner Cable",
@@ -122,8 +132,6 @@ export default () => {
       type: "transportation",
       alt: "Delta",
     },
-  ];
-  const logos2 = [
     {
       name: "brunswick_white",
       type: "transportation",
@@ -144,6 +152,8 @@ export default () => {
       type: "consumer",
       alt: "Verizon",
     },
+  ];
+  const logos2 = [
     {
       name: "coca_cola_white",
       type: "consumer",
@@ -153,6 +163,11 @@ export default () => {
       name: "CVS_pharmacy_white",
       type: "consumer",
       alt: "CVS Pharmacy",
+    },
+    {
+      name: "radio_systems_white",
+      type: "consumer",
+      alt: "Radio Systems",
     },
     {
       name: "general_insurance_white",
@@ -214,6 +229,7 @@ export default () => {
       type: "other",
       alt: "ams",
     },
+
     {
       name: "rhondes_college_white",
       type: "other",
@@ -243,6 +259,16 @@ export default () => {
       name: "osborne_coincom_white",
       type: "other",
       alt: "Osborne Coincom",
+    },
+    {
+      name: "cca_white",
+      type: "other",
+      alt: "CCA",
+    },
+    {
+      name: "pronova_white",
+      type: "other",
+      alt: "ProNova",
     },
   ];
   const [visible, toggleVisible] = useState(true);
