@@ -27,17 +27,22 @@ export default styled.section`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
 
-    img {
-      opacity: 0;
-      transition: all 0.5s cubic-bezier(0.68, 0.01, 0.68, 1);
+  & .logo {
+    opacity: 0;
+    transition: transform 0.2s cubic-bezier(0.68, 0.01, 0.68, 1);
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
+
   &.active {
     .grid {
-      img {
-        opacity: 1;
-      }
+    }
+    .logo {
+      opacity: 1;
     }
   }
 `;

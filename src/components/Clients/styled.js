@@ -31,14 +31,14 @@ export default styled.section`
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
+  }
 
-    & > * {
-      max-width: 7em;
-      max-height: 3.75em;
-      margin: 1.3rem;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
+  & .logo {
+    max-width: 7em;
+    max-height: 3.75em;
+    margin: 1.3rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
   }
 
   /* Logo Wrapper Slide Up */
