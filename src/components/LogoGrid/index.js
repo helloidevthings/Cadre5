@@ -33,8 +33,7 @@ export default () => {
       name: "pentagon",
       type: "government",
       alt: "Pentagon",
-      link:
-        "https://www.defense.gov/Resources/Military-Departments/DOD-Websites/?category=Pentagon+-+Official+Site",
+      link: "https://www.defense.gov/",
       delay: false,
     },
     {
@@ -45,11 +44,24 @@ export default () => {
       delay: false,
     },
     {
+      name: "lanl",
+      type: "government",
+      alt: "Y12",
+      link: "https://www.lanl.gov/",
+      delay: false,
+    },
+    {
+      name: "inl",
+      type: "government",
+      alt: "Idaho National Laboratory",
+      link: "https://inl.gov/",
+      delay: false,
+    },
+    {
       name: "us_army",
       type: "government",
       alt: "US Army",
-      link:
-        "https://www.goarmy.com/?iom=AFTU-20-980_N_PSEA_71700000059783001_700000001989777_43700049512734181_58700005434485240_us+army&gclid=CjwKCAjwzvX7BRAeEiwAsXExo5N1CBS3OixGIdl5TuUEKpvIm6yeii11Y2Cec2HlA3qa33gEKxyvgxoCFXEQAvD_BwE&gclsrc=aw.ds",
+      link: "https://www.goarmy.com/",
       delay: false,
     },
     {
@@ -234,6 +246,13 @@ export default () => {
       delay: false,
     },
     {
+      name: "rogers",
+      type: "transportation",
+      alt: "Rogers",
+      link: "https://rogersgroupincint.com/",
+      delay: false,
+    },
+    {
       name: "idle_air",
       type: "transportation",
       alt: "Idle Air",
@@ -320,26 +339,19 @@ export default () => {
       link: "https://americanbookco.com/",
       delay: false,
     },
-    {
-      name: "nucsafe",
-      type: "consumer",
-      alt: "Nucsafe",
-      link: "https://www.nucsafe.com/",
-      delay: false,
-    },
-    {
-      name: "avertium",
-      type: "consumer",
-      alt: "avertium",
-      link: "https://www.avertium.com/",
-      delay: false,
-    },
   ];
   const banking = [
     {
       name: "first_tennessee",
       type: "banking",
       alt: "First Tennessee",
+      link: "https://www.firsthorizon.com/",
+      delay: false,
+    },
+    {
+      name: "first_horizon",
+      type: "banking",
+      alt: "First Horizon",
       link: "https://www.firsthorizon.com/",
       delay: false,
     },
@@ -410,6 +422,13 @@ export default () => {
       delay: false,
     },
     {
+      name: "avertium",
+      type: "other",
+      alt: "avertium",
+      link: "https://www.avertium.com/",
+      delay: false,
+    },
+    {
       name: "shelton_group",
       type: "other",
       alt: "Shelton Group",
@@ -417,17 +436,17 @@ export default () => {
       delay: false,
     },
     {
-      name: "first_horizon",
-      type: "other",
-      alt: "First Horizon",
-      link: "https://www.firsthorizon.com/",
-      delay: false,
-    },
-    {
       name: "general_automics",
       type: "other",
       alt: "General Automics",
       link: "https://www.ga.com/",
+      delay: false,
+    },
+    {
+      name: "nucsafe",
+      type: "other",
+      alt: "Nucsafe",
+      link: "https://www.nucsafe.com/",
       delay: false,
     },
     {
@@ -448,8 +467,7 @@ export default () => {
       name: "pronova",
       type: "other",
       alt: "Pronova",
-      link:
-        "https://provisionhealthcare.com/about-us/innovative-solutions/proton-therapy-system/",
+      link: "https://provisionhealthcare.com/about-us/",
       delay: false,
     },
     {
@@ -464,13 +482,6 @@ export default () => {
       type: "other",
       alt: "PGi",
       link: "https://www.pgi.com/",
-      delay: false,
-    },
-    {
-      name: "rogers",
-      type: "other",
-      alt: "Rogers",
-      link: "https://rogersgroupincint.com/",
       delay: false,
     },
     {

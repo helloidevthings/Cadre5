@@ -16,11 +16,11 @@ export default styled.section`
   }
 
   & .logoWrapper {
-    max-height: 800px;
+    max-height: 1500px;
     max-width: 1200px;
     overflow: hidden;
     height: auto;
-    transition: all 0.5s cubic-bezier(0.68, 0.01, 0.68, 1);
+    transition: all 0.6s cubic-bezier(0.68, 0.01, 0.68, 1);
   }
 
   & .logos {
@@ -34,9 +34,9 @@ export default styled.section`
   }
 
   & .logo {
-    max-width: 7em;
-    max-height: 3.75em;
-    margin: 1.3rem;
+    max-width: 8.3em;
+    max-height: 3em;
+    margin: 1.2em 0.7em;
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }

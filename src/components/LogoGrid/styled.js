@@ -29,20 +29,16 @@ export default styled.section`
     align-items: center;
   }
 
-  & .logo {
+  .logo {
     opacity: 0;
-    transition: transform 0.2s cubic-bezier(0.68, 0.01, 0.68, 1);
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   &.active {
-    .grid {
-    }
     .logo {
-      opacity: 1;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 `;
