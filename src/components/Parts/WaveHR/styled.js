@@ -5,6 +5,8 @@ export default styled.figure`
   overflow: hidden;
   max-width: 100vw;
   figure {
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
   svg {
     max-width: 100%;

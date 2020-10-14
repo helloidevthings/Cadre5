@@ -14,8 +14,11 @@ export default styled.section`
       width: 100%;
       border-radius: 10px;
       margin: auto;
-      border: 1.4rem white solid;
+      border: 1em white solid;
       box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.16);
+      @media (max-width: ${(props) => props.theme.breakpoints.desktop}) {
+        border: 0.8em white solid;
+      }
     }
   }
 

@@ -209,8 +209,9 @@ export default styled.main`
   .fade_in {
     opacity: 0.4;
     transform: translateY(1.8em);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
+
   .fade_1 {
     opacity: 1;
     transform: translateY(0em);
