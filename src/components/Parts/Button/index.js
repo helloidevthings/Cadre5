@@ -13,6 +13,7 @@ export default ({
   <Styles
     href={href}
     target={target === true ? "_blank" : "_self"}
+    rel={target === "_blank" ? "noopener noreferrer" : ""}
     className={`${btnStyle} ${themeColor}`}
   >
     {text}

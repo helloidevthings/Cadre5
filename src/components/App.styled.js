@@ -36,6 +36,10 @@ export default styled.main`
     text-align: center;
   }
 
+  .red {
+    color: ${(props) => props.theme.color.primary};
+  }
+
   .text-wrapper {
     padding-left: 2rem;
     padding-right: 2rem;
