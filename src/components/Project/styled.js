@@ -19,7 +19,7 @@ export default styled.article`
     flex-grow: 9999;
     padding-right: 3em;
     opacity: 0;
-    transform: translateY(20%);
+    transform: translateY(20px);
     transition: all 0.5s ease-in-out;
   }
 
