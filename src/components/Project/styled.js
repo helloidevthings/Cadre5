@@ -20,7 +20,7 @@ export default styled.article`
     padding-right: 3em;
     opacity: 0;
     transform: translateY(20%);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .image-wrapper {
