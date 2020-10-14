@@ -4,15 +4,16 @@
   "private": true,
   "devDependencies": {
     "concurrently": "4.1.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.3"
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
     "autoprefixer-stylus": "0.14.0",
     "emotion-theming": "^10.0.27",
-    "firebase": "^7.19.1",
+    "firebase": "^7.23.0",
     "framer-motion": "^1.11.1",
+    "netlify": "^4.8.0",
     "prop-types": "^15.7.2",
     "re-base": "4.0.0",
     "react": "^16.13.1",
