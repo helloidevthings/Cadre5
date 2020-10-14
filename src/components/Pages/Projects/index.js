@@ -76,7 +76,7 @@ export default () => {
       ],
     },
     {
-      title: "Ru",
+      title: "Placeholder",
       leadin: "Project management for government agencies.",
       descLg:
         "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
@@ -99,7 +99,7 @@ export default () => {
       ],
     },
     {
-      title: "Ma",
+      title: "Placeholder",
       leadin: "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",

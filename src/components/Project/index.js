@@ -9,13 +9,18 @@ export default ({ details = [], themeColor }) => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
 
   return (
-    <div>
+    <React.Fragment>
       {details.map(
         (
           { subheader, title, leadin, descLg, desc, img = "", link = "" },
           i
         ) => (
-          <Styles key={i} className={`${themeColor} ${inView ? "active" : ""}`}>
+          <Styles
+            key={i}
+            className={`${themeColor ? themeColor : ""} ${
+              inView ? "active" : ""
+            }`}
+          >
             <div className="text-wrapper" ref={ref}>
               <h2>{title}</h2>
               <IntroText
@@ -43,6 +48,6 @@ export default ({ details = [], themeColor }) => {
           </Styles>
         )
       )}
-    </div>
+    </React.Fragment>
   );
 };
