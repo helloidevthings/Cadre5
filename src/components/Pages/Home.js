@@ -84,7 +84,7 @@ const Home = () => {
       <Project details={resolution} />
       <WaveHr
         color="white"
-        bg="linear-gradient(to top, rgb(237 237 237 / 10%), rgb(233 233 233 / 37%))"
+        bg="linear-gradient(to top, #ededed1a, #e9e9e95e)"
       />
       <Project details={g2} themeColor="mediumTheme" />
       <WaveHr color="#ededed" bg="white" />

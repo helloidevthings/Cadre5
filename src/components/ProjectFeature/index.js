@@ -12,7 +12,7 @@ export default ({
   themeColor = "",
   row = "",
   video = "",
-  iframe = [],
+  iframe = "",
   link = "",
 }) => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
@@ -38,7 +38,7 @@ export default ({
       <div className={`fade_in ${inView ? "fade_1" : ""}`} ref={ref}>
         {img && <Image src={img.src} alt={img.alt} />}
         {video && <Video url={video.url} poster={video.poster} />}
-        {iframe && <div className="iframeContainer">{iframe}</div>}
+        {iframe ? <div className="iframeContainer">{iframe}</div> : ""}
       </div>
     </Styles>
   );
