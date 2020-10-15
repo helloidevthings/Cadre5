@@ -9,7 +9,10 @@ const FourOhFour = () => (
   <Page>
     <BlogText textAlign="center">
       <h1 className="red">Oops!</h1>
-      <h2>404 • Page Not Found!</h2>
+      <h2>
+        <span className="blue">404</span>
+        <span className="grayLt"> • </span>Page Not Found!
+      </h2>
       <p>
         THe page you are looking for doesn't exist or an other error occured.
       </p>
@@ -21,7 +24,6 @@ const FourOhFour = () => (
         arrow={true}
       />
     </BlogText>
-    {/* <HeroBasic title="Oops! 404" /> */}
     <Image src="./images/404page.png" />
     <WaveHR bg="#ffffff" color="#ffffff" />
   </Page>

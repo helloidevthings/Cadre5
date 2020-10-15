@@ -39,6 +39,12 @@ export default styled.main`
   .red {
     color: ${(props) => props.theme.color.primary};
   }
+  .blue {
+    color: ${(props) => props.theme.color.secondary};
+  }
+  .grayLt {
+    color: ${(props) => props.theme.color.grayLt};
+  }
 
   .text-wrapper {
     padding-left: 2rem;
