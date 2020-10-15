@@ -2,20 +2,24 @@ import styled from "@emotion/styled";
 
 export default styled.section`
   & a {
-    color: white;
+    color: black;
     text-decoration: none;
-    background: ${(props) => props.theme.gradients.darkToGrayMd};
+    background: #fff;
     flex: 1 1 auto;
     margin: 0.5em;
     max-width: 20em;
-    border-radius: 0.7em;
-    box-shadow: ${(props) => props.theme.boxShadow.main};
+    border: 3px solid #efefef;
+    border-radius: 0.4em;
     opacity: 0;
     transform: scale(1.1);
     transition: opacity 0.3s ease-in, transform 0.4s ease-in;
 
     &:hover {
-      background: ${(props) => props.theme.color.black};
+      border: none;
+      border: 3px solid #fff;
+      box-shadow: -1px 0px 11px 4px #d0e5ff;
+
+      /* color: #fff; */
     }
   }
 
@@ -39,7 +43,7 @@ export default styled.section`
     position: relative;
     max-height: 250px;
     overflow: hidden;
-    border-radius: 0 0 0.7em 0.7em;
+    border-radius: 0 0 0.4em 0.4em;
 
     img {
       height: 100%;
@@ -50,22 +54,24 @@ export default styled.section`
   & .tags {
     display: flex;
     flex-wrap: wrap;
-    margin: 1.3em 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    margin: 1.3em 0;
     padding-inline-start: 0;
+    color: #fff;
 
     & li {
       list-style: none;
       font-size: 0.7em;
+      font-weight: 500;
       margin-right: 0.4em;
       border-radius: 1em;
-      padding: 0.1em 0.8em 0.2em;
+      padding: 0.2em 0.9em 0.2em;
       &:nth-of-type(even) {
-        background-color: ${(props) => props.theme.color.grayMed};
+        background-color: ${(props) => props.theme.color.primary};
       }
       &:nth-of-type(odd) {
-        background-color: ${(props) => props.theme.color.primary};
+        background-color: ${(props) => props.theme.color.secondary};
       }
 
       &:before {
