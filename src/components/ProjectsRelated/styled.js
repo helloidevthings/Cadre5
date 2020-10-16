@@ -7,6 +7,6 @@ export default styled.section`
 
   .title {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
   }
 `;
