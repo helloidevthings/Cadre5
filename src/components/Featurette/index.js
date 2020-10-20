@@ -14,11 +14,10 @@ export default ({ title, quote }) => {
   return (
     <Styles>
       <Title title={title} />
-      <div className="wrap">
+      <div className={`wrap fadeUp ${inView ? "active" : ""}`} ref={ref}>
         {partners.map(({ name = "", title = "", img = "" }, i) => (
           <article
-            className={`item fadeUp ${inView ? "active" : ""}`}
-            ref={ref}
+            className={`item `}
             key={i}
             style={{ transitionDelay: `${i * 0.2}s` }}
           >
