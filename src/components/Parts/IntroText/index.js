@@ -6,6 +6,7 @@ export default ({ subheader, leadin, descLg, desc }) => (
     {subheader && (
       <div className="date-wrap">
         <h4 className="date">{subheader}</h4>
+        <div></div>
       </div>
     )}
     {leadin && (

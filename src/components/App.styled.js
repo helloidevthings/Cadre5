@@ -146,6 +146,7 @@ export default styled.main`
 
   hr {
     margin: 1rem 0;
+    border: 1px solid #c4c3c3; 
   }
 
   .fancyAND {

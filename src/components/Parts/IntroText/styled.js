@@ -3,9 +3,8 @@ import styled from "@emotion/styled";
 export default styled.div`
   .date-wrap {
     margin: 1rem 0;
-    position: relative;
-
-    &:after {
+    /* position: relative; */
+    /* &:after {
       content: "";
       background-color: ${(props) => props.theme.color.grayLt};
       position: absolute;
@@ -14,13 +13,24 @@ export default styled.div`
       top: 50%;
       left: 0;
       z-index: -1;
+    } */
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+    div {
+      flex: 1 1 auto; 
+      flex-basis: auto; 
+      width: 100%;
+      height: 2px; 
+      background-color: #c4c3c3; 
     }
   }
 
   .date {
+    flex: 1 0 auto; 
     color: ${(props) => props.theme.color.grayLt};
-    display: inline;
-    background-color: white;
     font-size: 0.9em;
     font-weight: 500;
     letter-spacing: 0.01em;
