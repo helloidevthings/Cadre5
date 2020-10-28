@@ -6,7 +6,7 @@ import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
 
 export default ({ details = [], themeColor }) => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
     <React.Fragment>
