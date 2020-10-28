@@ -2,6 +2,7 @@ import React from "react";
 import Styles from "./styled";
 import HeroImage from "../HeroImage";
 import Map from "../Svgs/Map";
+import Image from "../Parts/Image";
 
 export default () => {
   return (
@@ -19,6 +20,7 @@ export default () => {
       <a href="https://goo.gl/maps/ipTngEpBKrhsJgd18" target="blank">
         <div className="map">
           <Map />
+          {/* <Image src="/images/cadre5map.png" alt="map of Knoxville and Cadre5's location"/> */}
         </div>
       </a>
     </Styles>

@@ -17,7 +17,7 @@ export default styled.section`
     flex-direction: row-reverse;
   }
   .text-wrapper {
-    max-width: 35rem;
+    max-width: 35em;
   }
 
   .leadin {

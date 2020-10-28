@@ -9,7 +9,7 @@ export default styled.div`
       content: "";
       background-color: ${(props) => props.theme.color.grayLt};
       position: absolute;
-      height: 1px;
+      height: 2px;
       width: 100%;
       top: 50%;
       left: 0;
@@ -22,7 +22,7 @@ export default styled.div`
     display: inline;
     background-color: white;
     font-size: 0.9em;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.01em;
     margin: 1em 0;
     padding-right: 10px;

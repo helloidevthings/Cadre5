@@ -27,7 +27,7 @@ export default () => {
       },
       tags: [
         {
-          type: "Government",
+          type: "Program Management",
         },
       ],
     },
@@ -52,7 +52,7 @@ export default () => {
           type: "Medical",
         },
         {
-          type: "User Experience",
+          type: "User Testing",
         },
       ],
     },
@@ -68,10 +68,10 @@ export default () => {
       },
       tags: [
         {
-          type: "Government",
+          type: "Project Management",
         },
         {
-          type: "User Experience",
+          type: "User Centered",
         },
       ],
     },
@@ -94,7 +94,7 @@ export default () => {
       },
       tags: [
         {
-          type: "Government",
+          type: "Placeholder",
         },
       ],
     },
@@ -116,10 +116,7 @@ export default () => {
       },
       tags: [
         {
-          type: "Medical",
-        },
-        {
-          type: "User Experience",
+          type: "Placeholder",
         },
       ],
     },

@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import C5MapPin from "../../Svgs/C5MapPin";
 import C5Phone from "../../Svgs/C5Phone";
 import C5Envelope from "../../Svgs/C5Envelope";
@@ -9,21 +10,31 @@ export default () => (
     <ul className="InfoItems">
       <li className="Info_item">
         <C5Envelope />
-        <a href="mailto:info@cadre5.com" target="blank">
-          Info@Cadre5.com
-        </a>
+        <Button
+                  themeColor="lightTheme"
+                  btnStyle="secondary"
+                  href="mailto:info@cadre5.com"
+                  text="Info@Cadre5.com"
+                />
       </li>
       <li className="Info_item">
         <C5Phone />
-        <a href="tel:1-865-694-5600" rel="nofollow">
-          865.694.5600
-        </a>
+        <Button
+                  themeColor="lightTheme"
+                  btnStyle="secondary"
+                  href="tel:1-865-694-5600"
+                  rel="nofollow"
+                  text="865.694.5600"
+                />
       </li>
       <li className="Info_item">
         <C5MapPin />
-        <a href="https://goo.gl/maps/ipTngEpBKrhsJgd18" target="blank">
-          804 Innovation Drive, Knoxville • TN 37932
-        </a>
+        <Button
+                  themeColor="lightTheme"
+                  btnStyle="secondary"
+                  href="https://goo.gl/maps/ipTngEpBKrhsJgd18"
+                  text="804 Innovation Drive, Knoxville • TN 37932"
+                />
       </li>
     </ul>
   </Styles>

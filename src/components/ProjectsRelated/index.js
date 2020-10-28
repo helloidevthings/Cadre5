@@ -6,7 +6,6 @@ import Title from "../Parts/Title";
 export default ({ projTitle, projLeadin, img = "", tags }) => {
   const cards = [
     {
-      subheader: "2007 • 2020",
       title: "G2",
       leadin: "Project management for government agencies.",
       descLg:
@@ -27,13 +26,9 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
         {
           type: "Program Management",
         },
-        {
-          type: "UX",
-        },
       ],
     },
     {
-      subheader: "2007 • 2020",
       title: "HealthMedEx",
       leadin: "Wireframing, Prototyping and Usability Testing",
       descLg:
@@ -54,12 +49,12 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
           type: "Medical",
         },
         {
-          type: "User Experience",
+          type: "User Testing",
         },
       ],
     },
     {
-      title: "Resolution",
+      title: "RESolution",
       leadin: "Simplify Work. Improve Scientific Productivity.",
       img: {
         src: "/images/graph-full-min.png",
@@ -73,7 +68,7 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
           type: "Project Management",
         },
         {
-          type: "User Experience",
+          type: "User Centered",
         },
       ],
     },

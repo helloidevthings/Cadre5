@@ -38,6 +38,11 @@ export default styled.section`
   & .text {
     padding: 1.3em 1.5em 1.4em;
   }
+/* 
+  p {
+    color: ${(props) => props.theme.color.primary};
+    font-weight: 600; 
+  } */
 
   & figure {
     position: relative;

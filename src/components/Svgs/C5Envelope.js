@@ -8,12 +8,12 @@ const C5Envelope = () => (
   >
     <path
       fill="none"
-      stroke="#ff2839"
+      stroke=""
       strokeMiterlimit="10"
       d="M.5.5h23.72v18.34H.5z"
     />
     <path
-      fill="#ff2839"
+      fill=""
       d="M3.27 4.97l8.94 6.02 9.23-6.02V3.62l-9.23 6.01-8.94-6.01z"
     />
   </svg>
