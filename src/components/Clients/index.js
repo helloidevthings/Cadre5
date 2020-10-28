@@ -520,7 +520,7 @@ export default () => {
       <div className="logoWrapper">
         <LogoGridItem logos={logos2} />
       </div>
-      <button onClick={handleButtonClick}>View All Logos</button>
+      <button onClick={handleButtonClick}>View All</button>
     </Styles>
   );
 };
