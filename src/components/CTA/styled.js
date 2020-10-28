@@ -32,7 +32,7 @@ export default styled.section`
     flex-grow: 9999;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   figure {

@@ -20,14 +20,12 @@ export default styled.article`
     padding-right: 3em;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.45, 0.99);
   }
 
   .image-wrapper {
     opacity: 0;
-    /* transform: translateX(15%); */
-    transition: all 1s ease-in-out;
-    transition-delay: 0.2s;
+    transition: all .8s ease-in-out;
 
     &.active {
       opacity: 1;

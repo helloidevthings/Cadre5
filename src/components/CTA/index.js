@@ -16,7 +16,7 @@ export default ({
   border = "",
   link = "",
 }) => {
-  const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
     <Styles
