@@ -57,13 +57,33 @@ export default styled.section`
     overflow: hidden;
     background: ${(props) => props.theme.gradients.redToBlack};
     max-width: 100vw;
-    max-height: 36em;
+    max-height: 38em;
     margin-top: 3rem;
+
 
     svg {
       margin-top: -7rem;
       width: 100%;
       height: 100%;
+
+      @media (min-width: 320px) and (max-width: 1100px) {
+        width: 0; 
+        height: 0; 
     }
   }
+
+  @media (min-width: 500px) and (max-width: 1100px) {
+        background: url("./images/cadre5map.png");
+        background-size: cover; 
+        background-position: 5% 90%; 
+        height: 500px;
+        background-size: 130%;
+        background-repeat:  no-repeat; 
+      }
+
+      @media (min-width: 320px) and (max-width: 500px) {
+        background-size: 200%;
+      }
+  }
+
 `;

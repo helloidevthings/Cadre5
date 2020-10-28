@@ -4,7 +4,7 @@ export default {
     white: "#ffffff",
     primary: "#c10230",
     secondary: "#224ca4",
-    ltRed: "#FF4545",
+    ltRed: "#ff2839",
     ltBlue: "#4296ff",
     red: "#ab022a",
     darkRed: "#2e0000",

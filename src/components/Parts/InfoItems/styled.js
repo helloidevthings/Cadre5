@@ -25,11 +25,29 @@ export default styled.div`
     margin: 0.4em 1.3em 0.4em 0;
     letter-spacing: 0.024em;
     font-weight: 200;
+    
+      a {
+      margin-top: 0; 
+      transition: all .1s ease-in-out;
+
+      &:hover {
+        color: ${(props)=> props.theme.color.ltBlue};
+      }
+    }
 
     svg {
-      margin-right: 0.5em;
+      margin-right: 0.4em;
       width: 23px;
       max-height: 23px;
+      stroke: ${(props)=> props.theme.color.ltRed};
+      fill: ${(props)=> props.theme.color.ltRed}; 
+    }
+
+    &:hover {
+     svg {
+        stroke: #fff;
+        fill: #fff;
+      }
     }
   }
 `;

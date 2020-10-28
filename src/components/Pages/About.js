@@ -7,6 +7,7 @@ import Featurette from "../Featurette";
 
 import Title from "../Parts/Title";
 import LogoGrid from "../LogoGrid";
+import ProjectsRelated from "../ProjectsRelated";
 
 const About = () => (
   <Page>
@@ -92,6 +93,7 @@ const About = () => (
       }}
     />
     <LogoGrid />
+    <ProjectsRelated />
   </Page>
 );
 
