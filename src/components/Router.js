@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import ContactPage from "./Pages/ContactPage";
 import Careers from "./Pages/Careers";
+import Clients from "./Pages/Clients";
 import Blog from "./Pages/Blog";
 import Projects from "./Pages/Projects";
 import Resolution from "./Pages/Projects/Resolution";
@@ -23,6 +24,7 @@ const Router = () => (
     <Route exact path="/Projects" component={Projects} />
     <Route exact path="/Careers" component={Careers} />
     <Route exact path="/Contact" component={ContactPage} />
+    <Route exact path="/Clients" component={Clients} />
     <Route
       exact
       path="/Posts/ProjectManagementGraphs"

@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 export default ({ isOpen, setIsOpen }) => {
   const mainNav = [
     { name: "About", path: "/About" },
+    { name: "Clients", path: "/Clients" },
     { name: "Projects", path: "/Projects" },
     { name: "Careers", path: "/Careers" },
     { name: "Contact", path: "/Contact" },
