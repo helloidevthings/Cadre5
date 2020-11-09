@@ -25,11 +25,7 @@ export default () => {
         themeColor: "dark",
         arrow: true,
       },
-      tags: [
-        {
-          type: "Program Management",
-        },
-      ],
+
     },
     {
       title: "HealthMedEx",
@@ -47,14 +43,7 @@ export default () => {
         themeColor: "dark",
         arrow: true,
       },
-      tags: [
-        {
-          type: "Medical",
-        },
-        {
-          type: "User Testing",
-        },
-      ],
+
     },
     {
       title: "RESolution",
@@ -66,14 +55,7 @@ export default () => {
       link: {
         href: "./resolution",
       },
-      tags: [
-        {
-          type: "Project Management",
-        },
-        {
-          type: "User Centered",
-        },
-      ],
+
     },
     {
       title: "Placeholder",

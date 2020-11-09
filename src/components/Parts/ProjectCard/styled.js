@@ -59,32 +59,13 @@ export default styled.section`
   & .tags {
     display: flex;
     flex-wrap: wrap;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin: 1.3em 0;
-    padding-inline-start: 0;
-    color: #fff;
-
+ 
     & li {
       list-style: none;
       font-size: 0.7em;
       font-weight: 500;
-      margin-right: 0.4em;
-      border-radius: 1em;
-      padding: 0.2em 0.9em 0.2em;
-      &:nth-of-type(even) {
-        background-color: ${(props) => props.theme.color.primary};
-      }
-      &:nth-of-type(odd) {
-        background-color: ${(props) => props.theme.color.secondary};
-      }
-
-      &:before {
-        content: none;
-      }
     }
   }
-
   &.mediumTheme a {
     color: black;
     background: ${(props) => props.theme.color.light};
