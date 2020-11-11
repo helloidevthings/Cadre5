@@ -15,6 +15,7 @@ export default ({ cards = [], themeColor }) => {
             key={i}
             style={{ transitionDelay: `${0.2 * i}s` }}
           >
+                        <Image src={img.src} alt={img.alt} />
             <div className="text">
               <h3>{title}</h3>
               <p>{leadin}</p>
@@ -26,7 +27,7 @@ export default ({ cards = [], themeColor }) => {
                 ))}
               </ul>
             </div>
-            <Image src={img.src} alt={img.alt} />
+
           </a>
         ))}
       </div>

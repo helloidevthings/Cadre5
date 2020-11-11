@@ -18,8 +18,6 @@ export default styled.section`
       border: none;
       border: 3px solid #fff;
       box-shadow: -1px 0px 11px 4px #d0e5ff;
-
-      /* color: #fff; */
     }
   }
 
@@ -27,6 +25,7 @@ export default styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     &.active {
       a {
         opacity: 1;
@@ -38,11 +37,6 @@ export default styled.section`
   & .text {
     padding: 1.3em 1.5em 1.4em;
   }
-/* 
-  p {
-    color: ${(props) => props.theme.color.primary};
-    font-weight: 600; 
-  } */
 
   & figure {
     position: relative;
@@ -59,10 +53,11 @@ export default styled.section`
   & .tags {
     display: flex;
     flex-wrap: wrap;
+    margin-top: .3em; 
  
     & li {
       list-style: none;
-      font-size: 0.7em;
+      font-size: 0.9em;
       font-weight: 500;
     }
   }

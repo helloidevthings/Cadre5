@@ -25,6 +25,14 @@ export default () => {
         themeColor: "dark",
         arrow: true,
       },
+      tags: [
+        {
+          type: "Placeholder",
+        },
+        {
+          type: "Placeholder",
+        },
+      ],
 
     },
     {
