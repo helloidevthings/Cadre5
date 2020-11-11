@@ -12,7 +12,7 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
         "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
 
       img: {
-        src: "/images/g2/card_graphic.png",
+        src: "/images/g2/project-image-card1.png",
         alt: "g2 graphics",
       },
       link: {
@@ -22,11 +22,7 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
         themeColor: "dark",
         arrow: true,
       },
-      tags: [
-        {
-          type: "Program Management",
-        },
-      ],
+
     },
     {
       title: "HealthMedEx",
@@ -34,7 +30,7 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
-        src: "/images/healthmedex/healthmedex1.png",
+        src: "/images/healthmedex/project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -44,34 +40,20 @@ export default ({ projTitle, projLeadin, img = "", tags }) => {
         themeColor: "dark",
         arrow: true,
       },
-      tags: [
-        {
-          type: "Medical",
-        },
-        {
-          type: "User Testing",
-        },
-      ],
+
     },
     {
       title: "RESolution",
       leadin: "Simplify Work. Improve Scientific Productivity.",
       img: {
-        src: "/images/graph-full-min.png",
+        src: "/images/resolution/project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
         href: "./resolution",
       },
-      tags: [
-        {
-          type: "Project Management",
-        },
-        {
-          type: "User Centered",
-        },
-      ],
-    },
+
+    }
   ];
   return (
     <Styles>

@@ -41,7 +41,7 @@ export default styled.div`
     }
 
     svg {
-      margin-right: 0.5em;
+      margin-right: 0.7em;
       width: 23px;
       max-height: 23px;
       stroke: ${(props)=> props.theme.color.ltRed};

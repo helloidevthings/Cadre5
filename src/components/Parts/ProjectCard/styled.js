@@ -15,8 +15,7 @@ export default styled.section`
     transition: opacity 0.3s ease-in, transform 0.4s ease-in;
 
     &:hover {
-      border: none;
-      border: 3px solid #fff;
+      border: 3px solid #d0e5ff;
       box-shadow: -1px 0px 11px 4px #d0e5ff;
     }
   }
@@ -35,14 +34,18 @@ export default styled.section`
   }
 
   & .text {
-    padding: 1.3em 1.5em 1.4em;
+    padding: 1.3em 1.5em 1.6em;
+  }
+
+  p {
+    margin-top: 0; 
   }
 
   & figure {
     position: relative;
     max-height: 250px;
     overflow: hidden;
-    border-radius: 0 0 0.4em 0.4em;
+    border-radius:0.4em 0.4em 0 0;
 
     img {
       height: 100%;
