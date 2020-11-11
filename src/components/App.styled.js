@@ -36,6 +36,10 @@ export default styled.main`
     text-align: center;
   }
 
+  .number {
+    font-family: aktiv-grotesk-extended, sans-serif;
+  }
+
   .red {
     color: ${(props) => props.theme.color.primary};
   }

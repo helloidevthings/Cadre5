@@ -17,7 +17,7 @@ export default () => (
                   text="Info@Cadre5.com"
                 />
       </li>
-      <li className="Info_item">
+      <li className="Info_item number">
         <C5Phone />
         <Button
                   themeColor="lightTheme"
