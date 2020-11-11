@@ -2,19 +2,6 @@ import styled from "@emotion/styled";
 
 export default styled.div`
   .date-wrap {
-    margin: 1em 0;
-    /* position: relative; */
-    /* &:after {
-      content: "";
-      background-color: ${(props) => props.theme.color.grayLt};
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      top: 50%;
-      left: 0;
-      z-index: -1;
-    } */
-
     display: flex; 
     justify-content: center; 
     align-items: center;
