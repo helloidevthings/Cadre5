@@ -18,8 +18,9 @@ export default styled.div`
   .date {
     flex: 1 0 auto; 
     color: ${(props) => props.theme.color.grayLt};
+    font-family: aktiv-grotesk-extended, sans-serif;
     font-size: 0.9em;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.01em;
     margin: 1em 0;
     padding-right: 10px;

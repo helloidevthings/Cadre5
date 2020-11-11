@@ -9,10 +9,15 @@ export default styled.div`
     display: flex;
     flex-wrap: wrap;
     color: white;
-    font-size: 0.9em;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: .03em; 
+    text-transform: uppercase; 
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
+
 
     & li:before {
       content: none;
@@ -36,7 +41,7 @@ export default styled.div`
     }
 
     svg {
-      margin-right: 0.4em;
+      margin-right: 0.5em;
       width: 23px;
       max-height: 23px;
       stroke: ${(props)=> props.theme.color.ltRed};
