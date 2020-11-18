@@ -6,8 +6,8 @@ export default styled.section`
     text-decoration: none;
     background: #fff;
     flex: 1 1 auto;
-    margin: 0.5em;
-    max-width: 20em;
+    margin: 0.8em;
+    max-width: 24em;
     border: 3px solid #efefef;
     border-radius: 0.4em;
     opacity: 0;
@@ -43,7 +43,7 @@ export default styled.section`
 
   & figure {
     position: relative;
-    max-height: 250px;
+    max-height: 350px;
     overflow: hidden;
     border-radius:0.4em 0.4em 0 0;
 

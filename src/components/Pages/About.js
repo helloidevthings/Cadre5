@@ -33,7 +33,7 @@ const About = () => (
     />
     <Featurette
       title="Our Partners"
-      quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      quote="The word cadre refers to a group of experts that come together to achieve a goal. We are a cadre, who works closely with our clients to solve problems together."
     />
     <Title title={`Awards & Recognition`} base="CTA" />
     <CTA
