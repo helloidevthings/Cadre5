@@ -100,7 +100,15 @@ const ProjResolution = () => {
         img={{ src: "/images/g2/desktop.png", alt: "" }}
         themeColor="darkTheme"
       />
-      <WaveHr color="#383838" bg="#efefef" /> */}
+*/}
+      <WaveHr color="#efefef" bg="#fff" /> 
+        <article className="blog">
+        <h3>SAFe Agile</h3>
+        Text about SAFe Agile. 
+      </article>
+      <FeatureApp         
+      img={{ src: "/images/g2/safe.png", alt: "" }}
+        themeColor="mediumTheme" />
       <WaveHr color="#efefef" bg="white" />
       <WaveHr color="white" bg="white" />
       <ProjectFeature
@@ -119,19 +127,7 @@ const ProjResolution = () => {
           alt: "",
         }}
       />
-      <article className="blog">
-        <h3>Fin Plan Dashboard</h3>
-        The fin plan dashboard(?) shows an overview of the status of every
-        project. By using a variety of icons the user can see exactly which
-        areas have been updated and are pending approval.
-      </article>
-      <FeatureApp
-        img={{
-          src: "/images/g2/.png",
-          alt: "Large Image of the Fin Plan Dashboard",
-        }}
-        themeColor="lightTheme"
-      />
+
       <ProjectFeature
         themeColor="lightTheme"
         row="basic"
@@ -219,6 +215,7 @@ const ProjResolution = () => {
           ></iframe>
         }
       />
+
       <ProjectFeature
         themeColor="darkTheme"
         row="reverse"
@@ -240,6 +237,7 @@ const ProjResolution = () => {
           ></iframe>
         }
       />
+
       <WaveHr color="#383838" bg="#1f1f1f" />
       <WaveHr color="#1f1f1f" bg="#1f1f1f" />
       <CTA

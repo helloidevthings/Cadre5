@@ -4,5 +4,6 @@ src/Components/Pages/Projects/Mavnet.js
 src/Components/Pages/Projects/Runestone.js
 public/mavnet
 public/runestone
+
 # Local Netlify folder
 .netlify

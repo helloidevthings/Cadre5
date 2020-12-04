@@ -14,10 +14,11 @@ export default () => {
         svg="WavesWhite"
       />
       <section className="Careers">
-        <iframe id="gnewtonjs" src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3">
-      <script id="gnewtonjs" type="text/javascript" src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"></script>
-        </iframe>
-      </section>
+     </section>
+      <div>
+<script id="gnewtonjs" type="text/javascript" src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"></script>
+</div>
     </Page>
   );
 };
+
