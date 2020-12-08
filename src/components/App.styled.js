@@ -9,6 +9,7 @@ export default styled.main`
   min-height: 100vh;
   justify-content: space-between;
 
+
   /* wrapper around main content */
   .Content {
     flex-grow: 9999;
