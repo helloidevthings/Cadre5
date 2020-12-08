@@ -15,6 +15,7 @@ export default ({ isOpen, setIsOpen }) => {
     setIsOpen(false);
   };
 
+  
   return (
     <Styles isOpen={isOpen} onClick={() => (isOpen = false)}>
       {mainNav.map(({ name, path }) => (
