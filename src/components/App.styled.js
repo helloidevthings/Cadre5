@@ -10,6 +10,7 @@ export default styled.main`
   justify-content: space-between;
 
 
+
   /* wrapper around main content */
   .Content {
     flex-grow: 9999;
