@@ -13,8 +13,8 @@ export default () => {
         infoItems={true}
         row="reverse"
         img={{
-          src: "/images/cadre-about-image.png",
-          alt: "people working in an office",
+          src: "/images/macbook_overhead.png",
+          alt: "person working at a computer and looking at the cadre5 website",
         }}
       />
       <a href="https://goo.gl/maps/ipTngEpBKrhsJgd18" target="blank">

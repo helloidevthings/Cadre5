@@ -11,10 +11,10 @@ export default () => {
       <HeroBasic
         title="Clients"
         img={{
-          src: "/images/people_working.png",
+          src: "/images/meeting2.png",
           alt: "People working in an office",
         }}
-        svg="AbstractWhite"
+        svg="CirclesWhite"
       />
             <article className="blog center">
               <h3>We deliver value to our customers.</h3>

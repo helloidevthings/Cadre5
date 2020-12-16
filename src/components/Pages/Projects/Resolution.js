@@ -287,7 +287,7 @@ const Resolution = () => {
             "Each segment represents a month of the timeline. The green represents the funding for the project. The blue is how much money has been spent so far. The yellow represents how much has be invoiced so far.",
         }}
         img={{
-          src: "/images/resolution/procurement_graph_details.png",
+          src: "/images/resolution/resolution-tooltips.png",
           alt: "",
         }}
       />
@@ -296,7 +296,7 @@ const Resolution = () => {
           src: "/images/resolution/procurement_timeline_graph.gif",
           alt: "",
         }}
-        themeColor="mediumTxheme"
+        themeColor="mediumTheme"
       />
       {/* Estimator */}
       <ProjectFeature
@@ -329,7 +329,7 @@ const Resolution = () => {
           svg: "Action",
         }}
         img={{
-          src: "/images/resolution/actionlist_small.png",
+          src: "/images/resolution/action_list_0.png",
           alt: "",
         }}
       />

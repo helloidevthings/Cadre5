@@ -99,10 +99,10 @@ export default () => {
       <HeroBasic
         title="Our Projects"
         img={{
-          src: "/images/people-working-2.png",
+          src: "/images/office-wideangle-vibrant.png",
           alt: "Cadre5 Building",
         }}
-        svg="CirclesWhite"
+        svg="WavesWhite"
       />
       {/* <Title title="Our Projects" themeColor="darkTheme" /> */}
       {/* <WaveHr color="#000000" bg="white" /> */}
