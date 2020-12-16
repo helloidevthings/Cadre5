@@ -8,7 +8,7 @@ export default () => {
       <HeroBasic
         title="Careers"
         img={{
-          src: "/images/stock-of-working.png",
+          src: "/images/kensoffice2.png",
           alt: "People working in an office",
         }}
         svg="WavesWhite"

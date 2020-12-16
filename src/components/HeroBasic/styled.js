@@ -4,7 +4,7 @@ export default styled.section`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 40vh;
+  height: 43vh;
   position: relative;
   overflow: hidden;
   color: white;
@@ -24,7 +24,7 @@ export default styled.section`
   }
   &:after {
     content: "";
-    background: linear-gradient(rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.58));
+    background: linear-gradient(rgb(0 0 0 / 0%),rgb(0 0 0 / 35%));
     height: inherit;
     width: 100%;
     top: 0;

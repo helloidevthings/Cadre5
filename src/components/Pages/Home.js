@@ -99,7 +99,7 @@ const Home = () => {
         desc="Founded in 1999, we strive to delight our customers and their end
           users with the systems we craft. We need YOU to join our team."
         img={{
-          src: "/images/stock-of-working.png",
+          src: "/images/meeting3.png",
           alt: "people working in an office",
         }}
         link={{

@@ -79,7 +79,7 @@ const About = () => (
       leadin="U.S. Small Business Administration, Southeast Subcontractor of the Year"
       desc="Cadre5, was recently presented with the U.S. Small Business Administration’s 2014 Small Business Subcontractor of the Year Award for Region 4, which includes Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee."
       img={{
-        src: "/images/people_working.png",
+        src: "/images/samatdesk.png",
         alt: "people working in an office environment",
       }}
       type="basic"
