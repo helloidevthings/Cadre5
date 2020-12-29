@@ -4,7 +4,6 @@
   "homepage": "./",
   "private": true,
   "devDependencies": {
-    "compress-images": "^1.9.5",
     "concurrently": "4.1.0",
     "react-scripts": "^3.4.3"
   },
@@ -12,6 +11,7 @@
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
     "autoprefixer-stylus": "0.14.0",
+    "cloudinary-react": "^1.6.8",
     "emotion-theming": "^10.0.27",
     "firebase": "^7.23.0",
     "framer-motion": "^1.11.1",
