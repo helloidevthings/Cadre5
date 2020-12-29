@@ -205,6 +205,9 @@ export default () => {
       link: "https://www.banditlites.com/",
       delay: true,
     },
+  ];
+
+  const logos2 = [
     {
       name: "vgt_white",
       type: "media",
@@ -212,9 +215,6 @@ export default () => {
       link: "https://www.aristocrat.com/business/vgt/",
       delay: true,
     },
-  ];
-
-  const logos2 = [
     {
       name: "auto_zone_white",
       type: "transportation",
@@ -517,7 +517,7 @@ export default () => {
       <div className="logos">
         <LogoGridItem logos={logos1} />
       </div>
-      <div className="logoWrapper">
+      <div className="logos logoWrapper">
         <LogoGridItem logos={logos2} />
       </div>
       <button onClick={handleButtonClick}>View All</button>

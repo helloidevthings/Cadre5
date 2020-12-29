@@ -61,7 +61,7 @@ const About = () => (
       leadin="Excellence.gov Awards, Overall Winner"
       desc="Research Enterprise Solution (RESolution) – To integrate multiple new technologies for Oak Ridge National Laboratory (ORNL) into one seamless user experience. The application offers streamlined, one-stop access to ORNL data from the underlying LOB systems – reducing the daily hassle of IT and allowing researchers to be productive anytime, anywhere and on any device."
       img={{
-        src: "/images/resolution/procurement_dash.png",
+        src: "/images/resolution/procurement_dash2.png",
         alt: "resolution interface graphics",
       }}
       type="alt"
