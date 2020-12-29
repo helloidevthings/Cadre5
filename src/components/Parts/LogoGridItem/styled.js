@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
-export default styled.img`
+export default styled.figure`
+img {
+
   max-width: 8em;
   max-height: 4em;
   margin: 0.9em;
@@ -14,4 +16,5 @@ export default styled.img`
     opacity: 1;
     transform: scale(1.1);
   }
+}
 `;

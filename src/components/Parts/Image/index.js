@@ -1,4 +1,4 @@
-import React from "react";import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
+import React from "react";import {Image} from 'cloudinary-react';
 import Styles from "./styled";
 
 
