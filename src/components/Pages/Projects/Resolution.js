@@ -273,7 +273,7 @@ const Resolution = () => {
           svg: "CircleChart",
         }}
         img={{
-          src: "/images/resolution/procurement_dash.png",
+          src: "/images/resolution/procurement_dash2.png",
           alt: "",
         }}
       />

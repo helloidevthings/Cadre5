@@ -1,8 +1,9 @@
-import React from "react";
+import React from "react";import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
 import Styles from "./styled";
 
-export default ({ src, alt, ref }) => (
+
+export default ({ src, alt }) => (
   <Styles className="media">
-    <img src={src} alt={alt} />
+    <Image cloudName="cadre5images" publicId={src} />
   </Styles>
 );

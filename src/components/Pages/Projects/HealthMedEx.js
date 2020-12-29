@@ -35,7 +35,7 @@ const ProjHealthMedEx = () => {
           svg: "ChartArrow",
         }}
         img={{
-          src: "/images/healthmedex/users2.png",
+          src: "/images/healthmedex/healthemedex-users2.png",
           alt: "",
         }}
       />
@@ -51,7 +51,7 @@ const ProjHealthMedEx = () => {
           svg: "People",
         }}
         img={{
-          src: "/images/healthmedex/names_inyellow.png",
+          src: "/images/healthmedex/healthmedex_names_inyellow.png",
           alt: "",
         }}
       />
@@ -68,12 +68,12 @@ const ProjHealthMedEx = () => {
           svg: "Shapes",
         }}
         img={{
-          src: "/images/healthmedex/healthmedex3.png",
+          src: "/images/healthmedex/healthmedex-ui-with-icons.png",
           alt: "",
         }}
       />
       <FeatureApp
-        img={{ src: "/images/healthmedex/1.2.png", alt: "" }}
+        img={{ src: "/images/healthmedex/healthmedex-1.2.png", alt: "" }}
         themeColor="lightTheme"
         tips={[
           {
@@ -119,7 +119,7 @@ const ProjHealthMedEx = () => {
           svg: "ExcelDoc",
         }}
         img={{
-          src: "/images/healthmedex/wireframing.png",
+          src: "/images/healthmedex/healthmedex-wireframing.png",
           alt: "",
         }}
       />
@@ -135,13 +135,13 @@ const ProjHealthMedEx = () => {
           svg: "Verified",
         }}
         img={{
-          src: "/images/healthmedex/userTest2.png",
+          src: "/images/healthmedex/healthmedex-userTest2.png",
           alt: "",
         }}
       />
       <WaveHr color="white" bg="white" />
       <FeatureApp
-        img={{ src: "/images/healthmedex/3.png", alt: "" }}
+        img={{ src: "/images/healthmedex/healthmedex-4.png", alt: "" }}
         themeColor="lightTheme"
         tips={[
           {
