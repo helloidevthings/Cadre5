@@ -26,7 +26,8 @@ const About = () => (
       desc="Building software that people enjoy using and that delivers significant business value requires a commitment from the whole team. We often work in blended teams where our clients may provide product owners, subject matter experts, quality assurance and even developers that will take over the solution once it is delivered."
       img={{
         src: "/images/updating-whiteboard2.png",
-        alt: "people working in an office environment",
+        alt:
+          "people working in an office environment",
       }}
       type="basic"
       border="border"
@@ -35,7 +36,10 @@ const About = () => (
       title="Our Partners"
       quote="The word cadre refers to a group of experts that come together to achieve a goal. We are a cadre, who works closely with our clients to solve problems together."
     />
-    <Title title={`Awards & Recognition`} base="CTA" />
+    <Title
+      title={`Awards & Recognition`}
+      base="CTA"
+    />
     <CTA
       subheader="Awarded in 2014"
       leadin="Oak Ridge National Laboratory Innovator Award"
@@ -54,6 +58,7 @@ const About = () => (
           "https://www.ornl.gov/news/six-area-firms-receive-ornl-small-business-awards",
       }}
     />
+
     <CTA
       row="reverse"
       themeColor="mediumTheme"
@@ -61,7 +66,8 @@ const About = () => (
       leadin="Excellence.gov Awards, Overall Winner"
       desc="Research Enterprise Solution (RESolution) – To integrate multiple new technologies for Oak Ridge National Laboratory (ORNL) into one seamless user experience. The application offers streamlined, one-stop access to ORNL data from the underlying LOB systems – reducing the daily hassle of IT and allowing researchers to be productive anytime, anywhere and on any device."
       img={{
-        src: "/images/resolution/procurement_dash2.png",
+        src:
+          "/images/resolution/procurement_dash2.png",
         alt: "resolution interface graphics",
       }}
       type="alt"
@@ -80,7 +86,8 @@ const About = () => (
       desc="Cadre5, was recently presented with the U.S. Small Business Administration’s 2014 Small Business Subcontractor of the Year Award for Region 4, which includes Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee."
       img={{
         src: "/images/samatdesk.png",
-        alt: "people working in an office environment",
+        alt:
+          "people working in an office environment",
       }}
       type="basic"
       link={{
