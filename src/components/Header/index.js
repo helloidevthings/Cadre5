@@ -27,7 +27,11 @@ export default () => {
             setIsOpen(!isOpen);
           }}
         >
-          {isOpen ? <MenuIcon /> : <MenuIconOpen />}
+          {isOpen ? (
+            <MenuIcon />
+          ) : (
+            <MenuIconOpen />
+          )}
         </button>
         <Nav isOpen={isOpen} />
       </nav>

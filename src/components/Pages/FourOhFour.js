@@ -11,10 +11,12 @@ const FourOhFour = () => (
       <h1 className="red">Oops!</h1>
       <h2>
         <span className="blue">404</span>
-        <span className="grayLt"> • </span>Page Not Found!
+        <span className="grayLt"> • </span>Page
+        Not Found!
       </h2>
       <p>
-        THe page you are looking for doesn't exist or an other error occured.
+        THe page you are looking for doesn't exist
+        or an other error occured.
       </p>
       <Button
         href="/home"

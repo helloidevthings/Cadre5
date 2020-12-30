@@ -7,17 +7,36 @@ import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
 
 export default ({ details = [], themeColor }) => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.25,
+  });
 
   return (
     <div>
       {details.map(
         (
-          { subheader, title, leadin, descLg, desc, img = "", link = "" },
+          {
+            subheader,
+            title,
+            leadin,
+            descLg,
+            desc,
+            img = "",
+            link = "",
+          },
           i
         ) => (
-          <Styles key={i} className={`${themeColor} ${inView ? "active" : ""}`}>
-            <div className="text-wrapper" ref={ref}>
+          <Styles
+            key={i}
+            className={`${themeColor} ${
+              inView ? "active" : ""
+            }`}
+          >
+            <div
+              className="text-wrapper"
+              ref={ref}
+            >
               <h2>{title}</h2>
               <IntroText
                 subheader={subheader}
@@ -36,10 +55,15 @@ export default ({ details = [], themeColor }) => {
               )}
             </div>
             <div
-              className={`image-wrapper ${inView ? "active" : ""}`}
+              className={`image-wrapper ${
+                inView ? "active" : ""
+              }`}
               ref={ref}
             >
-              <Image src={img.src} alt={img.alt} />
+              <Image
+                src={img.src}
+                alt={img.alt}
+              />
             </div>
           </Styles>
         )

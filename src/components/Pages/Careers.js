@@ -13,12 +13,14 @@ export default () => {
         }}
         svg="WavesWhite"
       />
-      <section className="Careers">
-     </section>
+      <section className="Careers"></section>
       <div>
-<script id="gnewtonjs" type="text/javascript" src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"></script>
-</div>
+        <script
+          id="gnewtonjs"
+          type="text/javascript"
+          src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"
+        ></script>
+      </div>
     </Page>
   );
 };
-
