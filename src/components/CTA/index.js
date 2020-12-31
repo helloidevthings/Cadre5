@@ -5,21 +5,14 @@ import Image from "../Parts/Image";
 import Button from "../Parts/Button";
 import Styles from "./styled";
 
-export default ({
-  subheader,
-  leadin,
-  descLg,
-  desc,
-  img = "",
-  row = "",
-  themeColor = "",
-  border = "",
-  link = "",
-}) => {
-  const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
+export default ({ subheader, leadin, descLg, desc, img = "", row = "", themeColor = "", border = "", link = "",}) => {
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
 
   return (
-    <Styles
+     <Styles
       className={
         inView
           ? `active ${row} ${themeColor} ${border}`
@@ -45,7 +38,11 @@ export default ({
           />
         )}
       </div>
-      <Image src={img.src} alt={img.alt} base="CTA" />
+      <Image
+        src={img.src}
+        alt={img.alt}
+        base="CTA"
+      />
     </Styles>
   );
 };

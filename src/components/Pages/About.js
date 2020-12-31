@@ -37,7 +37,7 @@ const About = () => (
       quote="The word cadre refers to a group of experts that come together to achieve a goal. We are a cadre, who works closely with our clients to solve problems together."
     />
     <Title
-      title={`Awards & Recognition`}
+      title="Awards & Recognition"
       base="CTA"
     />
     <CTA
