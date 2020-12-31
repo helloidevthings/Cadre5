@@ -7,7 +7,6 @@ export default styled.section`
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-
   &.row {
     flex-direction: row;
   }
