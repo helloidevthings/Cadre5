@@ -5,7 +5,7 @@ import Image from "../Parts/Image";
 import Button from "../Parts/Button";
 import Styles from "./styled";
 
-export default ({
+export default function ({
   subheader,
   leadin,
   descLg,
@@ -15,7 +15,7 @@ export default ({
   themeColor = "",
   border = "",
   link = "",
-}) => {
+}) {
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
@@ -54,4 +54,4 @@ export default ({
       />
     </Styles>
   );
-};
+}

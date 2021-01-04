@@ -6,14 +6,16 @@ export default styled.div`
     width: 2.5em;
     height: 2.5em;
     position: absolute;
-    background-color: ${(props) => props.theme.color.primary};
+    background-color: ${(props) =>
+      props.theme.color.primary};
     border: 0.2rem solid white;
     border-radius: 2.5em;
     text-decoration: none;
     font-size: 1em;
     font-weight: 700;
     color: white;
-    box-shadow: ${(props) => props.theme.boxShadow.main};
+    box-shadow: ${(props) =>
+      props.theme.boxShadow.main};
     z-index: 3;
     outline: none;
   }
@@ -31,7 +33,8 @@ export default styled.div`
     right: -0.8em;
     font-size: 0.7em;
     border: none;
-    background-color: ${(props) => props.theme.color.grayMed};
+    background-color: ${(props) =>
+      props.theme.color.grayMed};
     z-index: 0;
   }
 
@@ -51,7 +54,8 @@ export default styled.div`
     max-width: 20em;
     padding: 1em 1em 1em 1.3em;
     border-radius: 0.8rem;
-    box-shadow: ${(props) => props.theme.boxShadow.main};
+    box-shadow: ${(props) =>
+      props.theme.boxShadow.main};
     position: relative;
     font-size: 0.8rem;
     & .active {
