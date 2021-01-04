@@ -9,14 +9,22 @@ export default ({
   text,
   arrow = false,
   target = false,
-}) => (
-  <Styles
-    href={href}
-    target={target === true ? "_blank" : "_self"}
-    rel={target === "_blank" ? "noopener noreferrer" : ""}
-    className={`${btnStyle} ${themeColor}`}
-  >
-    {text}
-    {arrow === true ? <Arrow /> : ""}
-  </Styles>
-);
+}) => {
+  return (
+    <Styles
+      href={href}
+      target={
+        target === true ? "_blank" : "_self"
+      }
+      rel={
+        target === "_blank"
+          ? "noopener noreferrer"
+          : ""
+      }
+      className={`${btnStyle} ${themeColor}`}
+    >
+      {text}
+      {arrow === true ? <Arrow /> : ""}
+    </Styles>
+  );
+};

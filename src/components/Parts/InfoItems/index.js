@@ -11,30 +11,33 @@ export default () => (
       <li className="Info_item">
         <C5Envelope />
         <Button
-                  themeColor="lightTheme"
-                  btnStyle="secondary"
-                  href="mailto:info@cadre5.com"
-                  text="Info@Cadre5.com"
-                />
+          themeColor="lightTheme"
+          btnStyle="secondary"
+          href="mailto:info@cadre5.com"
+          text="Info@Cadre5.com"
+          target={true}
+        />
       </li>
       <li className="Info_item number">
         <C5Phone />
         <Button
-                  themeColor="lightTheme"
-                  btnStyle="secondary"
-                  href="tel:1-865-694-5600"
-                  rel="nofollow"
-                  text="865.694.5600"
-                />
+          themeColor="lightTheme"
+          btnStyle="secondary"
+          href="tel:1-865-694-5600"
+          rel="nofollow"
+          text="865.694.5600"
+          target={true}
+        />
       </li>
       <li className="Info_item">
         <C5MapPin />
         <Button
-                  themeColor="lightTheme"
-                  btnStyle="secondary"
-                  href="https://goo.gl/maps/ipTngEpBKrhsJgd18"
-                  text="804 Innovation Drive, Knoxville • TN 37932"
-                />
+          themeColor="lightTheme"
+          btnStyle="secondary"
+          href="https://goo.gl/maps/ipTngEpBKrhsJgd18"
+          text="804 Innovation Drive, Knoxville • TN 37932"
+          target={true}
+        />
       </li>
     </ul>
   </Styles>
