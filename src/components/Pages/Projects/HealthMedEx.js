@@ -11,11 +11,13 @@ const ProjHealthMedEx = () => {
     {
       subheader: "2007 • 2020",
       title: "HealthMedEx",
-      leadin: "Wireframing, Prototyping and Usability Testing",
+      leadin:
+        "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
-        src: "/images/healthmedex/healthmedex1.png",
+        src:
+          "/images/healthmedex/healthmedex1.png",
         alt: "resolution interface graphics",
       },
     },
@@ -29,13 +31,14 @@ const ProjHealthMedEx = () => {
         introText={{
           title: "The Challenge",
           descLg:
-            "Healthcare providers who work in long-term care facilities work in a fast paced environment taking care of multiple residents throughout their shift",
+            "Healthcare providers of long-term care facilities work in a fast paced environment. They take care of multiple residents throughout their shift.",
           desc:
             "They need a system that is easy to learn and can be used quickly.",
           svg: "ChartArrow",
         }}
         img={{
-          src: "/images/healthmedex/healthemedex-users2.png",
+          src:
+            "/images/healthmedex/healthemedex-users2.png",
           alt: "",
         }}
       />
@@ -51,7 +54,8 @@ const ProjHealthMedEx = () => {
           svg: "People",
         }}
         img={{
-          src: "/images/healthmedex/healthmedex_names_inyellow.png",
+          src:
+            "/images/healthmedex/healthmedex_names_inyellow.png",
           alt: "",
         }}
       />
@@ -68,25 +72,32 @@ const ProjHealthMedEx = () => {
           svg: "Shapes",
         }}
         img={{
-          src: "/images/healthmedex/healthmedex-ui-with-icons.png",
+          src:
+            "/images/healthmedex/healthmedex-ui-with-icons.png",
           alt: "",
         }}
       />
       <FeatureApp
-        img={{ src: "/images/healthmedex/healthmedex-1.2.png", alt: "" }}
+        img={{
+          src:
+            "/images/healthmedex/healthmedex-1.2.png",
+          alt: "",
+        }}
         themeColor="lightTheme"
         tips={[
           {
             i: 1,
             top: "10%",
             left: "20%",
-            desc: "Detailed iconography depicts a variety of care",
+            desc:
+              "Detailed iconography depicts a variety of care",
           },
           {
             i: 2,
             top: "23%",
             left: "10%",
-            desc: "ADL: Activities of Daily Living",
+            desc:
+              "ADL: Activities of Daily Living",
           },
         ]}
       />
@@ -104,7 +115,8 @@ const ProjHealthMedEx = () => {
           svg: "Design",
         }}
         img={{
-          src: "/images/healthmedex/icons_healthmedex.png",
+          src:
+            "/images/healthmedex/icons_healthmedex.png",
           alt: "",
         }}
       />
@@ -119,7 +131,8 @@ const ProjHealthMedEx = () => {
           svg: "ExcelDoc",
         }}
         img={{
-          src: "/images/healthmedex/healthmedex-wireframing.png",
+          src:
+            "/images/healthmedex/healthmedex-wireframing.png",
           alt: "",
         }}
       />
@@ -135,20 +148,26 @@ const ProjHealthMedEx = () => {
           svg: "Verified",
         }}
         img={{
-          src: "/images/healthmedex/healthmedex-userTest2.png",
+          src:
+            "/images/healthmedex/healthmedex-userTest2.png",
           alt: "",
         }}
       />
       <WaveHr color="white" bg="white" />
       <FeatureApp
-        img={{ src: "/images/healthmedex/healthmedex-4.png", alt: "" }}
+        img={{
+          src:
+            "/images/healthmedex/healthmedex-4.png",
+          alt: "",
+        }}
         themeColor="lightTheme"
         tips={[
           {
             i: 1,
             top: "45%",
             left: "27%",
-            desc: "Large checkboxes are easier to select on a touch screen",
+            desc:
+              "Large checkboxes are easier to select on a touch screen",
           },
           {
             i: 2,

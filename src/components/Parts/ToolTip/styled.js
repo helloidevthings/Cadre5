@@ -42,6 +42,7 @@ export default styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
+    padding-right: 0.5rem;
   }
 
   p {
