@@ -16,7 +16,10 @@ export default () => (
         background: white;
         font-weight: 500;
         text-rendering: optimizeLegibility;
-        font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (2100 - 320)));
+        font-size: calc(
+          14px + (20 - 14) *
+            ((100vw - 320px) / (2100 - 320))
+        );
       }
     `}
   />

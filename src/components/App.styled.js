@@ -9,14 +9,13 @@ export default styled.main`
   min-height: 100vh;
   justify-content: space-between;
 
-
-
   /* wrapper around main content */
   .Content {
     flex-grow: 9999;
     width: 90%;
-    /* flex-grow: 9999;
-    @supports (max-width: max-content) {
+    flex-grow: 9999;
+
+    /* @supports (max-width: max-content) {
       min-width: 100px;
       max-width: max-content;
       flex-basis: 200px;
@@ -39,14 +38,17 @@ export default styled.main`
   }
 
   .number {
-    font-family: aktiv-grotesk-extended, sans-serif;
+    font-family: aktiv-grotesk-extended,
+      sans-serif;
   }
 
   .red {
-    color: ${(props) => props.theme.color.primary};
+    color: ${(props) =>
+      props.theme.color.primary};
   }
   .blue {
-    color: ${(props) => props.theme.color.secondary};
+    color: ${(props) =>
+      props.theme.color.secondary};
   }
   .grayLt {
     color: ${(props) => props.theme.color.grayLt};
@@ -56,7 +58,8 @@ export default styled.main`
     padding-left: 2rem;
     padding-right: 2rem;
     margin-bottom: 2rem;
-    @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    @media (min-width: ${(props) =>
+        props.theme.breakpoints.desktop}) {
       padding-left: 4rem;
       padding-right: 3rem;
       margin-bottom: 2rem;
@@ -69,7 +72,8 @@ export default styled.main`
   }
 
   a {
-    color: ${(props) => props.theme.color.primary};
+    color: ${(props) =>
+      props.theme.color.primary};
   }
   h1,
   h2,
@@ -133,7 +137,8 @@ export default styled.main`
         width: 0.3em;
         height: 0.3em;
         border-radius: 0.3em;
-        background-color: ${(props) => props.theme.color.primary};
+        background-color: ${(props) =>
+          props.theme.color.primary};
         left: -0.8em;
         top: 0.6em;
       }
@@ -141,22 +146,25 @@ export default styled.main`
   }
   .darkTheme {
     ul li:before {
-      background-color: ${(props) => props.theme.color.ltRed};
+      background-color: ${(props) =>
+        props.theme.color.ltRed};
     }
   }
   .mediumTheme {
     ul li:before {
-      background-color: ${(props) => props.theme.color.red};
+      background-color: ${(props) =>
+        props.theme.color.red};
     }
   }
 
   hr {
     margin: 1rem 0;
-    border: 1px solid #c4c3c3; 
+    border: 1px solid #c4c3c3;
   }
 
   .fancyAND {
-    color: ${(props) => props.theme.color.primary};
+    color: ${(props) =>
+      props.theme.color.primary};
     display: block;
     text-transform: uppercase;
     font-size: 0.9em;
@@ -170,7 +178,8 @@ export default styled.main`
       content: "";
       display: block;
       position: absolute;
-      background-color: ${(props) => props.theme.color.primary};
+      background-color: ${(props) =>
+        props.theme.color.primary};
       height: 3px;
       width: 100%;
     }
@@ -187,7 +196,8 @@ export default styled.main`
     margin: 3em auto;
     padding-left: 4.4em;
     position: relative;
-    color: ${(props) => props.theme.color.grayMed};
+    color: ${(props) =>
+      props.theme.color.grayMed};
     font-size: 1em;
     font-weight: 500;
     font-style: italic;
@@ -195,7 +205,8 @@ export default styled.main`
 
     &:before {
       content: "";
-      color: ${(props) => props.theme.color.grayLt};
+      color: ${(props) =>
+        props.theme.color.grayLt};
       font-size: 3em;
       position: absolute;
       background: url(/images/svgs/quote.svg);
@@ -211,7 +222,8 @@ export default styled.main`
   .fadeUp {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.4s cubic-bezier(0.42, 0, 0.45, 0.99);
+    transition: all 0.4s
+      cubic-bezier(0.42, 0, 0.45, 0.99);
 
     &.active {
       transform: none;
@@ -318,7 +330,8 @@ export default styled.main`
   .drawInCircle {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: drawCircle 3s ease-in-out alternate infinite;
+    animation: drawCircle 3s ease-in-out alternate
+      infinite;
   }
 
   @keyframes drawCircle {
@@ -332,7 +345,8 @@ export default styled.main`
 
   .fadeInCircle {
     opacity: 0;
-    animation: fadeInCircle 5s ease-in-out alternate infinite;
+    animation: fadeInCircle 5s ease-in-out
+      alternate infinite;
   }
 
   @keyframes fadeInCircle {

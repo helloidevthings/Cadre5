@@ -12,18 +12,26 @@ export default styled.ul`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: ${(props) => props.theme.breakpoints.desktop}) {
+  @media (max-width: calc(${(props) =>
+      props.theme.breakpoints.desktop} -1px)) {
     position: absolute;
     top: 0;
     left: 0;
     font-size: 3em;
     text-align: center;
-    width: ${(props) => (props.isOpen ? "0%" : "100%")};
-    height: ${(props) => (props.isOpen ? "0" : "100vh")};
-    background-color: ${(props) => (props.isOpen ? "none" : "#000")};
+    width: ${(props) =>
+      props.isOpen ? "0%" : "100%"};
+    height: ${(props) =>
+      props.isOpen ? "0" : "100vh"};
+    background-color: ${(props) =>
+      props.isOpen ? "none" : "#000"};
     transform-origin: center;
-    transform: translateX(${(props) => (props.isOpen ? "-100%" : "0%")});
-    transition: transform 0.6s cubic-bezier(0.59, 0, 0.11, 0.97),
+    transform: translateX(
+      ${(props) =>
+        props.isOpen ? "-100%" : "0%"}
+    );
+    transition: transform 0.6s
+        cubic-bezier(0.59, 0, 0.11, 0.97),
       background-color 0.7s ease-in-out;
   }
 
@@ -35,9 +43,12 @@ export default styled.ul`
     letter-spacing: 0.12em;
     line-height: 1.12;
     color: white;
-    @media (max-width: ${(props) => props.theme.breakpoints.desktop}) {
+    @media (max-width: calc(${(props) =>
+        props.theme.breakpoints.desktop} -1px)) {
       transform-origin: center;
-      transform: scale(${(props) => (props.isOpen ? "0" : "1")});
+      transform: scale(
+        ${(props) => (props.isOpen ? "0" : "1")}
+      );
     }
 
     &:before {
@@ -62,7 +73,8 @@ export default styled.ul`
         background-color: black;
         transform-origin: bottom right;
         transform: scaleX(1);
-        transition: transform 0.5s cubic-bezier(0.6, -0.01, 0.11, 0.99);
+        transition: transform 0.5s
+          cubic-bezier(0.6, -0.01, 0.11, 0.99);
       }
       &:hover {
         &:after {
