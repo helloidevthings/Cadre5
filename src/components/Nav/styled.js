@@ -13,7 +13,7 @@ export default styled.ul`
   align-items: center;
 
   @media (max-width: calc(${(props) =>
-      props.theme.breakpoints.desktop} -1px)) {
+      props.theme.breakpoints.desktop} - 1px )) {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,7 +44,7 @@ export default styled.ul`
     line-height: 1.12;
     color: white;
     @media (max-width: calc(${(props) =>
-        props.theme.breakpoints.desktop} -1px)) {
+        props.theme.breakpoints.desktop} - 1px)) {
       transform-origin: center;
       transform: scale(
         ${(props) => (props.isOpen ? "0" : "1")}
