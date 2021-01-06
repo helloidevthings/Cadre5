@@ -10,7 +10,7 @@ export default ({
   tips,
 }) => {
   const [ref, inView] = useInView({
-    triggeronce: true,
+    triggerOnce: true,
     threshold: 0.15,
   });
   return (

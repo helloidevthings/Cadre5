@@ -6,8 +6,9 @@ export default styled.div`
     width: 2.5em;
     height: 2.5em;
     position: absolute;
-    background-color: ${(props) =>
-      props.theme.color.primary};
+    background-color: rgb(255 255 255 / 71%);
+    /* background-color: ${(props) =>
+      props.theme.color.primary}; */
     border: 0.2rem solid white;
     border-radius: 2.5em;
     text-decoration: none;
