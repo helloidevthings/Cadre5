@@ -10,12 +10,14 @@ export default () => {
   const cards1 = [
     {
       title: "G2",
-      leadin: "Project management for government agencies.",
+      leadin:
+        "Project management for government agencies.",
       descLg:
         "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
 
       img: {
-        src: "/images/g2/g2-project-image-card1.png",
+        src:
+          "/images/g2/g2-project-image-card1.png",
         alt: "g2 graphics",
       },
       link: {
@@ -25,15 +27,16 @@ export default () => {
         themeColor: "dark",
         arrow: true,
       },
-
     },
     {
       title: "HealthMedEx",
-      leadin: "Wireframing, Prototyping and Usability Testing",
+      leadin:
+        "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
-        src: "/images/healthmedex/healthmedex-project-card-image1.png",
+        src:
+          "/images/healthmedex/healthmedex-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -46,47 +49,50 @@ export default () => {
     },
     {
       title: "RESolution",
-      leadin: "Simplify Work. Improve Scientific Productivity.",
+      leadin:
+        "Simplify Work. Improve Scientific Productivity.",
       img: {
-        src: "/images/resolution/resolution-project-card-image1.png",
+        src:
+          "/images/resolution/resolution-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
         href: "./resolution",
       },
-
     },
     {
-      title: "Placeholder",
-      leadin: "Project management for government agencies.",
+      title: "Research Data Collection System",
+      leadin:
+        "Data Acquisition & Aggregation System for Researchers",
       descLg:
-        "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
-
+        "Data acquisition and aggregation system for researchers",
       img: {
-        src: "/images/placeholder-project-image-card.png",
+        src:
+          "/images/research/research-project-image-card.png",
         alt: "g2 graphics",
       },
       link: {
         text: "View Project",
-        href: "/g2",
+        href: "/researchdata",
         btnStyle: "secondary",
         themeColor: "dark",
         arrow: true,
       },
-
     },
     {
-      title: "Placeholder",
-      leadin: "Wireframing, Prototyping and Usability Testing",
+      title: "Mavnet",
+      leadin:
+        "Seamlessly Plan, Execute & Update Missions",
       descLg:
-        "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
+        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
       img: {
-        src: "/images/placeholder-project-image-card.png",
-        alt: "resolution interface graphics",
+        src:
+          "/images/mavnet/mavnet-project-image-card.png",
+        alt: "mavnet interface graphics",
       },
       link: {
         text: "View Project",
-        href: "./healthmedex",
+        href: "./mavnet",
         btnStyle: "secondary",
         themeColor: "dark",
         arrow: true,
@@ -98,13 +104,12 @@ export default () => {
       <HeroBasic
         title="Our Projects"
         img={{
-          src: "/images/office-wideangle-vibrant.png",
+          src:
+            "/images/office-wideangle-vibrant.png",
           alt: "Cadre5 Building",
         }}
         svg="WavesWhite"
       />
-      {/* <Title title="Our Projects" themeColor="darkTheme" /> */}
-      {/* <WaveHr color="#000000" bg="white" /> */}
       <WaveHr color="white" bg="white" />
       <ProjectCard cards={cards1} />
       <WaveHr color="white" bg="white" />
