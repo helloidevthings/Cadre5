@@ -79,7 +79,7 @@ export default styled.main`
   h2,
   h3 {
     font-weight: 700;
-    line-height: 1.45;
+    line-height: 1.38;
   }
 
   h1 {
@@ -94,9 +94,9 @@ export default styled.main`
 
   h3 {
     font-size: 1.8em;
-    line-height: 1.45;
     margin-bottom: 0.2em;
   }
+
   h4 {
     font-size: 1.1em;
     margin-bottom: 1em;

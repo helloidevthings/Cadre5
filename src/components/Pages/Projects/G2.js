@@ -11,8 +11,9 @@ const ProjResolution = () => {
   const details = [
     {
       subheader: "2007 • 2020",
-      title: "G2",
-      leadin: "Project management for government agencies.",
+      title: "G2 - This Page is Unfinshed",
+      leadin:
+        "Project management for government agencies.",
       descLg:
         "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
 
@@ -51,7 +52,8 @@ const ProjResolution = () => {
         }}
         img={{
           src: "/images/g2/",
-          alt: "A few nice Images of the UI. That could be collaged together",
+          alt:
+            "A few nice Images of the UI. That could be collaged together",
         }}
       />
       <ProjectFeature
@@ -75,7 +77,8 @@ const ProjResolution = () => {
           ],
         }}
         img={{
-          src: "/images/g2/responsive_graphic.png",
+          src:
+            "/images/g2/responsive_graphic.png",
           alt: "",
         }}
       />
@@ -101,14 +104,18 @@ const ProjResolution = () => {
         themeColor="darkTheme"
       />
 */}
-      <WaveHr color="#efefef" bg="#fff" /> 
-        <article className="blog">
+      <WaveHr color="#efefef" bg="#fff" />
+      <article className="blog">
         <h3>SAFe Agile</h3>
-        Text about SAFe Agile. 
+        Text about SAFe Agile.
       </article>
-      <FeatureApp         
-      img={{ src: "/images/g2/safe.png", alt: "" }}
-        themeColor="mediumTheme" />
+      <FeatureApp
+        img={{
+          src: "/images/g2/safe.png",
+          alt: "",
+        }}
+        themeColor="mediumTheme"
+      />
       <WaveHr color="#efefef" bg="white" />
       <WaveHr color="white" bg="white" />
       <ProjectFeature
@@ -146,11 +153,16 @@ const ProjResolution = () => {
       />
       <article className="blog">
         <h3>Fin Plan Dashboard(?)</h3>
-        Description of this dashboard goes here. I initially thought this was
-        the Fin Plan Dashboard. If it is, I can move it back up to the top.
+        Description of this dashboard goes here. I
+        initially thought this was the Fin Plan
+        Dashboard. If it is, I can move it back up
+        to the top.
       </article>
       <FeatureApp
-        img={{ src: "/images/g2/notifications.png", alt: "" }}
+        img={{
+          src: "/images/g2/notifications.png",
+          alt: "",
+        }}
         themeColor="lightTheme"
         tips={[
           {
@@ -176,12 +188,14 @@ const ProjResolution = () => {
         }}
         img={{
           src: "/images/g2/.png",
-          alt: "image of the milestones (detailed view)",
+          alt:
+            "image of the milestones (detailed view)",
         }}
       />
       <FeatureApp
         img={{
-          src: "/images/g2/Expanded-Tasks--Expanded-Timeline-huge.png",
+          src:
+            "/images/g2/Expanded-Tasks--Expanded-Timeline-huge.png",
           alt: "",
         }}
         themeColor="darkTheme"
@@ -201,7 +215,8 @@ const ProjResolution = () => {
           title: "Awards",
           descLg:
             '"NNSA is a model for organizations that value project management as a discipline that increases success rates, creates efficiencies and aligns with demanding strategic requirements. Few organizational missions demand excellent project execution more than the NNSA G2 project."',
-          desc: "- Mark Langley, President Project Management Institute",
+          desc:
+            "- Mark Langley, President Project Management Institute",
           svg: "Award",
         }}
         iframe={
@@ -246,7 +261,8 @@ const ProjResolution = () => {
         desc="– Mark Langley, President Project Management Institute"
         img={{
           src: "/images/g2/G2_cover.jpg",
-          alt: "people working in an office environment",
+          alt:
+            "people working in an office environment",
         }}
         type="basic"
         themeColor="darkTheme"
@@ -257,7 +273,8 @@ const ProjResolution = () => {
         desc="– James McConnell, Associate Administrator for the Office of Safety, Infrastructure, and Operations"
         img={{
           src: "/images/g2/img_of_everyone.jpeg",
-          alt: "people working standing with an award",
+          alt:
+            "people working standing with an award",
         }}
         themeColor="darkTheme"
         link={{
