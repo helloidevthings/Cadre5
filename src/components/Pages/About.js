@@ -25,7 +25,7 @@ const About = () => (
       descLg="We strive to delight our customers and their end users with the systems we craft. "
       desc="Building software that people enjoy using and that delivers significant business value requires a commitment from the whole team. We often work in blended teams where our clients may provide product owners, subject matter experts, quality assurance and even developers that will take over the solution once it is delivered."
       img={{
-        src: "/images/updating-whiteboard2.png",
+        src: "/images/whiteboard.png",
         alt:
           "people working in an office environment",
       }}

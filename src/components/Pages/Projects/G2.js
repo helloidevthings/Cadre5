@@ -272,7 +272,7 @@ const ProjResolution = () => {
         descLg={`"NNSA’s G2 system drives risk-based decisions at the enterprise level. Defensibility, traceability, and risk-based decision-making are now the norm at NNSA."`}
         desc="– James McConnell, Associate Administrator for the Office of Safety, Infrastructure, and Operations"
         img={{
-          src: "/images/g2/img_of_everyone.jpeg",
+          src: "/images/g2/img_of_everyone.jpg",
           alt:
             "people working standing with an award",
         }}
