@@ -11,9 +11,9 @@ export default () => {
     {
       title: "G2",
       leadin:
-        "Project management for government agencies.",
+        "Program Management for Government Agencies.",
       descLg:
-        "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
+        "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
 
       img: {
         src:
@@ -102,7 +102,8 @@ export default () => {
   return (
     <Page>
       <HeroBasic
-        title="Our Projects"
+        title="Featured Projects"
+        v
         img={{
           src:
             "/images/office-wideangle-vibrant.png",

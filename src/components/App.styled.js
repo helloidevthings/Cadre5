@@ -119,14 +119,15 @@ export default styled.main`
     margin-bottom: 1.1em;
   }
 
+  /* Main Bullets */
   ul {
     padding-left: 1em;
-    margin-top: 1.5em;
+    margin-top: 1.3em;
     list-style: none;
-    li {
-      margin-top: 1em;
+    & li {
+      margin-top: 0.8em;
       position: relative;
-      font-size: 1.28em;
+      font-size: 1.14em;
       font-weight: 200;
 
       &:before {
@@ -134,26 +135,44 @@ export default styled.main`
         color: red;
         display: block;
         position: absolute;
-        width: 0.3em;
-        height: 0.3em;
-        border-radius: 0.3em;
+        width: 6px;
+        height: 6px;
+        border-radius: 15px;
         background-color: ${(props) =>
           props.theme.color.primary};
-        left: -0.8em;
+        left: -0.7em;
         top: 0.6em;
       }
     }
-  }
-  .darkTheme {
-    ul li:before {
-      background-color: ${(props) =>
-        props.theme.color.ltRed};
+    /* Nested Bullets */
+    li ul {
+      margin-top: 0.3em;
     }
-  }
-  .mediumTheme {
-    ul li:before {
-      background-color: ${(props) =>
-        props.theme.color.red};
+    li li {
+      font-size: 0.85em;
+      margin-top: 0.13em;
+      &:before {
+        background-color: ${(props) =>
+          props.theme.color.grayLt};
+      }
+    }
+    .darkTheme {
+      ul li:before {
+        background-color: ${(props) =>
+          props.theme.color.ltRed};
+      }
+    }
+    .mediumTheme {
+      ul li {
+        &:before {
+          background-color: ${(props) =>
+            props.theme.color.red};
+        }
+        ul li:before {
+          background-color: ${(props) =>
+            props.theme.color.grayMed};
+        }
+      }
     }
   }
 

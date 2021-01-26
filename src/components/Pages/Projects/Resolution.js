@@ -10,13 +10,15 @@ import IconDesc from "../../Parts/IconDesc";
 const Resolution = () => {
   const details = [
     {
-      subheader: "2007 • 2020",
+      subheader: " ",
       title: "RESolution",
-      leadin: "Simplify Work. Improve Scientific Productivity.",
+      leadin:
+        "Simplify Work. Improve Scientific Productivity.",
       descLg:
         "RESolution was created for Oak Ridge National Laboratory which is the largest US Department of Energy science and energy laboratory.",
       img: {
-        src: "/images/resolution/anothergraph.png",
+        src:
+          "/images/resolution/anothergraph.png",
         alt: "resolution interface graphics",
       },
     },
@@ -29,7 +31,8 @@ const Resolution = () => {
         themeColor="mediumTheme"
         introText={{
           title: "The Challenge",
-          descLg: "Currently researchers interact with 80 different systems.",
+          descLg:
+            "Currently researchers interact with 80 different systems.",
           desc:
             "RESolution is a unified user interface platform designed around the researcher to manage the full lifecycle of research projects at ORNL.",
           svg: "ChartArrow",
@@ -56,7 +59,8 @@ const Resolution = () => {
           svg: "Devices",
         }}
         img={{
-          src: "/images/resolution/responsive_ipad_phone.png",
+          src:
+            "/images/resolution/responsive_ipad_phone.png",
           alt: "",
         }}
       />
@@ -69,11 +73,13 @@ const Resolution = () => {
           title: "Project Dashboard",
           descLg:
             "Each project dashboard gives a high level view of cost, schedule, budget authority and performance. Interactive widgets allow users to drill in and filter data.",
-          desc: "Interactive widgets allow users to drill in and filter data.",
+          desc:
+            "Interactive widgets allow users to drill in and filter data.",
           svg: "Wrench",
         }}
         img={{
-          src: "/images/resolution/project_management_dash.png",
+          src:
+            "/images/resolution/project_management_dash.png",
           alt: "",
         }}
       />
@@ -88,37 +94,46 @@ const Resolution = () => {
           svg: "List",
         }}
         img={{
-          src: "/images/resolution/graph-portfolio2.png",
+          src:
+            "/images/resolution/graph-portfolio2.png",
           alt: "",
         }}
       />
       <FeatureApp
-        img={{ src: "/images/resolution/complex_project_graph.png", alt: "" }}
+        img={{
+          src:
+            "/images/resolution/complex_project_graph.png",
+          alt: "",
+        }}
         themeColor="lightTheme"
         tips={[
           {
             i: 1,
             top: "52%",
             left: "20%",
-            desc: "The purple line indicates the planned project work",
+            desc:
+              "The purple line indicates the planned project work",
           },
           {
             i: 2,
             top: "28%",
             left: "26%",
-            desc: "The gray shaded region is the full budget authority",
+            desc:
+              "The gray shaded region is the full budget authority",
           },
           {
             i: 3,
             top: "28%",
             left: "60%",
-            desc: "The upper green line shows the actuals plus commitments",
+            desc:
+              "The upper green line shows the actuals plus commitments",
           },
           {
             i: 4,
             top: "43%",
             left: "55%",
-            desc: "The lower green line is the amount spent",
+            desc:
+              "The lower green line is the amount spent",
           },
           {
             i: 5,
@@ -146,12 +161,17 @@ const Resolution = () => {
           svg: "Briefcase",
         }}
         img={{
-          src: "/images/resolution/portfolio-dash3.png",
+          src:
+            "/images/resolution/portfolio-dash3.png",
           alt: "",
         }}
       />
       <FeatureApp
-        img={{ src: "/images/resolution/portfolio_dashboard2.gif", alt: "" }}
+        img={{
+          src:
+            "/images/resolution/portfolio_dashboard2.gif",
+          alt: "",
+        }}
         themeColor="lightTheme"
         tips={[
           {
@@ -183,7 +203,8 @@ const Resolution = () => {
           svg: "Doc",
         }}
         img={{
-          src: "/images/resolution/pubs_right.png",
+          src:
+            "/images/resolution/pubs_right.png",
           alt: "",
         }}
       />
@@ -204,14 +225,18 @@ const Resolution = () => {
         }}
       />
       <FeatureApp
-        img={{ src: "/images/resolution/pubs_main.png", alt: "" }}
+        img={{
+          src: "/images/resolution/pubs_main.png",
+          alt: "",
+        }}
         themeColor="mediumTheme"
         tips={[
           {
             i: 1,
             top: "13%",
             left: "79%",
-            desc: "Displays action items for each researcher",
+            desc:
+              "Displays action items for each researcher",
           },
           {
             i: 2,
@@ -236,19 +261,25 @@ const Resolution = () => {
           svg: "Lock",
         }}
         img={{
-          src: "/images/resolution/site_access_detail.png",
+          src:
+            "/images/resolution/site_access_detail.png",
           alt: "",
         }}
       />
       <FeatureApp
-        img={{ src: "/images/resolution/site_access.png", alt: "" }}
+        img={{
+          src:
+            "/images/resolution/site_access.png",
+          alt: "",
+        }}
         themeColor="lightTheme"
         tips={[
           {
             i: 1,
             top: "13%",
             left: "79%",
-            desc: "Gives an overview of each on-site individual",
+            desc:
+              "Gives an overview of each on-site individual",
           },
           {
             i: 2,
@@ -273,7 +304,8 @@ const Resolution = () => {
           svg: "CircleChart",
         }}
         img={{
-          src: "/images/resolution/procurement_dash2.png",
+          src:
+            "/images/resolution/procurement_dash2.png",
           alt: "",
         }}
       />
@@ -287,13 +319,15 @@ const Resolution = () => {
             "Each segment represents a month of the timeline. The green represents the funding for the project. The blue is how much money has been spent so far. The yellow represents how much has be invoiced so far.",
         }}
         img={{
-          src: "/images/resolution/resolution-tooltips.png",
+          src:
+            "/images/resolution/resolution-tooltips.png",
           alt: "",
         }}
       />
       <FeatureApp
         img={{
-          src: "/images/resolution/procurement_timeline_graph.gif",
+          src:
+            "/images/resolution/procurement_timeline_graph.gif",
           alt: "",
         }}
         themeColor="mediumTheme"
@@ -310,7 +344,8 @@ const Resolution = () => {
           svg: "Money",
         }}
         img={{
-          src: "/images/resolution/responsive_ipad_phone.png",
+          src:
+            "/images/resolution/responsive_ipad_phone.png",
           alt: "",
         }}
       />
@@ -329,7 +364,8 @@ const Resolution = () => {
           svg: "Action",
         }}
         img={{
-          src: "/images/resolution/action_list_0.png",
+          src:
+            "/images/resolution/action_list_0.png",
           alt: "",
         }}
       />

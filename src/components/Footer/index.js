@@ -7,6 +7,9 @@ import Styles from "./styled";
 export default () => (
   <Styles>
     <InfoItems />
-    <p>© 2020 Cadre5</p>
+    <p>
+      © 1999 to {new Date().getFullYear()} Cadre5,
+      LLC.
+    </p>
   </Styles>
 );

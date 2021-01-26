@@ -5,7 +5,10 @@ import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
 
 export default () => {
-  const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
   const logos1 = [
     {
       name: "oak_ridge_white",
@@ -17,9 +20,17 @@ export default () => {
     {
       name: "nnsa_white",
       type: "government",
-      alt: "National Nuclear Security Administration",
+      alt:
+        "National Nuclear Security Administration",
       link:
         "https://www.energy.gov/nnsa/national-nuclear-security-administration",
+      delay: true,
+    },
+    {
+      name: "sandia_white",
+      type: "government",
+      alt: "Sandia",
+      link: "https://www.sandia.gov/",
       delay: true,
     },
     {
@@ -80,7 +91,8 @@ export default () => {
     },
 
     {
-      name: "department_of_Homeland_security_white",
+      name:
+        "department_of_Homeland_security_white",
       type: "government",
       alt: "Department of Homeland Security",
       link: "https://www.dhs.gov/",
@@ -97,7 +109,8 @@ export default () => {
       name: "department_of_the_navy_white",
       type: "government",
       alt: "Department of the Navy",
-      link: "https://www.navy.com/start?activity=1228855",
+      link:
+        "https://www.navy.com/start?activity=1228855",
       delay: true,
     },
     {
@@ -122,9 +135,11 @@ export default () => {
       delay: true,
     },
     {
-      name: "national_geospacial_intellegence_agency_white",
+      name:
+        "national_geospacial_intellegence_agency_white",
       type: "government",
-      alt: "National Geospatial Intelligence Agency",
+      alt:
+        "National Geospatial Intelligence Agency",
       link: "https://www.nga.mil/",
       delay: true,
     },
@@ -212,7 +227,8 @@ export default () => {
       name: "vgt_white",
       type: "media",
       alt: "VGT",
-      link: "https://www.aristocrat.com/business/vgt/",
+      link:
+        "https://www.aristocrat.com/business/vgt/",
       delay: true,
     },
     {
@@ -296,7 +312,8 @@ export default () => {
       name: "radio_systems_white",
       type: "consumer",
       alt: "Radio Systems",
-      link: "https://www.radiosystemscorporation.com/",
+      link:
+        "https://www.radiosystemscorporation.com/",
       delay: true,
     },
     {
@@ -396,7 +413,8 @@ export default () => {
       name: "akal_security_white",
       type: "other",
       alt: "Akal Security",
-      link: "https://akalglobal.com/akal-security/",
+      link:
+        "https://akalglobal.com/akal-security/",
       delay: true,
     },
     {
@@ -435,7 +453,8 @@ export default () => {
       delay: true,
     },
     {
-      name: "nashville_international_airport_white",
+      name:
+        "nashville_international_airport_white",
       type: "other",
       alt: "Nashville Airport",
       link: "https://flynashville.com/",
@@ -452,7 +471,8 @@ export default () => {
       name: "pronova_white",
       type: "other",
       alt: "Pronova",
-      link: "https://provisionhealthcare.com/about-us/",
+      link:
+        "https://provisionhealthcare.com/about-us/",
       delay: true,
     },
     {
@@ -504,7 +524,10 @@ export default () => {
   const expand = visible ? "visible" : "";
 
   return (
-    <Styles className={`${view} ${expand}`} ref={ref}>
+    <Styles
+      className={`${view} ${expand}`}
+      ref={ref}
+    >
       {/* <Title className="title" title="Our Clients" /> */}
       <article className="blog center">
         <h2>Our Clients</h2>
@@ -520,7 +543,9 @@ export default () => {
       <div className="logos logoWrapper">
         <LogoGridItem logos={logos2} />
       </div>
-      <button onClick={handleButtonClick}>View All</button>
+      <button onClick={handleButtonClick}>
+        View All
+      </button>
     </Styles>
   );
 };

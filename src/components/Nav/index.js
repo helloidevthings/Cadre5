@@ -15,12 +15,18 @@ export default ({ isOpen, setIsOpen }) => {
     setIsOpen(false);
   };
 
-  
   return (
-    <Styles isOpen={isOpen} onClick={() => (isOpen = false)}>
+    <Styles
+      isOpen={isOpen}
+      onClick={() => (isOpen = false)}
+    >
       {mainNav.map(({ name, path }) => (
         <li className="navItem" key={name}>
-          <NavLink to={path} exact onClick={navClick}>
+          <NavLink
+            to={path}
+            exact
+            onClick={navClick}
+          >
             {name}
           </NavLink>
         </li>

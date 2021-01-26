@@ -15,11 +15,13 @@ const Home = () => {
     {
       subheader: "2007 • 2020",
       title: "RESolution",
-      leadin: "Simplify Work. Improve Scientific Productivity.",
+      leadin:
+        "Simplify Work. Improve Scientific Productivity.",
       descLg:
         "RESolution was created for Oak Ridge National Laboratory which is the largest US Department of Energy science and energy laboratory.",
       img: {
-        src: "/images/resolution/anothergraph.png",
+        src:
+          "/images/resolution/anothergraph.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -35,9 +37,10 @@ const Home = () => {
     {
       subheader: "2007 • 2020",
       title: "G2",
-      leadin: "Project management for government agencies.",
+      leadin:
+        "Program Management for Government Agencies.",
       descLg:
-        "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
+        "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
 
       img: {
         src: "/images/g2-screen-array.png",
@@ -56,11 +59,13 @@ const Home = () => {
     {
       subheader: "2007 • 2020",
       title: "HealthMedEx",
-      leadin: "Wireframing, Prototyping and Usability Testing",
+      leadin:
+        "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
-        src: "/images/healthmedex/healthmedex1.png",
+        src:
+          "/images/healthmedex/healthmedex1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -86,7 +91,10 @@ const Home = () => {
         color="white"
         bg="linear-gradient(to top, #ededed1a, #e9e9e95e)"
       />
-      <Project details={g2} themeColor="mediumTheme" />
+      <Project
+        details={g2}
+        themeColor="mediumTheme"
+      />
       <WaveHr color="#ededed" bg="white" />
       <Project details={healthmedex} />
       <WaveHr color="white" bg="#efefef" />
@@ -111,7 +119,10 @@ const Home = () => {
       />
       <HeroBasic
         title=""
-        img={{ src: "/images/cadre5office.jpg", alt: "Cadre5 Building" }}
+        img={{
+          src: "/images/cadre5office.jpg",
+          alt: "Cadre5 Building",
+        }}
       />
     </Page>
   );

@@ -14,7 +14,7 @@ const ProjHealthMedEx = () => {
       leadin:
         "Wireframing, Prototyping and Usability Testing",
       descLg:
-        "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
+        "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assisted living and nursing homes.",
       img: {
         src:
           "/images/healthmedex/healthmedex1.png",

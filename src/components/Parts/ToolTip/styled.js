@@ -19,6 +19,11 @@ export default styled.div`
       props.theme.boxShadow.main};
     z-index: 3;
     outline: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #000;
+      transform: scale(1.1);
+    }
   }
 
   .ToolTipButton {

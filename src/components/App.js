@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./Header";
 import Router from "./Router";
 import theme from "../theme";
@@ -8,20 +8,22 @@ import GlobalStyles from "./Global.styled.js";
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter } from "react-router-dom";
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <AppStyles>
-          <Header />
-          <AnimatePresence>
-            <Router />
-          </AnimatePresence>
-        </AppStyles>
-      </ThemeProvider>
-    </BrowserRouter>
-  );
-};
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <GlobalStyles />
+          <AppStyles>
+            <Header />
+            <AnimatePresence>
+              <Router />
+            </AnimatePresence>
+          </AppStyles>
+        </ThemeProvider>
+      </BrowserRouter>
+    );
+  }
+}
 
 export default App;
