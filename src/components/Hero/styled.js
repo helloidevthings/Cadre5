@@ -9,16 +9,43 @@ export default styled.section`
   margin: 0;
   position: relative;
   color: white;
-  background: ${(props) => props.theme.gradients.redToBlack};
+  background: ${(props) =>
+    props.theme.gradients.redToBlack};
+  /* background: url("./../images/office-wideangle4.png"),
+    ${(props) =>
+    props.theme.gradients.redToBlack}; */
+  /* background: url("./../images/wide-angle-duo-red.png"),
+    ${(props) =>
+    props.theme.gradients.redToBlack}; */
   background-repeat: no-repeat;
+  background-size: cover;
   z-index: 3;
   overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    /* background: linear-gradient(
+      180deg,
+      #100000a6 0%,
+      #000000cf 95%,
+      #000000 100%
+    ); */
+    /* background: linear-gradient(
+      #020202,
+      #01071599,
+      #000000de
+    ); */
+    width: 100%;
+  }
 
   & article {
     max-width: 33em;
     padding: 1.8em;
     z-index: 4;
-    @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    @media (min-width: ${(props) =>
+        props.theme.breakpoints.desktop}) {
       padding: 1.3em;
     }
   }

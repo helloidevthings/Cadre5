@@ -2,25 +2,50 @@ import styled from "@emotion/styled";
 
 export default styled.section`
   color: white;
-  background: ${(props) => props.theme.gradients.blackToDark};
+  background: ${(props) =>
+    props.theme.gradients.blackToDark};
   padding: 3rem 1rem;
+  /* padding-bottom: 0; */
   text-align: center;
   display: flex;
+  /* background: url("./../images/cadre5office-duo-blue.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   transition: flex 1s ease-in-out;
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    /* background: linear-gradient(
+      #020202,
+      #130101c4,
+      #330707d9
+    ); */
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
 
   & .title {
     text-align: center;
+    z-index: 2;
   }
-
+  & article {
+    z-index: 2;
+  }
   & .logoWrapper {
     max-height: 1500px;
     max-width: 1200px;
     overflow: hidden;
     height: auto;
-    transition: all 0.6s cubic-bezier(0.68, 0.01, 0.68, 1);
+    transition: all 0.6s
+      cubic-bezier(0.68, 0.01, 0.68, 1);
+    z-index: 2;
   }
 
   & .logos {
@@ -31,6 +56,7 @@ export default styled.section`
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
+    z-index: 2;
   }
 
   & .logo {
@@ -60,6 +86,7 @@ export default styled.section`
     opacity: 0;
     transition-delay: 5s;
     transition: opacity 2s ease-in;
+    z-index: 2;
   }
   /* Logo Fade In */
   &.active {

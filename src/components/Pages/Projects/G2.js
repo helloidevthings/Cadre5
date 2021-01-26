@@ -2,18 +2,20 @@ import React from "react";
 import Project from "../../Project";
 import Page from "../../Page";
 import WaveHr from "../../Parts/WaveHR";
+import BlogText from "../../Parts/BlogText";
 import CTA from "../../CTA";
 import FeatureApp from "../../FeatureApp";
 import ProjectFeature from "../../ProjectFeature";
 import ProjectsRelated from "../../ProjectsRelated";
+import Button from "../../Parts/Button";
 
 const ProjResolution = () => {
   const details = [
     {
-      subheader: "2007 • 2020",
-      title: "G2 - This Page is Unfinshed",
+      subheader: "2007 • ?",
+      title: "G2 - DRAFT",
       leadin:
-        "Project management for government agencies.",
+        "Program Management for Government Agencies.",
       descLg:
         "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
 
@@ -45,43 +47,67 @@ const ProjResolution = () => {
         introText={{
           title: "The Challenge",
           descLg:
-            "Nuclear projects can be difficult to manage, approve funding, and other needs. It took weeks to receive a status report from each lab. (?)",
-          desc:
-            "G2 provides transparency to Congress(?) and other constituents by giving the exact status of every project. By giving those in authority the ability to quickly view updates, projects can be managed more effectively. G2 also increases accountability between labs. Labs can see each other’s progress as well as the funding received. ",
+            "Effective management of thousands of projects across the NNSA worth approximately $3.5B in annual appropriations.",
+
           svg: "ChartArrow",
-        }}
-        img={{
-          src: "/images/g2/",
-          alt:
-            "A few nice Images of the UI. That could be collaged together",
-        }}
-      />
-      <ProjectFeature
-        themeColor="mediumTheme"
-        row="reverse"
-        introText={{
-          title: "Capabilities",
-          descLg:
-            "G2 offers a variety of services to fit their needs with a responsive design that makes it accessible on any any device.",
-          svg: "List",
-          list: [
-            "Financial Management",
-            "Cost Reporting, DOE STARS Reconciliation",
-            "Year-End Forecasting",
-            "Baseline/Forecast Schedules and Metrics",
-            "Out-Year & Annual Planning",
-            "Geo-Spatial Analysis",
-            "On-demand Reports",
-            "Data Warehousing",
-            "Numerous Line of Business Modules.",
-          ],
         }}
         img={{
           src:
             "/images/g2/responsive_graphic.png",
-          alt: "",
+          alt:
+            "G2 Homescreen on tablet and phone",
         }}
       />
+      <BlogText themeColor="mediumTheme">
+        <h3>Capabilities</h3>
+        <p>
+          G2 allows the NNSA and its subordinate
+          organizations to provide increased
+          operational transparency to Congress and
+          other constituents, efficient and
+          effective project management, advanced
+          reporting and data analytics to drive
+          better decision making, and support of
+          multiple organizations with varying
+          missions within a single system.
+          Capabilities include:
+        </p>
+        <ul>
+          <li>
+            Formal Change Management Processes
+          </li>
+          <li>
+            Schedule Management
+            <ul>
+              <li>
+                {
+                  "Baseline / Forecast Schedules & Metrics"
+                }
+              </li>
+            </ul>
+          </li>
+          <li>
+            Financial Management
+            <ul>
+              <li>Funds Allocation</li>
+              <li>Cost Collection</li>
+              <li>Spend Plans</li>
+              <li>Year-End Forecasts</li>
+              <li>
+                Reconciliation with DOE Financial
+                Systems
+              </li>
+            </ul>
+          </li>
+          <li>Future-Year Annual Planning</li>
+          <li>Real-Property Asset Management</li>
+          <li>Geo-Spatial Analysis</li>
+          <li>On-demand Reports</li>
+          <li>
+            Numerous Line-of-Business Modules
+          </li>
+        </ul>
+      </BlogText>
       {/* <WaveHr color="#efefef" bg="#383838" />
       <WaveHr color="#383838" bg="#383838" />
       <ProjectFeature
@@ -104,8 +130,7 @@ const ProjResolution = () => {
         themeColor="darkTheme"
       />
 */}
-      <WaveHr color="#efefef" bg="#fff" />
-      <article className="blog">
+      {/* <article className="blog">
         <h3>SAFe Agile</h3>
         Text about SAFe Agile.
       </article>
@@ -115,18 +140,18 @@ const ProjResolution = () => {
           alt: "",
         }}
         themeColor="mediumTheme"
-      />
+      /> */}
       <WaveHr color="#efefef" bg="white" />
       <WaveHr color="white" bg="white" />
       <ProjectFeature
         themeColor="lightTheme"
         row="reverse"
         introText={{
-          title: "Icon Signalling",
+          title: "Change Management",
           descLg:
-            "To make viewing projects more efficient we used iconography to indicate each change. By doing this the user can quickly see which areas need their attention. Projects change throughout the process, the user can see exactly what updates have been made to each plan.",
+            "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
           desc:
-            "(Maybe we explain one example icon?) -- This could be a nice place to use Jason's Sketches",
+            "To more efficiently manage change, iconography is used to indicate the type of change being made on each project and whether an approval action is required by the user.",
           svg: "Shapes",
         }}
         img={{
@@ -134,30 +159,6 @@ const ProjResolution = () => {
           alt: "",
         }}
       />
-
-      <ProjectFeature
-        themeColor="lightTheme"
-        row="basic"
-        introText={{
-          title: "Financial Plan Chart",
-          descLg:
-            "Each piece of the chart represents a variable of the total financial plan.",
-          desc:
-            "Each section is outlined below, also there's an option to hover each piece so that it is very clear what it represents.",
-          svg: "Money",
-        }}
-        img={{
-          src: "/images/g2/fin_plan_detail.png",
-          alt: "",
-        }}
-      />
-      <article className="blog">
-        <h3>Fin Plan Dashboard(?)</h3>
-        Description of this dashboard goes here. I
-        initially thought this was the Fin Plan
-        Dashboard. If it is, I can move it back up
-        to the top.
-      </article>
       <FeatureApp
         img={{
           src: "/images/g2/notifications.png",
@@ -175,23 +176,46 @@ const ProjResolution = () => {
         ]}
       />
       <WaveHr color="white" bg="#383838" />
-      <ProjectFeature
-        themeColor="darkTheme"
-        row="reverse"
-        introText={{
-          title: "Milestones",
-          descLg:
-            "This dashboard shows the progress of all projects. The user can quickly get an idea of the status of each project... They can also view every project in detail to see if the project is ahead of schedule, behind schedule, etc… (I’m not sure exactly what to say in this section)",
-          desc:
-            "(The next image is pretty big, but I wanted to show you what it looked like on the site.)",
-          svg: "List",
-        }}
-        img={{
-          src: "/images/g2/.png",
-          alt:
-            "image of the milestones (detailed view)",
-        }}
-      />
+      <BlogText themeColor="darkTheme">
+        <h3>Schedule Management</h3>
+        <ul>
+          <li>
+            G2 allows each organization to define
+            a custom Work Breakdown Structure
+            (WBS) to organize and manage their
+            work. Common to all organizations is
+            that the lowest level of each WBS
+            represents projects that are
+            decomposed into tasks, milestones, and
+            related metrics.
+            <p>
+              G2 summarizes a project’s tasks in
+              an interactive Gantt view that
+              allows users to easily view and
+              filter work based on progress and
+              active changes.
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Additionally, the details of each task
+            are presented in a way that highlights
+            the latest status, work progress, and
+            deltas between the baseline and
+            forecast milestone dates. From within
+            this view, baseline changes as well as
+            status updates can be initiated.
+            (Note: I’ve separated this sentence as
+            a separate bullet point. I’m not sure
+            if it is ok to simply combine this
+            with the previous bullet point as one
+            long statement or if it should be
+            separated. We can discuss after it is
+            captured in the design.)
+          </li>
+        </ul>
+      </BlogText>
       <FeatureApp
         img={{
           src:
@@ -209,6 +233,45 @@ const ProjResolution = () => {
           },
         ]}
       />
+      <WaveHr color="#383838" bg="#efefef" />
+      <ProjectFeature
+        themeColor="mediumTheme"
+        row="basic"
+        introText={{
+          title: "Financial Management",
+          descLg:
+            "G2 manages financials for each organization performing work on a project and is therefore able to summarize financials at any higher level of the WBS.",
+          desc:
+            "Formal change management processes provide organizations with a structured, accountable, and transparent way to allocate new funding, move funding between projects, communicate spending plans, estimate future year budget needs, collect actual costs, and reconcile with external systems. Shown below is a compact financial chart that concisely identifies the various types of funding, costs, and commitments that are managed within G2.",
+        }}
+        img={{
+          src: "/images/g2/fin_plan_detail.png",
+          alt: "",
+        }}
+      />
+      <BlogText themeColor="mediumTheme">
+        <h3>Process</h3>
+        <p>
+          G2 was developed using an agile
+          framework known as SAFe. This enterprise
+          framework assists organizations with the
+          appropriate practices to work at scale….
+        </p>
+      </BlogText>
+      <FeatureApp
+        themeColor="mediumTheme"
+        img={{
+          src: "/images/g2/safe.png",
+          alt: "SAFe Agile",
+        }}
+      />
+      <BlogText>
+        <p>
+          This is a graphic is copyrited from SAFe
+          Agile...link to it{" "}
+        </p>
+      </BlogText>
+      <WaveHr color="#efefef" bg="#383838" />
       <ProjectFeature
         themeColor="darkTheme"
         introText={{

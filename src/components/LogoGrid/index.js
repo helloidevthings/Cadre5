@@ -5,7 +5,9 @@ import Styles from "./styled";
 import { useInView } from "react-intersection-observer";
 
 export default () => {
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
   const gov = [
     {
       name: "oak_ridge",
@@ -17,9 +19,17 @@ export default () => {
     {
       name: "nnsa",
       type: "government",
-      alt: "National Nuclear Security Administration",
+      alt:
+        "National Nuclear Security Administration",
       link:
         "https://www.energy.gov/nnsa/national-nuclear-security-administration",
+      delay: false,
+    },
+    {
+      name: "sandia",
+      type: "government",
+      alt: "Sandia",
+      link: "https://www.sandia.gov/",
       delay: false,
     },
     {
@@ -97,7 +107,8 @@ export default () => {
       name: "department_of_the_navy",
       type: "government",
       alt: "Department of the Navy",
-      link: "https://www.navy.com/start?activity=1228855",
+      link:
+        "https://www.navy.com/start?activity=1228855",
       delay: false,
     },
     {
@@ -122,9 +133,11 @@ export default () => {
       delay: false,
     },
     {
-      name: "national_geospacial_intellegence_agency",
+      name:
+        "national_geospacial_intellegence_agency",
       type: "government",
-      alt: "National Geospatial Intelligence Agency",
+      alt:
+        "National Geospatial Intelligence Agency",
       link: "https://www.nga.mil/",
       delay: false,
     },
@@ -212,7 +225,8 @@ export default () => {
       name: "vgt",
       type: "media",
       alt: "VGT",
-      link: "https://www.aristocrat.com/business/vgt/",
+      link:
+        "https://www.aristocrat.com/business/vgt/",
       delay: false,
     },
   ];
@@ -308,7 +322,8 @@ export default () => {
       name: "radio_systems",
       type: "consumer",
       alt: "Radio Systems",
-      link: "https://www.radiosystemscorporation.com/",
+      link:
+        "https://www.radiosystemscorporation.com/",
       delay: false,
     },
     {
@@ -404,7 +419,8 @@ export default () => {
       name: "akal_security",
       type: "other",
       alt: "Akal Security",
-      link: "https://akalglobal.com/akal-security/",
+      link:
+        "https://akalglobal.com/akal-security/",
       delay: false,
     },
     {
@@ -467,7 +483,8 @@ export default () => {
       name: "pronova",
       type: "other",
       alt: "Pronova",
-      link: "https://provisionhealthcare.com/about-us/",
+      link:
+        "https://provisionhealthcare.com/about-us/",
       delay: false,
     },
     {
@@ -504,7 +521,10 @@ export default () => {
 
   return (
     <Styles className={`${view}`} ref={ref}>
-      <Title title="Our Clients" base="LogoGrid" />
+      <Title
+        title="Our Clients"
+        base="LogoGrid"
+      />
       <div className="heading">
         <h3>Government</h3>
       </div>
@@ -513,7 +533,8 @@ export default () => {
       </div>
       <div className="heading">
         <h3>Media</h3>
-        <span className="fancyAND">and</span> <h3>Entertainment</h3>
+        <span className="fancyAND">and</span>{" "}
+        <h3>Entertainment</h3>
       </div>
       <div className="grid">
         <LogoGridItem logos={media} />
