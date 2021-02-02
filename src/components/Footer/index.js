@@ -8,7 +8,7 @@ export default () => (
   <Styles>
     <InfoItems />
     <p>
-      © 1999 to {new Date().getFullYear()} Cadre5,
+      ©1999 - {new Date().getFullYear()} Cadre5,
       LLC.
     </p>
   </Styles>

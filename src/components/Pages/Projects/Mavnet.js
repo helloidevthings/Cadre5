@@ -64,7 +64,6 @@ const Mavnet = () => {
   ];
   const details = [
     {
-      subheader: "2007 • 2020",
       title: "Mavnet",
       leadin:
         "A Collaboration with Oak Ridge National Lab",

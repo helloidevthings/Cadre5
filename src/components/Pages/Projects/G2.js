@@ -64,7 +64,6 @@ const ProjResolution = () => {
   ];
   const details = [
     {
-      subheader: "2007 • ?",
       title: "G2 - DRAFT",
       leadin:
         "Program Management for Government Agencies.",

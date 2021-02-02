@@ -1,7 +1,12 @@
 import React, { Fragment } from "react";
 
 import Styles from "./styled";
-export default ({ subheader, leadin, descLg, desc }) => (
+export default ({
+  subheader,
+  leadin,
+  descLg,
+  desc,
+}) => (
   <Styles>
     {subheader && (
       <div className="date-wrap">
@@ -9,13 +14,18 @@ export default ({ subheader, leadin, descLg, desc }) => (
         <div></div>
       </div>
     )}
+
     {leadin && (
       <Fragment>
+        <hr />
+
         <h3 className="leadin">{leadin}</h3>
         <hr />
       </Fragment>
     )}
     <p className="description--lg">{descLg}</p>
-    {desc && <p className="description">{desc}</p>}
+    {desc && (
+      <p className="description">{desc}</p>
+    )}
   </Styles>
 );
