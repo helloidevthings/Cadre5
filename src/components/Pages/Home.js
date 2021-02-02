@@ -82,21 +82,23 @@ const Home = () => {
       <Hero
         title="We are Cadre5"
         tagline="We design and develop enterprise and scientific software for global leaders."
-        ctaText="About Us"
+        ctaText="Portfolio"
       />
+
       <Clients />
-      <WaveHr color="#1f1f1f" bg="white" />
-      <Project details={resolution} />
+
       <WaveHr
-        color="white"
+        color="#2b0000"
         bg="linear-gradient(to top, #ededed1a, #e9e9e95e)"
       />
       <Project
-        details={g2}
+        details={resolution}
         themeColor="mediumTheme"
       />
       <WaveHr color="#ededed" bg="white" />
-      <Project details={healthmedex} />
+      <Project details={g2} />
+      {/* <WaveHr color="#ededed" bg="white" /> */}
+      {/* <Project details={healthmedex} /> */}
       <WaveHr color="white" bg="#efefef" />
       <ProjectsRelated />
       <Contact />

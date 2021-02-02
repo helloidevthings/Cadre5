@@ -19,7 +19,7 @@ export default styled.section`
     props.theme.gradients.redToBlack}; */
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 3;
+  /* z-index: 3; */
   overflow: hidden;
 
   &:after {
@@ -41,26 +41,67 @@ export default styled.section`
   }
 
   & article {
-    max-width: 33em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    max-width: 28em;
     padding: 1.8em;
-    z-index: 4;
     @media (min-width: ${(props) =>
         props.theme.breakpoints.desktop}) {
       padding: 1.3em;
     }
   }
 
-  & h1 {
-    font-size: 3.7em;
+  .redCircle {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: 2%;
+    right: 4%;
+    overflow: visible;
   }
 
   & h2 {
-    font-size: 1.5em;
+    font-size: 3.7em;
+    margin-top: 1.6rem;
+  }
+
+  & h3 {
+    /* margin-top: 2em; */
+    font-size: 1.2em;
     font-weight: 300;
     line-height: 1.45;
+    a {
+      color: #fff;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 0.85em;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+
+      &:after {
+        content: "";
+        background-color: #fff;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.8s ease-in-out;
+      }
+
+      &:hover,
+      &:focus {
+        &:after {
+          width: 0%;
+        }
+      }
+    }
   }
+
   & .svg-wrapper {
-    z-index: 1;
     position: absolute;
 
     svg {
@@ -77,11 +118,22 @@ export default styled.section`
   }
 
   & .abstract-graph {
-    /* height: 800px; */
     bottom: 0;
     left: -10px;
     right: -10px;
     opacity: 1;
+  }
+
+  /* z-index */
+
+  .svg-wrapper {
+    z-index: 1;
+  }
+  article {
+    z-index: 10;
+  }
+  .scrollArrow {
+    z-index: 3;
   }
 
   /* SVG STYLES */

@@ -531,11 +531,6 @@ export default () => {
       {/* <Title className="title" title="Our Clients" /> */}
       <article className="blog center">
         <h2>Our Clients</h2>
-        <p>
-          {`Over the years Cadre5 has had the opportunity to work with various
-          different clients in many industries. Including, Government, Consumer,
-          Media & Entertainment`}
-        </p>
       </article>
       <div className="logos">
         <LogoGridItem logos={logos1} />
