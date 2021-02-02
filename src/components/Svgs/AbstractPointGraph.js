@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 const AbstractPointGraph = () => {
   const i = 8;
   return (
-    <svg overflow="visible" viewBox="0 0 2000.44 648.89">
+    <svg
+      overflow="visible"
+      viewBox="0 0 2000.44 648.89"
+    >
       <style>
         {
-          ".prefix__st0{fill:none;stroke:#ab022a;stroke-miterlimit:10}.prefix__st2{fill:#3F0A16}"
+          ".prefix__st0{fill:none;stroke:#540014;stroke-miterlimit:10}.prefix__st2{fill:#3F0A16}"
         }
       </style>
       <path

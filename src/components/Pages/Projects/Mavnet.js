@@ -12,7 +12,7 @@ const Mavnet = () => {
       subheader: "2007 • 2020",
       title: "Mavnet",
       leadin:
-        "Seamlessly Plan, Execute, & Update Missions",
+        "A Collaboration with Oak Ridge National Lab",
       descLg:
         "The Multimodal Autonomous Vehicle Network executes missions in real time for UAV and Rovers.",
       desc:

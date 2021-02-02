@@ -79,11 +79,11 @@ export default styled.main`
   h2,
   h3 {
     font-weight: 700;
-    line-height: 1.38;
+    line-height: 1.28;
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3.75em;
     font-weight: 700;
   }
 
@@ -377,6 +377,27 @@ export default styled.main`
     }
   }
 
+  .scrollArrow {
+    margin-top: 1rem;
+    opacity: 0;
+    animation: scrollArrow 4s ease-in-out
+      alternate infinite;
+  }
+  @keyframes scrollArrow {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 0.9;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+  }
+
   .itemTo {
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -406,13 +427,29 @@ export default styled.main`
 
   @keyframes bounce-2 {
     0% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
     50% {
       transform: translateY(20px);
     }
     100% {
-      transform: translateX(0);
+      transform: translateY(0);
+    }
+  }
+  .bounce3 {
+    animation-name: bounce-3;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes bounce-3 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 `;

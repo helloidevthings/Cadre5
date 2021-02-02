@@ -2,8 +2,7 @@ import styled from "@emotion/styled";
 
 export default styled.section`
   color: white;
-  background: ${(props) =>
-    props.theme.gradients.blackToDark};
+  background: linear-gradient(#000000, #2b0000);
   padding: 3rem 1rem;
   /* padding-bottom: 0; */
   text-align: center;
