@@ -46,7 +46,7 @@ export default ({ title, tagline, ctaText }) => {
         }`}
       >
         <CircleRed />
-        <ImageRandom />
+        <ImageRandom classes="itemTo bounce2" />
 
         {/* SOLUTION WITH MATH RANDOM */}
         {/* <Image
