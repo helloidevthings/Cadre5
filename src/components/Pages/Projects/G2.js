@@ -6,10 +6,62 @@ import BlogText from "../../Parts/BlogText";
 import CTA from "../../CTA";
 import FeatureApp from "../../FeatureApp";
 import ProjectFeature from "../../ProjectFeature";
-import ProjectsRelated from "../../ProjectsRelated";
-import Button from "../../Parts/Button";
+import ProjectCard from "../../Parts/ProjectCard";
 
 const ProjResolution = () => {
+  const cards = [
+    {
+      title: "RESolution",
+      leadin:
+        "Simplify Work. Improve Scientific Productivity.",
+      img: {
+        src:
+          "/images/resolution/resolution-project-card-image1.png",
+        alt: "resolution interface graphics",
+      },
+      link: {
+        href: "./resolution",
+      },
+    },
+    {
+      title: "Research Data Collection System",
+      leadin:
+        "Data Acquisition & Aggregation System for Researchers",
+      descLg:
+        "Data acquisition and aggregation system for researchers",
+      img: {
+        src:
+          "/images/research/research-project-image-card.png",
+        alt: "g2 graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "/researchdata",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+    {
+      title: "Mavnet",
+      leadin:
+        "Seamlessly Plan, Execute & Update Missions",
+      descLg:
+        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+      img: {
+        src:
+          "/images/mavnet/mavnet-project-image-card.png",
+        alt: "mavnet interface graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "./mavnet",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+  ];
   const details = [
     {
       subheader: "2007 • ?",
@@ -350,7 +402,7 @@ const ProjResolution = () => {
         }}
       />
       <WaveHr color="#1f1f1f" bg="#efefef" />
-      <ProjectsRelated />
+      <ProjectCard cards={cards} />
     </Page>
   );
 };

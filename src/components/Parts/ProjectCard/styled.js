@@ -1,6 +1,16 @@
 import styled from "@emotion/styled";
 
 export default styled.section`
+  background-color: ${(props) =>
+    props.theme.color.light};
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  .title {
+    text-align: center;
+    margin-bottom: 1.1rem;
+  }
+
   & a {
     color: black;
     text-decoration: none;
@@ -12,7 +22,8 @@ export default styled.section`
     border-radius: 0.4em;
     opacity: 0;
     transform: scale(1.1);
-    transition: opacity 0.3s ease-in, transform 0.4s ease-in;
+    transition: opacity 0.3s ease-in,
+      transform 0.4s ease-in;
 
     &:hover {
       border: 3px solid #d0e5ff;
@@ -24,7 +35,7 @@ export default styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
     &.active {
       a {
         opacity: 1;
@@ -38,14 +49,14 @@ export default styled.section`
   }
 
   p {
-    margin-top: 0; 
+    margin-top: 0;
   }
 
   & figure {
     position: relative;
     max-height: 350px;
     overflow: hidden;
-    border-radius:0.4em 0.4em 0 0;
+    border-radius: 0.4em 0.4em 0 0;
 
     img {
       height: 100%;
@@ -56,19 +67,22 @@ export default styled.section`
   & .tags {
     display: flex;
     flex-wrap: wrap;
-    margin-top: .3em; 
- 
+    margin-top: 0.3em;
+
     & li {
       list-style: none;
       font-size: 0.9em;
       font-weight: 500;
     }
   }
+
   &.mediumTheme a {
     color: black;
-    background: ${(props) => props.theme.color.light};
+    background: ${(props) =>
+      props.theme.color.light};
     &:hover {
-      color: ${(props) => props.theme.color.primary};
+      color: ${(props) =>
+        props.theme.color.primary};
     }
     h3 {
       font-size: 1.2em;

@@ -3,11 +3,65 @@ import Project from "../../Project";
 import Page from "../../Page";
 import WaveHr from "../../Parts/WaveHR";
 import ProjectFeature from "../../ProjectFeature";
-import ProjectsRelated from "../../ProjectsRelated";
 import FeatureApp from "../../FeatureApp";
 import BlogText from "../../Parts/BlogText";
+import ProjectCard from "../../Parts/ProjectCard";
 
 const ResearchData = () => {
+  const cards = [
+    {
+      title: "G2",
+      leadin:
+        "Program Management for Government Agencies.",
+      descLg:
+        "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
+
+      img: {
+        src:
+          "/images/g2/g2-project-image-card1.png",
+        alt: "g2 graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "/g2",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+    {
+      title: "RESolution",
+      leadin:
+        "Simplify Work. Improve Scientific Productivity.",
+      img: {
+        src:
+          "/images/resolution/resolution-project-card-image1.png",
+        alt: "resolution interface graphics",
+      },
+      link: {
+        href: "./resolution",
+      },
+    },
+    {
+      title: "Mavnet",
+      leadin:
+        "Seamlessly Plan, Execute & Update Missions",
+      descLg:
+        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+      img: {
+        src:
+          "/images/mavnet/mavnet-project-image-card.png",
+        alt: "mavnet interface graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "./mavnet",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+  ];
   const details = [
     {
       title: "Research Data Collection System",
@@ -288,7 +342,7 @@ const ResearchData = () => {
       </BlogText>
       {/* End of Page */}
       <WaveHr color="white" bg="#efefef" />
-      <ProjectsRelated />
+      <ProjectCard cards={cards} />
     </Page>
   );
 };
