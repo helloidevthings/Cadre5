@@ -64,7 +64,6 @@ const ProjHealthMedEx = () => {
   ];
   const details = [
     {
-      subheader: "2007 • 2020",
       title: "HealthMedEx",
       leadin:
         "Wireframing, Prototyping and Usability Testing",

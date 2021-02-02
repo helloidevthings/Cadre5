@@ -14,7 +14,6 @@ import ProjectCard from "../Parts/ProjectCard";
 const Home = () => {
   const resolution = [
     {
-      subheader: "2007 • 2020",
       title: "RESolution",
       leadin:
         "Simplify Work. Improve Scientific Productivity.",
@@ -36,7 +35,6 @@ const Home = () => {
   ];
   const g2 = [
     {
-      subheader: "2007 • 2020",
       title: "G2",
       leadin:
         "Program Management for Government Agencies.",

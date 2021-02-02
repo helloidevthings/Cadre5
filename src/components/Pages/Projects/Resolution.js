@@ -69,7 +69,6 @@ const Resolution = () => {
   ];
   const details = [
     {
-      subheader: " ",
       title: "RESolution",
       leadin:
         "Simplify Work. Improve Scientific Productivity.",
