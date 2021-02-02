@@ -74,7 +74,6 @@ const About = () => {
         svg="AbstractWhite"
       />
       <CTA
-        subheader="FOUNDED IN 1999"
         leadin="Cadre5 is dedicated to building great software."
         descLg="We strive to delight our customers and their end users with the systems we craft. "
         desc="Building software that people enjoy using and that delivers significant business value requires a commitment from the whole team. We often work in blended teams where our clients may provide product owners, subject matter experts, quality assurance and even developers that will take over the solution once it is delivered."
@@ -95,7 +94,6 @@ const About = () => {
         base="CTA"
       />
       <CTA
-        subheader=" "
         leadin="Oak Ridge National Laboratory Innovator Award"
         desc="Innovator Award: Cadre5, LLC, a small business located in Knoxville, for the development of an outstanding idea, process, project management mechanism or technology. Cadre5 has assisted the laboratory for several years in the area of software engineering and has consulted on multiple projects, most notably the Fieldable Nuclear Materials Identification System and the G2 Program Management System."
         img={{
@@ -116,7 +114,6 @@ const About = () => {
       <CTA
         row="reverse"
         themeColor="mediumTheme"
-        subheader=" "
         leadin="Excellence.gov Awards, Overall Winner"
         desc="Research Enterprise Solution (RESolution) – To integrate multiple new technologies for Oak Ridge National Laboratory (ORNL) into one seamless user experience. The application offers streamlined, one-stop access to ORNL data from the underlying LOB systems – reducing the daily hassle of IT and allowing researchers to be productive anytime, anywhere and on any device."
         img={{
@@ -135,7 +132,6 @@ const About = () => {
         }}
       />
       <CTA
-        subheader=" "
         leadin="U.S. Small Business Administration, Southeast Subcontractor of the Year"
         desc="Cadre5, was presented with the U.S. Small Business Administration’s Small Business Subcontractor of the Year Award for Region 4, which includes Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee."
         img={{
