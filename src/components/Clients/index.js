@@ -213,6 +213,9 @@ export default () => {
       link: "https://official.spectrum.com/",
       delay: true,
     },
+  ];
+
+  const logos2 = [
     {
       name: "bandit_white",
       type: "media",
@@ -220,9 +223,6 @@ export default () => {
       link: "https://www.banditlites.com/",
       delay: true,
     },
-  ];
-
-  const logos2 = [
     {
       name: "vgt_white",
       type: "media",
