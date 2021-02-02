@@ -87,7 +87,7 @@ export default ({ title, tagline, ctaText }) => {
         >
           We design and develop software for
           global leaders.{" "}
-          <a href="./Projects">View Portfolio</a>
+          <a href="./Projects">View Projects</a>
         </h3>
         {/* <Button
           themeColor="lightTheme"
