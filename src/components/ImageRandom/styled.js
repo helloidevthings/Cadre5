@@ -42,10 +42,10 @@ export default styled.figure`
     0% {
       background-image: url("${url}/building-circle1.png");
     }
-    25% {
+    /* 25% {
       background-image: url("${url}/meeting3-circle.png");
-    }
-    75% {
+    } */
+    50% {
       background-image: url("${url}/kensoffice-circle.png");
     }
     100% {
