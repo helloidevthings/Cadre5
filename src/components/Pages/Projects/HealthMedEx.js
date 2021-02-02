@@ -5,8 +5,63 @@ import WaveHr from "../../Parts/WaveHR";
 import ProjectFeature from "../../ProjectFeature";
 import ProjectsRelated from "../../ProjectsRelated";
 import FeatureApp from "../../FeatureApp";
+import ProjectCard from "../../Parts/ProjectCard";
 
 const ProjHealthMedEx = () => {
+  const cards = [
+    {
+      title: "G2",
+      leadin:
+        "Program Management for Government Agencies.",
+      descLg:
+        "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
+
+      img: {
+        src:
+          "/images/g2/g2-project-image-card1.png",
+        alt: "g2 graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "/g2",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+    {
+      title: "RESolution",
+      leadin:
+        "Simplify Work. Improve Scientific Productivity.",
+      img: {
+        src:
+          "/images/resolution/resolution-project-card-image1.png",
+        alt: "resolution interface graphics",
+      },
+      link: {
+        href: "./resolution",
+      },
+    },
+    {
+      title: "Research Data Collection System",
+      leadin:
+        "Data Acquisition & Aggregation System for Researchers",
+      descLg:
+        "Data acquisition and aggregation system for researchers",
+      img: {
+        src:
+          "/images/research/research-project-image-card.png",
+        alt: "g2 graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "/researchdata",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+  ];
   const details = [
     {
       subheader: "2007 • 2020",
@@ -102,7 +157,6 @@ const ProjHealthMedEx = () => {
         ]}
       />
       <WaveHr color="white" bg="white" />
-
       <ProjectFeature
         themeColor="lightTheme"
         row="reverse"
@@ -179,7 +233,7 @@ const ProjHealthMedEx = () => {
         ]}
       />
       <WaveHr color="white" bg="#efefef" />
-      <ProjectsRelated />
+      <ProjectCard cards={cards} />
     </Page>
   );
 };

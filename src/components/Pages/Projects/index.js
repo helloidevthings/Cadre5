@@ -111,9 +111,13 @@ export default () => {
         }}
         svg="WavesWhite"
       />
-      <WaveHr color="white" bg="white" />
-      <ProjectCard cards={cards1} />
-      <WaveHr color="white" bg="white" />
+      {/* <WaveHr color="white" bg="white" /> */}
+      <ProjectCard
+        cards={cards1}
+        title={false}
+        themeColor="lightTheme"
+      />
+      {/* <WaveHr color="white" bg="white" /> */}
     </Page>
   );
 };

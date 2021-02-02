@@ -2,12 +2,71 @@ import React from "react";
 import Project from "../../Project";
 import Page from "../../Page";
 import WaveHr from "../../Parts/WaveHR";
+import ProjectCard from "../../Parts/ProjectCard";
 import ProjectFeature from "../../ProjectFeature";
-import ProjectsRelated from "../../ProjectsRelated";
 import FeatureApp from "../../FeatureApp";
 import IconDesc from "../../Parts/IconDesc";
 
 const Resolution = () => {
+  const cards = [
+    {
+      title: "HealthMedEx",
+      leadin:
+        "Wireframing, Prototyping and Usability Testing",
+      descLg:
+        "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
+      img: {
+        src:
+          "/images/healthmedex/healthmedex-project-card-image1.png",
+        alt: "resolution interface graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "./healthmedex",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+    {
+      title: "Research Data Collection System",
+      leadin:
+        "Data Acquisition & Aggregation System for Researchers",
+      descLg:
+        "Data acquisition and aggregation system for researchers",
+      img: {
+        src:
+          "/images/research/research-project-image-card.png",
+        alt: "g2 graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "/researchdata",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+    {
+      title: "Mavnet",
+      leadin:
+        "Seamlessly Plan, Execute & Update Missions",
+      descLg:
+        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+      img: {
+        src:
+          "/images/mavnet/mavnet-project-image-card.png",
+        alt: "mavnet interface graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "./mavnet",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
+  ];
   const details = [
     {
       subheader: " ",
@@ -371,7 +430,7 @@ const Resolution = () => {
       />
       <IconDesc />
       <WaveHr color="white" bg="#efefef" />
-      <ProjectsRelated />
+      <ProjectCard cards={cards} />
     </Page>
   );
 };
