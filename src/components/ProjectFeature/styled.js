@@ -13,7 +13,7 @@ export default styled.section`
   }
 
   figure {
-    max-width: 30em;
+    max-width: 33em;
     img {
       width: 100%;
     }
@@ -42,10 +42,12 @@ export default styled.section`
     background-color: white;
   }
   &.darkTheme {
-    background-color: ${(props) => props.theme.color.grayDark};
+    background-color: ${(props) =>
+      props.theme.color.grayDark};
     color: white;
   }
   &.mediumTheme {
-    background-color: ${(props) => props.theme.color.light};
+    background-color: ${(props) =>
+      props.theme.color.light};
   }
 `;

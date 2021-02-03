@@ -25,8 +25,8 @@ export default styled.main`
 
   .blog {
     max-width: 40em;
-    margin: 3em auto 1em;
-    padding: 1em;
+    margin: 3rem auto 1rem;
+    padding: 1rem;
     p {
       margin-top: 1.3em;
       margin-bottom: 1.3em;
@@ -36,7 +36,7 @@ export default styled.main`
     padding: 1rem;
     max-width: 75em;
     text-align: center;
-    margin: 1em auto;
+    margin: 0.5rem auto;
   }
 
   figcaption {
@@ -167,8 +167,7 @@ export default styled.main`
       font-size: 0.85em;
       margin-top: 0.13em;
       &:before {
-        background-color: ${(props) =>
-          props.theme.color.grayLt};
+        background-color: #797979;
       }
     }
     .darkTheme {

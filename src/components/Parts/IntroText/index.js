@@ -1,11 +1,13 @@
 import React, { Fragment } from "react";
-
+import Button from "../Button";
 import Styles from "./styled";
+
 export default ({
   subheader,
   leadin,
   descLg,
   desc,
+  link = {},
 }) => (
   <Styles>
     {subheader && (
@@ -14,7 +16,6 @@ export default ({
         <div></div>
       </div>
     )}
-
     {leadin && (
       <Fragment>
         <hr />
