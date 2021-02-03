@@ -7,6 +7,7 @@ import CTA from "../../CTA";
 import FeatureApp from "../../FeatureApp";
 import ProjectFeature from "../../ProjectFeature";
 import ProjectCard from "../../Parts/ProjectCard";
+import Image from "../../Parts/Image";
 
 const ProjResolution = () => {
   const cards = [
@@ -98,7 +99,7 @@ const ProjResolution = () => {
         introText={{
           title: "The Challenge",
           descLg:
-            "Effective management of thousands of projects across the NNSA worth approximately $3.5B in annual appropriations.",
+            "Effective management of thousands of projects across the National Nuclear Security Administration (NNSA) worth approximately $3.5B in annual appropriations.",
 
           svg: "ChartArrow",
         }}
@@ -112,16 +113,16 @@ const ProjResolution = () => {
       <BlogText themeColor="mediumTheme">
         <h3>Capabilities</h3>
         <p>
-          G2 allows the NNSA and its subordinate
-          organizations to provide increased
-          operational transparency to Congress and
-          other constituents, efficient and
-          effective project management, advanced
-          reporting and data analytics to drive
-          better decision making, and support of
-          multiple organizations with varying
-          missions within a single system.
-          Capabilities include:
+          G2 provides the NNSA and its subordinate
+          organizations with increased operational
+          transparency for Congress and other
+          constituents, efficient and effective
+          project management, advanced reporting
+          and data analytics to drive better
+          decision making, and support of multiple
+          organizations with varying missions
+          within a single system. Capabilities
+          include:
         </p>
         <ul>
           <li>
@@ -229,43 +230,30 @@ const ProjResolution = () => {
       <WaveHr color="white" bg="#383838" />
       <BlogText themeColor="darkTheme">
         <h3>Schedule Management</h3>
-        <ul>
-          <li>
-            G2 allows each organization to define
-            a custom Work Breakdown Structure
-            (WBS) to organize and manage their
-            work. Common to all organizations is
-            that the lowest level of each WBS
-            represents projects that are
-            decomposed into tasks, milestones, and
-            related metrics.
-            <p>
-              G2 summarizes a project’s tasks in
-              an interactive Gantt view that
-              allows users to easily view and
-              filter work based on progress and
-              active changes.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            Additionally, the details of each task
-            are presented in a way that highlights
-            the latest status, work progress, and
-            deltas between the baseline and
-            forecast milestone dates. From within
-            this view, baseline changes as well as
-            status updates can be initiated.
-            (Note: I’ve separated this sentence as
-            a separate bullet point. I’m not sure
-            if it is ok to simply combine this
-            with the previous bullet point as one
-            long statement or if it should be
-            separated. We can discuss after it is
-            captured in the design.)
-          </li>
-        </ul>
+        <p>
+          G2 allows each organization to define a
+          custom Work Breakdown Structure (WBS) to
+          organize and manage their work. Common
+          to all organizations is that the lowest
+          level of each WBS represents projects
+          that are decomposed into tasks,
+          milestones, and related metrics.
+        </p>
+        <p>
+          G2 summarizes a project’s tasks in an
+          interactive Gantt view that allows users
+          to easily view and filter work based on
+          progress and active changes.
+        </p>
+        <p>
+          Additionally, the details of each task
+          are presented in a way that highlights
+          the latest status, work progress, and
+          deltas between the baseline and forecast
+          milestone dates. From within this view,
+          baseline changes as well as status
+          updates can be initiated.
+        </p>
       </BlogText>
       <FeatureApp
         img={{
@@ -300,7 +288,8 @@ const ProjResolution = () => {
           alt: "",
         }}
       />
-      <BlogText themeColor="mediumTheme">
+      <WaveHr color="#efefef" bg="#ffffff" />
+      <BlogText themeColor="lightTheme">
         <h3>Process</h3>
         <p>
           G2 was developed using an agile
@@ -309,20 +298,22 @@ const ProjResolution = () => {
           appropriate practices to work at scale….
         </p>
       </BlogText>
-      <FeatureApp
-        themeColor="mediumTheme"
+      <a href="">
+        <Image
+          classes="blogImage blog"
+          src="/images/g2/safe.png"
+          alt="Graphic of SAFe Agile"
+          figCap="SAFe Agile"
+        />
+      </a>
+      {/* <FeatureApp
+        themeColor="lightTheme"
         img={{
           src: "/images/g2/safe.png",
           alt: "SAFe Agile",
         }}
-      />
-      <BlogText>
-        <p>
-          This is a graphic is copyrited from SAFe
-          Agile...link to it{" "}
-        </p>
-      </BlogText>
-      <WaveHr color="#efefef" bg="#383838" />
+      /> */}
+      <WaveHr color="#ffffff" bg="#383838" />
       <ProjectFeature
         themeColor="darkTheme"
         introText={{

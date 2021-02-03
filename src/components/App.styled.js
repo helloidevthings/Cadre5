@@ -32,6 +32,21 @@ export default styled.main`
       margin-bottom: 1.3em;
     }
   }
+  .blogImage {
+    padding: 1rem;
+    max-width: 75em;
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  figcaption {
+    background-color: ${(props) =>
+      props.theme.color.dark};
+    padding: 0.5em 0.9em;
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+  }
 
   .center {
     text-align: center;
