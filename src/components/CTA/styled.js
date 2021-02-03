@@ -27,7 +27,7 @@ export default styled.section`
   }
 
   .text {
-    max-width: 36em;
+    max-width: 34em;
     flex-grow: 9999;
     opacity: 0;
     transform: translateY(20px);
@@ -74,7 +74,8 @@ export default styled.section`
     figure {
       &:after {
         content: "";
-        background: ${(props) => props.theme.color.primary};
+        background: ${(props) =>
+          props.theme.color.primary};
         position: absolute;
         width: 73%;
         height: 73%;
@@ -89,10 +90,12 @@ export default styled.section`
     background-color: white;
   }
   &.darkTheme {
-    background-color: ${(props) => props.theme.color.dark};
+    background-color: ${(props) =>
+      props.theme.color.dark};
     color: white;
   }
   &.mediumTheme {
-    background: ${(props) => props.theme.gradients.lightToTransparent};
+    background: ${(props) =>
+      props.theme.gradients.lightToTransparent};
   }
 `;

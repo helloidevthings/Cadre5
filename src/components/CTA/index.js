@@ -47,11 +47,13 @@ export default function ({
           />
         )}
       </div>
-      <Image
-        src={img.src}
-        alt={img.alt}
-        base="CTA"
-      />
+      {img && (
+        <Image
+          src={img.src}
+          alt={img.alt}
+          base="CTA"
+        />
+      )}
     </Styles>
   );
 }

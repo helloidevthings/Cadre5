@@ -7,7 +7,8 @@ export default styled.section`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border-bottom: 2px solid ${(props) => props.theme.color.grayLt};
+    border-bottom: 2px solid
+      ${(props) => props.theme.color.grayLt};
     margin-bottom: 1.2em;
     padding-bottom: 0.8em;
 
@@ -20,7 +21,7 @@ export default styled.section`
   }
 
   & .list {
-    margin-top: 1em;
+    margin-top: 0.5em;
     padding-left: 1em;
     li {
       font-weight: 500;
@@ -39,8 +40,10 @@ export default styled.section`
     & figure {
       z-index: 3;
       display: block;
-      width: ${(props) => props.theme.circle.size};
-      height: ${(props) => props.theme.circle.size};
+      width: ${(props) =>
+        props.theme.circle.size};
+      height: ${(props) =>
+        props.theme.circle.size};
 
       /* margin-right: 0;
       margin-bottom: 0;
@@ -53,7 +56,8 @@ export default styled.section`
     &:after {
       content: "";
       position: absolute;
-      background-color: ${(props) => props.theme.color.primary};
+      background-color: ${(props) =>
+        props.theme.color.primary};
       width: 2.4em;
       height: 2.4em;
       border-radius: 2.4em;

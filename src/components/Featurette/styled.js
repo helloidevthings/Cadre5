@@ -1,10 +1,21 @@
 import styled from "@emotion/styled";
 
 export default styled.section`
-  background: linear-gradient(
-    white 19%,
-    ${(props) => props.theme.color.light} 19%
-  );
+  background-color: ${(props) =>
+    props.theme.color.light};
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18rem;
+    background-color: #ffffff;
+    z-index: -1;
+    top: 0;
+    right: 0;
+  }
 
   .wrap {
     display: flex;

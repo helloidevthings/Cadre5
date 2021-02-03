@@ -15,9 +15,15 @@ export default ({
   iframe = "",
   link = "",
 }) => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.25 });
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.25,
+  });
   return (
-    <Styles className={themeColor ? themeColor : ""} data-row={row}>
+    <Styles
+      className={themeColor ? themeColor : ""}
+      data-row={row}
+    >
       <IntroTextIcon
         icon={introText.svg}
         title={introText.title}
@@ -35,10 +41,28 @@ export default ({
           target={link.target}
         />
       )}
-      <div className={`fade_in ${inView ? "fade_1" : ""}`} ref={ref}>
-        {img && <Image src={img.src} alt={img.alt} />}
-        {video && <Video url={video.url} poster={video.poster} />}
-        {iframe ? <div className="iframeContainer">{iframe}</div> : ""}
+      <div
+        className={`fade_in ${
+          inView ? "fade_1" : ""
+        }`}
+        ref={ref}
+      >
+        {img && (
+          <Image src={img.src} alt={img.alt} />
+        )}
+        {video && (
+          <Video
+            url={video.url}
+            poster={video.poster}
+          />
+        )}
+        {iframe ? (
+          <div className="iframeContainer">
+            {iframe}
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </Styles>
   );

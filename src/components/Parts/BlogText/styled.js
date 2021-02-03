@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export default styled.article`
   background-color: #fff;
-  padding: 3rem 1.2rem;
+  padding: 2rem 1.2rem;
 
   & .wrapper {
     max-width: 40em;

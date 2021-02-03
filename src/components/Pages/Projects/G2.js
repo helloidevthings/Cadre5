@@ -81,19 +81,6 @@ const ProjResolution = () => {
     <Page>
       <Project details={details} />
       <WaveHr color="white" bg="#efefef"></WaveHr>
-      {/* <ProjectFeature
-        themeColor="mediumTheme"
-        row="reverse"
-        introText={{
-          title: "The Challenge",
-          desc:
-            "The National Nuclear Security Administration maintains and enhances the safety, security, and effectiveness of U.S. nuclear capabilities and works globally to reduce nuclear proliferation and the danger from weapons of mass destruction.",
-        }}
-        img={{
-          src: "/images/logos/government/nnsa.png",
-          alt: "",
-        }}
-      /> */}
       <ProjectFeature
         themeColor="mediumTheme"
         introText={{
@@ -121,9 +108,16 @@ const ProjResolution = () => {
           and data analytics to drive better
           decision making, and support of multiple
           organizations with varying missions
-          within a single system. Capabilities
-          include:
+          within a single system.{" "}
+          <a
+            href="https://www.youtube.com/embed/BEwz3IA8NQ8"
+            target="_blank"
+          >
+            Watch a live demo of our application.
+          </a>
         </p>
+        <p></p>
+        <h4> Capabilities include:</h4>
         <ul>
           <li>
             Formal Change Management Processes
@@ -160,39 +154,6 @@ const ProjResolution = () => {
           </li>
         </ul>
       </BlogText>
-      {/* <WaveHr color="#efefef" bg="#383838" />
-      <WaveHr color="#383838" bg="#383838" />
-      <ProjectFeature
-        themeColor="darkTheme"
-        row="basic"
-        introText={{
-          title: "Main Dashboard",
-          descLg:
-            "Gives an overview of project state and notifications that need to be addressed.(?)",
-          desc: "Details?",
-          svg: "Wrench",
-        }}
-        img={{
-          src: "/images/g2/g2-graphs.png",
-          alt: "",
-        }}
-      />
-      <FeatureApp
-        img={{ src: "/images/g2/desktop.png", alt: "" }}
-        themeColor="darkTheme"
-      />
-*/}
-      {/* <article className="blog">
-        <h3>SAFe Agile</h3>
-        Text about SAFe Agile.
-      </article>
-      <FeatureApp
-        img={{
-          src: "/images/g2/safe.png",
-          alt: "",
-        }}
-        themeColor="mediumTheme"
-      /> */}
       <WaveHr color="#efefef" bg="white" />
       <WaveHr color="white" bg="white" />
       <ProjectFeature
@@ -293,35 +254,49 @@ const ProjResolution = () => {
         <h3>Process</h3>
         <p>
           G2 was developed using an agile
-          framework known as SAFe. This enterprise
-          framework assists organizations with the
-          appropriate practices to work at scale….
+          framework known as SAFe. This framework
+          provides enterprises with a set of
+          principles and practices{" "}
+          <em>
+            “For achieving business agility using
+            Lean, Agile, and DevOps”.
+          </em>
+        </p>
+        <p>
+          <small>
+            The infographic, SAFe for Lean
+            Enterprises 5.0, outlines the process
+            provided by{" "}
+            <a
+              href="https://www.scaledagileframework.com/"
+              target="_blank"
+            >
+              Scaled Agile
+            </a>
+            .
+          </small>
         </p>
       </BlogText>
-      <a href="">
+      <a
+        href="https://www.scaledagileframework.com/"
+        target="_blank"
+      >
         <Image
-          classes="blogImage blog"
+          classes="blogImage"
           src="/images/g2/safe.png"
           alt="Graphic of SAFe Agile"
-          figCap="SAFe Agile"
+          figCap="SAFe Agile for Lean Enterprises 5.0 provided by Scaled Agile"
         />
       </a>
-      {/* <FeatureApp
-        themeColor="lightTheme"
-        img={{
-          src: "/images/g2/safe.png",
-          alt: "SAFe Agile",
-        }}
-      /> */}
+      <WaveHr color="#ffffff" bg="#ffffff" />
       <WaveHr color="#ffffff" bg="#383838" />
       <ProjectFeature
         themeColor="darkTheme"
         introText={{
           title: "Awards",
           descLg:
-            '"NNSA is a model for organizations that value project management as a discipline that increases success rates, creates efficiencies and aligns with demanding strategic requirements. Few organizational missions demand excellent project execution more than the NNSA G2 project."',
-          desc:
-            "- Mark Langley, President Project Management Institute",
+            "PMI Distinguished Project Award",
+          desc: `"NNSA is a model for organizations that value project management as a discipline that increases success rates, creates efficiencies and aligns with demanding strategic requirements. Few organizational missions demand excellent project execution more than the NNSA G2 project."  - Mark Langley, President Project Management Institute`,
           svg: "Award",
         }}
         iframe={
@@ -336,7 +311,7 @@ const ProjResolution = () => {
         }
       />
 
-      <ProjectFeature
+      {/* <ProjectFeature
         themeColor="darkTheme"
         row="reverse"
         introText={{
@@ -345,6 +320,14 @@ const ProjResolution = () => {
             "The National Nuclear Security Administration maintains and enhances the safety, security, and effectiveness of U.S. nuclear capabilities and works globally to reduce nuclear proliferation and the danger from weapons of mass destruction.",
           desc:
             "^ I’m not sure where to put this… at the moment it’s next to a video",
+          link: {
+            themeColor: "lightTheme",
+            btnStyle: "secondary",
+            text: "Learn More",
+            target: true,
+            href:
+              "https://www.energy.gov/nnsa/articles/nnsa-s-g2-management-information-system-wins-association-enterprise",
+          },
         }}
         iframe={
           <iframe
@@ -356,22 +339,42 @@ const ProjResolution = () => {
             allowFullScreen
           ></iframe>
         }
-      />
-
+      /> */}
       <WaveHr color="#383838" bg="#1f1f1f" />
       <WaveHr color="#1f1f1f" bg="#1f1f1f" />
       <CTA
         leadin="AFEI EXCELLENCE IN ENTERPRISE INFORMATION"
         descLg={`"NNSA's innovative system is designed to optimize investments of taxpayer funded infrastructure recapitalization, maintenance, and support nuclear nonproliferation activities in the most cost-effective manner. G2 has given the NNSA the ability to analyze key data in a holistic manner on the scale of $2 billion in annual investment decisions."`}
         desc="– Mark Langley, President Project Management Institute"
-        img={{
-          src: "/images/g2/G2_cover.jpg",
-          alt:
-            "people working in an office environment",
-        }}
+        // img={{
+        //   src: "/images/g2/G2_cover.jpg",
+        //   alt:
+        //     "people working in an office environment",
+        // }}
         type="basic"
         themeColor="darkTheme"
       />
+      {/* <BlogText themeColor="darkTheme">
+        <h3>
+          AFEI EXCELLENCE IN ENTERPRISE
+          INFORMATION
+        </h3>
+        <p>
+          "NNSA's innovative system is designed to
+          optimize investments of taxpayer funded
+          infrastructure recapitalization,
+          maintenance, and support nuclear
+          nonproliferation activities in the most
+          cost-effective manner. G2 has given the
+          NNSA the ability to analyze key data in
+          a holistic manner on the scale of $2
+          billion in annual investment decisions."
+        </p>
+        <Image
+          src="/images/g2/img_of_everyone.jpg"
+          alt="people working standing with an award"
+        />
+      </BlogText> */}
       <CTA
         row="reverse"
         descLg={`"NNSA’s G2 system drives risk-based decisions at the enterprise level. Defensibility, traceability, and risk-based decision-making are now the norm at NNSA."`}
