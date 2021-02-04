@@ -46,6 +46,14 @@ export default styled.main`
     text-align: center;
     display: inline-block;
     color: #ffffff;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  a figcaption {
+    &:hover {
+      background-color: ${(props) =>
+        props.theme.color.primary};
+    }
   }
 
   .center {

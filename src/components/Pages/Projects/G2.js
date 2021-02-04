@@ -266,7 +266,7 @@ const ProjResolution = () => {
           <small>
             The infographic, SAFe for Lean
             Enterprises 5.0, outlines the process
-            provided by{" "}
+            – Copyright{" "}
             <a
               href="https://www.scaledagileframework.com/"
               target="_blank"
@@ -285,7 +285,7 @@ const ProjResolution = () => {
           classes="blogImage"
           src="/images/g2/safe.png"
           alt="Graphic of SAFe Agile"
-          figCap="SAFe Agile for Lean Enterprises 5.0 provided by Scaled Agile"
+          figCap="SAFe Agile for Lean Enterprises 5.0 – Copyright by Scaled Agile"
         />
       </a>
       <WaveHr color="#ffffff" bg="#ffffff" />
@@ -340,7 +340,7 @@ const ProjResolution = () => {
           ></iframe>
         }
       /> */}
-      <WaveHr color="#383838" bg="#1f1f1f" />
+      <WaveHr color="#383838" bg="#383838" />
       <WaveHr color="#1f1f1f" bg="#1f1f1f" />
       <CTA
         leadin="AFEI EXCELLENCE IN ENTERPRISE INFORMATION"

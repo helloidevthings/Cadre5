@@ -1,6 +1,7 @@
 import React from "react";
 import { Image } from "cloudinary-react";
 import Styles from "./styled";
+import Launch from "../../Svgs/Launch";
 
 export default ({
   src,
@@ -15,7 +16,9 @@ export default ({
         publicId={src}
       ></Image>
       {figCap && (
-        <figcaption>{figCap}</figcaption>
+        <figcaption>
+          {figCap} <Launch />
+        </figcaption>
       )}
     </Styles>
   );
