@@ -2,6 +2,7 @@ import React from "react";
 import Project from "../../Project";
 import Page from "../../Page";
 import WaveHr from "../../Parts/WaveHR";
+import BlogText from "../../Parts/BlogText";
 import ProjectFeature from "../../ProjectFeature";
 import ProjectsRelated from "../../ProjectsRelated";
 import FeatureApp from "../../FeatureApp";
@@ -94,7 +95,7 @@ const Mavnet = () => {
             "Missions can be controlled by multiple users in real time. Waypoints have geospatial recognition, in order for drones and rovers to safely navigate the terrain. ",
         }}
         img={{
-          src: "/images/mavnet/mission_path2.png",
+          src: "/images/mavnet/rover-image.png",
           alt: "Mission Screenshot",
         }}
       />{" "}
@@ -143,7 +144,25 @@ const Mavnet = () => {
           alt: "Mavnet Software Photo",
         }}
       />
-      <WaveHr color="white" bg="#efefef" />
+      <WaveHr color="#ffffff" bg="#ffffff" />
+      <BlogText textAlign="center">
+        <h3>Project Details</h3>
+        <p>
+          This project was created in
+          collaboration with Oak Ridge National
+          Lab and Horizon 31. For product
+          purchasing information see{" "}
+          <a
+            href="https://horizon31.com"
+            target="_blank"
+          >
+            Horizon31
+          </a>
+          .
+        </p>
+      </BlogText>
+      <WaveHr color="#ffffff" bg="#ffffff" />
+      <WaveHr color="#ffffff" bg="#efefef" />
       <ProjectCard cards={cards} />
     </Page>
   );
