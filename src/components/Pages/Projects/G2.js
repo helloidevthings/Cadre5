@@ -345,7 +345,7 @@ const ProjResolution = () => {
       <CTA
         leadin="AFEI EXCELLENCE IN ENTERPRISE INFORMATION"
         descLg={`"NNSA's innovative system is designed to optimize investments of taxpayer funded infrastructure recapitalization, maintenance, and support nuclear nonproliferation activities in the most cost-effective manner. G2 has given the NNSA the ability to analyze key data in a holistic manner on the scale of $2 billion in annual investment decisions."`}
-        desc="– Mark Langley, President Project Management Institute"
+        desc="– Dave Chesebrough"
         // img={{
         //   src: "/images/g2/G2_cover.jpg",
         //   alt:
