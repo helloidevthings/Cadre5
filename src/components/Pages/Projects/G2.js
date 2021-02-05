@@ -340,6 +340,7 @@ const ProjResolution = () => {
           ></iframe>
         }
       /> */}
+
       <WaveHr color="#383838" bg="#383838" />
       <WaveHr color="#1f1f1f" bg="#1f1f1f" />
       <CTA
