@@ -106,23 +106,23 @@ export default styled.main`
   }
 
   h1 {
-    font-size: 3.75em;
+    font-size: 3.75rem;
     font-weight: 700;
   }
 
   h2 {
-    font-size: 2.8em;
+    font-size: 2.8rem;
     font-weight: 700;
   }
 
   h3 {
-    font-size: 1.8em;
-    margin-bottom: 0.2em;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
   }
 
   h4 {
-    font-size: 1.1em;
-    margin-bottom: 1em;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
     font-weight: 300;
   }
 
