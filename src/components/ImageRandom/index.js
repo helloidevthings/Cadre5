@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Styles from "./styled";
 
 export default ({ classes }) => {
+  // useEffect() / set interval and then update the state - event listener for
+  // whatever poperties I'm adding into it
+
   // const randomSrc = [
   //   "building-circle1",
   //   "building-circle2",
