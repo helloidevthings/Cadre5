@@ -94,7 +94,7 @@ export default styled.main`
     text-align: center;
   }
 
-  a {
+  p a {
     color: ${(props) =>
       props.theme.color.primary};
   }

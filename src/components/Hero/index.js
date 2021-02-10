@@ -15,26 +15,26 @@ export default ({ title, tagline, ctaText }) => {
     triggerOnce: true,
   });
 
-  const randomSrc = [
-    "building-circle1",
-    "building-circle2",
-    "meeting-portrait-circle",
-    "megan-working-circle",
-    "meeting3-circle",
-    "kensoffice-circle",
-  ];
-  const cycleImages = (images, step) => {
-    images.forEach((image, index) =>
-      setTimeout(() => {
-        console.log(image);
-        return <div></div>;
-      }, step * (index + 1))
-    );
-    setTimeout(
-      () => cycleImages(images, step),
-      step * images.length
-    );
-  };
+  // const randomSrc = [
+  //   "building-circle1",
+  //   "building-circle2",
+  //   "meeting-portrait-circle",
+  //   "megan-working-circle",
+  //   "meeting3-circle",
+  //   "kensoffice-circle",
+  // ];
+  // const cycleImages = (images, step) => {
+  //   images.forEach((image, index) =>
+  //     setTimeout(() => {
+  //       console.log(image);
+  //       return <div></div>;
+  //     }, step * (index + 1))
+  //   );
+  //   setTimeout(
+  //     () => cycleImages(images, step),
+  //     step * images.length
+  //   );
+  // };
 
   return (
     <Styles>
@@ -51,21 +51,13 @@ export default ({ title, tagline, ctaText }) => {
         {/* SOLUTION WITH MATH RANDOM */}
         {/* <Image
           classes="itemTo bounce2"
-          src={`/images/${cycleImages(
-            randomSrc,
-            10000
-          )}.png`}
-          alt="images of Cadre5's building and staff"
-        /> */}
-        {/* randomSrc[
-        Math.floor(
-        Math.random() * randomSrc.length
-        )
-        ] */}
-        {/* Original Solution: */}
-        {/* <Image
-          classes="itemTo bounce2"
-          src="/images/building-circle1.png"
+          src={`/images/${
+            randomSrc[
+              Math.floor(
+                Math.random() * randomSrc.length
+              )
+            ]
+          }.png`}
           alt="images of Cadre5's building and staff"
         /> */}
 
