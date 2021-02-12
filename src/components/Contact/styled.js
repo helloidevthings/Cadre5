@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
-
+const url =
+  "https://res.cloudinary.com/cadre5images/image/upload/v1612201595/images/";
 export default styled.section`
   color: ${(props) => props.theme.color.white};
-  background: ${(props) => props.theme.color.dark};
+  background: ${(props) =>
+    props.theme.color.dark};
   padding-top: 3rem;
   /* min-height: 100vh; */
 
@@ -34,7 +36,8 @@ export default styled.section`
   input {
     margin-bottom: 1em;
     border: none;
-    border-bottom: 1px solid ${(props) => props.theme.color.white};
+    border-bottom: 1px solid
+      ${(props) => props.theme.color.white};
   }
 
   textarea {
@@ -42,7 +45,8 @@ export default styled.section`
   }
 
   & [type="submit"] {
-    background-color: ${(props) => props.theme.color.primary};
+    background-color: ${(props) =>
+      props.theme.color.primary};
     outline: none;
     border: none;
     border-radius: 2em;
@@ -55,11 +59,11 @@ export default styled.section`
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: ${(props) => props.theme.gradients.redToBlack};
+    background: ${(props) =>
+      props.theme.gradients.redToBlack};
     max-width: 100vw;
     max-height: 38em;
     margin-top: 3rem;
-
 
     svg {
       margin-top: -7rem;
@@ -67,23 +71,22 @@ export default styled.section`
       height: 100%;
 
       @media (min-width: 320px) and (max-width: 1100px) {
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
+      }
+    }
+
+    @media (min-width: 500px) and (max-width: 1100px) {
+      background: url("${url}/cadre5map.png");
+      background-size: cover;
+      background-position: 5% 90%;
+      height: 500px;
+      background-size: 130%;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: 320px) and (max-width: 500px) {
+      background-size: 200%;
     }
   }
-
-  @media (min-width: 500px) and (max-width: 1100px) {
-        background: url("./images/cadre5map.png");
-        background-size: cover; 
-        background-position: 5% 90%; 
-        height: 500px;
-        background-size: 130%;
-        background-repeat:  no-repeat; 
-      }
-
-      @media (min-width: 320px) and (max-width: 500px) {
-        background-size: 200%;
-      }
-  }
-
 `;
