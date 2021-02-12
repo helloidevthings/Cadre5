@@ -33,7 +33,7 @@ export default styled.main`
     }
   }
   .blogImage {
-    padding: 1.1rem;
+    padding: 1rem;
     max-width: 75em;
     text-align: center;
     margin: 0.5rem auto;
