@@ -6,6 +6,8 @@ export default styled.figure`
   max-width: 100vw;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 
   svg {
     max-width: 100%;
