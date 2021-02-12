@@ -40,21 +40,20 @@ export default () => {
         href: "./resolution",
       },
     },
-
     {
-      title: "Mavnet",
+      title: "Research Data Collection System",
       leadin:
-        "Seamlessly Plan, Execute & Update Missions",
+        "Data Acquisition & Aggregation System for Researchers",
       descLg:
-        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+        "Data acquisition and aggregation system for researchers",
       img: {
         src:
-          "/images/mavnet/mavnet-project-image-card.png",
-        alt: "mavnet interface graphics",
+          "/images/research/research-project-image-card.png",
+        alt: "g2 graphics",
       },
       link: {
         text: "View Project",
-        href: "./mavnet",
+        href: "/researchdata",
         btnStyle: "secondary",
         themeColor: "dark",
         arrow: true,

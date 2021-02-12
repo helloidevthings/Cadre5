@@ -94,25 +94,25 @@ const Home = () => {
         arrow: true,
       },
     },
-    {
-      title: "Mavnet",
-      leadin:
-        "Seamlessly Plan, Execute & Update Missions",
-      descLg:
-        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
-      img: {
-        src:
-          "/images/mavnet/mavnet-project-image-card.png",
-        alt: "mavnet interface graphics",
-      },
-      link: {
-        text: "View Project",
-        href: "./mavnet",
-        btnStyle: "secondary",
-        themeColor: "dark",
-        arrow: true,
-      },
-    },
+    // {
+    //   title: "Mavnet",
+    //   leadin:
+    //     "Seamlessly Plan, Execute & Update Missions",
+    //   descLg:
+    //     "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+    //   img: {
+    //     src:
+    //       "/images/mavnet/mavnet-project-image-card.png",
+    //     alt: "mavnet interface graphics",
+    //   },
+    //   link: {
+    //     text: "View Project",
+    //     href: "./mavnet",
+    //     btnStyle: "secondary",
+    //     themeColor: "dark",
+    //     arrow: true,
+    //   },
+    // },
   ];
 
   return (
