@@ -19,7 +19,7 @@ export default styled.figure`
     position: absolute;
     top: 0px;
     right: 0px;
-    background-image: url("./images/building-circle1.png");
+    background-image: url("${url}/building-circle1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 10;
