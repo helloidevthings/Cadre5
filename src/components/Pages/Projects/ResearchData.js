@@ -43,19 +43,19 @@ const ResearchData = () => {
       },
     },
     {
-      title: "Mavnet",
+      title: "HealthMedEx",
       leadin:
-        "Seamlessly Plan, Execute & Update Missions",
+        "Wireframing, Prototyping and Usability Testing",
       descLg:
-        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+        "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
         src:
-          "/images/mavnet/mavnet-project-image-card.png",
-        alt: "mavnet interface graphics",
+          "/images/healthmedex/healthmedex-project-card-image1.png",
+        alt: "resolution interface graphics",
       },
       link: {
         text: "View Project",
-        href: "./mavnet",
+        href: "./healthmedex",
         btnStyle: "secondary",
         themeColor: "dark",
         arrow: true,

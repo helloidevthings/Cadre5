@@ -44,28 +44,47 @@ const ProjResolution = () => {
       },
     },
     {
-      title: "Mavnet",
+      title: "HealthMedEx",
       leadin:
-        "Seamlessly Plan, Execute & Update Missions",
+        "Wireframing, Prototyping and Usability Testing",
       descLg:
-        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+        "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
         src:
-          "/images/mavnet/mavnet-project-image-card.png",
-        alt: "mavnet interface graphics",
+          "/images/healthmedex/healthmedex-project-card-image1.png",
+        alt: "resolution interface graphics",
       },
       link: {
         text: "View Project",
-        href: "./mavnet",
+        href: "./healthmedex",
         btnStyle: "secondary",
         themeColor: "dark",
         arrow: true,
       },
     },
+    // {
+    //   title: "Mavnet",
+    //   leadin:
+    //     "Seamlessly Plan, Execute & Update Missions",
+    //   descLg:
+    //     "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+    //   img: {
+    //     src:
+    //       "/images/mavnet/mavnet-project-image-card.png",
+    //     alt: "mavnet interface graphics",
+    //   },
+    //   link: {
+    //     text: "View Project",
+    //     href: "./mavnet",
+    //     btnStyle: "secondary",
+    //     themeColor: "dark",
+    //     arrow: true,
+    //   },
+    // },
   ];
   const details = [
     {
-      title: "G2 - DRAFT",
+      title: "G2",
       leadin:
         "Program Management for Government Agencies.",
       descLg:
@@ -165,7 +184,6 @@ const ProjResolution = () => {
             "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
           desc:
             "To more efficiently manage change, iconography is used to indicate the type of change being made on each project and whether an approval action is required by the user.",
-          svg: "Shapes",
         }}
         img={{
           src: "/images/g2/icon_signals.png",
@@ -347,11 +365,11 @@ const ProjResolution = () => {
         leadin="AFEI EXCELLENCE IN ENTERPRISE INFORMATION"
         descLg={`"NNSA's innovative system is designed to optimize investments of taxpayer funded infrastructure recapitalization, maintenance, and support nuclear nonproliferation activities in the most cost-effective manner. G2 has given the NNSA the ability to analyze key data in a holistic manner on the scale of $2 billion in annual investment decisions."`}
         desc="– Dave Chesebrough"
-        // img={{
-        //   src: "/images/g2/G2_cover.jpg",
-        //   alt:
-        //     "people working in an office environment",
-        // }}
+        img={{
+          src: "/images/g2/g2-graphs.png",
+          alt:
+            "people working in an office environment",
+        }}
         type="basic"
         themeColor="darkTheme"
       />

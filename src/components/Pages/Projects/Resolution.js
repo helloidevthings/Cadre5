@@ -48,19 +48,20 @@ const Resolution = () => {
       },
     },
     {
-      title: "Mavnet",
+      title: "G2",
       leadin:
-        "Seamlessly Plan, Execute & Update Missions",
+        "Program Management for Government Agencies.",
       descLg:
-        "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+        "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
+
       img: {
         src:
-          "/images/mavnet/mavnet-project-image-card.png",
-        alt: "mavnet interface graphics",
+          "/images/g2/g2-project-image-card1.png",
+        alt: "g2 graphics",
       },
       link: {
         text: "View Project",
-        href: "./mavnet",
+        href: "/g2",
         btnStyle: "secondary",
         themeColor: "dark",
         arrow: true,
