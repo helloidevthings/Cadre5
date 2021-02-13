@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export default styled.figure`
   display: block;
   overflow: hidden;
-  max-width: 100vw;
+  width: 100vw;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
