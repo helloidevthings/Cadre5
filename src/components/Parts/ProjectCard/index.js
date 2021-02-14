@@ -10,7 +10,7 @@ export default ({
   title = true,
 }) => {
   const [ref, inView] = useInView({
-    threshold: 0.25,
+    threshold: 0.01,
     triggerOnce: true,
   });
 
