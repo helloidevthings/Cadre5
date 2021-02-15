@@ -41,8 +41,8 @@ export default styled.figure`
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 10;
-    animation: randomImage 8s ease-in-out infinite
-      alternate;
+    /* animation: randomImage 8s ease-in-out infinite
+      alternate; */
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
