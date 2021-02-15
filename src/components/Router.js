@@ -31,21 +31,12 @@ const Router = () => (
       path="/Projects"
       component={Projects}
     />
+    <Route path="/Careers" component={Careers} />
     <Route
-      exact
-      path="/Careers"
-      component={Careers}
-    />
-    <Route
-      exact
       path="/Contact"
       component={ContactPage}
     />
-    <Route
-      exact
-      path="/Clients"
-      component={Clients}
-    />
+    <Route path="/Clients" component={Clients} />
     <Route
       exact
       path="/Posts/ProjectManagementGraphs"
