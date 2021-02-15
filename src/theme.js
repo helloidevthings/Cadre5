@@ -19,11 +19,16 @@ export default {
     main: "0px 4px 8px 2px rgba(0, 0, 0, 0.16)",
   },
   gradients: {
-    blackToRed: "linear-gradient(#000000, #2e0000)",
-    redToBlack: "linear-gradient(#2e0000, #000000)",
-    darkToGrayMd: "linear-gradient(#1f1f1f,#4d4d4d)",
-    blackToDark: "linear-gradient(#020202, #1f1f1f)",
-    lightToWhite: "linear-gradient(to right, #efefef, white)",
+    blackToRed:
+      "linear-gradient(#000000, #2e0000)",
+    redToBlack:
+      "linear-gradient(#2e0000, #000000)",
+    darkToGrayMd:
+      "linear-gradient(#1f1f1f,#4d4d4d)",
+    blackToDark:
+      "linear-gradient(#020202, #1f1f1f)",
+    lightToWhite:
+      "linear-gradient(to right, #efefef, white)",
     lightToTransparent:
       "linear-gradient(to right, rgb(239 239 239 / 59%), rgb(239 239 239 / 10%))",
     lightToTransparent180:
@@ -34,6 +39,7 @@ export default {
     mobile: "375px",
     tablet: "768px",
     desktop: "1440px",
+    desktopLg: "2000px",
   },
   maxWidth: {
     container: "1000px",
