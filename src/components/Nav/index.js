@@ -7,7 +7,7 @@ export default ({ isOpen, setIsOpen }) => {
     { name: "About", path: "/About" },
     { name: "Clients", path: "/Clients" },
     { name: "Projects", path: "/Projects" },
-    { name: "Careers", path: "/Careers" },
+    // { name: "Careers", path: "/Careers" },
     { name: "Contact", path: "/Contact" },
   ];
 
