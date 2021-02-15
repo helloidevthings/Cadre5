@@ -9,8 +9,8 @@ export default styled.figure`
   overflow: hidden;
   position: relative;
   z-index: 1;
-  /* transform: translate3d(0, 0, 0);
-  backface-visibility: hidden; */
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 
   &:before {
     content: "";
@@ -23,6 +23,9 @@ export default styled.figure`
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 4;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+
     /* animation: fadeImage 8s ease-in-out infinite; */
   }
 
@@ -42,8 +45,10 @@ export default styled.figure`
       alternate;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
+    -webkit-backface-visibility: hidden;
   }
 
   img {
@@ -51,6 +56,8 @@ export default styled.figure`
     height: 100%;
     object-fit: cover;
     opacity: 0;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 
   @keyframes randomImage {
