@@ -31,7 +31,7 @@ const Router = () => (
       path="/Projects"
       component={Projects}
     />
-    {/* <Route path="/Careers" component={Careers} /> */}
+    <Route path="/Careers" component={Careers} />
     <Route
       path="/Contact"
       component={ContactPage}

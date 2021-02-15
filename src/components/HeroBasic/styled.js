@@ -20,11 +20,24 @@ export default styled.section`
       object-position: 50% 50%;
       height: inherit;
       width: inherit;
+      @media (max-width: calc(${(props) =>
+          props.theme.breakpoints
+            .desktop} - 1px )) {
+        object-position: top;
+      }
+      /* @media (min-width: calc(${(props) =>
+        props.theme.breakpoints
+          .desktopLg} - 1px )) {
+        object-position: top;
+      } */
     }
   }
   &:after {
     content: "";
-    background: linear-gradient(rgb(0 0 0 / 0%),rgb(0 0 0 / 35%));
+    background: linear-gradient(
+      rgb(0 0 0 / 0%),
+      rgb(0 0 0 / 35%)
+    );
     height: inherit;
     width: 100%;
     top: 0;
