@@ -20,19 +20,19 @@ export default () => {
         svg="WavesWhite"
       />
       <section className="Careers" />
-      {/* <div>
-      <script
+      <div>
+        <script
+          id="gnewtonjs"
+          type="text/javascript"
+          src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"
+        ></script>
+      </div>
+      {/* <iframe
         id="gnewtonjs"
         type="text/javascript"
-        src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"
-      ></script>
-    </div> */}
-      <iframe
-        id="gnewtonjs"
-        type="text/javascript"
-        src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"
+        src="https://recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"
         frameborder="0"
-      ></iframe>
+      ></iframe> */}
     </Page>
   );
 };
