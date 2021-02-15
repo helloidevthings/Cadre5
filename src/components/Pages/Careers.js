@@ -14,12 +14,12 @@ export default () => (
     />
 
     <section className="Careers" />
-    <div>
+    {/* <div>
       <script
         id="gnewtonjs"
         type="text/javascript"
         src="//recruitingbypaycor.com/career/iframe.action?clientId=8a7883c66613934801661bdfb1e02ad3"
       ></script>
-    </div>
+    </div> */}
   </Page>
 );
