@@ -1,7 +1,8 @@
 import React from "react";
-import Page from "../Page";
-import HeroBasic from "../HeroBasic";
-import CareersiFrame from "../Parts/CareersiFrame";
+import Page from "../../Page";
+import HeroBasic from "../../HeroBasic";
+import CareersiFrame from "../../Parts/CareersiFrame";
+import Styles from "./styled";
 
 export default () => {
   return (
@@ -14,10 +15,10 @@ export default () => {
         }}
         svg="WavesWhite"
       />
-      <section className="Careers">
+      <Styles className="Careers">
         <CareersiFrame />
         <div id="careers-iframe"></div>
-      </section>
+      </Styles>
     </Page>
   );
 };
