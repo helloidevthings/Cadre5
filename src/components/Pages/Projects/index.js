@@ -10,14 +10,12 @@ export default () => {
   const cards1 = [
     {
       title: "G2",
-      leadin:
-        "Program Management for Government Agencies.",
+      leadin: "Program Management for Government Agencies.",
       descLg:
         "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
 
       img: {
-        src:
-          "/images/g2/g2-project-image-card1.png",
+        src: "/images/g2/g2-project-image-card1.png",
         alt: "g2 graphics",
       },
       link: {
@@ -30,13 +28,11 @@ export default () => {
     },
     {
       title: "HealthMedEx",
-      leadin:
-        "Wireframing, Prototyping and Usability Testing",
+      leadin: "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
-        src:
-          "/images/healthmedex/healthmedex-project-card-image1.png",
+        src: "/images/healthmedex/healthmedex-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -49,11 +45,9 @@ export default () => {
     },
     {
       title: "RESolution",
-      leadin:
-        "Simplify Work. Improve Scientific Productivity.",
+      leadin: "Simplify Work. Improve Scientific Productivity.",
       img: {
-        src:
-          "/images/resolution/resolution-project-card-image1.png",
+        src: "/images/resolution/resolution-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -62,13 +56,10 @@ export default () => {
     },
     {
       title: "Research Data Collection System",
-      leadin:
-        "Data Acquisition & Aggregation System for Researchers",
-      descLg:
-        "Data acquisition and aggregation system for researchers",
+      leadin: "Data Acquisition & Aggregation System for Researchers",
+      descLg: "Data acquisition and aggregation system for researchers",
       img: {
-        src:
-          "/images/research/research-project-image-card.png",
+        src: "/images/research/research-project-image-card.png",
         alt: "g2 graphics",
       },
       link: {
@@ -105,18 +96,13 @@ export default () => {
         title="Featured Projects"
         v
         img={{
-          src:
-            "/images/office-wideangle-vibrant.png",
+          src: "/images/office-wideangle-vibrant4.png",
           alt: "Cadre5 Building",
         }}
         svg="WavesWhite"
       />
       {/* <WaveHr color="white" bg="white" /> */}
-      <ProjectCard
-        cards={cards1}
-        title={false}
-        themeColor="lightTheme"
-      />
+      <ProjectCard cards={cards1} title={false} themeColor="lightTheme" />
       {/* <WaveHr color="white" bg="white" /> */}
     </Page>
   );
