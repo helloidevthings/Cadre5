@@ -1,14 +1,9 @@
 import React from "react";
 import Page from "../Page";
 import HeroBasic from "../HeroBasic";
+import CareersiFrame from "../Parts/CareersiFrame";
 
 export default () => {
-  // let el =
-  //   document && document.getElementById("career");
-
-  // if (document && !el) {
-  //   el.id = "career";
-  // }
   return (
     <Page>
       <HeroBasic
@@ -19,7 +14,10 @@ export default () => {
         }}
         svg="WavesWhite"
       />
-      <section className="Careers" />
+      <section className="Careers">
+        <CareersiFrame />
+        <div id="careers-iframe"></div>
+      </section>
     </Page>
   );
 };
