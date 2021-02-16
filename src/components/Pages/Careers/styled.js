@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export default styled.section`
-  margin: 3rem auto 10rem;
-  padding: 1.4rem 2rem;
+  margin: 2rem auto 9rem;
+  padding: 1.4rem 1rem;
   max-width: 910px;
 `;
