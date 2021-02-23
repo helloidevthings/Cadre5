@@ -15,14 +15,14 @@ export default ({ title, tagline, ctaText }) => {
     triggerOnce: true,
   });
 
-  // const randomSrc = [
-  //   "building-circle1",
-  //   "building-circle2",
-  //   "meeting-portrait-circle",
-  //   "megan-working-circle",
-  //   "meeting3-circle",
-  //   "kensoffice-circle",
-  // ];
+  const randomSrc = [
+    "building-circle1",
+    "building-circle2",
+    "meeting-portrait-circle",
+    "megan-working-circle",
+    "meeting3-circle",
+    "kensoffice-circle",
+  ];
   // const cycleImages = (images, step) => {
   //   images.forEach((image, index) =>
   //     setTimeout(() => {
@@ -41,45 +41,24 @@ export default ({ title, tagline, ctaText }) => {
       <article
         ref={ref}
         style={{ transitionDelay: `.2s` }}
-        className={`fadeUp ${
-          inView ? "active" : ""
-        }`}
+        className={`fadeUp ${inView ? "active" : ""}`}
       >
         <CircleRed />
         <ImageRandom classes="itemTo bounce2" />
 
-        {/* SOLUTION WITH MATH RANDOM */}
-        {/* <Image
-          classes="itemTo bounce2"
-          src={`/images/${
-            randomSrc[
-              Math.floor(
-                Math.random() * randomSrc.length
-              )
-            ]
-          }.png`}
-          alt="images of Cadre5's building and staff"
-        /> */}
-
         <h2
           ref={ref}
           style={{ transitionDelay: `.6s` }}
-          className={`fadeUp ${
-            inView ? "active" : ""
-          }`}
+          className={`fadeUp ${inView ? "active" : ""}`}
         >
           Welcome
         </h2>
         <h3
           style={{ transitionDelay: `.7s` }}
           ref={ref}
-          className={`fadeUp ${
-            inView ? "active" : ""
-          }`}
+          className={`fadeUp ${inView ? "active" : ""}`}
         >
-          We design and develop software for
-          global leaders.{" "}
-          <a href="./Projects">View Projects</a>
+          We design and develop software for global leaders. <a href="./Projects">View Projects</a>
         </h3>
         {/* <Button
           themeColor="lightTheme"
@@ -88,11 +67,7 @@ export default ({ title, tagline, ctaText }) => {
           href="/Projects"
         /> */}
       </article>
-      <ScrollArrow
-        classes={`fadeUp scrollArrow ${
-          inView ? "active" : ""
-        }`}
-      />
+      <ScrollArrow classes={`fadeUp scrollArrow ${inView ? "active" : ""}`} />
       <div className="svg-wrapper wave-lines">
         <WaveLines />
       </div>
