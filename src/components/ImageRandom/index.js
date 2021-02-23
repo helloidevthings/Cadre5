@@ -14,7 +14,7 @@ export default ({ classes }) => {
   ];
 
   const [src, newSrc] = useState(0);
-  const refContainer = useRef(initialValue);
+  // const refContainer = useRef(initialValue);
 
   useEffect(() => {
     if (src <= imageSrc.length - 2) {
