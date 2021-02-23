@@ -1,45 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Styles from "./styled";
 
 export default ({ classes }) => {
-  // useEffect() / set interval and then update the state - event listener for
-  // whatever poperties I'm adding into it
+  // src={`/images/${randomSrc[Math.floor(Math.random() * randomSrc.length)]}.png`}
 
-  // const randomSrc = [
-  //   "building-circle1",
-  //   "building-circle2",
-  //   "meeting-portrait-circle",
-  //   "megan-working-circle",
-  //   "meeting3-circle",
-  //   "kensoffice-circle",
-  // ];
-  // const cycleImages = (images, step) => {
-  //   images.forEach((image, index) =>
-  //     setTimeout(() => {
-  //       console.log(image);
-  //       return (
-  //         <div
-  //           className="RandomImages"
-  //           style={{
-  //             background: `url(
-  //             "/images/${image}.png"
-  //           )`,
-  //           }}
-  //         ></div>
-  //       );
-  //     }, step * (index + 1))
-  //   );
-  //   setTimeout(
-  //     () => cycleImages(images, step),
-  //     step * images.length
-  //   );
-  // };
+  const imageSrc = [
+    "building-circle1",
+    "meeting3-circle",
+    "kensoffice-circle",
+    "megan-working-circle",
+    "meeting-portrait-circle",
+    "building-circle2",
+  ];
+
+  const [src, newSrc] = useState(0);
+  const refContainer = useRef(initialValue);
+
+  useEffect(() => {
+    if (src <= imageSrc.length - 2) {
+      const interval = setInterval(() => {
+        newSrc(src + 1);
+      }, 4000);
+      return () => clearInterval(interval);
+    }
+  });
   return (
     <Styles className={classes}>
       <img
-        className="randomImage"
-        src="./images/building-circle1.png"
-        alt=""
+        className="fadeImg"
+        src={`/images/${imageSrc[src]}.png`}
+        alt="employees writing on white boards and the Cadre5 building exterior"
       />
     </Styles>
   );

@@ -7,9 +7,7 @@ export default ({ tips = [] }) => {
   return (
     <Styles>
       {tips.map(({ desc, i, top, left }) => {
-        const [visible, toggleVisible] = useState(
-          false
-        );
+        const [visible, toggleVisible] = useState(false);
         const handleButtonClick = (e) => {
           if (!visible) {
             toggleVisible(true);
@@ -23,18 +21,11 @@ export default ({ tips = [] }) => {
 
         return (
           <div
-            className={
-              visible
-                ? "wrapper active"
-                : "wrapper"
-            }
+            className={visible ? "wrapper active" : "wrapper"}
             style={{ top: top, left: left }}
             key={i}
           >
-            <button
-              className="ToolTip ToolTipButton"
-              onClick={handleButtonClick}
-            >
+            <button className="ToolTip ToolTipButton" onClick={handleButtonClick}>
               {i}
             </button>
             {visible ? (
@@ -46,10 +37,7 @@ export default ({ tips = [] }) => {
                 key={i}
               >
                 <p>{desc}</p>
-                <button
-                  className="Close"
-                  onClick={closeButton}
-                >
+                <button className="Close" onClick={closeButton}>
                   <CloseX />
                 </button>
               </motion.div>
