@@ -13,11 +13,9 @@ const ProjResolution = () => {
   const cards = [
     {
       title: "RESolution",
-      leadin:
-        "Simplify Work. Improve Scientific Productivity.",
+      leadin: "Simplify Work. Improve Scientific Productivity.",
       img: {
-        src:
-          "/images/resolution/resolution-project-card-image1.png",
+        src: "/images/resolution/resolution-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -26,13 +24,10 @@ const ProjResolution = () => {
     },
     {
       title: "Research Data Collection System",
-      leadin:
-        "Data Acquisition & Aggregation System for Researchers",
-      descLg:
-        "Data acquisition and aggregation system for researchers",
+      leadin: "Data Acquisition & Aggregation System for Researchers",
+      descLg: "Data acquisition and aggregation system for researchers",
       img: {
-        src:
-          "/images/research/research-project-image-card.png",
+        src: "/images/research/research-project-image-card.png",
         alt: "g2 graphics",
       },
       link: {
@@ -45,13 +40,11 @@ const ProjResolution = () => {
     },
     {
       title: "HealthMedEx",
-      leadin:
-        "Wireframing, Prototyping and Usability Testing",
+      leadin: "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
-        src:
-          "/images/healthmedex/healthmedex-project-card-image1.png",
+        src: "/images/healthmedex/healthmedex-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -85,8 +78,7 @@ const ProjResolution = () => {
   const details = [
     {
       title: "G2",
-      leadin:
-        "Program Management for Government Agencies.",
+      leadin: "Program Management for Government Agencies.",
       descLg:
         "G2 integrates Headquarters and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data. ",
 
@@ -110,45 +102,29 @@ const ProjResolution = () => {
           svg: "ChartArrow",
         }}
         img={{
-          src:
-            "/images/g2/responsive_graphic.png",
-          alt:
-            "G2 Homescreen on tablet and phone",
+          src: "/images/g2/responsive_graphic.png",
+          alt: "G2 Homescreen on tablet and phone",
         }}
       />
       <BlogText themeColor="mediumTheme">
         <h3>Capabilities</h3>
         <p>
-          G2 provides the NNSA and its subordinate
-          organizations with increased operational
-          transparency for Congress and other
-          constituents, efficient and effective
-          project management, advanced reporting
-          and data analytics to drive better
-          decision making, and support of multiple
-          organizations with varying missions
-          within a single system.{" "}
-          <a
-            href="https://www.youtube.com/embed/BEwz3IA8NQ8"
-            target="_blank"
-          >
+          G2 provides the NNSA and its subordinate organizations with increased operational
+          transparency for Congress and other constituents, efficient and effective project
+          management, advanced reporting and data analytics to drive better decision making, and
+          support of multiple organizations with varying missions within a single system.{" "}
+          <a href="https://www.youtube.com/embed/BEwz3IA8NQ8" target="_blank">
             Watch a live demo of our application.
           </a>
         </p>
         <p></p>
         <h4> Capabilities include:</h4>
         <ul>
-          <li>
-            Formal Change Management Processes
-          </li>
+          <li>Formal Change Management Processes</li>
           <li>
             Schedule Management
             <ul>
-              <li>
-                {
-                  "Baseline / Forecast Schedules & Metrics"
-                }
-              </li>
+              <li>{"Baseline / Forecast Schedules & Metrics"}</li>
             </ul>
           </li>
           <li>
@@ -158,19 +134,14 @@ const ProjResolution = () => {
               <li>Cost Collection</li>
               <li>Spend Plans</li>
               <li>Year-End Forecasts</li>
-              <li>
-                Reconciliation with DOE Financial
-                Systems
-              </li>
+              <li>Reconciliation with DOE Financial Systems</li>
             </ul>
           </li>
           <li>Future-Year Annual Planning</li>
           <li>Real-Property Asset Management</li>
           <li>Geo-Spatial Analysis</li>
           <li>On-demand Reports</li>
-          <li>
-            Numerous Line-of-Business Modules
-          </li>
+          <li>Numerous Line-of-Business Modules</li>
         </ul>
       </BlogText>
       <WaveHr color="#efefef" bg="white" />
@@ -196,60 +167,31 @@ const ProjResolution = () => {
           alt: "",
         }}
         themeColor="lightTheme"
-        tips={[
-          {
-            i: 1,
-            top: "45%",
-            left: "5%",
-            desc:
-              "The red-dot next to the icon shows that this item has been updated.",
-          },
-        ]}
       />
       <WaveHr color="white" bg="#383838" />
       <BlogText themeColor="darkTheme">
         <h3>Schedule Management</h3>
         <p>
-          G2 allows each organization to define a
-          custom Work Breakdown Structure (WBS) to
-          organize and manage their work. Common
-          to all organizations is that the lowest
-          level of each WBS represents projects
-          that are decomposed into tasks,
-          milestones, and related metrics.
+          G2 allows each organization to define a custom Work Breakdown Structure (WBS) to organize
+          and manage their work. Common to all organizations is that the lowest level of each WBS
+          represents projects that are decomposed into tasks, milestones, and related metrics.
         </p>
         <p>
-          G2 summarizes a project’s tasks in an
-          interactive Gantt view that allows users
-          to easily view and filter work based on
-          progress and active changes.
+          G2 summarizes a project’s tasks in an interactive Gantt view that allows users to easily
+          view and filter work based on progress and active changes.
         </p>
         <p>
-          Additionally, the details of each task
-          are presented in a way that highlights
-          the latest status, work progress, and
-          deltas between the baseline and forecast
-          milestone dates. From within this view,
-          baseline changes as well as status
-          updates can be initiated.
+          Additionally, the details of each task are presented in a way that highlights the latest
+          status, work progress, and deltas between the baseline and forecast milestone dates. From
+          within this view, baseline changes as well as status updates can be initiated.
         </p>
       </BlogText>
       <FeatureApp
         img={{
-          src:
-            "/images/g2/Expanded-Tasks--Expanded-Timeline-huge.png",
+          src: "/images/g2/Expanded-Tasks--Expanded-Timeline-huge.png",
           alt: "",
         }}
         themeColor="darkTheme"
-        tips={[
-          {
-            i: 1,
-            top: "45%",
-            left: "5%",
-            desc:
-              "The red-dot next to the icon shows that this item has been updated.",
-          },
-        ]}
       />
       <WaveHr color="#383838" bg="#efefef" />
       <ProjectFeature
@@ -271,34 +213,21 @@ const ProjResolution = () => {
       <BlogText themeColor="lightTheme">
         <h3>Process</h3>
         <p>
-          G2 was developed using an agile
-          framework known as SAFe. This framework
-          provides enterprises with a set of
-          principles and practices{" "}
-          <em>
-            “For achieving business agility using
-            Lean, Agile, and DevOps”.
-          </em>
+          G2 was developed using an agile framework known as SAFe. This framework provides
+          enterprises with a set of principles and practices{" "}
+          <em>“For achieving business agility using Lean, Agile, and DevOps”.</em>
         </p>
         <p>
           <small>
-            The infographic, SAFe for Lean
-            Enterprises 5.0, outlines the process
-            – Copyright{" "}
-            <a
-              href="https://www.scaledagileframework.com/"
-              target="_blank"
-            >
+            The infographic, SAFe for Lean Enterprises 5.0, outlines the process – Copyright{" "}
+            <a href="https://www.scaledagileframework.com/" target="_blank">
               Scaled Agile
             </a>
             .
           </small>
         </p>
       </BlogText>
-      <a
-        href="https://www.scaledagileframework.com/"
-        target="_blank"
-      >
+      <a href="https://www.scaledagileframework.com/" target="_blank">
         <Image
           classes="blogImage"
           src="/images/g2/safe.png"
@@ -312,8 +241,7 @@ const ProjResolution = () => {
         themeColor="darkTheme"
         introText={{
           title: "Awards",
-          descLg:
-            "PMI Distinguished Project Award",
+          descLg: "PMI Distinguished Project Award",
           desc: `"NNSA is a model for organizations that value project management as a discipline that increases success rates, creates efficiencies and aligns with demanding strategic requirements. Few organizational missions demand excellent project execution more than the NNSA G2 project."  - Mark Langley, President Project Management Institute`,
           svg: "Award",
         }}
@@ -367,8 +295,7 @@ const ProjResolution = () => {
         desc="– Dave Chesebrough"
         img={{
           src: "/images/g2/g2-graphs.png",
-          alt:
-            "people working in an office environment",
+          alt: "people working in an office environment",
         }}
         type="basic"
         themeColor="darkTheme"
@@ -400,8 +327,7 @@ const ProjResolution = () => {
         desc="– James McConnell, Associate Administrator for the Office of Safety, Infrastructure, and Operations"
         img={{
           src: "/images/g2/img_of_everyone.jpg",
-          alt:
-            "people working standing with an award",
+          alt: "people working standing with an award",
         }}
         themeColor="darkTheme"
         link={{
