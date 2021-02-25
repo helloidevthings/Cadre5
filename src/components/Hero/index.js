@@ -15,27 +15,6 @@ export default ({ title, tagline, ctaText }) => {
     triggerOnce: true,
   });
 
-  const randomSrc = [
-    "building-circle1",
-    "building-circle2",
-    "meeting-portrait-circle",
-    "megan-working-circle",
-    "meeting3-circle",
-    "kensoffice-circle",
-  ];
-  // const cycleImages = (images, step) => {
-  //   images.forEach((image, index) =>
-  //     setTimeout(() => {
-  //       console.log(image);
-  //       return <div></div>;
-  //     }, step * (index + 1))
-  //   );
-  //   setTimeout(
-  //     () => cycleImages(images, step),
-  //     step * images.length
-  //   );
-  // };
-
   return (
     <Styles>
       <article
