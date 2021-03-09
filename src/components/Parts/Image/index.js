@@ -3,18 +3,21 @@ import { Image } from "cloudinary-react";
 import Styles from "./styled";
 import Launch from "../../Svgs/Launch";
 
-export default ({
-  src,
-  alt,
-  classes,
-  figCap,
-}) => {
+export default ({ src, alt, classes, figCap }) => {
   return (
     <Styles className={`media ${classes}`}>
-      <Image
+      <img
+        alt={alt}
+        srcset={`images/small${src} 600w, images/large${src} 1600w,
+        ${src}`}
+        sizes="(max-width: 600px) 600px,
+        (max-width: 1600px) 1600px"
+        src={src}
+      />
+      {/* <Image
         cloudName="cadre5images"
         publicId={src}
-      ></Image>
+      ></Image> */}
       {figCap && (
         <figcaption>
           {figCap} <Launch />

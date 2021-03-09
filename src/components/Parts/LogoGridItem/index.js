@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import Styles from "./styled";
-import {Image} from 'cloudinary-react';
-
+import { Image } from "cloudinary-react";
 
 export default ({ logos = [] }) => {
   return (
@@ -9,13 +8,16 @@ export default ({ logos = [] }) => {
       {logos.map(({ type, name, alt, link, delay = false }, i) => (
         <a href={link} target="_blank">
           <Styles>
-              <Image 
-                cloudName="cadre5images" 
-                publicId={`/images/logos/${type}/${name}.png`}
-                alt={`${alt} Logo`}
-                key={i}
-                className="logo"
-                style={{transitionDelay: `${delay === true ? 0.1 * i : "0"}s `}} />
+            <img
+              alt={`${alt} Logo`}
+              srcset={`images/small/images/logos/${type}/${name}.png 250w, images/logos/${type}/${name}.png 600w`}
+              sizes="(max-width: 600px) 250px,
+        600px"
+              src={`${name}.png`}
+              key={i}
+              className="logo"
+              style={{ transitionDelay: `${delay === true ? 0.1 * i : "0"}s ` }}
+            />
           </Styles>
         </a>
       ))}
