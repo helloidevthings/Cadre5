@@ -11,7 +11,7 @@ export default ({ src, alt, classes, figCap }) => {
         srcset={`images/small${src} 600w, images/large${src} 1600w,
         ${src}`}
         sizes="(max-width: 600px) 600px,
-        (max-width: 1600px) 1600px"
+        (min-width: 1600px) 1600px"
         src={src}
       />
       {/* <Image
