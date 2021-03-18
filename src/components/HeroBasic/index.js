@@ -11,11 +11,8 @@ export default ({ title, img = "", svg = "" }) => {
 
   return (
     <Styles>
-      <Image src={img.src} alt={img.alt} base="HeroBasic" />
-      <div
-        className={`text-wrapper fadeUp ${inView ? "active" : ""}`}
-        ref={ref}
-      >
+      <Image src={img.src} alt={img.alt} base="HeroBasic" large={true} />
+      <div className={`text-wrapper fadeUp ${inView ? "active" : ""}`} ref={ref}>
         <h1 className="header">{title}</h1>
       </div>
       <div className="background_svg">
