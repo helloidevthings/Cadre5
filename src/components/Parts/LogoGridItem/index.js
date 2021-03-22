@@ -10,7 +10,7 @@ export default ({ logos = [] }) => {
           <Styles>
             <img
               alt={`${alt} Logo`}
-              srcset={`images/small/images/logos/${type}/${name}.png 250w, images/logos/${type}/${name}.png 600w`}
+              srcset={`images/logos/${type}/${name}.png 250w, images/_medium/images/logos/${type}/${name}.png 600w`}
               sizes="(max-width: 600px) 250px,
         600px"
               src={`${name}.png`}

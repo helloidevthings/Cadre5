@@ -2,14 +2,13 @@ import React from "react";
 import Styles from "./styled";
 import Launch from "../../Svgs/Launch";
 
-export default ({ src, alt, classes, figCap, large }) => {
+export default ({ src, alt, classes, figCap }) => {
   return (
     <Styles className={`media ${classes}`}>
       <img
         alt={alt}
-        srcset={`images/small${src} 600w, images/large${src} 1600w,
-        ${src}`}
-        sizes={`(max-width: 600px) 600px, ${large && "(min-width: 1600px) 1600px"}`}
+        srcset={`images/_medium${src} 800w`}
+        sizes="(min-width: 600px) 800px, 600px"
         src={src}
       />
 

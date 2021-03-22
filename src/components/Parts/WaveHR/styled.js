@@ -8,6 +8,7 @@ export default styled.figure`
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  margin-top: -1px;
 
   svg {
     max-width: 100%;
@@ -15,6 +16,5 @@ export default styled.figure`
     width: auto;
     height: auto;
     vertical-align: middle;
-    margin-top: -1px;
   }
 `;
