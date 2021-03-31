@@ -150,6 +150,28 @@ const ProjResolution = () => {
         themeColor="lightTheme"
         row="reverse"
         introText={{
+          title: "G2 FinPlan",
+          descLg:
+            "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
+          desc:
+            "To more efficiently manage change, iconography is used to indicate the type of change being made on each project and whether an approval action is required by the user.",
+        }}
+        img={{
+          src: "/images/g2/g2-finplan2.png",
+          alt: "",
+        }}
+      />
+      <FeatureApp
+        img={{
+          src: "/images/g2/notifications.png",
+          alt: "",
+        }}
+        themeColor="lightTheme"
+      />
+      <ProjectFeature
+        themeColor="lightTheme"
+        row="reverse"
+        introText={{
           title: "Change Management",
           descLg:
             "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
