@@ -7,8 +7,8 @@ export default ({ src, alt, classes, figCap }) => {
     <Styles className={`media ${classes}`}>
       <img
         alt={alt}
-        srcset={`images/_medium${src} 800w`}
-        sizes="(min-width: 600px) 800px, 600px"
+        // srcset={`images/_medium${src} 800w`}
+        // sizes="(min-width: 600px) 800px, 600px"
         src={src}
       />
 

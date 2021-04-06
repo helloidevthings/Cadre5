@@ -146,21 +146,12 @@ const ProjResolution = () => {
       </BlogText>
       <WaveHr color="#efefef" bg="white" />
       <WaveHr color="white" bg="white" />
-      <ProjectFeature
-        themeColor="lightTheme"
-        row="reverse"
-        introText={{
-          title: "G2 FinPlan",
-          descLg:
-            "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
-          desc:
-            "To more efficiently manage change, iconography is used to indicate the type of change being made on each project and whether an approval action is required by the user.",
-        }}
-        img={{
-          src: "/images/g2/g2-finplan2.png",
-          alt: "",
-        }}
-      />
+      <BlogText themeColor="lightTheme">
+        <h3>Dashboard</h3>
+        <p className="large">
+          When the user first enters the software this is the screen that they see...?
+        </p>
+      </BlogText>
       <FeatureApp
         img={{
           src: "/images/g2/notifications.png",
@@ -172,6 +163,32 @@ const ProjResolution = () => {
         themeColor="lightTheme"
         row="reverse"
         introText={{
+          title: "G2 FinPlan",
+          descLg: "Each FinPlan shows a high level view of what changes are being requested.",
+          desc: "More detailed description?",
+        }}
+        img={{
+          src: "/images/g2/g2-finplan2.png",
+          alt: "",
+        }}
+      />
+      <ProjectFeature
+        themeColor="lightTheme"
+        row="basic"
+        introText={{
+          title: "Workflow History",
+          descLg: "Each FinPlan shows a high level view of what changes are being requested.",
+          desc: "More detailed description?",
+        }}
+        img={{
+          src: "/images/g2/g2-personhistory.png",
+          alt: "",
+        }}
+      />
+      <ProjectFeature
+        themeColor="lightTheme"
+        row="basic"
+        introText={{
           title: "Change Management",
           descLg:
             "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
@@ -179,7 +196,22 @@ const ProjResolution = () => {
             "To more efficiently manage change, iconography is used to indicate the type of change being made on each project and whether an approval action is required by the user.",
         }}
         img={{
-          src: "/images/g2/icon_signals.png",
+          src: "/images/g2/g2-wbs-metadata.png",
+          alt: "",
+        }}
+      />
+      <ProjectFeature
+        themeColor="lightTheme"
+        row="basic"
+        introText={{
+          title: "Change Management",
+          descLg:
+            "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
+          desc:
+            "To more efficiently manage change, iconography is used to indicate the type of change being made on each project and whether an approval action is required by the user.",
+        }}
+        img={{
+          src: "/images/g2/g2-finplan-icondetails.png",
           alt: "",
         }}
       />
