@@ -9,7 +9,7 @@ export default ({ src, alt, classes, figCap }) => {
         alt={alt}
         // srcset={`images/${src}?nf_resize=fit&w=300 300w`}
         // sizes="(min-width: 300px) 300px"
-        src={`${src}?nf_resize=fit&w=300`}
+        src={`${src}`}
       />
 
       {figCap && (
