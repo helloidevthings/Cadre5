@@ -6,7 +6,7 @@ export default ({ logos = [] }) => {
   return (
     <Fragment>
       {logos.map(({ type, name, alt, link, delay = false }, i) => (
-        <a href={link} target="_blank">
+        <a href={link} key={i} target="_blank">
           <Styles>
             <img
               alt={`${alt} Logo`}
