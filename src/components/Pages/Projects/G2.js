@@ -139,13 +139,15 @@ const ProjResolution = () => {
         }}
         themeColor="lightTheme"
       />
+      <WaveHr color="#fff" bg="#fff" />
+      <WaveHr color="#fff" bg="#383838" />
       <ProjectFeature
-        themeColor="lightTheme"
+        themeColor="darkTheme"
         row="reverse"
         introText={{
           title: "G2 FinPlan",
           descLg: "Each FinPlan shows a high level view of what changes are being requested.",
-          desc: "More detailed description?",
+          desc: "More detailed description? (?)",
         }}
         img={{
           src: "/images/g2/g2-finplan2.png",
@@ -153,36 +155,52 @@ const ProjResolution = () => {
         }}
       />
       <ProjectFeature
-        themeColor="lightTheme"
+        themeColor="darkTheme"
         row="basic"
         introText={{
           title: "Workflow History",
-          descLg: "Each FinPlan shows a high level view of what changes are being requested.",
-          desc: "More detailed description?",
+          descLg: "This view shows an overview of each person involved.",
+          desc:
+            "The user can see where the plan is in the approval process. The user can aslo see who has approved each change ot the plan. (?)",
         }}
         img={{
-          src: "/images/g2/g2-personhistory.png",
+          src: "/images/g2/g2-person-management.png",
           alt: "",
         }}
       />
+      <WaveHr color="#383838" bg="#efefef" />
       <ProjectFeature
-        themeColor="lightTheme"
-        row="basic"
+        themeColor="mediumTheme"
+        row="reverse"
         introText={{
-          title: "Change Management",
-          descLg:
-            "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
-          desc:
-            "To more efficiently manage change, iconography is used to indicate the type of change being made on each project and whether an approval action is required by the user.",
+          title: "Meta Data & Description",
+          descLg: "This gives a detailed view of each Fin Plan",
+          desc: "",
         }}
         img={{
           src: "/images/g2/g2-wbs-metadata.png",
           alt: "",
         }}
       />
+      <WaveHr color="#efefef" bg="#efefef" />
+      <WaveHr color="#efefef" bg="#fff" />
       <ProjectFeature
         themeColor="lightTheme"
         row="basic"
+        introText={{
+          title: "Icographic Signalling",
+          descLg:
+            "We used icon signalling so that the user can quickly see the changes that are requested.",
+          desc: "...(?)",
+        }}
+        img={{
+          src: "/images/g2/g2-finplan-hover.png",
+          alt: "",
+        }}
+      />
+      <ProjectFeature
+        themeColor="lightTheme"
+        row="reverse"
         introText={{
           title: "Change Management",
           descLg:
@@ -195,29 +213,20 @@ const ProjResolution = () => {
           alt: "",
         }}
       />
-      <ProjectFeature
-        themeColor="lightTheme"
-        row="basic"
-        introText={{
-          title: "Change Management",
-          descLg:
-            "G2 provides formal change management processes with customizable approval workflows and automated email notifications. All changes can be managed from a single screen.",
-          desc:
-            "To more efficiently manage change, iconography is used to indicate the type of change being made on each project and whether an approval action is required by the user.",
-        }}
-        img={{
-          src: "/images/g2/g2-finplan-icondetails.png",
-          alt: "",
-        }}
-      />
+      <WaveHr color="#fff" bg="#efefef" />
+      <WaveHr color="#efefef" bg="#efefef" />
+      <BlogText themeColor="mediumTheme">
+        <h3>Fin Plan in Detail?</h3>
+        <p>Ability to change dates? Not entirely sure what's happening in this.</p>
+      </BlogText>
       <FeatureApp
         img={{
-          src: "/images/g2/g2-detail-card.png",
+          src: "/images/g2/g2-plan-detail.png",
           alt: "",
         }}
-        themeColor="lightTheme"
+        themeColor="mediumTheme"
       />
-      <WaveHr color="white" bg="#383838" />
+      <WaveHr color="#efefef" bg="#383838" />
       <BlogText themeColor="darkTheme">
         <h3>Schedule Management</h3>
         <p>
