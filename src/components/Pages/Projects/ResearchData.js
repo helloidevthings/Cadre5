@@ -11,14 +11,12 @@ const ResearchData = () => {
   const cards = [
     {
       title: "G2",
-      leadin:
-        "Program Management for Government Agencies.",
+      leadin: "Program Management for Government Agencies.",
       descLg:
         "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
 
       img: {
-        src:
-          "/images/g2/g2-project-image-card1.png",
+        src: "/images/g2/g2-project-image-card1.png",
         alt: "g2 graphics",
       },
       link: {
@@ -30,27 +28,28 @@ const ResearchData = () => {
       },
     },
     {
-      title: "RESolution",
-      leadin:
-        "Simplify Work. Improve Scientific Productivity.",
+      title: "Mavnet",
+      leadin: "Seamlessly Plan, Execute & Update Missions",
+      descLg: "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
       img: {
-        src:
-          "/images/resolution/resolution-project-card-image1.png",
-        alt: "resolution interface graphics",
+        src: "/images/mavnet/mavnet-project-image-card.png",
+        alt: "mavnet interface graphics",
       },
       link: {
-        href: "./resolution",
+        text: "View Project",
+        href: "./mavnet",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
       },
     },
     {
       title: "HealthMedEx",
-      leadin:
-        "Wireframing, Prototyping and Usability Testing",
+      leadin: "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
-        src:
-          "/images/healthmedex/healthmedex-project-card-image1.png",
+        src: "/images/healthmedex/healthmedex-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -80,35 +79,17 @@ const ResearchData = () => {
       <BlogText themeColor="mediumTheme">
         <h3>{"Requirements & Parameters"}</h3>
         <h4>
-          The system needed to be flexible and
-          easily deployed on multiple nodes.
-          Researchers wanted to be able to add
-          sensors and sensor data to the system
-          without altering the user interface (UI)
-          code or network code. The main body of
-          code is written in Python to accommodate
-          researchers who wanted to write analysis
-          code for the system.
+          The system needed to be flexible and easily deployed on multiple nodes. Researchers wanted
+          to be able to add sensors and sensor data to the system without altering the user
+          interface (UI) code or network code. The main body of code is written in Python to
+          accommodate researchers who wanted to write analysis code for the system.
         </h4>
 
         <ul>
-          <li>
-            Stand-alone data collection for a
-            sensor or group of sensors
-          </li>
-          <li>
-            Ability to add sensors as needed and
-            repurpose existing sensors
-          </li>
-          <li>
-            Operates with command line user
-            interface or rich user interface
-          </li>
-          <li>
-            Light-weight and can be deployed using
-            internet connection or a USB flash
-            drive
-          </li>
+          <li>Stand-alone data collection for a sensor or group of sensors</li>
+          <li>Ability to add sensors as needed and repurpose existing sensors</li>
+          <li>Operates with command line user interface or rich user interface</li>
+          <li>Light-weight and can be deployed using internet connection or a USB flash drive</li>
         </ul>
       </BlogText>
       <BlogText themeColor="mediumTheme"></BlogText>
@@ -124,8 +105,7 @@ const ResearchData = () => {
           ],
         }}
         img={{
-          src:
-            "/images/research/research-system-ui.png",
+          src: "/images/research/research-system-ui.png",
           alt: "",
         }}
       />
@@ -142,8 +122,7 @@ const ResearchData = () => {
           ],
         }}
         img={{
-          src:
-            "/images/research/research-node-ui.png",
+          src: "/images/research/research-node-ui.png",
           alt: "",
         }}
       />
@@ -151,8 +130,7 @@ const ResearchData = () => {
         themeColor="mediumTheme"
         introText={{
           title: "User Interface",
-          descLg:
-            "OS agnostic interface using a Web based platform",
+          descLg: "OS agnostic interface using a Web based platform",
           list: [
             "The system was created with a rich web user interface to allow researchers to control N-number of systems simultaneously.",
             "Graphs real-time data streams",
@@ -171,33 +149,23 @@ const ResearchData = () => {
         <h3>Case Study</h3>
         <h4>Urban Noise Pollution</h4>
         <p>
-          A local city is interested in the amount
-          of noise pollution in its downtown
-          commercial sector and how that noise
-          impacts the surrounding residential and
-          shopping districts. Collecting data and
-          analyzing this data will help the city
-          determine how to zone new areas.
+          A local city is interested in the amount of noise pollution in its downtown commercial
+          sector and how that noise impacts the surrounding residential and shopping districts.
+          Collecting data and analyzing this data will help the city determine how to zone new
+          areas.
         </p>
         <ul>
           <li>The city deploys 50 nodes.</li>
-          <li>
-            Nodes are set up to record decibels,
-            temperature, humidity, and pressure
-            sensor
-          </li>
+          <li>Nodes are set up to record decibels, temperature, humidity, and pressure sensor</li>
           <li>Nodes report every 100ms</li>
           <li>
-            Nodes send that data back to research
-            and this requires no in-person data
-            collection.
+            Nodes send that data back to research and this requires no in-person data collection.
           </li>
         </ul>
       </BlogText>
       <FeatureApp
         img={{
-          src:
-            "/images/research/research_nodes.png",
+          src: "/images/research/research_nodes.png",
           alt: "",
         }}
         themeColor="darkTheme"
@@ -231,14 +199,10 @@ const ResearchData = () => {
       <BlogText themeColor="darkTheme">
         <h3>Results</h3>
         <p>
-          Since the data includes location, after
-          a month of recording, a ‘heat map’ is
-          generated and laid over a map of the
-          city that shows the noise hotspots and
-          allows city planners to investigate the
-          source of the sound and where it is a
-          viable option to expand residential and
-          commercial zones.
+          Since the data includes location, after a month of recording, a ‘heat map’ is generated
+          and laid over a map of the city that shows the noise hotspots and allows city planners to
+          investigate the source of the sound and where it is a viable option to expand residential
+          and commercial zones.
         </p>
       </BlogText>
 
@@ -253,65 +217,43 @@ const ResearchData = () => {
         <h3>Case Study</h3>
         <h4>Forestry Service</h4>
         <p>
-          A state forestry service is interested
-          in researching if low power seismic
-          sensors could be used along game paths
-          to determine the activity and amount of
-          wildlife in a given area. 15 test nodes
-          are procured that consist of the
-          following items:
+          A state forestry service is interested in researching if low power seismic sensors could
+          be used along game paths to determine the activity and amount of wildlife in a given area.
+          15 test nodes are procured that consist of the following items:
         </p>
         <ul>
           <li>
-            A low power single board computer
-            encased in an IP-67 rated enclosure
-            that is WiFi capable
+            A low power single board computer encased in an IP-67 rated enclosure that is WiFi
+            capable
           </li>
           <li>
-            A series of 4 low power seismic
-            sensors that connect to the GPIO pins
-            of the single board computer that are
-            buried along the path at intervals of
-            10 meters
+            A series of 4 low power seismic sensors that connect to the GPIO pins of the single
+            board computer that are buried along the path at intervals of 10 meters
           </li>
           <li>
-            A low power GPS receiver for locating
-            the system and synchronizing all of
-            the timestamps
+            A low power GPS receiver for locating the system and synchronizing all of the timestamps
           </li>
           <li>
-            A low power
-            temperature/humidity/pressure sensor
-            for recording environmental
-            conditions, also connected to the GPIO
-            pins of the single board computer
+            A low power temperature/humidity/pressure sensor for recording environmental conditions,
+            also connected to the GPIO pins of the single board computer
           </li>
           <li>
-            Two low power miniature camera that
-            can be operated by the SBC to take
-            pictures when it detects seismic
-            activity for confirming the presence
-            of wildlife
+            Two low power miniature camera that can be operated by the SBC to take pictures when it
+            detects seismic activity for confirming the presence of wildlife
           </li>
           <li>
-            Two low power thermal cameras that can
-            be operated by the SBC to take
-            pictures when it detects seismic
-            activity for confirm he presence of
-            wildlife
+            Two low power thermal cameras that can be operated by the SBC to take pictures when it
+            detects seismic activity for confirm he presence of wildlife
           </li>
           <li>
-            A long-life lead-acid battery
-            connected to a solar panel that is
-            affixed above the tree canopy and
-            charges the batteries as needed
+            A long-life lead-acid battery connected to a solar panel that is affixed above the tree
+            canopy and charges the batteries as needed
           </li>
         </ul>
       </BlogText>
       <FeatureApp
         img={{
-          src:
-            "/images/research/case_study_forestry.png",
+          src: "/images/research/case_study_forestry.png",
           alt: "",
         }}
         themeColor="lightTheme"
@@ -326,18 +268,11 @@ const ResearchData = () => {
               <hr/> */}
         <h3>Results</h3>
         <p>
-          The nodes are buried for a month and
-          allowed to run. Forestry service
-          personnel check on the systems once a
-          week by bringing a cell phone that is
-          setup as a hotspot near the systems and
-          access the local UI to ensure that the
-          systems do not have any faults. At the
-          end of the month, the nodes are dug up
-          and and the data is then pulled from
-          each individual node system and analyzed
-          to determine the success or failure of
-          the experiment.
+          The nodes are buried for a month and allowed to run. Forestry service personnel check on
+          the systems once a week by bringing a cell phone that is setup as a hotspot near the
+          systems and access the local UI to ensure that the systems do not have any faults. At the
+          end of the month, the nodes are dug up and and the data is then pulled from each
+          individual node system and analyzed to determine the success or failure of the experiment.
         </p>
       </BlogText>
       {/* End of Page */}

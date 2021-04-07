@@ -15,13 +15,11 @@ const Home = () => {
   const resolution = [
     {
       title: "RESolution",
-      leadin:
-        "Simplify Work. Improve Scientific Productivity.",
+      leadin: "Simplify Work. Improve Scientific Productivity.",
       descLg:
         "RESolution was created for Oak Ridge National Laboratory which is the largest US Department of Energy science and energy laboratory.",
       img: {
-        src:
-          "/images/resolution/anothergraph.png",
+        src: "/images/resolution/anothergraph.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -36,8 +34,7 @@ const Home = () => {
   const g2 = [
     {
       title: "G2",
-      leadin:
-        "Program Management for Government Agencies.",
+      leadin: "Program Management for Government Agencies.",
       descLg:
         "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
 
@@ -58,13 +55,11 @@ const Home = () => {
   const cards = [
     {
       title: "HealthMedEx",
-      leadin:
-        "Wireframing, Prototyping and Usability Testing",
+      leadin: "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assited living and nursing homes.",
       img: {
-        src:
-          "/images/healthmedex/healthmedex-project-card-image1.png",
+        src: "/images/healthmedex/healthmedex-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -77,13 +72,10 @@ const Home = () => {
     },
     {
       title: "Research Data Collection System",
-      leadin:
-        "Data Acquisition & Aggregation System for Researchers",
-      descLg:
-        "Data acquisition and aggregation system for researchers",
+      leadin: "Data Acquisition & Aggregation System for Researchers",
+      descLg: "Data acquisition and aggregation system for researchers",
       img: {
-        src:
-          "/images/research/research-project-image-card.png",
+        src: "/images/research/research-project-image-card.png",
         alt: "g2 graphics",
       },
       link: {
@@ -94,25 +86,22 @@ const Home = () => {
         arrow: true,
       },
     },
-    // {
-    //   title: "Mavnet",
-    //   leadin:
-    //     "Seamlessly Plan, Execute & Update Missions",
-    //   descLg:
-    //     "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
-    //   img: {
-    //     src:
-    //       "/images/mavnet/mavnet-project-image-card.png",
-    //     alt: "mavnet interface graphics",
-    //   },
-    //   link: {
-    //     text: "View Project",
-    //     href: "./mavnet",
-    //     btnStyle: "secondary",
-    //     themeColor: "dark",
-    //     arrow: true,
-    //   },
-    // },
+    {
+      title: "Mavnet",
+      leadin: "Seamlessly Plan, Execute & Update Missions",
+      descLg: "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
+      img: {
+        src: "/images/mavnet/mavnet-project-image-card.png",
+        alt: "mavnet interface graphics",
+      },
+      link: {
+        text: "View Project",
+        href: "./mavnet",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
+      },
+    },
   ];
 
   return (
@@ -125,14 +114,8 @@ const Home = () => {
 
       <Clients />
 
-      <WaveHr
-        color="#2b0000"
-        bg="linear-gradient(to top, #ededed1a, #e9e9e95e)"
-      />
-      <Project
-        details={resolution}
-        themeColor="mediumTheme"
-      />
+      <WaveHr color="#2b0000" bg="linear-gradient(to top, #ededed1a, #e9e9e95e)" />
+      <Project details={resolution} themeColor="mediumTheme" />
       <WaveHr color="#ededed" bg="white" />
       <Project details={g2} />
       {/* <WaveHr color="#ededed" bg="white" /> */}

@@ -12,14 +12,12 @@ const Mavnet = () => {
   const cards = [
     {
       title: "G2",
-      leadin:
-        "Program Management for Government Agencies.",
+      leadin: "Program Management for Government Agencies.",
       descLg:
         "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
 
       img: {
-        src:
-          "/images/g2/g2-project-image-card1.png",
+        src: "/images/g2/g2-project-image-card1.png",
         alt: "g2 graphics",
       },
       link: {
@@ -31,27 +29,27 @@ const Mavnet = () => {
       },
     },
     {
-      title: "RESolution",
-      leadin:
-        "Simplify Work. Improve Scientific Productivity.",
+      title: "Mavnet",
+      leadin: "Seamlessly Plan, Execute & Update Missions",
+      descLg: "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
       img: {
-        src:
-          "/images/resolution/resolution-project-card-image1.png",
-        alt: "resolution interface graphics",
+        src: "/images/mavnet/mavnet-project-image-card.png",
+        alt: "mavnet interface graphics",
       },
       link: {
-        href: "./resolution",
+        text: "View Project",
+        href: "./mavnet",
+        btnStyle: "secondary",
+        themeColor: "dark",
+        arrow: true,
       },
     },
     {
       title: "Research Data Collection System",
-      leadin:
-        "Data Acquisition & Aggregation System for Researchers",
-      descLg:
-        "Data acquisition and aggregation system for researchers",
+      leadin: "Data Acquisition & Aggregation System for Researchers",
+      descLg: "Data acquisition and aggregation system for researchers",
       img: {
-        src:
-          "/images/research/research-project-image-card.png",
+        src: "/images/research/research-project-image-card.png",
         alt: "g2 graphics",
       },
       link: {
@@ -66,8 +64,7 @@ const Mavnet = () => {
   const details = [
     {
       title: "Mavnet",
-      leadin:
-        "A Collaboration with Oak Ridge National Lab",
+      leadin: "A Collaboration with Oak Ridge National Lab",
       descLg:
         "The Multimodal Autonomous Vehicle Network executes missions in real time for UAV and Rovers.",
       desc:
@@ -81,10 +78,7 @@ const Mavnet = () => {
   return (
     <Page>
       <Project details={details} />
-      <WaveHr
-        color="white"
-        bg="#383838"
-      ></WaveHr>{" "}
+      <WaveHr color="white" bg="#383838"></WaveHr>{" "}
       <ProjectFeature
         themeColor="darkTheme"
         introText={{
@@ -113,12 +107,10 @@ const Mavnet = () => {
           title: "Seemlessly Connected",
           descLg:
             "Each device can switch between Line of Sight, Wi-Fi, Cellular and Satellite links.",
-          desc:
-            "This can change depending on what signal is the strongest.",
+          desc: "This can change depending on what signal is the strongest.",
         }}
         img={{
-          src:
-            "/images/mavnet/networks_icons.png",
+          src: "/images/mavnet/networks_icons.png",
           alt: "Image of the Networks",
         }}
       />
@@ -139,8 +131,7 @@ const Mavnet = () => {
             "The map shows a topographic view of the area. Mission planning can be flexible depending on the terrain. If a previous mission has been performed with LIDAR to map out the area, that data is captured and used the next mission.",
         }}
         img={{
-          src:
-            "/images/mavnet/mavnet_photo_landscape2.png",
+          src: "/images/mavnet/mavnet_photo_landscape2.png",
           alt: "Mavnet Software Photo",
         }}
       />
@@ -148,14 +139,9 @@ const Mavnet = () => {
       <BlogText textAlign="center">
         <h3>Project Details</h3>
         <p>
-          This project was created in
-          collaboration with Oak Ridge National
-          Lab and Horizon 31. For product
-          purchasing information see{" "}
-          <a
-            href="https://horizon31.com"
-            target="_blank"
-          >
+          This project was created in collaboration with Oak Ridge National Lab and Horizon 31. For
+          product purchasing information see{" "}
+          <a href="https://horizon31.com" target="_blank">
             Horizon31
           </a>
           .

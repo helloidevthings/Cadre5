@@ -1,9 +1,5 @@
 .DS_Store
 node_modules
-src/Components/Pages/Projects/Mavnet.js
-# src/Components/Pages/Projects/research.js
-public/mavnet
-# public/research
 
 # Local Netlify folder
 .netlify

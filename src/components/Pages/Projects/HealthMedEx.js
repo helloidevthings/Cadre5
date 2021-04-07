@@ -10,20 +10,16 @@ import ProjectCard from "../../Parts/ProjectCard";
 const ProjHealthMedEx = () => {
   const cards = [
     {
-      title: "G2",
-      leadin:
-        "Program Management for Government Agencies.",
-      descLg:
-        "G2 was created for the National Nuclear Security Administration (NNSA) to integrate Headquarter and National Laboratory scope, schedule, budget, and metric information, creating a single repository of program data.",
-
+      title: "Mavnet",
+      leadin: "Seamlessly Plan, Execute & Update Missions",
+      descLg: "Mavnet makes it easy to plan and execute missions in real time for UAV and Rovers.",
       img: {
-        src:
-          "/images/g2/g2-project-image-card1.png",
-        alt: "g2 graphics",
+        src: "/images/mavnet/mavnet-project-image-card.png",
+        alt: "mavnet interface graphics",
       },
       link: {
         text: "View Project",
-        href: "/g2",
+        href: "./mavnet",
         btnStyle: "secondary",
         themeColor: "dark",
         arrow: true,
@@ -31,11 +27,9 @@ const ProjHealthMedEx = () => {
     },
     {
       title: "RESolution",
-      leadin:
-        "Simplify Work. Improve Scientific Productivity.",
+      leadin: "Simplify Work. Improve Scientific Productivity.",
       img: {
-        src:
-          "/images/resolution/resolution-project-card-image1.png",
+        src: "/images/resolution/resolution-project-card-image1.png",
         alt: "resolution interface graphics",
       },
       link: {
@@ -44,13 +38,10 @@ const ProjHealthMedEx = () => {
     },
     {
       title: "Research Data Collection System",
-      leadin:
-        "Data Acquisition & Aggregation System for Researchers",
-      descLg:
-        "Data acquisition and aggregation system for researchers",
+      leadin: "Data Acquisition & Aggregation System for Researchers",
+      descLg: "Data acquisition and aggregation system for researchers",
       img: {
-        src:
-          "/images/research/research-project-image-card.png",
+        src: "/images/research/research-project-image-card.png",
         alt: "g2 graphics",
       },
       link: {
@@ -65,13 +56,11 @@ const ProjHealthMedEx = () => {
   const details = [
     {
       title: "HealthMedEx",
-      leadin:
-        "Wireframing, Prototyping and Usability Testing",
+      leadin: "Wireframing, Prototyping and Usability Testing",
       descLg:
         "HeathMEDX provides an all encompassing software platform to operate long-term care facilities. Their systems provide everything from point of care interfaces to enterprise reporting for assisted living and nursing homes.",
       img: {
-        src:
-          "/images/healthmedex/healthmedex1.png",
+        src: "/images/healthmedex/healthmedex1.png",
         alt: "resolution interface graphics",
       },
     },
@@ -86,13 +75,11 @@ const ProjHealthMedEx = () => {
           title: "The Challenge",
           descLg:
             "Healthcare providers of long-term care facilities work in a fast paced environment. They take care of multiple residents throughout their shift.",
-          desc:
-            "They need a system that is easy to learn and can be used quickly.",
+          desc: "They need a system that is easy to learn and can be used quickly.",
           svg: "ChartArrow",
         }}
         img={{
-          src:
-            "/images/healthmedex/healthemedex-users2.png",
+          src: "/images/healthmedex/healthemedex-users2.png",
           alt: "",
         }}
       />
@@ -108,8 +95,7 @@ const ProjHealthMedEx = () => {
           svg: "People",
         }}
         img={{
-          src:
-            "/images/healthmedex/healthmedex_names_inyellow.png",
+          src: "/images/healthmedex/healthmedex_names_inyellow.png",
           alt: "",
         }}
       />
@@ -126,15 +112,13 @@ const ProjHealthMedEx = () => {
           svg: "Shapes",
         }}
         img={{
-          src:
-            "/images/healthmedex/healthmedex-ui-with-icons.png",
+          src: "/images/healthmedex/healthmedex-ui-with-icons.png",
           alt: "",
         }}
       />
       <FeatureApp
         img={{
-          src:
-            "/images/healthmedex/healthmedex-1.2.png",
+          src: "/images/healthmedex/healthmedex-1.2.png",
           alt: "",
         }}
         themeColor="lightTheme"
@@ -143,15 +127,13 @@ const ProjHealthMedEx = () => {
             i: 1,
             top: "10%",
             left: "20%",
-            desc:
-              "Detailed iconography depicts a variety of care",
+            desc: "Detailed iconography depicts a variety of care",
           },
           {
             i: 2,
             top: "23%",
             left: "10%",
-            desc:
-              "ADL: Activities of Daily Living",
+            desc: "ADL: Activities of Daily Living",
           },
         ]}
       />
@@ -168,8 +150,7 @@ const ProjHealthMedEx = () => {
           svg: "Design",
         }}
         img={{
-          src:
-            "/images/healthmedex/icons_healthmedex.png",
+          src: "/images/healthmedex/icons_healthmedex.png",
           alt: "",
         }}
       />
@@ -184,8 +165,7 @@ const ProjHealthMedEx = () => {
           svg: "ExcelDoc",
         }}
         img={{
-          src:
-            "/images/healthmedex/healthmedex-wireframing.png",
+          src: "/images/healthmedex/healthmedex-wireframing.png",
           alt: "",
         }}
       />
@@ -194,23 +174,20 @@ const ProjHealthMedEx = () => {
         row="reverse"
         introText={{
           title: "User Testing",
-          descLg:
-            "We conducted live user testing in our office and visited care facilities.",
+          descLg: "We conducted live user testing in our office and visited care facilities.",
           desc:
             "A touch screen prototype was developed in gray-frames to test the usability of different design paradigms. To minimize occlusion we positioned the navigation and action buttons at the bottom of the screen.",
           svg: "Verified",
         }}
         img={{
-          src:
-            "/images/healthmedex/healthmedex-userTest2.png",
+          src: "/images/healthmedex/healthmedex-userTest2.png",
           alt: "",
         }}
       />
       <WaveHr color="white" bg="white" />
       <FeatureApp
         img={{
-          src:
-            "/images/healthmedex/healthmedex-4.png",
+          src: "/images/healthmedex/healthmedex-4.png",
           alt: "",
         }}
         themeColor="lightTheme"
@@ -219,8 +196,7 @@ const ProjHealthMedEx = () => {
             i: 1,
             top: "45%",
             left: "27%",
-            desc:
-              "Large checkboxes are easier to select on a touch screen",
+            desc: "Large checkboxes are easier to select on a touch screen",
           },
           {
             i: 2,
