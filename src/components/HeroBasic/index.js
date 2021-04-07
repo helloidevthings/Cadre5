@@ -12,8 +12,8 @@ export default ({ title, img = "", svg = "" }) => {
   return (
     <Styles>
       <picture>
-        <source srcset={`images/_large${img.src}`} media="(min-width: 1600px)" />
-        <source srcset={`images/_medium${img.src}`} media="(min-width: 800px)" />
+        <source srcSet={`images/_large${img.src}`} media="(min-width: 1600px)" />
+        <source srcSet={`images/_medium${img.src}`} media="(min-width: 800px)" />
         <img src={img.src} alt={img.alt} />
       </picture>
       <div className={`text-wrapper fadeUp ${inView ? "active" : ""}`} ref={ref}>
