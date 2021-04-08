@@ -124,8 +124,37 @@ const ProjResolution = () => {
           <li>Numerous Line-of-Business Modules</li>
         </ul>
       </BlogText>
-      <WaveHr color="#efefef" bg="white" />
-      <WaveHr color="white" bg="white" />
+      <WaveHr color="#efefef" bg="#383838" />
+      <WaveHr color="#383838" bg="#383838" />
+      <ProjectFeature
+        themeColor="darkTheme"
+        row="basic"
+        introText={{
+          title: "Financial Management",
+          descLg:
+            "G2 manages financials for each organization performing work on a project and is therefore able to summarize financials at any higher level of the WBS.",
+          desc:
+            "Formal change management processes provide organizations with a structured, accountable, and transparent way to allocate new funding, move funding between projects, communicate spending plans, estimate future year budget needs, collect actual costs, and reconcile with external systems. Shown below is a compact financial chart that concisely identifies the various types of funding, costs, and commitments that are managed within G2.",
+        }}
+        img={{
+          src: "/images/g2/fin_plan_detail.png",
+          alt: "",
+        }}
+      />
+      <ProjectFeature
+        themeColor="darkTheme"
+        row="reverse"
+        introText={{
+          title: "Change Requests",
+          descLg: "Shows a high level view of changes that are requested to a FinPlan",
+          desc: "Each change needs to be approved... (?)",
+        }}
+        img={{
+          src: "/images/g2/g2-finplan2.png",
+          alt: "",
+        }}
+      />
+      <WaveHr color="#383838" bg="#ffffff" />
       <BlogText themeColor="lightTheme">
         <h3>Dashboard</h3>
         <p className="large">
@@ -140,22 +169,9 @@ const ProjResolution = () => {
         themeColor="lightTheme"
       />
       <WaveHr color="#fff" bg="#fff" />
-      <WaveHr color="#fff" bg="#383838" />
+      <WaveHr color="#fff" bg="#efefef" />
       <ProjectFeature
-        themeColor="darkTheme"
-        row="reverse"
-        introText={{
-          title: "G2 FinPlan",
-          descLg: "Each FinPlan shows a high level view of what changes are being requested.",
-          desc: "More detailed description? (?)",
-        }}
-        img={{
-          src: "/images/g2/g2-finplan2.png",
-          alt: "",
-        }}
-      />
-      <ProjectFeature
-        themeColor="darkTheme"
+        themeColor="mediumTheme"
         row="basic"
         introText={{
           title: "Workflow History",
@@ -168,7 +184,6 @@ const ProjResolution = () => {
           alt: "",
         }}
       />
-      <WaveHr color="#383838" bg="#efefef" />
       <ProjectFeature
         themeColor="mediumTheme"
         row="reverse"
@@ -251,23 +266,8 @@ const ProjResolution = () => {
         }}
         themeColor="darkTheme"
       />
-      <WaveHr color="#383838" bg="#efefef" />
-      <ProjectFeature
-        themeColor="mediumTheme"
-        row="basic"
-        introText={{
-          title: "Financial Management",
-          descLg:
-            "G2 manages financials for each organization performing work on a project and is therefore able to summarize financials at any higher level of the WBS.",
-          desc:
-            "Formal change management processes provide organizations with a structured, accountable, and transparent way to allocate new funding, move funding between projects, communicate spending plans, estimate future year budget needs, collect actual costs, and reconcile with external systems. Shown below is a compact financial chart that concisely identifies the various types of funding, costs, and commitments that are managed within G2.",
-        }}
-        img={{
-          src: "/images/g2/fin_plan_detail.png",
-          alt: "",
-        }}
-      />
-      <WaveHr color="#efefef" bg="#ffffff" />
+      <WaveHr color="#383838" bg="#fff" />
+
       <BlogText themeColor="lightTheme">
         <h3>Process</h3>
         <p>
