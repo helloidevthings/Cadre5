@@ -170,6 +170,7 @@ const ProjResolution = () => {
       />
       <WaveHr color="#fff" bg="#fff" />
       <WaveHr color="#fff" bg="#efefef" />
+
       <ProjectFeature
         themeColor="mediumTheme"
         row="basic"
